@@ -1,0 +1,345 @@
+{
+  "nav": {
+    "kapital": "KAPITAL",
+    "wohnenUndLeben": "WOHNEN & LEBEN",
+    "clasen": "Clasen",
+    "contact": "Kontakt",
+    "login": "Mandanten Login"
+  },
+  "hero": {
+    "vision": "Ihre Vision",
+    "items": [
+      {
+        "title": "Aufs richtige \nPferd setzen.",
+        "subtitle": "Ihr zuverlässiges Bindeglied zwischen anspruchsvollen Mandanten und außergewöhnlichen Immobilienchancen.",
+        "videoPath": "/video/hero.mp4"
+      },
+      {
+        "title": "Vor-Sorge statt Nach-Sicht",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch eines unserer hoch-performanten, für Sie maßgeschneiderten Assets.",
+        "videoPath": "/video/hero1.mp4"
+      }
+    ]
+  },
+  "stats": {
+    "investments": {
+      "line1": "Vermittelte",
+      "line2": "Investments"
+    },
+    "transactions": {
+      "prefix": "Ø ",
+      "line1": "Transaktionen",
+      "line2": "Pro Mandant"
+    },
+    "recommendations": {
+      "suffix": "%",
+      "line1": "Empfehlen uns",
+      "line2": "ihren Freunden"
+    }
+  },
+  "profile": {
+    "verticalLabel": "Märkte in Bewegung. Wie Ihr Kopf.",
+    "sectionLabel": "Profil",
+    "heading": "Leidenschaft die ihresgleichen sucht.",
+    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern vor allem unseren geschätzten Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
+    "body2": "Diese Geisteshaltung und die Maxime, alle Ressourcen dabei jederzeit mit absoluter Effektivität und Gewissenhaftigkeit einzusetzen, garantieren Ihnen einmalige Performance und stets das besondere Maß an Menschlichkeit.",
+    "credo": "Unser Credo der FAIRlässlichkeit.",
+    "tagline": "Ihr Schlüssel zum Erfolg.",
+    "role": "Alexander Clasen - Geschäftsführer",
+    "cta": "Schlüsselmoment erleben",
+    "circularText": "IHR VERTRAUEN · UNSER STOLZ ·"
+  },
+  "alleinstell": {
+    "sectionLabel": "Mehrwert",
+    "heading": "Alleinstellungsmerkmale.",
+    "cta": "Jetzt Beratung sichern →",
+    "merkmale": [
+      {
+        "title": "Treffsicher",
+        "description": "Jedes Investment wird auf Basis Ihrer persönlichen Ziele sorgfältig entwickelt und anschließend liebevoll maßgeschneidert."
+      },
+      {
+        "title": "Off-Market",
+        "description": "Sie investieren zu den Konditionen eines Großinvestors: Ohne Zwischenhändler. Ohne Vermittlungshonorare."
+      },
+      {
+        "title": "Heimspiel",
+        "description": "Hohe Heimatverbundenheit ermöglicht Ihnen, selbst an begehrten A+ Standorten wie München außergewöhnliche Renditen."
+      },
+      {
+        "title": "Steuervorteil",
+        "description": "Rechtssichere Konzepte, von führenden Kanzleien entwickelt, um Ihre gesamte Steuerlast drastisch zu reduzieren."
+      },
+      {
+        "title": "Exzellenz",
+        "description": "Nachhaltige Strategien der Extraklasse. Durchdacht von A–Z. Damit Sie sich auf Ihr Kerngeschäft fokussieren können."
+      },
+      {
+        "title": "Eco — Mission",
+        "description": "Schon heute bereit für die Zukunft: Dank energetischer Sanierung erfüllt jedes Investment modernste Standards."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "Kundenstimmen",
+    "heading": "Echte Gesichter.\nEchte Geschichten.",
+    "items": [
+      {
+        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
+        "client_name": "Philippe Geissler",
+        "client_quote": "Das Team konnte mich durch strukturierte Vorgehensweise und außergewöhnliche Marktkenntnis überzeugen. Eine Zusammenarbeit, die ich jederzeit weiterempfehlen würde.",
+        "client_type": "Jurist/master LMU",
+        "object_name": "Villa Maxvorstadt",
+        "object_location": "München · Maxvorstadt",
+        "objects": [
+          {
+            "label": "Schlafzimmer",
+            "image_path": "/testimonials/phillip_geissler/image_1.jpg"
+          },
+          {
+            "label": "Eingang",
+            "image_path": "/testimonials/phillip_geissler/image_2.jpg"
+          },
+          {
+            "label": "Vorhof",
+            "image_path": "/testimonials/phillip_geissler/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
+        "client_name": "Maria Hoffmann",
+        "client_quote": "Clasen hat uns nicht nur die perfekte Immobilie gefunden, sondern uns durch den gesamten Prozess begleitet — diskret, kompetent und mit echtem Herzblut.",
+        "client_type": "Zufriedene Käuferin",
+        "object_name": "Stadtpalais Schwabing",
+        "object_location": "München · Schwabing",
+        "objects": [
+          {
+            "label": "Fassade",
+            "image_path": "/backgrounds/chess.png"
+          },
+          {
+            "label": "Wohnbereich",
+            "image_path": "/backgrounds/facade.png"
+          },
+          {
+            "label": "Garten",
+            "image_path": "/backgrounds/chess.png"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
+        "client_name": "Dr. Thomas Bergmann",
+        "client_quote": "Als Unternehmer war mir Diskretion und Effizienz besonders wichtig. Clasen hat beides in höchstem Maß geliefert — und dabei eine Rendite erzielt, die meine Erwartungen weit übertroffen hat.",
+        "client_type": "Investor",
+        "object_name": "Mehrfamilienhaus Bogenhausen",
+        "object_location": "München · Bogenhausen",
+        "objects": [
+          {
+            "label": "Außenansicht",
+            "image_path": "/backgrounds/facade.png"
+          },
+          {
+            "label": "Treppenhaus",
+            "image_path": "/backgrounds/chess.png"
+          },
+          {
+            "label": "Innenhof",
+            "image_path": "/backgrounds/facade.png"
+          }
+        ]
+      }
+    ]
+  },
+  "credo": {
+    "sectionLabel": "Credo",
+    "quote": "„Der beste Zeitpunkt,\neinen Baum zu pflanzen,\nwar vor 20 Jahren.\n\nDer zweitbeste ist jetzt…\u201C",
+    "attribution": "— Chinesisches Sprichwort",
+    "cta": "Jetzt Kontakt aufnehmen"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "clasenHero": {
+    "sectionLabel": "Die Geschichte hinter der Marke",
+    "heading": "Eine Überzeugung.\nKein Umweg.",
+    "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen. Was dazwischen liegt, ist keine Karriere — es ist ein Credo.",
+    "cta": "Die Geschichte lesen"
+  },
+  "clasenWarum": {
+    "sectionLabel": "Das Warum",
+    "body": "Die Assetklasse, die mich durch alle persönlichen Krisen und jede finanzielle Fehlentscheidung getragen hat — zugänglich machen für alle, die sie verdienen. Nicht nur für Institutionelle. Nicht nur für Erben. Für jeden, der bereit ist, sein Kapital arbeiten zu lassen."
+  },
+  "clasenChronik": {
+    "sectionLabel": "Chronik",
+    "heading": "Der Weg",
+    "entries": [
+      {
+        "year": "Sommer 1993",
+        "category": "Ursprung",
+        "subtitle": "München. Der Anfang von allem.",
+        "body": "Alexander Christian Clasen wird im Sommer 1993 in München geboren — in der Stadt, die später zum Zentrum seiner Arbeit und seiner Leidenschaft werden wird. Dass der Immobilienmarkt dieser Stadt einmal sein Spielfeld sein würde, ahnte damals noch niemand. Er selbst wahrscheinlich auch nicht."
+      },
+      {
+        "year": "18. Geburtstag",
+        "category": "Erster Versuch",
+        "subtitle": "Die Absage, die alles in Gang setzte.",
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für die meisten wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession."
+      },
+      {
+        "year": "2012",
+        "category": "Erweckung",
+        "subtitle": "»Rich Dad Poor Dad« und die Erkenntnis.",
+        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. Jura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. Die echte Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt."
+      },
+      {
+        "year": "2015",
+        "category": "Wendepunkt",
+        "subtitle": "Der Abbruch, gegen den Rat aller.",
+        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. Nicht aus Gleichgültigkeit — sondern aus Klarheit. Er erkennt, welches Potential ein eigener Immobilienbestand auf den angestrebten frühzeitigen Ruhestand haben kann. Alle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn."
+      },
+      {
+        "year": "2016",
+        "category": "Quereinstieg",
+        "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
+        "body": "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+        "milestone": {
+          "stat": "1",
+          "label": "Jahr · Mehrere Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen"
+        }
+      },
+      {
+        "year": "2017",
+        "category": "Erkundung",
+        "subtitle": "Die andere Seite. Schweizer Präzision.",
+        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. Konträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht."
+      },
+      {
+        "year": "2018",
+        "category": "Gründung",
+        "subtitle": "Das erste eigene Unternehmen. Mit einem klaren Auftrag.",
+        "body": "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie: Der Fokus liegt ausschließlich auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Menschen, die überzeugt waren, keinen Makler zu brauchen. Oft genug lagen sie falsch. Über 500 Immobilien werden in der Folge vermittelt. Das Ergebnis im ersten Jahr: siebenstelliger Umsatz — und die Bestätigung, dass ein anderer Weg möglich ist.",
+        "milestone": {
+          "stat": "500+",
+          "label": "Vermittelte Immobilien · 7-stelliger Umsatz im Gründungsjahr"
+        }
+      },
+      {
+        "year": "2018",
+        "category": "Gründung",
+        "subtitle": "Die eigene Baufirma. Weil echte Unabhängigkeit keine Kompromisse kennt.",
+        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für die Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur fertigen Immobilie."
+      },
+      {
+        "year": "Meilenstein",
+        "category": "Projekt",
+        "subtitle": "Ein Ensemble. Vollständig in eigener Hand.",
+        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchener Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Objektakquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. Ein Beweis dafür, was echte Partnerschaft bedeutet."
+      },
+      {
+        "year": "Meilenstein",
+        "category": "Baudenkmal",
+        "subtitle": "München, Theresienwiese. Vier Jahre. Ein Denkmal.",
+        "body": "Eine Münchener Erbengemeinschaft vertraut CLASEN mit einem der anspruchsvollsten Aufträge der Unternehmensgeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. Denkmalschutz, Erbrecht, Sanierungskomplexität, Münchener Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion, Ausdauer und die Fähigkeit, auch dort Ergebnisse zu liefern, wo andere scheitern.",
+        "milestone": {
+          "stat": "4",
+          "label": "Jahre Projektlaufzeit · Baudenkmal · Theresienwiese München"
+        }
+      },
+      {
+        "year": "2024",
+        "category": "Vision",
+        "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
+        "body": "Aus dem Maklerhaus wird ein Family Office. Der Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. 329,7 Mio. € anvertraute Kundenwerte. 687 vermittelte Investments. 97 % Weiterempfehlung. Das Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen — zu Konditionen, die sonst nur Institutionelle kennen.",
+        "milestone": {
+          "stat": "329.7",
+          "label": "Mio. € anvertraute Kundenwerte · 97 % Weiterempfehlung"
+        }
+      },
+      {
+        "year": "Heute",
+        "category": "Spezialisierung",
+        "subtitle": "Steuern sparen als Königsdisziplin.",
+        "body": "Mit wachsendem Mandantenstamm wächst auch die Erkenntnis: Die größte Stellschraube im Vermögensaufbau ist nicht die Rendite — es ist die Steuerlast. CLASEN spezialisiert sich konsequent auf maßgeschneiderte Steuersparmodelle für Topverdiener, Unternehmer und anspruchsvolle Kapitalanleger. In enger Zusammenarbeit mit führenden Kanzleien entstehen rechtssichere Konzepte, die die gesamte Steuerlast der Mandanten strukturell und nachhaltig reduzieren — nicht als Trick, sondern als Architektur. Wer einmal verstanden hat, wie viel Kapital hier jährlich verloren geht, denkt Investitionen nie wieder gleich.",
+        "isToday": true
+      }
+    ]
+  },
+  "wohnenUndLeben": {
+    "sectionLabel": "Referenzobjekte",
+    "heading": "Wohnen &\nLeben.",
+    "subheading": "Kapital in selbstgenutzter Immobilie",
+    "description": "Ausgewählte Objekte, die wir für unsere Mandanten vermittelt haben.",
+    "viewProperty": "Objekt ansehen",
+    "notConnected": "ImmoScout nicht verbunden",
+    "connectButton": "Jetzt verbinden",
+    "noListings": "Keine Objekte verfügbar"
+  },
+  "contact": {
+    "sectionLabel": "Kontakt",
+    "heading": "Ihr Schlüssel zum Erfolg.",
+    "body": "Wir sind das Bindeglied zwischen anspruchsvollen Mandanten und außergewöhnlichen Immobilienchancen. Melden Sie sich — diskret und unverbindlich.",
+    "emailLabel": "E-Mail",
+    "phoneLabel": "Telefon",
+    "nameLabel": "Name",
+    "emailFieldLabel": "E-Mail",
+    "phoneFieldLabel": "Telefon (optional)",
+    "messageLabel": "Nachricht",
+    "namePlaceholder": "Max Mustermann",
+    "emailPlaceholder": "max@beispiel.de",
+    "phonePlaceholder": "+49 000 000000",
+    "messagePlaceholder": "Wie können wir Ihnen helfen?",
+    "submit": "Nachricht senden"
+  },
+  "commercial": {
+    "label": "Commercial",
+    "heading": "Demnächst.",
+    "subheading": "Inhalte folgen"
+  },
+  "living": {
+    "label": "Living",
+    "heading": "Demnächst.",
+    "subheading": "Inhalte folgen"
+  },
+  "login": {
+    "heading": "Mandanten Login",
+    "subheading": "Zugang zum Clasen Mandantenportal",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "ihre@email.de",
+    "passwordLabel": "Passwort",
+    "submit": "Einloggen",
+    "noAccess": "Noch kein Zugang?",
+    "contactLink": "Kontakt aufnehmen"
+  },
+  "meta": {
+    "home": {
+      "title": "Clasen Immos — Home",
+      "description": "Die elitäre Welt der institutionellen Immobilieninvestoren. Professionelle Lösungen für anspruchsvolle Mandanten."
+    },
+    "clasen": {
+      "title": "Clasen Immos — Die Geschichte",
+      "description": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office. Die Geschichte hinter der Marke."
+    },
+    "contact": {
+      "title": "Clasen Immos — Kontakt",
+      "description": "Nehmen Sie Kontakt mit uns auf."
+    },
+    "wohnenUndLeben": {
+      "title": "Clasen Immos — Wohnen & Leben",
+      "description": "Referenzobjekte — cineastisch und hochwertig in Szene gesetzt."
+    },
+    "commercial": {
+      "title": "Clasen Immos — Commercial",
+      "description": "Gewerbliche Immobilien — demnächst."
+    },
+    "living": {
+      "title": "Clasen Immos — Living",
+      "description": "Wohnimmobilien — demnächst."
+    },
+    "login": {
+      "title": "Clasen Immos — Mandanten Login",
+      "description": "Sicherer Zugang zum Clasen Mandantenportal."
+    }
+  }
+}
