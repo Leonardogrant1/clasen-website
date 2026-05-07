@@ -34,30 +34,17 @@ export default function TestimonialsCarousel({
     <div className="flex flex-col gap-6">
       {/* Image grid */}
       <div className="overflow-hidden">
-        <div className={`grid grid-cols-1 sm:grid-cols-3 gap-4 transition-all duration-500 ease-in-out ${translateClass}`}>
+        <div className={`grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-12 transition-all duration-500 ease-in-out ${translateClass}`}>
           {objects.map((obj, i) => (
-            <div key={i} className="relative h-72 rounded-xl overflow-hidden bg-white/5 border border-white/5 group">
-              {obj.image_path ? (
-                <>
-                  <Image
-                    src={obj.image_path}
-                    fill
-                    alt={obj.label}
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
-                  <p className="absolute bottom-4 left-4 text-white/70 text-xs uppercase tracking-widest">
-                    {obj.label}
-                  </p>
-                </>
-              ) : (
-                <>
-                  <div className="absolute inset-0 bg-linear-to-br from-white/5 to-white/10" />
-                  <p className="absolute bottom-4 left-4 text-white/30 text-xs uppercase tracking-widest">
-                    {obj.label}
-                  </p>
-                </>
-              )}
+            <div key={i} className="relative h-48 rounded-xl overflow-hidden bg-white/5 border border-white/5 group">
+
+              <Image
+                src={obj.image_path}
+                fill
+                alt="Objektbild"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+
             </div>
           ))}
         </div>

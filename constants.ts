@@ -1,8 +1,7 @@
 
 
 export type TestimonialObject = {
-    label: string;
-    image_path: string | null;
+    image_path: string;
 };
 
 export type Testimonial = {
@@ -25,15 +24,12 @@ export const testimonials: Testimonial[] = [
         object_location: "München · Maxvorstadt",
         objects: [
             {
-                label: "Schlafzimmer",
                 image_path: "/testimonials/phillip_geissler/image_1.jpg",
             },
             {
-                label: "Eingang",
                 image_path: "/testimonials/phillip_geissler/image_2.jpg",
             },
             {
-                label: "Vorhof",
                 image_path: "/testimonials/phillip_geissler/image_3.jpg",
             },
         ],
@@ -47,15 +43,12 @@ export const testimonials: Testimonial[] = [
         object_location: "München · Maxvorstadt",
         objects: [
             {
-                label: "Stadthaus Schwabing",
                 image_path: "/backgrounds/chess.png",
             },
             {
-                label: "Villa Blankenese",
                 image_path: "/backgrounds/facade.png",
             },
             {
-                label: "Baudenkmal Theresienwiese",
                 image_path: "/backgrounds/chess.png",
             },
         ],
@@ -69,15 +62,12 @@ export const testimonials: Testimonial[] = [
         object_location: "München · Maxvorstadt",
         objects: [
             {
-                label: "Mehrfamilienhaus Bogenhausen",
                 image_path: "/backgrounds/facade.png",
             },
             {
-                label: "Penthouse Oberkassel",
                 image_path: "/backgrounds/chess.png",
             },
             {
-                label: "Stadtvilla Herzogpark",
                 image_path: "/backgrounds/facade.png",
             },
         ],

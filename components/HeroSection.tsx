@@ -33,8 +33,8 @@ export default function HeroSection({ dict, statsDict }: Props) {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
         </div>
 
-        <div className="px-4 py-8">
-          <div className="flex items-end gap-2 mb-3">
+        <div className="px-4 py-8 text-center">
+          <div className="flex items-end justify-center gap-2 mb-3">
             <span className="text-[#C9A84C] text-2xl font-semibold tracking-widest uppercase">01</span>
             <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-1 font-semibold">{dict.vision}</p>
           </div>

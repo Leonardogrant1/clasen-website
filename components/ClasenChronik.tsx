@@ -115,7 +115,7 @@ export default function ClasenChronik({ dict }: { dict: Dictionary["clasenChroni
 
       <div className="max-w-5xl mx-auto">
         {/* Heading */}
-        <div className="flex flex-col items-baseline gap-2 mb-12 md:mb-20">
+        <div className="flex flex-col items-center md:items-baseline gap-2 mb-12 md:mb-20 text-center md:text-left">
           <span className="text-accent text-sm uppercase tracking-widest font-semibold">{dict.sectionLabel}</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">{dict.heading}</h2>
         </div>

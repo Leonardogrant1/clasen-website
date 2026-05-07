@@ -22,9 +22,20 @@
     ]
   },
   "stats": {
-    "investments": { "line1": "Brokered", "line2": "Investments" },
-    "transactions": { "prefix": "Ø ", "line1": "Transactions", "line2": "Per Client" },
-    "recommendations": { "suffix": "%", "line1": "Recommend Us", "line2": "To Friends" }
+    "investments": {
+      "line1": "Brokered",
+      "line2": "Investments"
+    },
+    "transactions": {
+      "prefix": "Ø ",
+      "line1": "Transactions",
+      "line2": "Per Client"
+    },
+    "recommendations": {
+      "suffix": "%",
+      "line1": "Recommend Us",
+      "line2": "To Friends"
+    }
   },
   "profile": {
     "verticalLabel": "Markets in Motion. Like Your Mind.",
@@ -43,36 +54,57 @@
     "heading": "Unique Selling Points.",
     "cta": "Book a Consultation →",
     "merkmale": [
-      { "title": "Pinpoint Precise", "description": "Every investment is carefully developed based on your personal goals and lovingly tailored to your needs." },
-      { "title": "Off-Market", "description": "You invest at the terms of a major institutional investor: no middlemen, no brokerage fees." },
-      { "title": "Home Advantage", "description": "Deep local expertise enables you to achieve extraordinary returns even at sought-after A+ locations like Munich." },
-      { "title": "Tax Advantage", "description": "Legally sound concepts developed by leading law firms to drastically reduce your entire tax burden." },
-      { "title": "Excellence", "description": "Sustainable premium strategies. Thought through from A to Z. So you can focus on your core business." },
-      { "title": "Eco — Mission", "description": "Ready for the future today: thanks to energy-efficient renovation, every investment meets the latest standards." }
+      {
+        "title": "Pinpoint Precise",
+        "description": "Every investment is carefully developed based on your personal goals and lovingly tailored to your needs.",
+        "animation": "/animations/goals.json"
+      },
+      {
+        "title": "Off-Market",
+        "description": "You invest at the terms of a major institutional investor: no middlemen, no brokerage fees.",
+        "animation": "/animations/invoice.json"
+      },
+      {
+        "title": "Home Advantage",
+        "description": "Deep local expertise enables you to achieve extraordinary returns even at sought-after A+ locations like Munich.",
+        "animation": "/animations/town.json"
+      },
+      {
+        "title": "Tax Advantage",
+        "description": "Legally sound concepts developed by leading law firms to drastically reduce your entire tax burden.",
+        "animation": "/animations/gift.json"
+      },
+      {
+        "title": "Excellence",
+        "description": "Sustainable premium strategies. Thought through from A to Z. So you can focus on your core business.",
+        "animation": "/animations/crown.json"
+      },
+      {
+        "title": "Eco — Mission",
+        "description": "Ready for the future today: thanks to energy-efficient renovation, every investment meets the latest standards.",
+        "animation": "/animations/energy.json"
+      }
     ]
   },
   "testimonials": {
     "sectionLabel": "Client Testimonials",
     "heading": "Real Faces.\nReal Stories.",
+    "investmentLabel": "Investment",
     "items": [
       {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
+        "client_image_path": "/testimonials/phillip_geissler/profile.png",
         "client_name": "Philippe Geissler",
         "client_quote": "The team convinced me with their structured approach and exceptional market knowledge. A collaboration I would recommend at any time.",
         "client_type": "Jurist/Master LMU",
-        "object_name": "Villa Maxvorstadt",
-        "object_location": "Munich · Maxvorstadt",
+        "object_title": "Period Building Munich/Au",
         "objects": [
           {
-            "label": "Bedroom",
             "image_path": "/testimonials/phillip_geissler/image_1.jpg"
           },
           {
-            "label": "Entrance",
             "image_path": "/testimonials/phillip_geissler/image_2.jpg"
           },
           {
-            "label": "Courtyard",
             "image_path": "/testimonials/phillip_geissler/image_3.jpg"
           }
         ]
@@ -82,19 +114,15 @@
         "client_name": "Maria Hoffmann",
         "client_quote": "Clasen not only found us the perfect property but guided us through the entire process — discreetly, competently, and with genuine passion.",
         "client_type": "Satisfied Buyer",
-        "object_name": "Stadtpalais Schwabing",
-        "object_location": "Munich · Schwabing",
+        "object_title": "Stadtpalais Schwabing",
         "objects": [
           {
-            "label": "Facade",
             "image_path": "/backgrounds/chess.png"
           },
           {
-            "label": "Living Area",
             "image_path": "/backgrounds/facade.png"
           },
           {
-            "label": "Garden",
             "image_path": "/backgrounds/chess.png"
           }
         ]
@@ -104,19 +132,15 @@
         "client_name": "Dr. Thomas Bergmann",
         "client_quote": "As an entrepreneur, discretion and efficiency were paramount to me. Clasen delivered both in the highest measure — and achieved a return that far exceeded my expectations.",
         "client_type": "Investor",
-        "object_name": "Apartment Building Bogenhausen",
-        "object_location": "Munich · Bogenhausen",
+        "object_title": "Multi-Family House Bogenhausen",
         "objects": [
           {
-            "label": "Exterior",
             "image_path": "/backgrounds/facade.png"
           },
           {
-            "label": "Staircase",
             "image_path": "/backgrounds/chess.png"
           },
           {
-            "label": "Courtyard",
             "image_path": "/backgrounds/facade.png"
           }
         ]
@@ -147,66 +171,90 @@
     "heading": "The Journey",
     "entries": [
       {
-        "year": "Summer 1993", "category": "Origin",
+        "year": "Summer 1993",
+        "category": "Origin",
         "subtitle": "Munich. The beginning of everything.",
         "body": "Alexander Christian Clasen is born in Munich in the summer of 1993 — the city that would later become the center of his work and passion. At the time, no one could have guessed that this city's real estate market would become his playing field. Probably not even himself."
       },
       {
-        "year": "18th Birthday", "category": "First Attempt",
+        "year": "18th Birthday",
+        "category": "First Attempt",
         "subtitle": "The rejection that set everything in motion.",
         "body": "On the day of his 18th birthday, Alexander submits his first real estate financing request. The bank's answer: rejection. No equity, no income, no chance. For most, that would have been the end of the thought. For him, it was the beginning of an obsession."
       },
       {
-        "year": "2012", "category": "Awakening",
+        "year": "2012",
+        "category": "Awakening",
         "subtitle": "«Rich Dad Poor Dad» and the revelation.",
         "body": "After graduating, a book and a glimpse into the world of well-off friends opens an entirely new perspective: passive income through real estate. Alexander dives deep into specialist literature. Law and psychology studies begin — but increasingly take a back seat. The real education takes place in books, balance sheets, and land register extracts."
       },
       {
-        "year": "2015", "category": "Turning Point",
+        "year": "2015",
+        "category": "Turning Point",
         "subtitle": "The dropout, against everyone's advice.",
         "body": "Shortly before completing his degree, Alexander drops out of his costly psychology studies. Not out of indifference — but out of clarity. He recognizes the potential that a real estate portfolio of his own could have on his sought-after early retirement. Everyone advises against it. He does it anyway. This decision — to consistently swim against the current — becomes the leitmotif of his entire career."
       },
       {
-        "year": "2016", "category": "Career Switch",
+        "year": "2016",
+        "category": "Career Switch",
         "subtitle": "100 years of history. Overtaken in one year.",
         "body": "As a career changer, Alexander joins one of Munich's most renowned estate agencies — over a century of company history, established structures, long-standing records. One year later, several are broken: most expensive apartment brokered, largest rental mandate — records that had stood for decades. The realization: the Munich real estate market is stagnant. And ready for a revolution.",
-        "milestone": { "stat": "1", "label": "Year · Multiple sales records broken from over 100 years of company history" }
+        "milestone": {
+          "stat": "1",
+          "label": "Year · Multiple sales records broken from over 100 years of company history"
+        }
       },
       {
-        "year": "2017", "category": "Exploration",
+        "year": "2017",
+        "category": "Exploration",
         "subtitle": "The other side. Swiss precision.",
         "body": "Before the planned step into self-employment comes a deliberate detour: a modern Swiss franchise system. Contrary to everything he had known before. Different processes, different mindset, different standards. Alexander absorbs both — and afterwards knows even more precisely how his own company will look. And how it won't."
       },
       {
-        "year": "2018", "category": "Foundation",
+        "year": "2018",
+        "category": "Foundation",
         "subtitle": "The first company of his own. With a clear mission.",
         "body": "Foundation of the first independent brokerage — with an unusual strategy: the focus lies exclusively on sellers who had already written off estate agents. People convinced they didn't need a broker. Often enough, they were wrong. Over 500 properties are subsequently brokered. The result in the first year: seven-figure revenue — and confirmation that a different path is possible.",
-        "milestone": { "stat": "500+", "label": "Properties Brokered · 7-figure revenue in the founding year" }
+        "milestone": {
+          "stat": "500+",
+          "label": "Properties Brokered · 7-figure revenue in the founding year"
+        }
       },
       {
-        "year": "2018", "category": "Foundation",
+        "year": "2018",
+        "category": "Foundation",
         "subtitle": "The construction company. Because true independence knows no compromises.",
         "body": "In the same founding year comes the next consequential step: the establishment of an in-house construction company. The reason is as simple as it is strategic — whoever promises clients \"everything from a single source\" cannot be dependent on third-party companies along the way. Quality, timing, and cost control remain entirely in-house. For clients: one contact, one responsibility, one outcome — from the first consultation to the completed property."
       },
       {
-        "year": "Milestone", "category": "Project",
+        "year": "Milestone",
+        "category": "Project",
         "subtitle": "An ensemble. Fully in-house.",
         "body": "A longstanding client entrusts CLASEN with the acquisition of a complete apartment building ensemble in a solid Munich location. What follows is a full-scope mandate: property acquisition, financial planning, subsidy management, core renovation, project development, interior construction, letting, and ongoing property management — all from a single source. Proof of what true partnership means."
       },
       {
-        "year": "Milestone", "category": "Heritage Building",
+        "year": "Milestone",
+        "category": "Heritage Building",
         "subtitle": "Munich, Theresienwiese. Four years. A monument.",
         "body": "A Munich hereditary community entrusts CLASEN with one of the most demanding mandates in the company's history: the extensive, four-year core renovation of a well-known heritage building near the Theresienwiese. Historic preservation, inheritance law, renovation complexity, Munich's bureaucratic landscape. The project stands for what defines CLASEN: discretion, perseverance, and the ability to deliver results where others fail.",
-        "milestone": { "stat": "4", "label": "Years project duration · Heritage Building · Theresienwiese Munich" }
+        "milestone": {
+          "stat": "4",
+          "label": "Years project duration · Heritage Building · Theresienwiese Munich"
+        }
       },
       {
-        "year": "2024", "category": "Vision",
+        "year": "2024",
+        "category": "Vision",
         "subtitle": "CLASEN Family Office. The next key.",
         "body": "The brokerage becomes a Family Office. The step is consistent — not a reinvention, but a completion. €329.7 million in entrusted client assets. 687 brokered investments. 97% referral rate. The foundation is solid. What follows is the next level: tailored capital investments, tax-saving models, and off-market access for all who want to put their capital to work — at terms usually only known to institutional investors.",
-        "milestone": { "stat": "329.7", "label": "M € in entrusted client assets · 97% referral rate" }
+        "milestone": {
+          "stat": "329.7",
+          "label": "M € in entrusted client assets · 97% referral rate"
+        }
       },
       {
-        "year": "Today", "category": "Specialization",
+        "year": "Today",
+        "category": "Specialization",
         "subtitle": "Tax optimization as the supreme discipline.",
         "body": "With a growing client base comes a growing realization: the biggest lever in wealth building is not the return — it is the tax burden. CLASEN specializes consistently in tailored tax-saving models for top earners, entrepreneurs, and sophisticated investors. In close collaboration with leading law firms, legally sound concepts are developed that structurally and sustainably reduce clients' entire tax burden — not as a trick, but as architecture. Once you understand how much capital is lost here annually, you will never think about investments the same way again.",
         "isToday": true
@@ -229,15 +277,43 @@
     "body": "We are the link between discerning clients and extraordinary real estate opportunities. Get in touch — discreetly and without obligation.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
-    "nameLabel": "Name",
-    "emailFieldLabel": "Email",
-    "phoneFieldLabel": "Phone (optional)",
-    "messageLabel": "Message",
+    "nameLabel": "Your Name",
+    "emailFieldLabel": "Your Email",
+    "phoneFieldLabel": "Your Phone",
+    "messageLabel": "Your Message",
     "namePlaceholder": "John Smith",
     "emailPlaceholder": "john@example.com",
     "phonePlaceholder": "+44 000 000000",
     "messagePlaceholder": "How can we help you?",
-    "submit": "Send Message"
+    "submit": "Send Message",
+    "topicPlaceholder": "Please select…",
+    "topicLabel": "Subject",
+    "topics": [
+      {
+        "value": "portfolio",
+        "label": "Portfolio Advisory Enquiry"
+      },
+      {
+        "value": "bauleistung",
+        "label": "Construction Services Enquiry"
+      },
+      {
+        "value": "asset",
+        "label": "Asset Management Enquiry"
+      },
+      {
+        "value": "kapitalanlage",
+        "label": "Capital Investment Enquiry"
+      },
+      {
+        "value": "wohnimmobilie",
+        "label": "Residential Property Enquiry"
+      },
+      {
+        "value": "freitext",
+        "label": "Other"
+      }
+    ]
   },
   "commercial": {
     "label": "Commercial",
@@ -260,12 +336,33 @@
     "contactLink": "Get in touch"
   },
   "meta": {
-    "home": { "title": "Clasen Immos — Home", "description": "The elite world of institutional real estate investors. Professional solutions for discerning clients." },
-    "clasen": { "title": "Clasen Immos — Our Story", "description": "From the 18-year-old whose first financing was rejected, to the Family Office. The story behind the brand." },
-    "contact": { "title": "Clasen Immos — Contact", "description": "Get in touch with us." },
-    "wohnenUndLeben": { "title": "Clasen Immos — Living & Lifestyle", "description": "Reference properties — presented cinematically and with the highest quality." },
-    "commercial": { "title": "Clasen Immos — Commercial", "description": "Commercial real estate — coming soon." },
-    "living": { "title": "Clasen Immos — Living", "description": "Residential properties — coming soon." },
-    "login": { "title": "Clasen Immos — Client Login", "description": "Secure access to the Clasen client portal." }
+    "home": {
+      "title": "Clasen Immos — Home",
+      "description": "The elite world of institutional real estate investors. Professional solutions for discerning clients."
+    },
+    "clasen": {
+      "title": "Clasen Immos — Our Story",
+      "description": "From the 18-year-old whose first financing was rejected, to the Family Office. The story behind the brand."
+    },
+    "contact": {
+      "title": "Clasen Immos — Contact",
+      "description": "Get in touch with us."
+    },
+    "wohnenUndLeben": {
+      "title": "Clasen Immos — Living & Lifestyle",
+      "description": "Reference properties — presented cinematically and with the highest quality."
+    },
+    "commercial": {
+      "title": "Clasen Immos — Commercial",
+      "description": "Commercial real estate — coming soon."
+    },
+    "living": {
+      "title": "Clasen Immos — Living",
+      "description": "Residential properties — coming soon."
+    },
+    "login": {
+      "title": "Clasen Immos — Client Login",
+      "description": "Secure access to the Clasen client portal."
+    }
   }
 }

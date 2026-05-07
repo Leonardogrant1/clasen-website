@@ -35,7 +35,7 @@ export default function ProfileSection({ dict, locale }: Props) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
           <span className="text-accent text-sm uppercase tracking-widest font-semibold">
             {dict.sectionLabel}
           </span>
@@ -47,13 +47,13 @@ export default function ProfileSection({ dict, locale }: Props) {
           <p className="text-muted leading-relaxed">{dict.credo}</p>
           <p className="text-muted leading-relaxed">{dict.tagline}</p>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center md:items-start">
             <Image alt="signature" width={200} height={200} src="/signature.png" />
             <span className="text-sm text-muted tracking-widest uppercase mt-1">
               {dict.role}
             </span>
           </div>
-          <button className="self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200">
+          <button className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200">
             {dict.cta}
           </button>
         </div>
