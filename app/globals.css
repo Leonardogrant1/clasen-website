@@ -12,7 +12,7 @@
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-jost);
   --font-mono: var(--font-geist-mono);
 }
 

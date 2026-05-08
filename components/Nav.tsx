@@ -65,6 +65,7 @@ export default function Nav({ dict, locale }: Props) {
   };
 
   useEffect(() => {
+    setIsOpen(false);
     if (loginPhase !== "idle") {
       setLoginPhase("idle");
       setFlyRect(null);
@@ -113,7 +114,7 @@ export default function Nav({ dict, locale }: Props) {
           <div ref={lockRef} className="relative h-12 w-48">
             <button
               onClick={handleLoginClick}
-              className={`absolute inset-0 rounded-full bg-white text-black text-sm uppercase font-semibold transition-opacity duration-300 cursor-pointer
+              className={`absolute inset-0 rounded-full bg-white text-black text-sm font-semibold transition-opacity duration-300 cursor-pointer
                 ${isAnimating ? "opacity-0 pointer-events-none" : "opacity-100 hover:bg-white/90"}`}
             >
               {dict.login}

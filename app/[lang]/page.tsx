@@ -22,8 +22,8 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
   return (
     <>
       <HeroSection dict={dict.hero} statsDict={dict.stats} />
-      <ProfileSection dict={dict.profile} locale={lang} />
       <TestimonialsSection dict={dict.testimonials} />
+      <ProfileSection dict={dict.profile} locale={lang} />
       <AlleinestellungsMerkmale dict={dict.alleinstell} locale={lang} />
       <CredoSection dict={dict.credo} locale={lang} />
     </>

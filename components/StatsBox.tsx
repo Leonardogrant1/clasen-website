@@ -83,7 +83,7 @@ export default function StatsBox({ dict, inline = false }: Props) {
       {stats.map((stat, i) => (
         <div
           key={i}
-          className={`flex items-center gap-4 ${inline ? "px-4 py-4" : "px-8 py-5"} ${i < stats.length - 1 ? (inline ? "border-b border-white/10" : "border-r border-white/20") : ""}`}
+          className={`flex items-center gap-4 ${inline ? "px-4 py-4 justify-center" : "px-8 py-5"} ${i < stats.length - 1 ? (inline ? "border-b border-white/10" : "border-r border-white/20") : ""}`}
         >
           <p className={`text-foreground font-bold whitespace-nowrap ${inline ? "text-xl" : "text-3xl"}`}>
             <AnimatedCounter

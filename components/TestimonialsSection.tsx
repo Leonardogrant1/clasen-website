@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
@@ -34,7 +34,7 @@ export default function TestimonialsSection({ dict }: Props) {
   return (
     <section className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
       <div className="max-w-6xl mx-auto flex flex-col gap-6">
-        <div className="grid md:grid-cols-[2fr_3fr] gap-12 items-center">
+        <div className="grid md:grid-cols-[2fr_3fr] gap-8 md:gap-12 items-center">
           <div className="text-center md:text-left">
             <span className="text-accent text-xs uppercase tracking-widest font-semibold block mb-6">
               {dict.sectionLabel}
@@ -43,27 +43,26 @@ export default function TestimonialsSection({ dict }: Props) {
               {dict.heading}
             </h2>
 
-            <div className={`mt-24 flex flex-col gap-1 transition-all duration-500 ease-in-out ${quoteClass}`}>
-              {/* <p className="text-foreground font-semibold text-base">{slide.object_name}</p> */}
-              <div className="flex items-center gap-2">
+            <div className={`mt-6 md:mt-24 flex flex-col gap-1 transition-all duration-500 ease-in-out ${quoteClass}`}>
+              <div className="flex items-center justify-center md:justify-start gap-2 flex-wrap">
                 <p className="text-foreground font-semibold text-base">{slide.client_name.split(' ')[0]}&apos;s {dict.investmentLabel}:</p>
                 <p className="text-accent tracking-widest">{slide.object_title}</p>
               </div>
             </div>
           </div>
 
-          <div className={`flex gap-10 items-center transition-all duration-500 ease-in-out ${quoteClass}`}>
-            <div className="relative shrink-0 w-32 h-44 rounded-[999px] overflow-hidden bg-white/10 border border-white/10">
+          <div className={`flex flex-col md:flex-row gap-6 md:gap-10 md:items-center transition-all duration-500 ease-in-out ${quoteClass}`}>
+            <div className="relative shrink-0 w-16 h-24 md:w-32 md:h-44 rounded-[999px] overflow-hidden bg-white/10 border border-white/10 mx-auto md:mx-0">
               {slide.client_image_path && (
                 <Image src={slide.client_image_path} fill alt={slide.client_name} className="object-cover scale-150 object-top" />
               )}
             </div>
 
-            <Image src="/quote.png" alt="quote" className="self-start" width={60} height={60} />
+            <Image src="/quote.png" alt="quote" className="self-center md:self-start mx-auto md:mx-0" width={40} height={40} />
 
-            <div className="flex flex-col gap-8">
-              <p className="text-muted text-sm leading-relaxed">{slide.client_quote}</p>
-              <div className="flex items-center gap-2">
+            <div className="flex flex-col gap-4 md:gap-8 text-center md:text-left">
+              <p className="text-muted text-sm leading-relaxed whitespace-pre-line">{slide.client_quote}</p>
+              <div className="flex items-center justify-center md:justify-start gap-2">
                 <p className="text-foreground text-sm font-semibold">{slide.client_name}</p>
                 <span className="text-white/20 text-xs">·</span>
                 <p className="text-accent text-xs uppercase tracking-widest">{slide.client_type}</p>

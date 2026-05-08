@@ -4,14 +4,14 @@
     "wohnenUndLeben": "WOHNEN & LEBEN",
     "clasen": "Clasen",
     "contact": "Kontakt",
-    "login": "Mandanten Login"
+    "login": "MANDANTEN - LogIn"
   },
   "hero": {
     "vision": "Ihre Vision",
     "items": [
       {
         "title": "Aufs richtige \nPferd setzen.",
-        "subtitle": "Ihr zuverlässiges Bindeglied zwischen anspruchsvollen Mandanten und außergewöhnlichen Immobilienchancen.",
+        "subtitle": "Ihr zuverlässiges Bindeglied zwischen anspruchsvoller Mandantschaft und außergewöhnlichen Investmentchancen.",
         "videoPath": "/video/hero.mp4"
       },
       {
@@ -95,7 +95,7 @@
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
         "client_name": "Philippe Geissler",
         "client_quote": "...das Team konnte mich durch strukturierte Vorgehensweise und exzellente Marktkenntnisse überzeugen und erfolgreich fürs Alter absichern...",
-        "client_type": "Jurist/master LMU",
+        "client_type": "Jurist / Master (LMU)",
         "object_title": "Altbau München/Au",
         "objects": [
           {
@@ -110,20 +110,20 @@
         ]
       },
       {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
-        "client_name": "Maria Hoffmann",
-        "client_quote": "Clasen hat uns nicht nur die perfekte Immobilie gefunden, sondern uns durch den gesamten Prozess begleitet — diskret, kompetent und mit echtem Herzblut.",
-        "client_type": "Zufriedene Käuferin",
-        "object_title": "Stadtpalais Schwabing",
+        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
+        "client_name": "Jens Krautscheid",
+        "client_quote": "...anfänglich gefielen mir vorallem Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nSteuerlich komplett zu Ende gedacht.",
+        "client_type": "Apotheker / Speaker / Unternehmer",
+        "object_title": "Renditekonzept München/Giesing",
         "objects": [
           {
-            "image_path": "/backgrounds/chess.png"
+            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
           },
           {
-            "image_path": "/backgrounds/facade.png"
+            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
           },
           {
-            "image_path": "/backgrounds/chess.png"
+            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
           }
         ]
       },
@@ -154,7 +154,34 @@
     "cta": "Jetzt Kontakt aufnehmen"
   },
   "footer": {
-    "rights": "All rights reserved"
+    "tagline": "Ihr Schlüssel zum Erfolg.",
+    "navLabel": "Navigation",
+    "links": [
+      {
+        "label": "Kapital",
+        "href": "/"
+      },
+      {
+        "label": "Wohnen & Leben",
+        "href": "/properties"
+      },
+      {
+        "label": "Clasen",
+        "href": "/clasen"
+      },
+      {
+        "label": "Kontakt",
+        "href": "/contact"
+      }
+    ],
+    "contactLabel": "Kontakt",
+    "email": "info@clasen-immos.de",
+    "phone": "+49 (0) 89 66 08 55 80",
+    "address": "München, Deutschland",
+    "legalLabel": "Rechtliches",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "rights": "Alle Rechte vorbehalten"
   },
   "clasenHero": {
     "sectionLabel": "Die Geschichte hinter der Marke",
@@ -280,6 +307,7 @@
     "nameLabel": "Ihr Name",
     "emailFieldLabel": "Ihre E-Mail",
     "phoneFieldLabel": "Ihre Telefonnummer",
+    "phoneFieldLabelShort": "Ihre Telefon-Nr.",
     "messageLabel": "Ihre Nachricht",
     "namePlaceholder": "Max Mustermann",
     "emailPlaceholder": "max@beispiel.de",
@@ -363,6 +391,74 @@
     "login": {
       "title": "Clasen Immos — Mandanten Login",
       "description": "Sicherer Zugang zum Clasen Mandantenportal."
+    },
+    "impressum": {
+      "title": "Clasen Immos — Impressum",
+      "description": "Impressum und Anbieterkennzeichnung gemäß § 5 TMG."
+    },
+    "datenschutz": {
+      "title": "Clasen Immos — Datenschutz",
+      "description": "Datenschutzerklärung gemäß DSGVO."
     }
+  },
+  "impressum": {
+    "label": "Rechtliches",
+    "heading": "Impressum",
+    "sections": [
+      {
+        "title": "Angaben gemäß § 5 TMG",
+        "content": "CLASEN Family Office\nAlexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald\n\nE-Mail: info@clasen-immos.de\nTelefon: +49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV",
+        "content": "Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald"
+      },
+      {
+        "title": "Haftungsausschluss",
+        "content": "Die Inhalte dieser Website wurden mit größtmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich."
+      },
+      {
+        "title": "Haftung für Links",
+        "content": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich."
+      },
+      {
+        "title": "Urheberrecht",
+        "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+      }
+    ]
+  },
+  "datenschutz": {
+    "label": "Rechtliches",
+    "heading": "Datenschutzerklärung",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "content": "Verantwortlicher im Sinne der DSGVO ist:\n\nCLASEN Family Office — Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald\nE-Mail: info@clasen-immos.de\nTelefon: +49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "Erhebung und Speicherung personenbezogener Daten",
+        "content": "Beim Besuch unserer Website werden durch den Browser automatisch Informationen an unseren Server übermittelt. Diese werden temporär in einem sogenannten Server-Log-File gespeichert und umfassen: IP-Adresse, Datum und Uhrzeit des Zugriffs, Name und URL der abgerufenen Datei, Website, von der der Zugriff erfolgt, verwendeter Browser und ggf. das Betriebssystem Ihres Rechners. Die Erhebung dieser Daten erfolgt auf Basis von Art. 6 Abs. 1 lit. f DSGVO."
+      },
+      {
+        "title": "Kontaktformular",
+        "content": "Bei der Nutzung unseres Kontaktformulars werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Nachricht) zur Bearbeitung Ihrer Anfrage bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO."
+      },
+      {
+        "title": "Analyse mit PostHog",
+        "content": "Mit Ihrer Einwilligung nutzen wir PostHog, einen Webanalysedienst. PostHog verwendet Cookies und ähnliche Technologien, um anonymisierte Nutzungsdaten zu erheben. Die Daten werden auf Servern in der EU verarbeitet. Sie können Ihre Einwilligung jederzeit widerrufen, indem Sie die gespeicherten Cookies löschen oder uns kontaktieren. Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO."
+      },
+      {
+        "title": "Cookies",
+        "content": "Unsere Website verwendet Cookies. Dabei handelt es sich um kleine Textdateien, die Ihr Browser auf Ihrem Endgerät speichert. Technisch notwendige Cookies werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gesetzt. Analyse-Cookies werden nur nach Ihrer ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) gesetzt."
+      },
+      {
+        "title": "Ihre Rechte",
+        "content": "Sie haben das Recht auf Auskunft über die bei uns gespeicherten Daten (Art. 15 DSGVO), Berichtigung unrichtiger Daten (Art. 16 DSGVO), Löschung Ihrer Daten (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) sowie das Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Zur Geltendmachung Ihrer Rechte wenden Sie sich bitte an: info@clasen-immos.de"
+      },
+      {
+        "title": "Beschwerderecht",
+        "content": "Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Zuständige Aufsichtsbehörde in Bayern ist der Bayerische Landesbeauftragte für den Datenschutz (BayLfD)."
+      }
+    ]
   }
 }

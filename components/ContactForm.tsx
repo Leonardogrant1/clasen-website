@@ -78,7 +78,10 @@ export default function ContactForm({ dict }: Props) {
                     <input type="text" name="name" required placeholder={dict.namePlaceholder} className={inputClass} />
                 </div>
                 <div className="flex flex-col gap-2">
-                    <label className={labelClass}>{dict.phoneFieldLabel}</label>
+                    <label className={labelClass}>
+                        <span className="hidden sm:inline">{dict.phoneFieldLabel}</span>
+                        <span className="sm:hidden">{dict.phoneFieldLabelShort}</span>
+                    </label>
                     <input type="tel" name="phone" placeholder={dict.phonePlaceholder} className={inputClass} />
                 </div>
             </div>

@@ -1,6 +1,8 @@
 "use client"
 import type { Dictionary } from "@/app/[lang]/dictionaries";
-import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 type Props = {
   dict: Dictionary["alleinstell"];

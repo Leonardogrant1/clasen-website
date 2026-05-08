@@ -31,20 +31,55 @@ function useFadeIn() {
   return ref;
 }
 
-function EntryContent({ entry, align }: { entry: Entry; align: "left" | "right" }) {
-  const isLeft = align === "left";
+function EntryImage({ alt, rotate }: { alt: string; rotate?: number }) {
+  const deg = rotate ?? 0;
   return (
-    <div className={isLeft ? "text-right" : "text-left"}>
+    <div
+      className="relative shrink-0 w-full"
+      style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
+    >
+      {/* Polaroid frame */}
+      <div
+        className="bg-white p-2 pb-6"
+        style={{
+          boxShadow: "2px 4px 18px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.25)",
+        }}
+      >
+        <div className="relative w-full h-44 overflow-hidden">
+          <Image src="/1.jpeg" alt={alt} fill className="object-cover" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function EntryText({ entry }: { entry: Entry }) {
+  return (
+    <div className="text-left">
       <span className="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">{entry.year}</span>
       <h3 className="text-foreground font-bold text-lg mb-1">{entry.category}</h3>
       <p className="text-muted italic text-sm mb-3">{entry.subtitle}</p>
       <p className="text-muted text-sm leading-relaxed">{entry.body}</p>
       {entry.milestone && (
-        <div className={`mt-4 flex flex-col ${isLeft ? "items-end" : "items-start"}`}>
+        <div className="mt-4 flex flex-col items-start">
           <span className="text-accent font-bold text-2xl">{entry.milestone.stat}</span>
           <span className="text-muted text-xs mt-1 max-w-xs leading-relaxed">{entry.milestone.label}</span>
         </div>
       )}
+    </div>
+  );
+}
+
+// Mobile only: image + text side by side
+function EntryContent({ entry }: { entry: Entry }) {
+  return (
+    <div className="flex gap-3 items-start">
+      <div className="flex-1">
+        <EntryText entry={entry} />
+      </div>
+      <div className="shrink-0 w-28">
+        <EntryImage alt={entry.category} rotate={2} />
+      </div>
     </div>
   );
 }
@@ -66,7 +101,7 @@ function MobileRow({ entry }: { entry: Entry }) {
         )}
       </div>
       <div className="pl-4">
-        <EntryContent entry={entry} align="right" />
+        <EntryContent entry={entry} />
       </div>
     </div>
   );
@@ -80,7 +115,7 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
       className="grid grid-cols-[1fr_32px_1fr] mb-16 items-start opacity-0 translate-y-6 transition-all duration-700 ease-out"
     >
       <div className="pr-8">
-        {i % 2 === 0 && <EntryContent entry={entry} align="left" />}
+        {i % 2 === 0 ? <EntryText entry={entry} /> : <EntryImage alt={entry.category} rotate={-2} />}
       </div>
       <div className="flex justify-center pt-2">
         {entry.isToday ? (
@@ -92,7 +127,7 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
         )}
       </div>
       <div className="pl-8">
-        {i % 2 !== 0 && <EntryContent entry={entry} align="right" />}
+        {i % 2 !== 0 ? <EntryText entry={entry} /> : <EntryImage alt={entry.category} rotate={2} />}
       </div>
     </div>
   );

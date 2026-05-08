@@ -94,36 +94,36 @@
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
         "client_name": "Philippe Geissler",
-        "client_quote": "The team convinced me with their structured approach and exceptional market knowledge. A collaboration I would recommend at any time.",
-        "client_type": "Jurist/Master LMU",
+        "client_quote": "...the team convinced me through their structured approach and excellent market knowledge, successfully securing my financial future...",
+        "client_type": "Lawyer / Master (LMU)",
         "object_title": "Period Building Munich/Au",
         "objects": [
-          {
-            "image_path": "/testimonials/phillip_geissler/image_1.jpg"
-          },
           {
             "image_path": "/testimonials/phillip_geissler/image_2.jpg"
           },
           {
             "image_path": "/testimonials/phillip_geissler/image_3.jpg"
+          },
+          {
+            "image_path": "/testimonials/phillip_geissler/image_1.jpg"
           }
         ]
       },
       {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
-        "client_name": "Maria Hoffmann",
-        "client_quote": "Clasen not only found us the perfect property but guided us through the entire process — discreetly, competently, and with genuine passion.",
-        "client_type": "Satisfied Buyer",
-        "object_title": "Stadtpalais Schwabing",
+        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
+        "client_name": "Jens Krautscheid",
+        "client_quote": "...initially it was the brand and concept that impressed me.\nNow I'm convinced on a personal level too.\nThought through to the end — including the tax side.",
+        "client_type": "Pharmacist / Speaker / Entrepreneur",
+        "object_title": "Yield Concept Munich/Giesing",
         "objects": [
           {
-            "image_path": "/backgrounds/chess.png"
+            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
           },
           {
-            "image_path": "/backgrounds/facade.png"
+            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
           },
           {
-            "image_path": "/backgrounds/chess.png"
+            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
           }
         ]
       },
@@ -154,6 +154,21 @@
     "cta": "Get in Touch Now"
   },
   "footer": {
+    "tagline": "Your Key to Success.",
+    "navLabel": "Navigation",
+    "links": [
+      { "label": "Capital", "href": "/en/" },
+      { "label": "Living", "href": "/en/properties" },
+      { "label": "Clasen", "href": "/en/clasen" },
+      { "label": "Contact", "href": "/en/contact" }
+    ],
+    "contactLabel": "Contact",
+    "email": "info@clasen-immos.de",
+    "phone": "+49 (0) 89 66 08 55 80",
+    "address": "Munich, Germany",
+    "legalLabel": "Legal",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy",
     "rights": "All rights reserved"
   },
   "clasenHero": {
@@ -279,7 +294,8 @@
     "phoneLabel": "Phone",
     "nameLabel": "Your Name",
     "emailFieldLabel": "Your Email",
-    "phoneFieldLabel": "Your Phone",
+    "phoneFieldLabel": "Your Phone Number",
+    "phoneFieldLabelShort": "Phone Nr.",
     "messageLabel": "Your Message",
     "namePlaceholder": "John Smith",
     "emailPlaceholder": "john@example.com",
@@ -363,6 +379,74 @@
     "login": {
       "title": "Clasen Immos — Client Login",
       "description": "Secure access to the Clasen client portal."
+    },
+    "impressum": {
+      "title": "Clasen Immos — Legal Notice",
+      "description": "Legal notice and provider identification."
+    },
+    "datenschutz": {
+      "title": "Clasen Immos — Privacy Policy",
+      "description": "Privacy policy in accordance with GDPR."
     }
+  },
+  "impressum": {
+    "label": "Legal",
+    "heading": "Legal Notice",
+    "sections": [
+      {
+        "title": "Information pursuant to § 5 TMG",
+        "content": "CLASEN Family Office\nAlexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald, Germany\n\nEmail: info@clasen-immos.de\nPhone: +49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "Responsible for content pursuant to § 55 Para. 2 RStV",
+        "content": "Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald, Germany"
+      },
+      {
+        "title": "Disclaimer",
+        "content": "The contents of these pages were prepared with utmost care. Nonetheless, we cannot assume liability for the timeless accuracy and completeness of the information. Our website contains links to external websites. As the contents of these third-party websites are beyond our control, we cannot accept liability for them."
+      },
+      {
+        "title": "Liability for Links",
+        "content": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages."
+      },
+      {
+        "title": "Copyright",
+        "content": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator."
+      }
+    ]
+  },
+  "datenschutz": {
+    "label": "Legal",
+    "heading": "Privacy Policy",
+    "sections": [
+      {
+        "title": "Controller",
+        "content": "The controller within the meaning of the GDPR is:\n\nCLASEN Family Office — Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald, Germany\nEmail: info@clasen-immos.de\nPhone: +49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "Collection and Storage of Personal Data",
+        "content": "When you visit our website, your browser automatically transmits information to our server. This is temporarily stored in a server log file and includes: IP address, date and time of access, name and URL of the accessed file, website from which access occurs, browser used, and where applicable your computer's operating system. This data is collected on the basis of Art. 6 Para. 1 lit. f GDPR."
+      },
+      {
+        "title": "Contact Form",
+        "content": "When using our contact form, the data you provide (name, email address, message) will be stored to process your request. We do not share this data without your consent. The legal basis is Art. 6 Para. 1 lit. b GDPR."
+      },
+      {
+        "title": "Analytics with PostHog",
+        "content": "With your consent, we use PostHog, a web analytics service. PostHog uses cookies and similar technologies to collect anonymized usage data. The data is processed on servers within the EU. You may withdraw your consent at any time by deleting stored cookies or contacting us. The legal basis is Art. 6 Para. 1 lit. a GDPR."
+      },
+      {
+        "title": "Cookies",
+        "content": "Our website uses cookies — small text files stored by your browser on your device. Technically necessary cookies are set on the basis of Art. 6 Para. 1 lit. f GDPR. Analytics cookies are only set with your explicit consent (Art. 6 Para. 1 lit. a GDPR)."
+      },
+      {
+        "title": "Your Rights",
+        "content": "You have the right to access data stored about you (Art. 15 GDPR), to rectify inaccurate data (Art. 16 GDPR), to erasure of your data (Art. 17 GDPR), to restriction of processing (Art. 18 GDPR), to data portability (Art. 20 GDPR), and to object to processing (Art. 21 GDPR). To exercise your rights, please contact: info@clasen-immos.de"
+      },
+      {
+        "title": "Right to Lodge a Complaint",
+        "content": "You have the right to lodge a complaint with a data protection supervisory authority regarding our processing of your personal data. The competent authority in Bavaria is the Bavarian State Commissioner for Data Protection (BayLfD)."
+      }
+    ]
   }
 }
