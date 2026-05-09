@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@source inline("scale-150 object-top object-bottom object-center");
+
+
 :root {
   --background: #0d0d0d;
   --foreground: #ffffff;
@@ -22,11 +25,21 @@ body {
 }
 
 @keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes shimmer {
-  from { transform: translateX(-100%); }
-  to   { transform: translateX(200%); }
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
 }

@@ -4,9 +4,16 @@ import Image from "next/image";
 import { useCallback, useState } from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { cn } from "@/utils/cn";
 
 type Props = {
   dict: Dictionary["testimonials"];
+};
+
+// Per-client object-position overrides for the profile pill image
+const imageStyles: Record<string, string> = {
+  "Philippe Geissler": "scale-150 object-top",
+  "Jens Krautscheid": "scale-130 translate-y-5",
 };
 
 export default function TestimonialsSection({ dict }: Props) {
@@ -31,6 +38,8 @@ export default function TestimonialsSection({ dict }: Props) {
     ? direction === "next" ? "-translate-x-2 opacity-0" : "translate-x-2 opacity-0"
     : "translate-x-0 opacity-100";
 
+  const imageStyle = imageStyles[slide.client_name] ?? "";
+
   return (
     <section className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
       <div className="max-w-6xl mx-auto flex flex-col gap-6">
@@ -54,7 +63,7 @@ export default function TestimonialsSection({ dict }: Props) {
           <div className={`flex flex-col md:flex-row gap-6 md:gap-10 md:items-center transition-all duration-500 ease-in-out ${quoteClass}`}>
             <div className="relative shrink-0 w-16 h-24 md:w-32 md:h-44 rounded-[999px] overflow-hidden bg-white/10 border border-white/10 mx-auto md:mx-0">
               {slide.client_image_path && (
-                <Image src={slide.client_image_path} fill alt={slide.client_name} className="object-cover scale-150 object-top" />
+                <Image src={slide.client_image_path} fill alt={slide.client_name} className={cn("object-cover", imageStyle)} />
               )}
             </div>
 
