@@ -100,7 +100,7 @@ export default function CherryBlossoms() {
     ro.observe(canvas);
 
     // Seed with petals already on screen
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 30; i++) {
       petals.push(spawnPetal(canvas.width, true, isMobile()));
     }
 
@@ -108,7 +108,7 @@ export default function CherryBlossoms() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       t++;
 
-      if (t % 6 === 0 && petals.length < 90) {
+      if (t % 6 === 0 && petals.length < 30) {
         petals.push(spawnPetal(canvas.width, false, isMobile()));
       }
 

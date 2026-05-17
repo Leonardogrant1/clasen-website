@@ -33,7 +33,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground mt-4 leading-tight">
               {t.heading}
             </h1>
-            <p className="text-muted mt-6 leading-relaxed max-w-sm mx-auto md:mx-0">{t.body}</p>
+            <p className="text-muted mt-6 leading-relaxed max-w-sm mx-auto md:mx-0 whitespace-pre-line">{t.body}</p>
 
             <div className="mt-16 flex flex-col gap-4">
               <div>

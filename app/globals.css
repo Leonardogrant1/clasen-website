@@ -24,6 +24,17 @@ body {
   color: var(--foreground);
 }
 
+@keyframes swipe-hint {
+  0%, 100% { transform: translateX(0px); }
+  40%       { transform: translateX(5px); }
+  60%       { transform: translateX(-5px); }
+}
+
+@keyframes cmp-particle {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 1; }
+  50%       { transform: translateY(-7px) scale(1.4); opacity: 0.3; }
+}
+
 @keyframes spin-slow {
   from {
     transform: rotate(0deg);

@@ -189,31 +189,36 @@
         "year": "Summer 1993",
         "category": "Origin",
         "subtitle": "Munich. The beginning of everything.",
-        "body": "Alexander Christian Clasen is born in Munich in the summer of 1993 — the city that would later become the center of his work and passion. At the time, no one could have guessed that this city's real estate market would become his playing field. Probably not even himself."
+        "body": "Alexander Christian Clasen is born in Munich in the summer of 1993 — the city that would later become the center of his work and passion. At the time, no one could have guessed that this city's real estate market would become his playing field. Probably not even himself.",
+        "image_path": "/timeline-images/0.jpeg"
       },
       {
         "year": "18th Birthday",
         "category": "First Attempt",
         "subtitle": "The rejection that set everything in motion.",
-        "body": "On the day of his 18th birthday, Alexander submits his first real estate financing request. The bank's answer: rejection. No equity, no income, no chance. For most, that would have been the end of the thought. For him, it was the beginning of an obsession."
+        "body": "On the day of his 18th birthday, Alexander submits his first real estate financing request. The bank's answer: rejection. No equity, no income, no chance. For most, that would have been the end of the thought. For him, it was the beginning of an obsession.",
+        "image_path": "/timeline-images/1.jpeg"
       },
       {
         "year": "2012",
         "category": "Awakening",
         "subtitle": "«Rich Dad Poor Dad» and the revelation.",
-        "body": "After graduating, a book and a glimpse into the world of well-off friends opens an entirely new perspective: passive income through real estate. Alexander dives deep into specialist literature. Law and psychology studies begin — but increasingly take a back seat. The real education takes place in books, balance sheets, and land register extracts."
+        "body": "After graduating, a book and a glimpse into the world of well-off friends opens an entirely new perspective: passive income through real estate. Alexander dives deep into specialist literature. Law and psychology studies begin — but increasingly take a back seat. The real education takes place in books, balance sheets, and land register extracts.",
+        "image_path": "/timeline-images/2.png"
       },
       {
         "year": "2015",
         "category": "Turning Point",
         "subtitle": "The dropout, against everyone's advice.",
-        "body": "Shortly before completing his degree, Alexander drops out of his costly psychology studies. Not out of indifference — but out of clarity. He recognizes the potential that a real estate portfolio of his own could have on his sought-after early retirement. Everyone advises against it. He does it anyway. This decision — to consistently swim against the current — becomes the leitmotif of his entire career."
+        "body": "Shortly before completing his degree, Alexander drops out of his costly psychology studies. Not out of indifference — but out of clarity. He recognizes the potential that a real estate portfolio of his own could have on his sought-after early retirement. Everyone advises against it. He does it anyway. This decision — to consistently swim against the current — becomes the leitmotif of his entire career.",
+        "image_path": "/timeline-images/3.jpeg"
       },
       {
         "year": "2016",
         "category": "Career Switch",
         "subtitle": "100 years of history. Overtaken in one year.",
         "body": "As a career changer, Alexander joins one of Munich's most renowned estate agencies — over a century of company history, established structures, long-standing records. One year later, several are broken: most expensive apartment brokered, largest rental mandate — records that had stood for decades. The realization: the Munich real estate market is stagnant. And ready for a revolution.",
+        "image_path": "/timeline-images/4.png",
         "milestone": {
           "stat": "1",
           "label": "Year · Multiple sales records broken from over 100 years of company history"

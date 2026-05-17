@@ -6,7 +6,7 @@ export default function Footer({ dict, locale }: { dict: Dictionary["footer"]; l
   return (
     <footer className="bg-background border-t border-white/10">
       {/* Main row */}
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-14 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-14 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <p className="text-foreground text-xl md:text-2xl font-light tracking-wide">
           {dict.tagline}
         </p>

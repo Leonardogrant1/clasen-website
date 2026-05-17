@@ -16,7 +16,7 @@
       },
       {
         "title": "Vor-Sorge statt Nach-Sicht",
-        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch eines unserer hoch-performanten, für Sie maßgeschneiderten Assets.",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch eines unserer hoch-performanten und für Sie maßgeschneiderten Assets.",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -201,31 +201,36 @@
         "year": "Sommer 1993",
         "category": "Ursprung",
         "subtitle": "München. Der Anfang von allem.",
-        "body": "Alexander Christian Clasen wird im Sommer 1993 in München geboren — in der Stadt, die später zum Zentrum seiner Arbeit und seiner Leidenschaft werden wird. Dass der Immobilienmarkt dieser Stadt einmal sein Spielfeld sein würde, ahnte damals noch niemand. Er selbst wahrscheinlich auch nicht."
+        "body": "Alexander Christian Clasen wird im Sommer 1993 in München geboren — in der Stadt, die später zum Zentrum seiner Arbeit und seiner Leidenschaft werden wird. Dass der Immobilienmarkt dieser Stadt einmal sein Spielfeld sein würde, ahnte damals noch niemand. Er selbst wahrscheinlich auch nicht.",
+        "image_path": "/timeline-images/0.png"
       },
       {
         "year": "18. Geburtstag",
         "category": "Erster Versuch",
         "subtitle": "Die Absage, die alles in Gang setzte.",
-        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für die meisten wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession."
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für die meisten wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
+        "image_path": "/timeline-images/1.png"
       },
       {
         "year": "2012",
         "category": "Erweckung",
         "subtitle": "»Rich Dad Poor Dad« und die Erkenntnis.",
-        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. Jura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. Die echte Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt."
+        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. Jura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. Die echte Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt.",
+        "image_path": "/timeline-images/2.png"
       },
       {
         "year": "2015",
         "category": "Wendepunkt",
         "subtitle": "Der Abbruch, gegen den Rat aller.",
-        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. Nicht aus Gleichgültigkeit — sondern aus Klarheit. Er erkennt, welches Potential ein eigener Immobilienbestand auf den angestrebten frühzeitigen Ruhestand haben kann. Alle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn."
+        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. Nicht aus Gleichgültigkeit — sondern aus Klarheit. Er erkennt, welches Potential ein eigener Immobilienbestand auf den angestrebten frühzeitigen Ruhestand haben kann. Alle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
+        "image_path": "/timeline-images/3.png"
       },
       {
         "year": "2016",
         "category": "Quereinstieg",
         "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
         "body": "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+        "image_path": "/timeline-images/4.png",
         "milestone": {
           "stat": "1",
           "label": "Jahr · Mehrere Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen"
@@ -235,35 +240,40 @@
         "year": "2017",
         "category": "Erkundung",
         "subtitle": "Die andere Seite. Schweizer Präzision.",
-        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. Konträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht."
+        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. Konträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht.",
+        "image_path": "/timeline-images/5.png"
       },
       {
         "year": "2018",
-        "category": "Gründung",
+        "category": "1. Gründung",
         "subtitle": "Das erste eigene Unternehmen. Mit einem klaren Auftrag.",
         "body": "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie: Der Fokus liegt ausschließlich auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Menschen, die überzeugt waren, keinen Makler zu brauchen. Oft genug lagen sie falsch. Über 500 Immobilien werden in der Folge vermittelt. Das Ergebnis im ersten Jahr: siebenstelliger Umsatz — und die Bestätigung, dass ein anderer Weg möglich ist.",
         "milestone": {
           "stat": "500+",
           "label": "Vermittelte Immobilien · 7-stelliger Umsatz im Gründungsjahr"
-        }
+        },
+        "image_path": "/timeline-images/6.jpg"
       },
       {
         "year": "2018",
-        "category": "Gründung",
+        "category": "2. Gründung",
         "subtitle": "Die eigene Baufirma. Weil echte Unabhängigkeit keine Kompromisse kennt.",
-        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für die Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur fertigen Immobilie."
+        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für die Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur fertigen Immobilie.",
+        "image_path": "/timeline-images/7.png"
       },
       {
         "year": "Meilenstein",
         "category": "Projekt",
         "subtitle": "Ein Ensemble. Vollständig in eigener Hand.",
-        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchener Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Objektakquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. Ein Beweis dafür, was echte Partnerschaft bedeutet."
+        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchener Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Objektakquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. Ein Beweis dafür, was echte Partnerschaft bedeutet.",
+        "image_path": "/timeline-images/8a.jpg"
       },
       {
         "year": "Meilenstein",
         "category": "Baudenkmal",
         "subtitle": "München, Theresienwiese. Vier Jahre. Ein Denkmal.",
         "body": "Eine Münchener Erbengemeinschaft vertraut CLASEN mit einem der anspruchsvollsten Aufträge der Unternehmensgeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. Denkmalschutz, Erbrecht, Sanierungskomplexität, Münchener Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion, Ausdauer und die Fähigkeit, auch dort Ergebnisse zu liefern, wo andere scheitern.",
+        "image_path": "/timeline-images/9.png",
         "milestone": {
           "stat": "4",
           "label": "Jahre Projektlaufzeit · Baudenkmal · Theresienwiese München"
@@ -277,14 +287,16 @@
         "milestone": {
           "stat": "329.7",
           "label": "Mio. € anvertraute Kundenwerte · 97 % Weiterempfehlung"
-        }
+        },
+        "image_path": "/timeline-images/10.png"
       },
       {
         "year": "Heute",
         "category": "Spezialisierung",
         "subtitle": "Steuern sparen als Königsdisziplin.",
         "body": "Mit wachsendem Mandantenstamm wächst auch die Erkenntnis: Die größte Stellschraube im Vermögensaufbau ist nicht die Rendite — es ist die Steuerlast. CLASEN spezialisiert sich konsequent auf maßgeschneiderte Steuersparmodelle für Topverdiener, Unternehmer und anspruchsvolle Kapitalanleger. In enger Zusammenarbeit mit führenden Kanzleien entstehen rechtssichere Konzepte, die die gesamte Steuerlast der Mandanten strukturell und nachhaltig reduzieren — nicht als Trick, sondern als Architektur. Wer einmal verstanden hat, wie viel Kapital hier jährlich verloren geht, denkt Investitionen nie wieder gleich.",
-        "isToday": true
+        "isToday": true,
+        "image_path": "/timeline-images/11.png"
       }
     ]
   },
@@ -301,7 +313,7 @@
   "contact": {
     "sectionLabel": "Kontakt",
     "heading": "Ihr Schlüssel zum Erfolg.",
-    "body": "Wir sind das Bindeglied zwischen anspruchsvollen Mandanten und außergewöhnlichen Chancen. Lassen Sie uns in Kontakt kommen — diskret & unverbindlich.",
+    "body": "Von A wie Anlageberatung \nbis Z wie zukünftige Generationen. \nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
     "nameLabel": "Ihr Name",
@@ -309,33 +321,37 @@
     "phoneFieldLabel": "Ihre Telefonnummer",
     "phoneFieldLabelShort": "Ihre Telefon-Nr.",
     "messageLabel": "Ihre Nachricht",
-    "namePlaceholder": "Max Mustermann",
-    "emailPlaceholder": "max@beispiel.de",
-    "phonePlaceholder": "+49 000 000000",
-    "messagePlaceholder": "Wie können wir Ihnen helfen?",
+    "namePlaceholder": "Peter Beispiel",
+    "emailPlaceholder": "beispiel@mail.de",
+    "phonePlaceholder": "+49",
+    "messagePlaceholder": "Wie dürfen wir Ihnen helfen?",
     "submit": "Nachricht senden",
     "topicPlaceholder": "Bitte wählen…",
     "topicLabel": "Betreff wählen",
     "topics": [
       {
         "value": "portfolio",
-        "label": "Anfrage Portfolio-Beratung"
+        "label": "Anfrage: Portfolio-Beratung"
       },
       {
         "value": "bauleistung",
-        "label": "Anfrage Bauleistung"
+        "label": "Anfrage: Bauleistung"
       },
       {
         "value": "asset",
-        "label": "Anfrage Asset Management"
+        "label": "Anfrage: Asset-Management"
       },
       {
         "value": "kapitalanlage",
-        "label": "Anfrage Kapitalanlage"
+        "label": "Anfrage: Kapitalanlage"
       },
       {
-        "value": "wohnimmobilie",
-        "label": "Anfrage Wohnimmobilie"
+        "value": "objektvermittlung",
+        "label": "Anfrage: Objektvermittlung"
+      },
+      {
+        "value": "steuersparmodell",
+        "label": "Anfrage: Steuersparmodell"
       },
       {
         "value": "freitext",
@@ -355,9 +371,9 @@
   },
   "login": {
     "heading": "Mandanten Login",
-    "subheading": "Zugang zum Clasen Mandantenportal",
-    "emailLabel": "E-Mail",
-    "emailPlaceholder": "ihre@email.de",
+    "subheading": "Zugang zum CLASEN Mandantenportal",
+    "emailLabel": "CFO-Kennung",
+    "emailPlaceholder": "ZB. 26/044",
     "passwordLabel": "Passwort",
     "submit": "Einloggen",
     "noAccess": "Noch kein Zugang?",

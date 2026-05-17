@@ -1,11 +1,69 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import posthog from "posthog-js";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type Props = {
     dict: Dictionary["contact"];
 };
+
+function TopicDropdown({
+    topics,
+    value,
+    onChange,
+}: {
+    topics: { value: string; label: string }[];
+    value: string;
+    onChange: (v: string) => void;
+}) {
+    const [open, setOpen] = useState(false);
+    const ref = useRef<HTMLDivElement>(null);
+    const selected = topics.find((t) => t.value === value);
+
+    useEffect(() => {
+        function handleClick(e: MouseEvent) {
+            if (ref.current && !ref.current.contains(e.target as Node)) {
+                setOpen(false);
+            }
+        }
+        document.addEventListener("mousedown", handleClick);
+        return () => document.removeEventListener("mousedown", handleClick);
+    }, []);
+
+    return (
+        <div ref={ref} className="relative">
+            <button
+                type="button"
+                onClick={() => setOpen((o) => !o)}
+                className="w-full bg-white/4 border border-white/10 rounded-xl px-4 py-3 text-foreground text-sm text-left flex items-center justify-between focus:outline-none focus:border-accent/50 transition-all duration-200"
+            >
+                <span>{selected?.label}</span>
+                <svg
+                    className={`text-white/30 transition-transform duration-200 shrink-0 ${open ? "rotate-180" : ""}`}
+                    width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                >
+                    <polyline points="2 4 6 8 10 4" />
+                </svg>
+            </button>
+
+            {open && (
+                <ul className="absolute z-50 mt-1 w-full bg-[#1a1a1a] border border-white/10 rounded-xl overflow-hidden shadow-xl">
+                    {topics.map((t) => (
+                        <li key={t.value}>
+                            <button
+                                type="button"
+                                onClick={() => { onChange(t.value); setOpen(false); }}
+                                className={`w-full text-left px-4 py-3 text-sm transition-colors duration-150 ${t.value === value ? "text-accent bg-white/[0.06]" : "text-foreground hover:bg-white/[0.06]"}`}
+                            >
+                                {t.label}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+    );
+}
 
 export default function ContactForm({ dict }: Props) {
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
@@ -93,24 +151,7 @@ export default function ContactForm({ dict }: Props) {
 
             <div className="flex flex-col gap-2">
                 <label className={labelClass}>{dict.topicLabel} <span className="text-accent">*</span></label>
-                <div className="relative">
-                    <select
-                        name="topic"
-                        required
-                        value={topic}
-                        onChange={(e) => setTopic(e.target.value)}
-                        className={`${inputClass} appearance-none cursor-pointer pr-10`}
-                    >
-                        {dict.topics.map((t) => (
-                            <option key={t.value} value={t.value} className="bg-[#1a1a1a] text-foreground">
-                                {t.label}
-                            </option>
-                        ))}
-                    </select>
-                    <svg className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-white/30" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                        <polyline points="2 4 6 8 10 4" />
-                    </svg>
-                </div>
+                <TopicDropdown topics={dict.topics} value={topic} onChange={setTopic} />
             </div>
 
             <div className="flex flex-col gap-2">
@@ -130,7 +171,7 @@ export default function ContactForm({ dict }: Props) {
                 disabled={status === 'submitting'}
                 className="mt-1 w-full py-3 rounded-full border border-accent text-accent text-sm uppercase tracking-widest font-semibold hover:bg-accent hover:text-background disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200"
             >
-                {status === 'submitting' ? '…' : status === 'error' ? dict.submit : dict.submit}
+                {status === 'submitting' ? '…' : dict.submit}
             </button>
         </form>
     );

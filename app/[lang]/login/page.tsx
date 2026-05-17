@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../dictionaries";
 import LoginForm from "./LoginForm";
@@ -18,26 +19,11 @@ export default async function LoginPage({ params }: PageProps<"/[lang]/login">) 
   const base = lang === "en" ? "/en" : "";
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center px-4">
-      <div className="w-full max-w-sm">
-        <div className="flex justify-center mb-8">
-          <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center">
-            <svg width="24" height="28" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <mask id="login-keyhole-mask">
-                  <rect x="0" y="8" width="18" height="12" rx="2.5" fill="white" />
-                  <circle cx="9" cy="13" r="2.2" fill="black" />
-                  <rect x="7.7" y="13" width="2.6" height="3.2" rx="0.6" fill="black" />
-                </mask>
-              </defs>
-              <path d="M4 9V6a5 5 0 0 1 10 0v3" stroke="white" strokeOpacity="0.6" strokeWidth="2" strokeLinecap="round" />
-              <rect x="0" y="8" width="18" height="12" rx="2.5" fill="white" fillOpacity="0.7" mask="url(#login-keyhole-mask)" />
-            </svg>
-          </div>
-        </div>
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 py-12">
+      <Image src="/logo/logo_text.svg" alt="Clasen Logo" width={650} height={200} className="h-auto w-full max-w-xs sm:max-w-sm md:max-w-xl object-contain mb-4 md:mb-6" />
 
-        <h1 className="text-foreground text-2xl font-bold tracking-tight text-center mb-1">{t.heading}</h1>
-        <p className="text-muted text-sm text-center mb-8">{t.subheading}</p>
+      <div className="w-full max-w-sm">
+        <p className="text-muted text-sm md:text-md text-center mb-6 md:mb-8">{t.subheading}</p>
 
         <LoginForm t={t} base={base} />
       </div>
