@@ -18,7 +18,7 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
   const t = dict.wohnenUndLeben;
 
   return (
-    <main className="min-h-screen bg-background pt-24 pb-16 px-4 md:pt-36 md:pb-24 md:px-8">
+    <main className="min-h-screen bg-background pt-12 pb-16 px-4 md:pt-36 md:pb-24 md:px-8">
       <div className="w-full lg:max-w-7xl mx-auto flex flex-col gap-3">
         <div className="flex 2  justify-between pt-20 lg:pt-0">
           <div className="flex flex-col w-full lg:w-1/2 gap-10 md:gap-18 lg:gap-29">
@@ -30,23 +30,23 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
             </div>
 
             <blockquote className="lg:hidden flex flex-col items-center gap-3 max-w-xl shrink-0 lg:self-end self-center" style={{ animation: "fade-up 0.7s ease 0.2s both" }}>
-              <p className="text-muted text-xs leading-relaxed text-center italic">
+              <p className="text-muted text-sm leading-relaxed text-center italic">
                 „{t.quote.p1}
               </p>
-              <p className="text-muted text-xs leading-relaxed text-center italic">
+              <p className="text-muted text-sm leading-relaxed text-center italic">
                 {t.quote.p2}"
               </p>
               <div className="flex flex-col items-center">
                 <span className="text-accent text-xs uppercase tracking-widest font-semibold block">
                   Alexander Clasen
                 </span>
-                <div className="w-30 aspect-video relative">
-                  <Image alt="signature" fill src="/signature.png" className="object-contain scale-[1.3]" />
+                <div className="w-24 aspect-4/2 relative">
+                  <Image alt="signature" fill src="/signature.png" className="object-contain" />
                 </div>
               </div>
             </blockquote>
 
-            <div className="flex-col md:flex-row flex items-baseline gap-4 pt-14 lg:pt-0" style={{ animation: "fade-up 0.7s ease 0.35s both" }}>
+            <div className="flex-col md:flex-row flex items-baseline gap-4 pt-4 md:pt-14 lg:pt-0" style={{ animation: "fade-up 0.7s ease 0.35s both" }}>
               <span className="text-accent text-xs uppercase tracking-widest font-semibold block">
                 {t.sectionLabel}
               </span>

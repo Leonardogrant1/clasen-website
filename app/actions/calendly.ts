@@ -14,7 +14,7 @@ export async function getCalendlyMembers() {
           Authorization: `Bearer ${process.env.CALENDLY_ACCESS_TOKEN}`,
           "Content-Type": "application/json",
         },
-        next: { revalidate: 3600 },
+        next: { revalidate: 300 },
       }
     );
 
@@ -29,9 +29,19 @@ export async function getCalendlyMembers() {
     // Custom sort order
     const orderMap: Record<string, number> = {
       "Leonardo Granetto": 1,
-      "Manuel Leitl": 2,
-      "Alexander Clasen": 3
+      "Johanna Reimer": 2,
+      "Manuel Leitl": 3,
+      "Sophie Prinz": 4,
+      "Isabella Holder": 5,
+      "Alexander Clasen": 6
     };
+
+    members = members.map((m: any) => {
+      if (m.user?.name === "Alexander Clasen") {
+        return { ...m, user: { ...m.user, email: "info@clasen.com" } };
+      }
+      return m;
+    });
 
     members.sort((a: any, b: any) => {
       const nameA = a.user?.name || "";

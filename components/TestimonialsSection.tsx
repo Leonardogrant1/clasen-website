@@ -62,8 +62,20 @@ export default function TestimonialsSection({ dict }: Props) {
 
           <div className={`flex flex-col md:flex-row gap-6 md:gap-10 md:items-center transition-all duration-500 ease-in-out ${quoteClass}`}>
             <div className="relative shrink-0 w-16 h-24 md:w-32 md:h-44 rounded-[999px] overflow-hidden bg-white/10 border border-white/10 mx-auto md:mx-0">
-              {slide.client_image_path && (
-                <Image src={slide.client_image_path} fill alt={slide.client_name} className={cn("object-cover", imageStyle)} />
+              {dict.items.map((item, i) =>
+                item.client_image_path ? (
+                  <Image
+                    key={i}
+                    src={item.client_image_path}
+                    fill
+                    alt={item.client_name}
+                    className={cn(
+                      "object-cover",
+                      imageStyles[item.client_name] ?? "",
+                      i === current ? "opacity-100" : "opacity-0"
+                    )}
+                  />
+                ) : null
               )}
             </div>
 

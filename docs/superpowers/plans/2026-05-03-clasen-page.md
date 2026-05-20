@@ -197,9 +197,9 @@ const entries: TimelineEntry[] = [
     year: "2018",
     category: "Gründung",
     subtitle: "Das erste eigene Unternehmen. Mit einem klaren Auftrag.",
-    body: "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie: Der Fokus liegt ausschließlich auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Menschen, die überzeugt waren, keinen Makler zu brauchen. Oft genug lagen sie falsch. Über 500 Immobilien werden in der Folge vermittelt. Das Ergebnis im ersten Jahr: siebenstelliger Umsatz — und die Bestätigung, dass ein anderer Weg möglich ist.",
+    body: "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie: Der Fokus liegt ausschließlich auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Menschen, die überzeugt waren, keinen Makler zu brauchen. Oft genug lagen sie falsch. Über 330 Immobilien werden in der Folge vermittelt. Das Ergebnis im ersten Jahr: siebenstelliger Umsatz — und die Bestätigung, dass ein anderer Weg möglich ist.",
     milestone: {
-      stat: "500+",
+      stat: "330+",
       label: "Vermittelte Immobilien · 7-stelliger Umsatz im Gründungsjahr",
     },
   },

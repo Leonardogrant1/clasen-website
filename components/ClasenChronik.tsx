@@ -182,7 +182,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 8) {
     return (
       <div
-        className="relative shrink-0 w-full"
+        className="relative shrink-0 w-full scale-125"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/8a.png" imageB="/timeline-images/8b.png" />
@@ -206,7 +206,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full", index === 6 && "md:scale-139 md:translate-y-20")}
+      className={cn("relative shrink-0 flex justify-center w-full", index === 6 && "md:scale-145 md:translate-y-20", (index === 2 || index === 4) && "md:scale-90 md:-translate-y-20 ", (index === 7) && "md:scale-110", (index === 10) && "md:scale-120")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -237,7 +237,7 @@ function EntryText({ entry, i, className }: { entry: Entry, i: number, className
       <span className="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">{entry.year}</span>
       <h3 className="text-foreground font-bold text-lg mb-1">{entry.category}</h3>
       <p className="text-muted italic text-sm mb-3">{entry.subtitle}</p>
-      <p className="text-muted text-sm leading-relaxed">{entry.body}</p>
+      <p className="text-muted text-sm leading-relaxed whitespace-pre-line">{entry.body}</p>
       {entry.milestone && (
         <div className="mt-4 flex flex-col items-start">
           <span className="text-accent font-bold text-2xl">{entry.milestone.stat}</span>
@@ -288,7 +288,7 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
 function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   const ref = useFadeIn();
 
-  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-14", "mt-24", "mt-24", "mt-14"]
+  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-0", "mt-28", "mt-24", "mt-14", "mt-44", "mt-10", "mt-14"]
 
   return (
     <div
