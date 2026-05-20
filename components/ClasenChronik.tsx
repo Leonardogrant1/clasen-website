@@ -182,7 +182,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 8) {
     return (
       <div
-        className="relative shrink-0 w-full scale-125"
+        className="relative shrink-0 w-full md:scale-125"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/8a.png" imageB="/timeline-images/8b.png" />
