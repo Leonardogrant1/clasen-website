@@ -21,26 +21,29 @@ export default function HeroSection({ dict, statsDict }: Props) {
     <>
       {/* Mobile */}
       <section className="flex flex-col md:hidden bg-background">
-        <div className="relative h-[60vh] overflow-hidden">
+        <div className="relative h-[70vh] overflow-hidden">
           <video
-            src={item.videoPath}
+            src={item.videoPath.replace(".mp4", "_mobile.mp4")}
             autoPlay
             loop
             muted
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/10" />
+          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-black/10" />
+
+          <div className="absolute bottom-6 left-4 right-4 z-10">
+            <div className="flex items-end justify-start gap-2 mb-2">
+              <span className="text-[#C9A84C] text-2xl font-semibold tracking-widest uppercase">01</span>
+              <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-1 font-semibold">{dict.vision}</p>
+            </div>
+            <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground whitespace-pre-line text-left">
+              {item.title}
+            </h1>
+          </div>
         </div>
 
-        <div className="px-4 py-8 text-center">
-          <div className="flex items-end justify-center gap-2 mb-3">
-            <span className="text-[#C9A84C] text-2xl font-semibold tracking-widest uppercase">01</span>
-            <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-1 font-semibold">{dict.vision}</p>
-          </div>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground mb-3 whitespace-pre-line">
-            {item.title}
-          </h1>
+        <div className="px-4 py-4">
           <p className="text-muted leading-relaxed text-sm">{item.subtitle}</p>
         </div>
 

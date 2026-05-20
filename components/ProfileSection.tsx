@@ -53,7 +53,9 @@ export default function ProfileSection({ dict, locale }: Props) {
           <p className="text-muted leading-relaxed">{dict.tagline}</p>
 
           <div className="flex flex-col items-center md:items-start">
-            <Image alt="signature" width={200} height={200} src="/signature.png" />
+            <div className="w-40 aspect-4/2 relative">
+              <Image alt="signature" fill src="/signature.png" className="object-contain" />
+            </div>
             <span className="text-sm text-muted tracking-widest uppercase mt-1">
               {dict.role}
             </span>
