@@ -57,14 +57,14 @@ export default function HeroSection({ dict, statsDict }: Props) {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
 
-        <div className="absolute bottom-20 left-8 z-10 max-w-2xl">
+        <div className="absolute bottom-20 md:bottom-36 lg:bottom-44 xl:bottom-20 left-8 xl:left-16 z-10 max-w-xl lg:max-w-2xl">
           <div className="flex items-end gap-2 align-bottom">
             <span className="text-[#C9A84C] text-3xl font-semibold tracking-widest uppercase z-10">01</span>
             <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-1 font-semibold">{dict.vision}</p>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight text-foreground mb-4 whitespace-pre-line">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground mb-4 whitespace-pre-line">
             {item.title}
           </h1>
           <p className="text-muted max-w-md leading-relaxed text-sm">{item.subtitle}</p>

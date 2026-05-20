@@ -19,7 +19,7 @@ export default function ProfileSection({ dict, locale }: Props) {
           </span>
 
           <div className="relative">
-            <div className="w-56 h-[360px] md:w-96 md:h-[780px] rounded-[999px] relative overflow-hidden z-20">
+            <div className="w-56 h-[360px] md:w-72 md:h-[540px] lg:w-96 lg:h-[780px] rounded-[999px] relative overflow-hidden z-20">
               <Image
                 src="/backgrounds/facade.png"
                 alt="Facade"
@@ -27,7 +27,7 @@ export default function ProfileSection({ dict, locale }: Props) {
                 className="w-full h-full object-cover object-[25%_center]"
               />
             </div>
-            <div className="absolute bottom-[62%] -right-12 md:-right-22 w-24 h-24 md:w-40 md:h-40 z-10">
+            <div className="absolute bottom-[62%] -right-12 md:-right-16 lg:-right-20 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 z-10">
               <Link href={`${base}/clasen`}>
                 <CircularText text={dict.circularText} />
               </Link>

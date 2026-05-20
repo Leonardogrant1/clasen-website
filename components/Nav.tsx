@@ -78,7 +78,7 @@ export default function Nav({ dict, locale }: Props) {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 grid grid-cols-3 items-start px-6 py-6 md:px-20 md:py-12">
+      <header className="fixed top-0 left-0 right-0 z-50 grid grid-cols-3 items-start px-6 py-6 md:px-10 md:py-8 lg:px-8 lg:py-8 xl:px-20 xl:py-12">
 
         <div
           ref={logoRef}
@@ -97,7 +97,7 @@ export default function Nav({ dict, locale }: Props) {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-1.5 rounded-full text-sm uppercase tracking-widest whitespace-nowrap transition-colors duration-200
+                  className={`px-2 py-1.5 rounded-full text-xs uppercase tracking-wider whitespace-nowrap transition-colors duration-200 xl:px-4 xl:text-sm xl:tracking-widest
                     ${active
                       ? "bg-white/20 text-foreground"
                       : "text-foreground/60 hover:text-foreground hover:bg-white/10"
@@ -111,10 +111,10 @@ export default function Nav({ dict, locale }: Props) {
         </nav>
 
         <div className="hidden lg:flex justify-end items-center">
-          <div ref={lockRef} className="relative h-12 w-48">
+          <div ref={lockRef} className="relative h-10 w-36 xl:h-12 xl:w-48">
             <button
               onClick={handleLoginClick}
-              className={`absolute inset-0 rounded-full bg-white text-black text-sm font-semibold transition-opacity duration-300 cursor-pointer
+              className={`absolute inset-0 rounded-full bg-white text-black text-xs xl:text-sm font-semibold transition-opacity duration-300 cursor-pointer
                 ${isAnimating ? "opacity-0 pointer-events-none" : "opacity-100 hover:bg-white/90"}`}
             >
               {dict.login}
