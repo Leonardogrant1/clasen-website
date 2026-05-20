@@ -19,14 +19,9 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
 
   return (
     <main className="min-h-screen bg-background pt-24 pb-16 px-4 md:pt-36 md:pb-24 md:px-8">
-      <div className="w-full lg:max-w-7xl mx-auto">
-
-
-
-        <div className="flex mb-4 justify-between pt-20 lg:pt-0">
-
-
-          <div className="flex flex-col w-full lg:w-1/2 gap-10 md:gap-18 lg:gap-60">
+      <div className="w-full lg:max-w-7xl mx-auto flex flex-col gap-3">
+        <div className="flex 2  justify-between pt-20 lg:pt-0">
+          <div className="flex flex-col w-full lg:w-1/2 gap-10 md:gap-18 lg:gap-29">
             <div className="text-center lg:text-left" style={{ animation: "fade-up 0.7s ease both" }}>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight whitespace-pre-line">
                 {t.heading}
@@ -61,30 +56,26 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
             </div>
           </div>
 
-          <blockquote className="hidden lg:flex flex-col items-center gap-2 max-w-sm shrink-0 self-end mb-18 mr-64" style={{ animation: "fade-up 0.7s ease 0.15s both" }}>
-            <p className="text-muted text-sm leading-relaxed text-center italic">
+          <blockquote className="hidden lg:flex flex-col items-end max-w-xl shrink-0 self-end mr-43" style={{ animation: "fade-up 0.7s ease 0.15s both" }}>
+            <p className="text-muted text-sm leading-relaxed text-right italic">
               „{t.quote.p1}
             </p>
-            <p className="text-muted text-sm leading-relaxed text-center italic mt-2">
+            <p className="text-muted text-sm leading-relaxed text-right italic mt-4">
               {t.quote.p2}"
             </p>
-            <div className="flex items-center">
-              <span className="text-accent mt-2 text-xs uppercase tracking-widest font-semibold block">
+
+            <div className="flex items-center gap-3">
+
+              <span className="text-accent mt-2 text-[0.625rem] uppercase tracking-widest font-semibold block">
                 Alexander Clasen
               </span>
-              <div className="w-28 aspect-video relative">
-                <Image alt="signature" fill src="/signature.png" className="object-contain scale-[1.2]" />
+              <div className="w-26 aspect-4/2 relative">
+                <Image alt="signature" fill src="/signature.png" className="object-contain" />
               </div>
             </div>
+
           </blockquote>
-
-
-
         </div>
-
-
-
-
 
         <ReferenzGridTemporary
           viewProperty={t.viewProperty}

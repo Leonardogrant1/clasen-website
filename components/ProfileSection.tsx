@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
 import CircularText from "./CircularText";
 import Link from "next/link";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
@@ -10,6 +13,8 @@ type Props = {
 
 export default function ProfileSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
+  const { openDialog } = useCalendlyDialog();
+
   return (
     <section className="relative py-16 px-4 md:py-32 md:px-8 bg-background overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -53,7 +58,7 @@ export default function ProfileSection({ dict, locale }: Props) {
               {dict.role}
             </span>
           </div>
-          <button className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
+          <button onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
             {dict.cta}
           </button>
         </div>

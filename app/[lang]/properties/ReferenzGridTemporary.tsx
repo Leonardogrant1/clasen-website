@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import posthog from "posthog-js";
+import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
 
 type Listing = {
   id: string;
@@ -258,6 +259,8 @@ export default function ReferenzGridTemporary({ viewProperty, notConnected, conn
   const [loading, setLoading] = useState(true);
   const [hoveredListing, setHoveredListing] = useState<Listing | null>(null);
 
+  const { openDialog } = useCalendlyDialog();
+
   useEffect(() => {
     const merged: Listing[] = STATIC_DATA.map((s, i) => ({
       id: `prop-${i}`,
@@ -317,7 +320,10 @@ export default function ReferenzGridTemporary({ viewProperty, notConnected, conn
           <p className="text-2xl md:text-3xl font-semibold text-foreground mb-8 max-w-md leading-relaxed">
             {ctaHeading}
           </p>
-          <button className="px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
+          <button 
+            onClick={openDialog}
+            className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
+          >
             {ctaButton}
           </button>
         </div>

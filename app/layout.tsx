@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
+import { CalendlyDialogProvider } from "@/components/CalendlyDialogProvider";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -22,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="de" className={`${jost.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        {children}
+        <CalendlyDialogProvider>
+          {children}
+        </CalendlyDialogProvider>
       </body>
     </html>
   );

@@ -15,8 +15,8 @@
         "videoPath": "/video/hero.mp4"
       },
       {
-        "title": "Vor-Sorge statt Nach-Sicht",
-        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch eines unserer hoch-performanten und für Sie maßgeschneiderten Assets.",
+        "title": "Vor-Sorge statt \nNach-Sicht",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch hoch-performante und für Sie maßgeschneiderte Assets.",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -304,18 +304,18 @@
     "sectionLabel": "Referenzobjekte",
     "heading": "Wohnen & Leben.",
     "subheading": "Lebensmittelpunkte. So einzigartig wie Sie selbst.",
-    "description": "Ausgewählte, bereits vermittelte Liegenschaften:",
+    "description": "Auszüge vermittelter Liegenschaften:",
     "viewProperty": "Objekt ansehen",
     "notConnected": "ImmoScout nicht verbunden",
     "connectButton": "Jetzt verbinden",
     "noListings": "Keine Objekte verfügbar",
-    "ctaHeading": "Lassen Sie auch Ihr Objekt im besten Licht erscheinen.",
+    "ctaHeading": "Ihr Objekt verdient die Besten. Beratung. Strategie.",
     "ctaButton": "Schlüsselmoment erleben",
     "labelOrt": "Ort",
     "labelTyp": "Typ",
     "labelFlaeche": "Fläche",
     "quote": {
-      "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln.",
+      "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln:",
       "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung von selbstgenutzten Wohnimmobilien."
     },
     "listings": [
@@ -351,7 +351,7 @@
       },
       {
         "title": "Architektur. Bergblick.",
-        "ort": "Fischbachau",
+        "ort": "Miesbach",
         "typ": "Einfamilienhaus",
         "flaeche": "240 m²"
       },
