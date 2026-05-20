@@ -23,8 +23,9 @@ export async function getCalendlyMembers() {
       return [];
     }
 
+    const data = await response.json();
     let members = data.collection || [];
-    
+
     // Custom sort order
     const orderMap: Record<string, number> = {
       "Leonardo Granetto": 1,

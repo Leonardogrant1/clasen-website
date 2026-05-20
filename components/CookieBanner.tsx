@@ -16,9 +16,19 @@ const copy = {
     accept: "Accept",
     decline: "Decline",
   },
+  ru: {
+    text: "Мы используем файлы cookie для анонимного анализа использования с целью улучшения этого веб-сайта.",
+    accept: "Принять",
+    decline: "Отказаться",
+  },
+  zh: {
+    text: "我们使用Cookie进行匿名使用分析，以改进本网站。",
+    accept: "接受",
+    decline: "拒绝",
+  },
 } as const;
 
-export default function CookieBanner({ locale }: { locale: "de" | "en" }) {
+export default function CookieBanner({ locale }: { locale: 'en' | 'de' | "ru" | "zh" }) {
   const [visible, setVisible] = useState(false);
   const t = copy[locale] ?? copy.de;
 
