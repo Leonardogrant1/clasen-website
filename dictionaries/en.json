@@ -157,10 +157,22 @@
     "tagline": "Your Key to Success.",
     "navLabel": "Navigation",
     "links": [
-      { "label": "Capital", "href": "/en/" },
-      { "label": "Living", "href": "/en/properties" },
-      { "label": "Clasen", "href": "/en/clasen" },
-      { "label": "Contact", "href": "/en/contact" }
+      {
+        "label": "Capital",
+        "href": "/en/"
+      },
+      {
+        "label": "Living",
+        "href": "/en/properties"
+      },
+      {
+        "label": "Clasen",
+        "href": "/en/clasen"
+      },
+      {
+        "label": "Contact",
+        "href": "/en/contact"
+      }
     ],
     "contactLabel": "Contact",
     "email": "info@clasen-immos.de",
@@ -289,7 +301,60 @@
     "viewProperty": "View Property",
     "notConnected": "ImmoScout not connected",
     "connectButton": "Connect now",
-    "noListings": "No properties available"
+    "noListings": "No properties available",
+    "ctaHeading": "Let us present your property in the best light too.",
+    "ctaButton": "Experience the key moment",
+    "labelOrt": "Location",
+    "labelTyp": "Type",
+    "labelFlaeche": "Area",
+    "quote": {
+      "p1": "Even though our clients today seek expertise and hands-on experience in tax matters and asset management above all, we remain true to our roots.",
+      "p2": "These roots lie unmistakably in the passionate and discreet marketing of owner-occupied residential properties."
+    },
+    "listings": [
+      {
+        "title": "Exclusive. Lakeside.",
+        "ort": "Starnberg, Tutzing",
+        "typ": "Detached House",
+        "flaeche": "350 m²"
+      },
+      {
+        "title": "Understatement. Elegance.",
+        "ort": "Grünwald",
+        "typ": "Semi-detached Villa",
+        "flaeche": "approx. 275 m²"
+      },
+      {
+        "title": "Quiet. Family-friendly.",
+        "ort": "Hohenbrunn",
+        "typ": "Detached House",
+        "flaeche": "approx. 220 m²"
+      },
+      {
+        "title": "City. Family.",
+        "ort": "Munich, Schwabing",
+        "typ": "Semi-detached House",
+        "flaeche": "190 m²"
+      },
+      {
+        "title": "Penthouse. Elevator.",
+        "ort": "Munich, Thalkirchen",
+        "typ": "Penthouse",
+        "flaeche": "125 m²"
+      },
+      {
+        "title": "Architecture. Mountain View.",
+        "ort": "Fischbachau",
+        "typ": "Detached House",
+        "flaeche": "240 m²"
+      },
+      {
+        "title": "Exotic. Bold.",
+        "ort": "Ottobrunn",
+        "typ": "Loft",
+        "flaeche": "190 m²"
+      }
+    ]
   },
   "contact": {
     "sectionLabel": "Contact",

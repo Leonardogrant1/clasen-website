@@ -1,21 +1,26 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import createMiddleware from 'next-intl/middleware';
 
-const locales = ['en', 'de']
+
+const LANDING_ROUTES = /^\/(?!admin|api|sign-in|_next|.*\..*).*$/
+
 
 export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl
 
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
+  if (LANDING_ROUTES.test(request.nextUrl.pathname)) {
+    const defaultLocale = "de"
+    const handleI18nRouting = createMiddleware({
+      locales: ['en', 'de', "ru", "zh"],
+      defaultLocale,
+      localePrefix: 'as-needed'
+    });
+    const response = handleI18nRouting(request);
 
-  if (pathnameHasLocale) return NextResponse.next()
+    return response;
+  }
 
-  // No locale prefix → rewrite to /de/... (default locale, pathless)
-  const url = request.nextUrl.clone()
-  url.pathname = `/de${pathname}`
-  return NextResponse.rewrite(url)
+  return NextResponse.next();
 }
 
 export const config = {

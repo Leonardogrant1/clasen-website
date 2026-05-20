@@ -89,7 +89,7 @@ export default function Nav({ dict, locale }: Props) {
           </Link>
         </div>
 
-        <nav className="hidden md:flex items-center justify-center">
+        <nav className="hidden lg:flex items-center justify-center">
           <div className="flex items-center gap-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-2 py-1.5">
             {mainLinks.map((link) => {
               const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
@@ -110,7 +110,7 @@ export default function Nav({ dict, locale }: Props) {
           </div>
         </nav>
 
-        <div className="hidden md:flex justify-end items-center">
+        <div className="hidden lg:flex justify-end items-center">
           <div ref={lockRef} className="relative h-12 w-48">
             <button
               onClick={handleLoginClick}
@@ -131,7 +131,7 @@ export default function Nav({ dict, locale }: Props) {
           </div>
         </div>
 
-        <div className="flex md:hidden justify-end col-start-3">
+        <div className="flex lg:hidden justify-end col-start-3">
           <button
             onClick={() => setIsOpen(true)}
             aria-label="Menü öffnen"

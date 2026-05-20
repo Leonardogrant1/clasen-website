@@ -149,7 +149,7 @@
   },
   "credo": {
     "sectionLabel": "Credo",
-    "quote": "„Der beste Zeitpunkt,\neinen Baum zu pflanzen,\nwar vor 20 Jahren.\n\nDer zweitbeste ist jetzt…\u201C",
+    "quote": "„Der beste Zeitpunkt,\neinen Baum zu pflanzen,\nwar vor 20 Jahren.\n\nDer zweitbeste ist jetzt…“",
     "attribution": "— Chinesisches Sprichwort",
     "cta": "Jetzt Kontakt aufnehmen"
   },
@@ -304,11 +304,64 @@
     "sectionLabel": "Referenzobjekte",
     "heading": "Wohnen & Leben.",
     "subheading": "Lebensmittelpunkte. So einzigartig wie Sie selbst.",
-    "description": "Ausgewählte Objekte, die wir für unsere Mandanten vermittelt haben.",
+    "description": "Ausgewählte, bereits vermittelte Liegenschaften:",
     "viewProperty": "Objekt ansehen",
     "notConnected": "ImmoScout nicht verbunden",
     "connectButton": "Jetzt verbinden",
-    "noListings": "Keine Objekte verfügbar"
+    "noListings": "Keine Objekte verfügbar",
+    "ctaHeading": "Lassen Sie auch Ihr Objekt im besten Licht erscheinen.",
+    "ctaButton": "Schlüsselmoment erleben",
+    "labelOrt": "Ort",
+    "labelTyp": "Typ",
+    "labelFlaeche": "Fläche",
+    "quote": {
+      "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln.",
+      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung von selbstgenutzten Wohnimmobilien."
+    },
+    "listings": [
+      {
+        "title": "Exklusiv. Am See.",
+        "ort": "Starnberg, Tutzing",
+        "typ": "Einfamilienhaus",
+        "flaeche": "350 m²"
+      },
+      {
+        "title": "Understatement. Eleganz.",
+        "ort": "Grünwald",
+        "typ": "Villenhälfte",
+        "flaeche": "ca. 275 m²"
+      },
+      {
+        "title": "Ruhig. Familienfreundlich.",
+        "ort": "Hohenbrunn",
+        "typ": "Einfamilienhaus",
+        "flaeche": "ca. 220 m²"
+      },
+      {
+        "title": "Stadt. Nachwuchs.",
+        "ort": "München, Schwabing",
+        "typ": "Doppelhaushälfte",
+        "flaeche": "190 m²"
+      },
+      {
+        "title": "Penthouse. Fahrstuhl.",
+        "ort": "München, Thalkirchen",
+        "typ": "Penthouse",
+        "flaeche": "125 m²"
+      },
+      {
+        "title": "Architektur. Bergblick.",
+        "ort": "Fischbachau",
+        "typ": "Einfamilienhaus",
+        "flaeche": "240 m²"
+      },
+      {
+        "title": "Exotisch. Herb.",
+        "ort": "Ottobrunn",
+        "typ": "Loft",
+        "flaeche": "190 m²"
+      }
+    ]
   },
   "contact": {
     "sectionLabel": "Kontakt",

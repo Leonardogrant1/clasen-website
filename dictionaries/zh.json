@@ -1,0 +1,533 @@
+{
+  "nav": {
+    "kapital": "资本",
+    "wohnenUndLeben": "居住与生活",
+    "clasen": "Clasen",
+    "contact": "联系我们",
+    "login": "客户登录"
+  },
+  "hero": {
+    "vision": "您的愿景",
+    "items": [
+      {
+        "title": "押对\n正确的赌注。",
+        "subtitle": "在尊贵的客户与卓越的投资机会之间,我们是您值得信赖的纽带。",
+        "videoPath": "/video/hero.mp4"
+      },
+      {
+        "title": "未雨绸缪,胜于亡羊补牢",
+        "subtitle": "您的投资组合需要不动产,正如您需要呼吸的空气。\n通过我们为您量身定制的高收益资产之一,守护您的资本。",
+        "videoPath": "/video/hero1.mp4"
+      }
+    ]
+  },
+  "stats": {
+    "investments": {
+      "line1": "已促成",
+      "line2": "投资项目"
+    },
+    "transactions": {
+      "prefix": "Ø ",
+      "line1": "交易笔数",
+      "line2": "每位客户"
+    },
+    "recommendations": {
+      "suffix": "%",
+      "line1": "推荐我们",
+      "line2": "给朋友"
+    }
+  },
+  "profile": {
+    "verticalLabel": "市场在波动。如同您的思绪。",
+    "sectionLabel": "简介",
+    "heading": "无与伦比的热忱。",
+    "body1": "当心血与对细节的执着不仅限于自己的投资组合,更持续为我们尊贵的客户创造巨大的附加价值时,便会形成一种独特的咨询与投资氛围——一种您会乐于向最亲近的人讲述的氛围。",
+    "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,为您带来无与伦比的业绩,并始终保有那份特别的人情味。",
+    "credo": "我们的信条:公平可靠 (FAIRlässlichkeit)。",
+    "tagline": "您通往成功的钥匙。",
+    "role": "Alexander Clasen — 总经理",
+    "cta": "感受关键时刻",
+    "circularText": "您的信任 · 我们的荣耀 ·"
+  },
+  "alleinstell": {
+    "sectionLabel": "附加价值",
+    "heading": "我们的独特之处。",
+    "cta": "立即预约咨询 →",
+    "merkmale": [
+      {
+        "title": "精准命中",
+        "description": "每一项投资都基于您的个人目标精心打造,并悉心为您量身定制。",
+        "animation": "/animations/goals.json"
+      },
+      {
+        "title": "场外交易",
+        "description": "您以大型投资者的条件进行投资:无中间商。无中介费用。",
+        "animation": "/animations/invoice.json"
+      },
+      {
+        "title": "主场优势",
+        "description": "深厚的本土根基让您即便在慕尼黑这样备受追捧的 A+ 级地段,也能获得超凡的收益。",
+        "animation": "/animations/town.json"
+      },
+      {
+        "title": "税务优势",
+        "description": "由顶级律师事务所制定的法律稳健方案,大幅降低您的整体税负。",
+        "animation": "/animations/gift.json"
+      },
+      {
+        "title": "卓越品质",
+        "description": "顶级的可持续策略。从 A 到 Z 周密考量。让您可以专注于自己的核心业务。",
+        "animation": "/animations/crown.json"
+      },
+      {
+        "title": "生态使命",
+        "description": "今日即为未来做好准备:通过节能改造,每一项投资都符合最先进的标准。",
+        "animation": "/animations/energy.json"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionLabel": "客户心声",
+    "heading": "真实的面孔。\n真实的故事。",
+    "investmentLabel": "投资",
+    "items": [
+      {
+        "client_image_path": "/testimonials/phillip_geissler/profile.png",
+        "client_name": "Philippe Geissler",
+        "client_quote": "……团队以严谨的方法和卓越的市场知识打动了我,成功为我的晚年生活提供了保障……",
+        "client_type": "法学家 / 硕士 (LMU)",
+        "object_title": "慕尼黑老城区 Au 的老建筑",
+        "objects": [
+          {
+            "image_path": "/testimonials/phillip_geissler/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/phillip_geissler/image_3.jpg"
+          },
+          {
+            "image_path": "/testimonials/phillip_geissler/image_1.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
+        "client_name": "Jens Krautscheid",
+        "client_quote": "……起初我最欣赏的是品牌与理念。\n如今在人格层面也完全被打动。\n税务方面的考量也面面俱到。",
+        "client_type": "药剂师 / 演讲者 / 企业家",
+        "object_title": "慕尼黑 Giesing 收益方案",
+        "objects": [
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
+        "client_name": "Dr. Thomas Bergmann",
+        "client_quote": "作为企业家,谨慎与效率对我尤为重要。Clasen 在两方面都做到了极致——并取得了远超我预期的回报。",
+        "client_type": "投资者",
+        "object_title": "Bogenhausen 多户住宅",
+        "objects": [
+          {
+            "image_path": "/backgrounds/facade.png"
+          },
+          {
+            "image_path": "/backgrounds/chess.png"
+          },
+          {
+            "image_path": "/backgrounds/facade.png"
+          }
+        ]
+      }
+    ]
+  },
+  "credo": {
+    "sectionLabel": "信条",
+    "quote": "「种一棵树最好的时间,\n是二十年前。\n\n其次,就是现在……」",
+    "attribution": "— 中国谚语",
+    "cta": "立即联系我们"
+  },
+  "footer": {
+    "tagline": "您通往成功的钥匙。",
+    "navLabel": "导航",
+    "links": [
+      {
+        "label": "资本",
+        "href": "/"
+      },
+      {
+        "label": "居住与生活",
+        "href": "/properties"
+      },
+      {
+        "label": "Clasen",
+        "href": "/clasen"
+      },
+      {
+        "label": "联系我们",
+        "href": "/contact"
+      }
+    ],
+    "contactLabel": "联系方式",
+    "email": "info@clasen-immos.de",
+    "phone": "+49 (0) 89 66 08 55 80",
+    "address": "慕尼黑,德国",
+    "legalLabel": "法律信息",
+    "impressum": "公司信息",
+    "datenschutz": "隐私政策",
+    "rights": "版权所有"
+  },
+  "clasenHero": {
+    "sectionLabel": "品牌背后的故事",
+    "heading": "一个信念。\n无需绕路。",
+    "body": "从一位 18 岁、被银行拒绝首笔贷款的青年,到企业家们托付财富的家族办公室。这之间的历程,不是一段履历——而是一种信条。",
+    "cta": "阅读故事"
+  },
+  "clasenWarum": {
+    "sectionLabel": "缘由",
+    "body": "陪伴我度过所有个人危机、走过每一次财务失误的资产类别——让所有应当拥有它的人都能够触及。不仅服务于机构投资者。不仅服务于继承人。而是面向每一位愿意让资本为自己工作的人。"
+  },
+  "clasenChronik": {
+    "sectionLabel": "年表",
+    "heading": "历程",
+    "entries": [
+      {
+        "year": "1993 年夏",
+        "category": "起源",
+        "subtitle": "慕尼黑。一切的开端。",
+        "body": "Alexander Christian Clasen 于 1993 年夏出生于慕尼黑——这座城市后来成为他事业与热情的中心。当时无人预见这座城市的房地产市场将成为他的舞台。或许他自己也未曾料到。",
+        "image_path": "/timeline-images/0.png"
+      },
+      {
+        "year": "18 岁生日",
+        "category": "首次尝试",
+        "subtitle": "那次拒绝,启动了一切。",
+        "body": "在 18 岁生日当天,Alexander 提出了人生第一笔不动产贷款申请。银行的回复:拒绝。没有自有资金,没有收入,没有机会。对大多数人而言,这就是念头的终点。对他而言,这是执着的起点。",
+        "image_path": "/timeline-images/1.png"
+      },
+      {
+        "year": "2012",
+        "category": "觉醒",
+        "subtitle": "《富爸爸穷爸爸》与那次顿悟。",
+        "body": "高中毕业后,一本书与对身边富裕朋友世界的一瞥,打开了全新的视野:通过不动产获取被动收入。Alexander 深入钻研专业文献。法学与心理学的学业虽已开始——却逐渐退居其次。真正的学习,发生在书籍、财务报表与不动产登记簿中。",
+        "image_path": "/timeline-images/2.png"
+      },
+      {
+        "year": "2015",
+        "category": "转折点",
+        "subtitle": "众人反对下的中断。",
+        "body": "在毕业前夕,Alexander 中断了昂贵的心理学学业。并非出于漠然——而是出于清醒。他意识到自有不动产组合对于实现早期退休目标所蕴含的潜力。所有人都反对。他依然坚持。这个逆流而上的决定,成为他整个职业生涯的主旋律。",
+        "image_path": "/timeline-images/3.png"
+      },
+      {
+        "year": "2016",
+        "category": "跨界进入",
+        "subtitle": "百年历史。一年超越。",
+        "body": "Alexander 作为跨界新人加入慕尼黑最负盛名的房产中介之一——拥有逾百年的企业历史、成熟的体系与悠久的纪录。一年后,多项纪录被打破:最高成交价的住宅、最大宗的租赁委托——这些保持了数十年的最佳纪录被悉数刷新。结论:慕尼黑的中介市场已陈旧。是时候迎来一场革命。",
+        "image_path": "/timeline-images/4.png",
+        "milestone": {
+          "stat": "1",
+          "label": "年 · 打破多项逾百年企业历史中的销售纪录"
+        }
+      },
+      {
+        "year": "2017",
+        "category": "探索",
+        "subtitle": "另一面。瑞士式的精准。",
+        "body": "在已既定的创业步骤之前,他刻意绕道:进入一家现代化的瑞士特许经营体系。与他过往所知的一切截然不同。不同的流程、不同的态度、不同的标准。Alexander 兼收并蓄——之后更加清楚自己的企业将如何运作。也更加清楚不该如何运作。",
+        "image_path": "/timeline-images/5.png"
+      },
+      {
+        "year": "2018",
+        "category": "第一次创业",
+        "subtitle": "首家自己的公司。带着明确的使命。",
+        "body": "成立首家自有中介公司——采用一个不寻常的策略:专注于那些已对中介行业失去信心的卖家。那些坚信自己不需要中介的人。事实证明他们往往是错的。此后促成了 500 余笔不动产交易。第一年的成绩:七位数营业额——以及对另一条道路可行性的印证。",
+        "milestone": {
+          "stat": "500+",
+          "label": "促成不动产交易 · 创业首年七位数营业额"
+        },
+        "image_path": "/timeline-images/6.jpg"
+      },
+      {
+        "year": "2018",
+        "category": "第二次创业",
+        "subtitle": "自营建筑公司。因为真正的独立不容妥协。",
+        "body": "在同一创业之年,他迈出了下一个合乎逻辑的步伐:成立自营建筑公司。原因既简单又具战略意义——向客户承诺「一站式服务」者,不应在实现过程中受制于外部公司。质量、进度与成本控制,完全掌握在自己手中。对客户而言意味着:一位联系人、一份责任、一个成果——从首次咨询直至成品交付。",
+        "image_path": "/timeline-images/7.png"
+      },
+      {
+        "year": "里程碑",
+        "category": "项目",
+        "subtitle": "一组建筑。完全自主操盘。",
+        "body": "一位长期老客户委托 CLASEN 收购慕尼黑稳健地段的一整组多户住宅。随之而来的是一项涵盖全方位的任务:物业收购、经济规划、补贴管理、整体翻新、项目开发、室内装修、出租及日常物业管理——全部一站式完成。这是真正合作关系的明证。",
+        "image_path": "/timeline-images/8a.jpg"
+      },
+      {
+        "year": "里程碑",
+        "category": "历史建筑",
+        "subtitle": "慕尼黑特蕾西娅草坪。四年。一座纪念建筑。",
+        "body": "一个慕尼黑的遗产共同体将公司历史上最具挑战性的任务之一托付给 CLASEN:在特蕾西娅草坪附近,对一座知名历史建筑进行历时四年的大规模翻修。文物保护、继承法、翻修复杂度、慕尼黑的行政程序。这一项目代表了 CLASEN 的精神:谨慎、坚韧,以及在他人失败之处仍能交付成果的能力。",
+        "image_path": "/timeline-images/9.png",
+        "milestone": {
+          "stat": "4",
+          "label": "年项目周期 · 历史建筑 · 慕尼黑特蕾西娅草坪"
+        }
+      },
+      {
+        "year": "2024",
+        "category": "愿景",
+        "subtitle": "CLASEN 家族办公室。下一把钥匙。",
+        "body": "从中介公司发展为家族办公室。这一步合乎逻辑——不是重塑,而是完成。3.297 亿欧元的受托客户资产。687 项促成投资。97% 的推荐率。基石已奠定。接下来的是下一个层次:量身定制的资本配置、节税方案以及场外投资渠道,面向所有希望让资本为自己工作的人——以往日仅机构投资者才能获得的条件。",
+        "milestone": {
+          "stat": "329.7",
+          "label": "百万欧元受托客户资产 · 97% 推荐率"
+        },
+        "image_path": "/timeline-images/10.png"
+      },
+      {
+        "year": "今日",
+        "category": "专长",
+        "subtitle": "节税:登峰造极之术。",
+        "body": "随着客户群的扩大,认知也日益深化:财富积累中最大的调节阀并非收益率——而是税负。CLASEN 持续专注于为高收入者、企业家及高净值投资者量身定制节税方案。在与顶级律师事务所的紧密合作中,我们打造法律稳健的方案,在结构上持续地降低客户的整体税负——不是技巧,而是一种架构。一旦明白每年在此流失的资本之巨,便再也无法以同样的方式看待投资。",
+        "isToday": true,
+        "image_path": "/timeline-images/11.png"
+      }
+    ]
+  },
+  "wohnenUndLeben": {
+    "sectionLabel": "参考案例",
+    "heading": "居住与生活。",
+    "subheading": "生活的中心。一如您本人,独一无二。",
+    "description": "精选已成交物业:",
+    "viewProperty": "查看物业",
+    "notConnected": "ImmoScout 未连接",
+    "connectButton": "立即连接",
+    "noListings": "暂无可用物业",
+    "ctaHeading": "让我们也将您的物业以最佳风采呈现。",
+    "ctaButton": "体验关键时刻",
+    "labelOrt": "位置",
+    "labelTyp": "类型",
+    "labelFlaeche": "面积",
+    "quote": {
+      "p1": "尽管我们的客户如今主要寻求的是税务领域与资产配置方面的专业知识与实战经验,我们依然坚守自己的根本。",
+      "p2": "这一根本,毫无疑问地植根于对自住型住宅不动产的热忱且谨慎的营销之中。"
+    },
+    "listings": [
+      {
+        "title": "独家。湖畔。",
+        "ort": "施塔恩贝格,图青",
+        "typ": "独栋住宅",
+        "flaeche": "350 m²"
+      },
+      {
+        "title": "低调。优雅。",
+        "ort": "格林瓦尔德",
+        "typ": "半独立别墅",
+        "flaeche": "约 275 m²"
+      },
+      {
+        "title": "宁静。宜家。",
+        "ort": "霍恩布伦",
+        "typ": "独栋住宅",
+        "flaeche": "约 220 m²"
+      },
+      {
+        "title": "城市。育儿。",
+        "ort": "慕尼黑,施瓦宾",
+        "typ": "双拼住宅",
+        "flaeche": "190 m²"
+      },
+      {
+        "title": "顶层公寓。带电梯。",
+        "ort": "慕尼黑,塔尔基兴",
+        "typ": "顶层公寓",
+        "flaeche": "125 m²"
+      },
+      {
+        "title": "建筑。山景。",
+        "ort": "菲施巴豪",
+        "typ": "独栋住宅",
+        "flaeche": "240 m²"
+      },
+      {
+        "title": "异域。粗犷。",
+        "ort": "奥托布伦",
+        "typ": "Loft",
+        "flaeche": "190 m²"
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "联系我们",
+    "heading": "您通往成功的钥匙。",
+    "body": "从「A」如投资咨询 \n到「Z」如未来世代。 \n无论是资产组合优化还是物业撮合, \n您的需求值得真正的专家来对待!\n\n让我们取得联系—— \n谨慎且无需承诺。",
+    "emailLabel": "电子邮箱",
+    "phoneLabel": "电话",
+    "nameLabel": "您的姓名",
+    "emailFieldLabel": "您的电子邮箱",
+    "phoneFieldLabel": "您的电话号码",
+    "phoneFieldLabelShort": "您的电话",
+    "messageLabel": "您的留言",
+    "namePlaceholder": "张三",
+    "emailPlaceholder": "example@mail.com",
+    "phonePlaceholder": "+49",
+    "messagePlaceholder": "我们可以如何帮助您?",
+    "submit": "发送留言",
+    "topicPlaceholder": "请选择……",
+    "topicLabel": "选择主题",
+    "topics": [
+      {
+        "value": "portfolio",
+        "label": "咨询:资产组合顾问"
+      },
+      {
+        "value": "bauleistung",
+        "label": "咨询:建筑服务"
+      },
+      {
+        "value": "asset",
+        "label": "咨询:资产管理"
+      },
+      {
+        "value": "kapitalanlage",
+        "label": "咨询:资本投资"
+      },
+      {
+        "value": "objektvermittlung",
+        "label": "咨询:物业撮合"
+      },
+      {
+        "value": "steuersparmodell",
+        "label": "咨询:节税方案"
+      },
+      {
+        "value": "freitext",
+        "label": "其他事项"
+      }
+    ]
+  },
+  "commercial": {
+    "label": "Commercial",
+    "heading": "敬请期待。",
+    "subheading": "内容即将上线"
+  },
+  "living": {
+    "label": "Living",
+    "heading": "敬请期待。",
+    "subheading": "内容即将上线"
+  },
+  "login": {
+    "heading": "客户登录",
+    "subheading": "进入 CLASEN 客户门户",
+    "emailLabel": "CFO 标识",
+    "emailPlaceholder": "例如 26/044",
+    "passwordLabel": "密码",
+    "submit": "登录",
+    "noAccess": "尚未获得访问权限?",
+    "contactLink": "联系我们"
+  },
+  "meta": {
+    "home": {
+      "title": "Clasen Immos — 首页",
+      "description": "机构级不动产投资者的精英世界。为尊贵客户提供专业解决方案。"
+    },
+    "clasen": {
+      "title": "Clasen Immos — 故事",
+      "description": "从被银行拒绝首笔贷款的 18 岁青年,到家族办公室。品牌背后的故事。"
+    },
+    "contact": {
+      "title": "Clasen Immos — 联系我们",
+      "description": "与我们取得联系。"
+    },
+    "wohnenUndLeben": {
+      "title": "Clasen Immos — 居住与生活",
+      "description": "参考案例——以电影般的高品质呈现。"
+    },
+    "commercial": {
+      "title": "Clasen Immos — Commercial",
+      "description": "商业不动产——敬请期待。"
+    },
+    "living": {
+      "title": "Clasen Immos — Living",
+      "description": "住宅不动产——敬请期待。"
+    },
+    "login": {
+      "title": "Clasen Immos — 客户登录",
+      "description": "安全进入 Clasen 客户门户。"
+    },
+    "impressum": {
+      "title": "Clasen Immos — 公司信息",
+      "description": "依据 § 5 TMG 的公司信息与服务提供者标识。"
+    },
+    "datenschutz": {
+      "title": "Clasen Immos — 隐私政策",
+      "description": "依据 GDPR 的数据保护声明。"
+    }
+  },
+  "impressum": {
+    "label": "法律信息",
+    "heading": "公司信息 (Impressum)",
+    "sections": [
+      {
+        "title": "依据 § 5 TMG 的声明",
+        "content": "CLASEN Family Office\nAlexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald\n\n电子邮箱:info@clasen-immos.de\n电话:+49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "依据 § 55 第 2 款 RStV 对内容负责的人",
+        "content": "Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald"
+      },
+      {
+        "title": "免责声明",
+        "content": "本网站的内容已尽最大努力悉心制作。然而,我们无法保证其正确性、完整性及时效性。作为服务提供者,我们依据 § 7 第 1 款 TMG,根据一般法律对本网站的自有内容承担责任。"
+      },
+      {
+        "title": "链接责任",
+        "content": "本网站包含指向第三方外部网站的链接,我们对这些网站的内容没有影响力。因此,我们也无法对这些外部内容承担责任。所链接页面的内容始终由该页面的相应提供者或运营者负责。"
+      },
+      {
+        "title": "著作权",
+        "content": "网站运营者在本网站上创作的内容和作品受德国著作权法保护。任何超出著作权法范围的复制、修改、传播及利用,均须获得相应作者或创作者的书面同意。"
+      }
+    ]
+  },
+  "datenschutz": {
+    "label": "法律信息",
+    "heading": "隐私政策",
+    "sections": [
+      {
+        "title": "负责方",
+        "content": "GDPR 意义上的负责方为:\n\nCLASEN Family Office — Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald\n电子邮箱:info@clasen-immos.de\n电话:+49 (0) 89 66 08 55 80"
+      },
+      {
+        "title": "个人数据的收集与存储",
+        "content": "您访问我们网站时,浏览器会自动向我们的服务器传输信息。这些信息会暂存于所谓的服务器日志文件中,包括:IP 地址、访问的日期与时间、所请求文件的名称及 URL、来源网站、所使用的浏览器,以及在适用情况下您计算机的操作系统。这些数据的收集依据 GDPR 第 6 条第 1 款 f 项进行。"
+      },
+      {
+        "title": "联系表单",
+        "content": "使用我们的联系表单时,您所填写的数据(姓名、电子邮箱、留言)将被存储于我方以便处理您的请求。未经您的同意,我们不会将这些数据转交他人。法律依据为 GDPR 第 6 条第 1 款 b 项。"
+      },
+      {
+        "title": "使用 PostHog 进行分析",
+        "content": "在您同意的前提下,我们使用网络分析服务 PostHog。PostHog 使用 cookies 及类似技术收集匿名化的使用数据。数据在欧盟境内的服务器上处理。您可随时通过删除已存储的 cookies 或与我们联系来撤回您的同意。法律依据为 GDPR 第 6 条第 1 款 a 项。"
+      },
+      {
+        "title": "Cookies",
+        "content": "本网站使用 cookies。这些是您的浏览器在您的终端设备上存储的小型文本文件。技术上必需的 cookies 依据 GDPR 第 6 条第 1 款 f 项进行设置。分析类 cookies 仅在您明确同意后(GDPR 第 6 条第 1 款 a 项)设置。"
+      },
+      {
+        "title": "您的权利",
+        "content": "您有权了解我们存储的有关您的数据(GDPR 第 15 条)、更正不正确的数据(GDPR 第 16 条)、删除您的数据(GDPR 第 17 条)、限制处理(GDPR 第 18 条)、数据可携(GDPR 第 20 条)以及反对处理的权利(GDPR 第 21 条)。如需行使您的权利,请联系:info@clasen-immos.de"
+      },
+      {
+        "title": "申诉权",
+        "content": "您有权就我方对您个人数据的处理向数据保护监管机构提出申诉。巴伐利亚州的主管监管机构为巴伐利亚州数据保护专员 (BayLfD)。"
+      }
+    ]
+  }
+}

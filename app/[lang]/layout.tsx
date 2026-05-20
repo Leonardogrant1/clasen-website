@@ -6,7 +6,7 @@ import CookieBanner from "@/components/CookieBanner";
 import { getDictionary, hasLocale } from "./dictionaries";
 
 export async function generateStaticParams() {
-  return [{ lang: "de" }, { lang: "en" }];
+  return [{ lang: "de" }, { lang: "en" }, { lang: "ru" }, { lang: "zh" }];
 }
 
 export default async function LocaleLayout({
