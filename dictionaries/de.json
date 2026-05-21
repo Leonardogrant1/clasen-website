@@ -366,7 +366,7 @@
   "contact": {
     "sectionLabel": "Kontakt",
     "heading": "Ihr Schlüssel zum Erfolg.",
-    "body": "Von A wie Anlageberatung \nbis Z wie zukünftige Generationen. \nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
+    "body": "Von A wie Anlageberatung \nbis Z wie zukünftige Generationen. \n\nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
     "nameLabel": "Ihr Name",
@@ -379,6 +379,10 @@
     "phonePlaceholder": "+49",
     "messagePlaceholder": "Wie dürfen wir Ihnen helfen?",
     "submit": "Nachricht senden",
+    "successHeading1": "Vielen Dank —",
+    "successHeading2": "wir melden uns bald.",
+    "successMessage": "Ihre Anfrage ist eingegangen. Ein Mitarbeiter wird sich in Kürze bei Ihnen melden.",
+    "errorMessage": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.",
     "topicPlaceholder": "Bitte wählen…",
     "topicLabel": "Betreff wählen",
     "topics": [
@@ -427,7 +431,13 @@
     "subheading": "Zugang zum CLASEN Mandantenportal",
     "emailLabel": "CFO-Kennung",
     "emailPlaceholder": "ZB. 26/044",
+    "emailTooltip": "Sie finden Ihre persönliche CFO-Kennung in Ihrem Willkommensbrief, beziehungsweise in Ihrer Onboarding-Email.",
     "passwordLabel": "Passwort",
+    "passwordTooltip": {
+      "p1": "Geben Sie hier Ihr zugesandtes Einmalpasswort für Ihren Erstlogin oder Ihr beim 1. Login bereits festgelegtes persönliches Passwort ein.",
+      "p2": "CLASEN Mitarbeiter oder Systemadministratoren werden Sie NIEMALS nach Ihrem persönlichen Passwort fragen.",
+      "p3": "Sollten Sie Ihr bereits festgelegtes Passwort vergessen haben, wenden Sie sich bitte an"
+    },
     "submit": "Einloggen",
     "noAccess": "Noch kein Zugang?",
     "contactLink": "Kontakt aufnehmen"

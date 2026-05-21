@@ -29,6 +29,7 @@ export default function ProfileSection({ dict, locale }: Props) {
                 src="/backgrounds/facade.png"
                 alt="Facade"
                 fill
+                sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 384px"
                 className="w-full h-full object-cover object-[25%_center]"
               />
             </div>
@@ -54,7 +55,7 @@ export default function ProfileSection({ dict, locale }: Props) {
 
           <div className="flex flex-col items-center md:items-start">
             <div className="w-40 aspect-4/2 relative">
-              <Image alt="signature" fill src="/signature.png" className="object-contain" />
+              <Image alt="signature" fill sizes="160px" src="/signature.png" className="object-contain" />
             </div>
             <span className="text-sm text-muted tracking-widest uppercase mt-1">
               {dict.role}

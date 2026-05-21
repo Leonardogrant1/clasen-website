@@ -119,8 +119,8 @@ export default function ContactForm({ dict }: Props) {
                     </svg>
                 </div>
                 <p className="text-accent text-xs uppercase tracking-widest font-semibold">{dict.submit}</p>
-                <p className="text-foreground text-xl font-semibold leading-snug">Vielen Dank —<br />wir melden uns bald.</p>
-                <p className="text-muted text-sm leading-relaxed">Ihre Anfrage ist eingegangen. Ein Mitarbeiter wird sich in Kürze bei Ihnen melden.</p>
+                <p className="text-foreground text-xl font-semibold leading-snug">{dict.successHeading1}<br />{dict.successHeading2}</p>
+                <p className="text-muted text-sm leading-relaxed">{dict.successMessage}</p>
             </div>
         );
     }
@@ -162,7 +162,7 @@ export default function ContactForm({ dict }: Props) {
 
             {status === 'error' && (
                 <p className="text-red-400/80 text-xs leading-relaxed">
-                    Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.
+                    {dict.errorMessage}
                 </p>
             )}
 

@@ -5,7 +5,7 @@ import AnimatedCounter from "./AnimatedCounter";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 const REF_DATE = new Date("2026-05-20T00:00:00Z");
-const REF_VALUE = 687;
+const REF_VALUE = 487;
 
 function getInvestmentCount(): number {
   const now = new Date();

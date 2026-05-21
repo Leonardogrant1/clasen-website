@@ -80,6 +80,7 @@ export default function TestimonialsSection({ dict }: Props) {
             key={i}
             src={item.client_image_path}
             fill
+            sizes="(max-width: 768px) 56px, 128px"
             alt={item.client_name}
             className={cn("object-cover", imageStyles[item.client_name] ?? "", i === current ? "opacity-100" : "opacity-0")}
           />

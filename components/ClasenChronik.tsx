@@ -74,6 +74,7 @@ function ComparisonSlider({ alt, imageA, imageB }: { alt: string; imageA: string
             alt={alt}
             width={1200}
             height={800}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-auto block"
           />
           {/* Image A (before) — clipped from the right */}
@@ -86,6 +87,7 @@ function ComparisonSlider({ alt, imageA, imageB }: { alt: string; imageA: string
               alt={alt}
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="w-full h-auto block"
             />
           </div>
@@ -221,6 +223,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
           alt={alt}
           width={1200}
           height={800}
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="w-full h-auto"
         />
       </div>
@@ -323,6 +326,7 @@ export default function ClasenChronik({ dict }: { dict: Dictionary["clasenChroni
           src="/backgrounds/munich.jpeg"
           alt=""
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           className="object-cover object-center"
           priority={false}
         />

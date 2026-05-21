@@ -137,6 +137,7 @@ function Tile({ listing, index, onHoverChange, labelOrt, labelTyp, labelFlaeche 
             key={img}
             src={img}
             fill
+            sizes="(max-width: 1024px) 100vw, 66vw"
             alt={`${listing.titel} - Bild ${i + 1}`}
             className={`${listing.imgClass} absolute inset-0`}
             style={{
@@ -340,7 +341,7 @@ export default function ReferenzGridTemporary({ viewProperty, notConnected, conn
             className={`relative overflow-hidden flex flex-col items-start justify-center p-8 rounded-2xl text-left border border-white/20 transition-opacity duration-300 ${listing.detailsPosition}`}
             style={{ opacity: hoveredListing?.id === listing.id ? 1 : 0 }}
           >
-            <Image src="/backgrounds/facade.png" fill alt="" className="object-cover object-center" />
+            <Image src="/backgrounds/facade.png" fill sizes="(max-width: 1024px) 100vw, 66vw" alt="" className="object-cover object-center" />
             <div className="absolute inset-0 bg-black/70" />
             <div className="relative z-10 flex flex-col items-start">
               <h3 className="text-accent text-sm uppercase tracking-widest font-semibold mb-2">Details</h3>

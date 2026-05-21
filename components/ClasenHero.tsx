@@ -1,10 +1,20 @@
+import Image from "next/image";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 export default function ClasenHero({ dict }: { dict: Dictionary["clasenHero"] }) {
   return (
     <section className="relative min-h-screen overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/backgrounds/chess.png')" }} />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" />
+      <div className="absolute inset-0">
+        <Image
+          src="/backgrounds/chess.png"
+          alt="Clasen Background"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          className="object-cover object-center"
+        />
+      </div>
+      <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
 
       <div className="absolute bottom-20 left-4 md:left-8 z-10 max-w-2xl pr-4 md:pr-0">
         <p className="text-accent text-xs uppercase tracking-widest font-semibold mb-4">

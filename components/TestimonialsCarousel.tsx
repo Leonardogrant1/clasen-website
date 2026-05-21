@@ -63,7 +63,7 @@ export default function TestimonialsCarousel({
           >
             {objects.map((obj, i) => (
               <div key={i} className="w-full shrink-0 relative h-52 rounded-xl overflow-hidden bg-white/5">
-                <Image src={obj.image_path} fill alt="Objektbild" className="object-cover" />
+                <Image src={obj.image_path} fill sizes="(max-width: 768px) 100vw, 33vw" alt="Objektbild" className="object-cover" />
               </div>
             ))}
           </div>
@@ -83,6 +83,7 @@ export default function TestimonialsCarousel({
             <Image
               src={obj.image_path}
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               alt="Objektbild"
               className="object-cover transition-transform duration-700 group-hover:scale-105"
             />

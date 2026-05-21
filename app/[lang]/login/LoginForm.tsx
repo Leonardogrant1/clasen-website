@@ -51,7 +51,7 @@ export default function LoginForm({ t, base }: Props) {
         <div className="flex flex-col gap-1.5">
           <label className="text-muted text-xs uppercase tracking-widest flex items-center">
             {t.emailLabel}
-            <InfoTooltip showDsgvo>Sie finden Ihre persönliche CFO-Kennung in Ihrem Willkommensbrief, beziehungsweise in Ihrer Onboarding-Email.</InfoTooltip>
+            <InfoTooltip showDsgvo>{t.emailTooltip}</InfoTooltip>
           </label>
           <input type="email" placeholder={t.emailPlaceholder}
             className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-foreground text-sm placeholder:text-muted/40 focus:outline-none focus:border-accent transition-colors duration-200" />
@@ -61,9 +61,9 @@ export default function LoginForm({ t, base }: Props) {
           <label className="text-muted text-xs uppercase tracking-widest flex items-center">
             {t.passwordLabel}
             <InfoTooltip>
-              <span>Geben Sie hier Ihr zugesandtes Einmalpasswort für Ihren Erstlogin oder Ihr beim 1. Login bereits festgelegtes persönliches Passwort ein.</span>
-              <span className="text-white/90 font-semibold">CLASEN Mitarbeiter oder Systemadministratoren werden Sie NIEMALS nach Ihrem persönlichen Passwort fragen.</span>
-              <span>Sollten Sie Ihr bereits festgelegtes Passwort vergessen haben, wenden Sie sich bitte an{" "}
+              <span>{t.passwordTooltip.p1}</span>
+              <span className="text-white/90 font-semibold">{t.passwordTooltip.p2}</span>
+              <span>{t.passwordTooltip.p3}{" "}
                 <span className="text-accent">support@clasen.com</span>
               </span>
             </InfoTooltip>

@@ -48,7 +48,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
           </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 mt-14">
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:mt-14">
           <ContactForm dict={t} />
         </div>
       </div>

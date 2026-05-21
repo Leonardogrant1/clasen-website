@@ -11,12 +11,12 @@
     "items": [
       {
         "title": "押对\n正确的赌注。",
-        "subtitle": "在尊贵的客户与卓越的投资机会之间,我们是您值得信赖的纽带。",
+        "subtitle": "在卓越追求与非凡投资机遇之间,我们是您值得信赖的纽带。",
         "videoPath": "/video/hero.mp4"
       },
       {
-        "title": "未雨绸缪,胜于亡羊补牢",
-        "subtitle": "您的投资组合需要不动产,正如您需要呼吸的空气。\n通过我们为您量身定制的高收益资产之一,守护您的资本。",
+        "title": "未雨绸缪\n胜于亡羊补牢",
+        "subtitle": "您的投资组合需要不动产,正如您需要呼吸的空气。\n以高收益、为您量身定制的资产,守护您的资本。",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -113,7 +113,7 @@
         "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
         "client_name": "Jens Krautscheid",
         "client_quote": "……起初我最欣赏的是品牌与理念。\n如今在人格层面也完全被打动。\n税务方面的考量也面面俱到。",
-        "client_type": "药剂师 / 演讲者 / 企业家",
+        "client_type": "药剂师 / 演讲者 / \n企业家",
         "object_title": "慕尼黑 Giesing 收益方案",
         "objects": [
           {
@@ -262,14 +262,14 @@
         "image_path": "/timeline-images/7.png"
       },
       {
-        "year": "里程碑",
+        "year": "2020 里程碑",
         "category": "项目",
         "subtitle": "一组建筑。完全自主操盘。",
-        "body": "一位长期老客户委托 CLASEN 收购慕尼黑稳健地段的一整组多户住宅。随之而来的是一项涵盖全方位的任务:物业收购、经济规划、补贴管理、整体翻新、项目开发、室内装修、出租及日常物业管理——全部一站式完成。这是真正合作关系的明证。",
+        "body": "一位长期老客户委托 CLASEN 收购慕尼黑稳健地段的一整组多户住宅。随之而来的是一项涵盖全方位的任务:物业收购、经济规划、补贴管理、整体翻新、项目开发、室内装修、出租及日常物业管理——全部一站式完成。\n这是真正合作关系的明证。",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
-        "year": "里程碑",
+        "year": "2022 里程碑",
         "category": "历史建筑",
         "subtitle": "慕尼黑特蕾西娅草坪。四年。一座纪念建筑。",
         "body": "一个慕尼黑的遗产共同体将公司历史上最具挑战性的任务之一托付给 CLASEN:在特蕾西娅草坪附近,对一座知名历史建筑进行历时四年的大规模翻修。文物保护、继承法、翻修复杂度、慕尼黑的行政程序。这一项目代表了 CLASEN 的精神:谨慎、坚韧,以及在他人失败之处仍能交付成果的能力。",
@@ -309,13 +309,13 @@
     "notConnected": "ImmoScout 未连接",
     "connectButton": "立即连接",
     "noListings": "暂无可用物业",
-    "ctaHeading": "让我们也将您的物业以最佳风采呈现。",
-    "ctaButton": "体验关键时刻",
-    "labelOrt": "位置",
+    "ctaHeading": "您的物业值得最好的。咨询。策略。",
+    "ctaButton": "感受关键时刻",
+    "labelOrt": "地点",
     "labelTyp": "类型",
     "labelFlaeche": "面积",
     "quote": {
-      "p1": "尽管我们的客户如今主要寻求的是税务领域与资产配置方面的专业知识与实战经验,我们依然坚守自己的根本。",
+      "p1": "尽管我们的客户如今主要寻求的是税务领域与资产配置方面的专业知识与实战经验,我们依然坚守自己的根本:",
       "p2": "这一根本,毫无疑问地植根于对自住型住宅不动产的热忱且谨慎的营销之中。"
     },
     "listings": [
@@ -351,7 +351,7 @@
       },
       {
         "title": "建筑。山景。",
-        "ort": "菲施巴豪",
+        "ort": "米斯巴赫",
         "typ": "独栋住宅",
         "flaeche": "240 m²"
       },
@@ -480,7 +480,7 @@
       },
       {
         "title": "依据 § 55 第 2 款 RStV 对内容负责的人",
-        "content": "Alexander Christi an Clasen\nSchloßstraße 19\n82031 Grünwald"
+        "content": "Alexander Clasen\nSchloßstraße 19\n82031 Grünwald"
       },
       {
         "title": "免责声明",
@@ -502,7 +502,7 @@
     "sections": [
       {
         "title": "负责方",
-        "content": "GDPR 意义上的负责方为:\n\nCLASEN Family Office — Alexander Christian Clasen\nSchloßstraße 19\n82031 Grünwald\n电子邮箱:info@clasen.com\n电话:+49 (0) 89 66 08 55 80"
+        "content": "GDPR 意义上的负责方为:\n\nCLASEN Family Office — Alexander Clasen\nSchloßstraße 19\n82031 Grünwald\n电子邮箱:info@clasen.com\n电话:+49 (0) 89 66 08 55 80"
       },
       {
         "title": "个人数据的收集与存储",
