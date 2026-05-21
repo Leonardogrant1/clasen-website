@@ -49,14 +49,25 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16">
-          {dict.merkmale.map((m, i) => (
-            <div key={m.title} className="flex flex-col items-center gap-4">
-              <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-28 h-28" />
+          {dict.merkmale.map((m, i) => {
+            const mobileOrders = [
+              "order-1 md:order-none", // 1. Treffsicher
+              "order-2 md:order-none", // 2. Off-Market
+              "order-4 md:order-none", // 4. Heimspiel
+              "order-3 md:order-none", // 3. Steuervorteil
+              "order-6 md:order-none", // 6. Exzellenz
+              "order-5 md:order-none", // 5. Eco - mission
+            ];
+            
+            return (
+              <div key={m.title} className={`flex flex-col items-center gap-4 ${mobileOrders[i] || ""}`}>
+                <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-28 h-28" />
 
-              <p className="text-xs uppercase tracking-[0.2em] text-center font-semibold text-foreground">{m.title}</p>
-              <p className="text-muted text-sm leading-relaxed text-center">{m.description}</p>
-            </div>
-          ))}
+                <p className="text-xs uppercase tracking-[0.2em] text-center font-semibold text-foreground">{m.title}</p>
+                <p className="text-muted text-sm leading-relaxed text-center">{m.description}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

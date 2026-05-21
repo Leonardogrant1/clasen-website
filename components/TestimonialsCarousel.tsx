@@ -76,29 +76,27 @@ export default function TestimonialsCarousel({
         )}
       </div>
 
-      {/* Desktop: 3-image grid — testimonial nav chevrons sit on the last image */}
-      <div className={`hidden md:grid grid-cols-3 gap-12 transition-all duration-500 ease-in-out ${translateClass}`}>
-        {objects.map((obj, i) => (
-          <div key={i} className="relative h-48 rounded-xl overflow-hidden bg-white/5 border border-white/5 group">
-            <Image
-              src={obj.image_path}
-              fill
-              sizes="(max-width: 768px) 100vw, 33vw"
-              alt="Objektbild"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-            />
-            {i === objects.length - 1 && (
-              <div className="absolute bottom-3 right-3 z-10 flex gap-2">
-                <ChevronButton onClick={onPrev} dir="prev" />
-                <ChevronButton onClick={onNext} dir="next" />
-              </div>
-            )}
-          </div>
-        ))}
+      {/* Desktop: 3-image grid with chevrons on sides */}
+      <div className="hidden md:flex items-center gap-6">
+        <ChevronButton onClick={onPrev} dir="prev" />
+        <div className={`flex-1 grid grid-cols-3 gap-12 transition-all duration-500 ease-in-out ${translateClass}`}>
+          {objects.map((obj, i) => (
+            <div key={i} className="relative h-48 rounded-xl overflow-hidden bg-white/5 border border-white/5 group">
+              <Image
+                src={obj.image_path}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                alt="Objektbild"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+          ))}
+        </div>
+        <ChevronButton onClick={onNext} dir="next" />
       </div>
 
-      {/* Desktop: dots only (chevrons moved into image) */}
-      <div className="hidden md:flex items-center">
+      {/* Desktop: dots only */}
+      <div className="hidden md:flex items-center justify-center mt-6">
         {dots}
       </div>
     </div>

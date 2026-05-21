@@ -41,8 +41,8 @@
     "verticalLabel": "Markets in motion. Like your mind.",
     "sectionLabel": "Profile",
     "heading": "A passion without peer.",
-    "body1": "When dedication and an eye for detail extend beyond one's own portfolio — continuously creating substantial value for our esteemed clients — the result is an advisory and investment atmosphere you'll be proud to share with those closest to you.",
-    "body2": "This mindset, paired with the principle of deploying every resource with absolute effectiveness and integrity, guarantees you singular performance — and that uncommon measure of humanity.",
+    "body1": "When dedication and an eye for detail extend beyond one's own portfolio — continuously creating substantial value for our clients — the result is an advisory and investment atmosphere you'll be proud to share with those closest to you.",
+    "body2": "This mindset, along with the principle of deploying all resources with absolute effectiveness and integrity at all times, ensures that uncommon measure of humanity and guarantees you and your capital a singular performance.",
     "credo": "Our credo: FAIRlässlichkeit.",
     "tagline": "Your key to success.",
     "role": "Alexander Clasen — Managing Director",
@@ -124,24 +124,6 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
-        "client_name": "Dr. Thomas Bergmann",
-        "client_quote": "As an entrepreneur, discretion and efficiency matter to me above all. Clasen delivered both — at the highest level — while producing returns that far exceeded my expectations.",
-        "client_type": "Investor",
-        "object_title": "Multi-family residence, Bogenhausen",
-        "objects": [
-          {
-            "image_path": "/backgrounds/facade.png"
-          },
-          {
-            "image_path": "/backgrounds/chess.png"
-          },
-          {
-            "image_path": "/backgrounds/facade.png"
           }
         ]
       }

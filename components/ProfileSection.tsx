@@ -17,37 +17,48 @@ export default function ProfileSection({ dict, locale }: Props) {
 
   return (
     <section className="relative py-16 px-4 md:py-32 md:px-8 bg-background overflow-hidden">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-        <div className="relative flex flex-col justify-center items-center">
-          <span className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-10 text-muted text-xs tracking-[0.3em] uppercase hidden lg:block [writing-mode:vertical-lr] rotate-180">
-            {dict.verticalLabel}
-          </span>
-
-          <div className="relative">
-            <div className="w-56 h-[360px] md:w-72 md:h-[540px] lg:w-96 lg:h-[780px] rounded-[999px] relative overflow-hidden z-20">
-              <Image
-                src="/backgrounds/facade.png"
-                alt="Facade"
-                fill
-                sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 384px"
-                className="w-full h-full object-cover object-[25%_center]"
-              />
-            </div>
-            <div className="absolute bottom-[62%] -right-12 md:-right-16 lg:-right-20 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 z-10">
-              <Link href={`${base}/clasen`}>
-                <CircularText text={dict.circularText} />
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+      <div className="max-w-6xl mx-auto">
+        {/* Mobile-only section label & heading */}
+        <div className="md:hidden text-center mb-10 flex flex-col gap-4">
           <span className="text-accent text-sm uppercase tracking-widest font-semibold">
             {dict.sectionLabel}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
+          <h2 className="text-3xl font-bold leading-tight text-foreground">
             {dict.heading}
           </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="relative flex flex-col justify-center items-center">
+            <span className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-10 text-muted text-xs tracking-[0.3em] uppercase hidden lg:block [writing-mode:vertical-lr] rotate-180">
+              {dict.verticalLabel}
+            </span>
+
+            <div className="relative">
+              <div className="w-56 h-[360px] md:w-72 md:h-[540px] lg:w-96 lg:h-[780px] rounded-[999px] relative overflow-hidden z-20">
+                <Image
+                  src="/backgrounds/facade.png"
+                  alt="Facade"
+                  fill
+                  sizes="(max-width: 768px) 224px, (max-width: 1024px) 288px, 384px"
+                  className="w-full h-full object-cover object-[25%_center]"
+                />
+              </div>
+              <div className="absolute bottom-[62%] -right-12 md:-right-16 lg:-right-20 w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 z-10">
+                <Link href={`${base}/clasen`}>
+                  <CircularText text={dict.circularText} />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
+            <span className="hidden md:block text-accent text-sm uppercase tracking-widest font-semibold">
+              {dict.sectionLabel}
+            </span>
+            <h2 className="hidden md:block md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
+              {dict.heading}
+            </h2>
           <p className="text-muted leading-relaxed">{dict.body1}</p>
           <p className="text-muted leading-relaxed whitespace-pre-line">{dict.body2}</p>
           <p className="text-muted leading-relaxed">{dict.credo}</p>
@@ -65,6 +76,7 @@ export default function ProfileSection({ dict, locale }: Props) {
             {dict.cta}
           </button>
         </div>
+      </div>
       </div>
     </section>
   );

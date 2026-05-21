@@ -9,9 +9,7 @@ type Props = {
 export default function CredoSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
   return (
-    <section className="py-16 pb-48 px-4 md:py-28 md:px-8 bg-background border-t border-white/5 relative overflow-hidden">
-
-
+    <section className="py-16 pb-20 px-4 md:py-28 md:px-8 bg-background border-t border-white/5 relative overflow-hidden">
 
       <CherryBlossoms />
 
@@ -25,10 +23,10 @@ export default function CredoSection({ dict, locale }: Props) {
 
           <div className="flex items-start justify-between gap-12">
             <div className="flex flex-col items-center w-full">
-              <blockquote className="text-3xl md:text-3xl lg:text-2xl text-center md:text-start font-semibold italic text-foreground leading-tight max-w-2xl whitespace-pre-line">
+              <blockquote className="text-xl text-center md:text-start font-medium italic text-foreground leading-tight max-w-2xl whitespace-pre-line">
                 {dict.quote}
               </blockquote>
-              <p className="mt-8 text-accent text-xs uppercase tracking-widest">
+              <p className="mt-4 md:mt-8 text-accent text-xs uppercase tracking-widest">
                 {dict.attribution}
               </p>
             </div>
@@ -41,7 +39,7 @@ export default function CredoSection({ dict, locale }: Props) {
           loop
           muted
           playsInline
-          className="object-cover w-72 md:w-80 h-64 self-center"
+          className="object-cover w-50 md:w-80 aspect-5/4 self-center"
         />
       </div>
 

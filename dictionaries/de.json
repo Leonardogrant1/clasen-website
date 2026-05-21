@@ -56,7 +56,7 @@
     "merkmale": [
       {
         "title": "Treffsicher",
-        "description": "Jedes Investment wird auf Basis Ihrer persönlichen Ziele sorgfältig entwickelt und anschließend liebevoll maßgeschneidert.",
+        "description": "Jedes Investment wird auf Basis Ihrer persönlichen Ziele sorgfältig entwickelt und liebevoll maßgeschneidert.",
         "animation": "/animations/goals.json"
       },
       {
@@ -66,7 +66,7 @@
       },
       {
         "title": "Heimspiel",
-        "description": "Hohe Heimatverbundenheit ermöglicht Ihnen, selbst an begehrten A+ Standorten wie München außergewöhnliche Renditen.",
+        "description": "Hohe Heimatverbundenheit ermöglicht Ihnen, selbst an A+ Standorten wie München außergewöhnliche Renditen.",
         "animation": "/animations/town.json"
       },
       {
@@ -124,24 +124,6 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
-        "client_name": "Dr. Thomas Bergmann",
-        "client_quote": "Als Unternehmer war mir Diskretion und Effizienz besonders wichtig. Clasen hat beides in höchstem Maß geliefert — und dabei eine Rendite erzielt, die meine Erwartungen weit übertroffen hat.",
-        "client_type": "Investor",
-        "object_title": "Mehrfamilienhaus Bogenhausen",
-        "objects": [
-          {
-            "image_path": "/backgrounds/facade.png"
-          },
-          {
-            "image_path": "/backgrounds/chess.png"
-          },
-          {
-            "image_path": "/backgrounds/facade.png"
           }
         ]
       }

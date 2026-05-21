@@ -12,7 +12,7 @@ type Props = {
 
 const imageStyles: Record<string, string> = {
   "Philippe Geissler": "scale-150 object-top",
-  "Jens Krautscheid": "scale-130 translate-y-5",
+  "Jens Krautscheid": "scale-130 lg:translate-y-5",
 };
 
 export default function TestimonialsSection({ dict }: Props) {
@@ -36,26 +36,7 @@ export default function TestimonialsSection({ dict }: Props) {
     ? direction === "next" ? "-translate-x-2 opacity-0" : "translate-x-2 opacity-0"
     : "translate-x-0 opacity-100";
 
-  const NavButtons = ({ className }: { className?: string }) => (
-    <div className={cn("flex gap-3", className)}>
-      <button
-        onClick={() => goTo((current - 1 + dict.items.length) % dict.items.length, "prev")}
-        className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:border-accent hover:text-accent transition-colors duration-200"
-      >
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M9 2L4 7l5 5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
-      <button
-        onClick={() => goTo((current + 1) % dict.items.length, "next")}
-        className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:border-accent hover:text-accent transition-colors duration-200"
-      >
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M5 2l5 5-5 5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </button>
-    </div>
-  );
+
 
   const Dots = ({ className }: { className?: string }) => (
     <div className={cn("flex gap-2", className)}>
@@ -80,7 +61,6 @@ export default function TestimonialsSection({ dict }: Props) {
             key={i}
             src={item.client_image_path}
             fill
-            sizes="(max-width: 768px) 56px, 128px"
             alt={item.client_name}
             className={cn("object-cover", imageStyles[item.client_name] ?? "", i === current ? "opacity-100" : "opacity-0")}
           />

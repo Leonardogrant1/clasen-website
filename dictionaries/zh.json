@@ -41,8 +41,8 @@
     "verticalLabel": "市场在波动。如同您的思绪。",
     "sectionLabel": "简介",
     "heading": "无与伦比的热忱。",
-    "body1": "当心血与对细节的执着不仅限于自己的投资组合,更持续为我们尊贵的客户创造巨大的附加价值时,便会形成一种独特的咨询与投资氛围——一种您会乐于向最亲近的人讲述的氛围。",
-    "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,为您带来无与伦比的业绩,并始终保有那份特别的人情味。",
+    "body1": "当心血与对细节的执着不仅限于自己的投资组合,更持续为我们的客户创造巨大的附加价值时,便会形成一种独特的咨询与投资氛围——一种您会乐于向最亲近的人讲述的氛围。",
+    "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,不仅始终保有那份特别的人情味,更为您和您的资本带来无与伦比的业绩。",
     "credo": "我们的信条:公平可靠 (FAIRlässlichkeit)。",
     "tagline": "您通往成功的钥匙。",
     "role": "Alexander Clasen — 总经理",
@@ -124,24 +124,6 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
-        "client_image_path": "/testimonials/phillip_geissler/profile.jpeg",
-        "client_name": "Dr. Thomas Bergmann",
-        "client_quote": "作为企业家,谨慎与效率对我尤为重要。Clasen 在两方面都做到了极致——并取得了远超我预期的回报。",
-        "client_type": "投资者",
-        "object_title": "Bogenhausen 多户住宅",
-        "objects": [
-          {
-            "image_path": "/backgrounds/facade.png"
-          },
-          {
-            "image_path": "/backgrounds/chess.png"
-          },
-          {
-            "image_path": "/backgrounds/facade.png"
           }
         ]
       }
