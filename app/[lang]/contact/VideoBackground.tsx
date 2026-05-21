@@ -1,17 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function VideoBackground() {
   const [ended, setEnded] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Force play on mount to bypass any autoPlay/hydration quirks
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {});
+    }
+  }, []);
 
   return (
     <>
       <video
+        ref={videoRef}
         src="/video/contact.mp4"
         autoPlay
         muted
         playsInline
+        preload="auto"
         onEnded={() => setEnded(true)}
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
