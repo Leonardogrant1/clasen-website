@@ -378,6 +378,10 @@
     "emailPlaceholder": "example@mail.com",
     "phonePlaceholder": "+49",
     "messagePlaceholder": "我们可以如何帮助您?",
+    "successHeading1": "谢谢 —",
+    "successHeading2": "我们将尽快与您联系。",
+    "successMessage": "已收到您的留言。我们的团队成员将很快与您取得联系。",
+    "errorMessage": "发送信息失败。请重试或直接致电我们。",
     "submit": "发送留言",
     "topicPlaceholder": "请选择……",
     "topicLabel": "选择主题",
@@ -427,7 +431,13 @@
     "subheading": "进入 CLASEN 客户门户",
     "emailLabel": "CFO 标识",
     "emailPlaceholder": "例如 26/044",
+    "emailTooltip": "您可以在欢迎信或入职电子邮件中找到您的个人 CFO 标识。",
     "passwordLabel": "密码",
+    "passwordTooltip": {
+      "p1": "在此输入发送给您的用于首次登录的一次性密码，或您在首次登录时已设置的个人密码。",
+      "p2": "CLASEN 员工或系统管理员绝不会询问您的个人密码。",
+      "p3": "如果您忘记了已设置的密码，请联系"
+    },
     "submit": "登录",
     "noAccess": "尚未获得访问权限?",
     "contactLink": "联系我们"
