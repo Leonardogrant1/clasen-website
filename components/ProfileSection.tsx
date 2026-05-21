@@ -49,7 +49,7 @@ export default function ProfileSection({ dict, locale }: Props) {
             {dict.heading}
           </h2>
           <p className="text-muted leading-relaxed">{dict.body1}</p>
-          <p className="text-muted leading-relaxed">{dict.body2}</p>
+          <p className="text-muted leading-relaxed whitespace-pre-line">{dict.body2}</p>
           <p className="text-muted leading-relaxed">{dict.credo}</p>
           <p className="text-muted leading-relaxed">{dict.tagline}</p>
 
@@ -57,7 +57,7 @@ export default function ProfileSection({ dict, locale }: Props) {
             <div className="w-40 aspect-4/2 relative">
               <Image alt="signature" fill sizes="160px" src="/signature.png" className="object-contain" />
             </div>
-            <span className="text-sm text-muted tracking-widest uppercase mt-1">
+            <span className="text-xs text-muted tracking-widest uppercase mt-1">
               {dict.role}
             </span>
           </div>
