@@ -40,11 +40,28 @@ export default function TestimonialsCarousel({
   onNext,
   dots,
 }: Props) {
-  const [imgIdx, setImgIdx] = useState(0);
+  // Infinite carousel: prepend last slide, append first slide as clones
+  const extended = [objects[objects.length - 1], ...objects, objects[0]];
+  const [offset, setOffset] = useState(1);
+  const [withTransition, setWithTransition] = useState(true);
 
   useEffect(() => {
-    setImgIdx(0);
+    setWithTransition(false);
+    setOffset(1);
   }, [current]);
+
+  const goImgNext = () => { setWithTransition(true); setOffset(o => o + 1); };
+  const goImgPrev = () => { setWithTransition(true); setOffset(o => o - 1); };
+
+  const handleTransitionEnd = () => {
+    if (offset >= objects.length + 1) {
+      setWithTransition(false);
+      setOffset(1);
+    } else if (offset <= 0) {
+      setWithTransition(false);
+      setOffset(objects.length);
+    }
+  };
 
   const translateClass = animating
     ? direction === "next" ? "-translate-x-4 opacity-0" : "translate-x-4 opacity-0"
@@ -53,15 +70,15 @@ export default function TestimonialsCarousel({
   return (
     <div className="flex flex-col gap-4">
 
-      {/* Mobile: single image slider */}
+      {/* Mobile: endless image slider */}
       <div className="md:hidden relative rounded-xl">
-        {/* overflow-hidden only on the strip, not the parent, so chevrons aren't clipped */}
         <div className="overflow-hidden rounded-xl">
           <div
-            className="flex transition-transform duration-500 ease-out"
-            style={{ transform: `translateX(-${imgIdx * 100}%)` }}
+            className={withTransition ? "flex transition-transform duration-500 ease-out" : "flex"}
+            style={{ transform: `translateX(-${offset * 100}%)` }}
+            onTransitionEnd={handleTransitionEnd}
           >
-            {objects.map((obj, i) => (
+            {extended.map((obj, i) => (
               <div key={i} className="w-full shrink-0 relative h-52 rounded-xl overflow-hidden bg-white/5">
                 <Image src={obj.image_path} fill sizes="(max-width: 768px) 100vw, 33vw" alt="Objektbild" className="object-cover" />
               </div>
@@ -70,8 +87,8 @@ export default function TestimonialsCarousel({
         </div>
         {objects.length > 1 && (
           <div className="absolute bottom-3 right-3 z-10 flex gap-2">
-            <ChevronButton onClick={() => setImgIdx(i => Math.max(0, i - 1))} dir="prev" />
-            <ChevronButton onClick={() => setImgIdx(i => Math.min(objects.length - 1, i + 1))} dir="next" />
+            <ChevronButton onClick={goImgPrev} dir="prev" />
+            <ChevronButton onClick={goImgNext} dir="next" />
           </div>
         )}
       </div>

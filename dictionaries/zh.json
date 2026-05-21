@@ -110,24 +110,6 @@
         ]
       },
       {
-        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
-        "client_name": "Jens Krautscheid",
-        "client_quote": "……起初我最欣赏的是品牌与理念。\n如今在人格层面也完全被打动。\n税务方面的考量也面面俱到。",
-        "client_type": "药剂师 / 演讲者 / \n企业家",
-        "object_title": "慕尼黑 Giesing 收益方案",
-        "objects": [
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
         "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
         "client_name": "Daniel Seglias (CH)",
         "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
@@ -226,7 +208,7 @@
         "year": "18 岁生日",
         "category": "首次尝试",
         "subtitle": "那次拒绝,启动了一切。",
-        "body": "在 18 岁生日当天,Alexander 提出了人生第一笔不动产贷款申请。银行的回复:拒绝。没有自有资金,没有收入,没有机会。对大多数人而言,这就是念头的终点。对他而言,这是执着的起点。",
+        "body": "在 18 岁生日当天,Alexander 提出了人生第一笔不动产贷款申请。银行的回复:拒绝。没有自有资金,没有收入,没有机会。对许多人而言,这就是念头的终点。对他而言,这是执着的起点。",
         "image_path": "/timeline-images/1.png"
       },
       {
@@ -247,11 +229,11 @@
         "year": "2016",
         "category": "跨界进入",
         "subtitle": "百年历史。一年超越。",
-        "body": "Alexander 作为跨界新人加入慕尼黑最负盛名的房产中介之一——拥有逾百年的企业历史、成熟的体系与悠久的纪录。一年后,多项纪录被打破:最高成交价的住宅、最大宗的租赁委托——这些保持了数十年的最佳纪录被悉数刷新。结论:慕尼黑的中介市场已陈旧。是时候迎来一场革命。",
+        "body": "Alexander 作为跨界新人加入慕尼黑最负盛名的房产中介之一——拥有逾百年的企业历史、成熟的体系与悠久的纪录。一年后,多项纪录被打破:最高成交价的住宅、最短的营销时间、最大宗的租赁委托——这些保持了数十年的最佳纪录被悉数刷新。结论:慕尼黑的中介市场已陈旧。是时候迎来一场革命。",
         "image_path": "/timeline-images/4.png",
         "milestone": {
           "stat": "1",
-          "label": "年 · 打破多项逾百年企业历史中的销售纪录"
+          "label": "年 · 打破无数项逾百年企业历史中的销售纪录"
         }
       },
       {
@@ -280,14 +262,14 @@
         "image_path": "/timeline-images/7.png"
       },
       {
-        "year": "2020 里程碑",
+        "year": "里程碑 (2020)",
         "category": "项目",
         "subtitle": "一组建筑。完全自主操盘。",
         "body": "一位长期老客户委托 CLASEN 收购慕尼黑稳健地段的一整组多户住宅。随之而来的是一项涵盖全方位的任务:物业收购、经济规划、补贴管理、整体翻新、项目开发、室内装修、出租及日常物业管理——全部一站式完成。\n这是真正合作关系的明证。",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
-        "year": "2022 里程碑",
+        "year": "里程碑 (2022)",
         "category": "历史建筑",
         "subtitle": "慕尼黑特蕾西娅草坪。四年。一座纪念建筑。",
         "body": "一个慕尼黑的遗产共同体将公司历史上最具挑战性的任务之一托付给 CLASEN:在特蕾西娅草坪附近,对一座知名历史建筑进行历时四年的大规模翻修。文物保护、继承法、翻修复杂度、慕尼黑的行政程序。这一项目代表了 CLASEN 的精神:谨慎、坚韧,以及在他人失败之处仍能交付成果的能力。",

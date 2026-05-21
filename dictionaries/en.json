@@ -110,24 +110,6 @@
         ]
       },
       {
-        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
-        "client_name": "Jens Krautscheid",
-        "client_quote": "...what first drew me in was the brand and the concept. \n By now I'm convinced on a human level. \nThought through to the last detail — tax-wise too.",
-        "client_type": "Pharmacist / Speaker / \nEntrepreneur",
-        "object_title": "Yield concept, Munich/Giesing",
-        "objects": [
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
         "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
         "client_name": "Daniel Seglias (CH)",
         "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
@@ -226,7 +208,7 @@
         "year": "18th birthday",
         "category": "First attempt",
         "subtitle": "The rejection that set everything in motion.",
-        "body": "On his 18th birthday, Alexander files his first real estate financing application. The bank's answer: rejected. No equity, no income, no chance. For most, that would be the end of the idea. For him, it was the beginning of an obsession.",
+        "body": "On his 18th birthday, Alexander files his first real estate financing application. The bank's answer: rejected. No equity, no income, no chance. For many, that would be the end of the idea. For him, it was the beginning of an obsession.",
         "image_path": "/timeline-images/1.png"
       },
       {
@@ -247,11 +229,11 @@
         "year": "2016",
         "category": "Lateral entry",
         "subtitle": "100 years of history. Surpassed in one.",
-        "body": "Alexander joins one of Munich's most renowned brokerage houses as a lateral entrant — over a century of company history, established structures, long-standing records. A year later, several have been broken: the highest-priced apartment sold, the largest rental mandate — benchmarks that had stood for decades. The insight: Munich's brokerage market had grown stale. And was ready for a revolution.",
+        "body": "Alexander joins one of Munich's most renowned brokerage houses as a lateral entrant — over a century of company history, established structures, long-standing records. A year later, several have been broken: the highest-priced apartment sold, the shortest marketing time, the largest rental mandate — benchmarks that had stood for decades. The insight: Munich's brokerage market had grown stale. And was ready for a revolution.",
         "image_path": "/timeline-images/4.png",
         "milestone": {
           "stat": "1",
-          "label": "year · several sales records from over 100 years of company history broken"
+          "label": "year · numerous sales records from over 100 years of company history broken"
         }
       },
       {
@@ -280,14 +262,14 @@
         "image_path": "/timeline-images/7.png"
       },
       {
-        "year": "2020 Milestone",
+        "year": "Milestone (2020)",
         "category": "Project",
         "subtitle": "An ensemble. Entirely in our own hands.",
         "body": "A long-standing client entrusts CLASEN with the acquisition of an entire ensemble of multi-family residences in a solid Munich location. What follows is a mandate of full scope: acquisition, financial planning, subsidy management, full refurbishment, project development, interior fit-out, leasing and ongoing property management — all from a single source. \nProof of what true partnership means.",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
-        "year": "2022 Milestone",
+        "year": "Milestone (2022)",
         "category": "Heritage building",
         "subtitle": "Munich, Theresienwiese. Four years. One landmark.",
         "body": "A Munich heir community entrusts CLASEN with one of the most demanding mandates in the firm's history: the elaborate, four-year refurbishment of a well-known heritage building near Theresienwiese. Heritage protection, inheritance law, structural complexity, the labyrinth of Munich's authorities. The project stands for what CLASEN is about: discretion, endurance, and the ability to deliver results where others fail.",

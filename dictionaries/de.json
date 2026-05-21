@@ -110,24 +110,6 @@
         ]
       },
       {
-        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
-        "client_name": "Jens Krautscheid",
-        "client_quote": "...anfänglich gefielen mir vorallem Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nSteuerlich komplett zu Ende gedacht.",
-        "client_type": "Apotheker / Speaker / \nUnternehmer",
-        "object_title": "Renditekonzept München/Giesing",
-        "objects": [
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_4.jpg"
-          },
-          {
-            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
-          }
-        ]
-      },
-      {
         "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
         "client_name": "Daniel Seglias (CH)",
         "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
@@ -226,7 +208,7 @@
         "year": "18. Geburtstag",
         "category": "Erster Versuch",
         "subtitle": "Die Absage, die alles in Gang setzte.",
-        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für die meisten wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
         "image_path": "/timeline-images/1.png"
       },
       {
@@ -247,11 +229,11 @@
         "year": "2016",
         "category": "Quereinstieg",
         "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
-        "body": "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+        "body": "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, kürzeste Vermarktungszeit, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
         "image_path": "/timeline-images/4.png",
         "milestone": {
           "stat": "1",
-          "label": "Jahr · Mehrere Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen"
+          "label": "Jahr · Etliche Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen"
         }
       },
       {
@@ -280,14 +262,14 @@
         "image_path": "/timeline-images/7.png"
       },
       {
-        "year": "2020 Meilenstein",
+        "year": "Meilenstein (2020)",
         "category": "Projekt",
         "subtitle": "Ein Ensemble. Vollständig in eigener Hand.",
         "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchener Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Akquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. \nEin Beweis dafür, was echte Partnerschaft bedeutet.",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
-        "year": "2022 Meilenstein",
+        "year": "Meilenstein (2022)",
         "category": "Baudenkmal",
         "subtitle": "München, Theresienwiese. Vier Jahre. Ein Denkmal.",
         "body": "Eine Münchener Erbengemeinschaft vertraut CLASEN mit einem der anspruchsvollsten Aufträge der Unternehmensgeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. Denkmalschutz, Erbrecht, Sanierungskomplexität, Münchener Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion, Ausdauer und die Fähigkeit, auch dort Ergebnisse zu liefern, wo andere scheitern.",
@@ -301,7 +283,7 @@
         "year": "2024",
         "category": "Vision",
         "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
-        "body": "Aus dem Maklerhaus wird ein Family Office. Der Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. 329,7 Mio. € anvertraute Kundenwerte. 687 vermittelte Investments. 97 % Weiterempfehlung. Das Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen — zu Konditionen, die sonst nur Institutionelle kennen.",
+        "body": "Aus dem Maklerhaus wird ein Family Office. Der Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. Insgesamt transferierte Sachwerte von über 300 Mio. Euro. Über 400 vermittelte Investments. 97 % Weiterempfehlung. Das Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen — zu Konditionen, die sonst nur Institutionelle kennen.",
         "milestone": {
           "stat": "329.7",
           "label": "Mio. € anvertraute Kundenwerte · 97 % Weiterempfehlung"
