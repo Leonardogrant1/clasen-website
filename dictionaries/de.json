@@ -41,11 +41,11 @@
     "verticalLabel": "Märkte in Bewegung. Wie Ihr Kopf.",
     "sectionLabel": "Profil",
     "heading": "Leidenschaft die ihresgleichen sucht.",
-    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern vor allem unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
-    "body2": "Diese Geisteshaltung und die Maxime, dabei alle Ressourcen jederzeit mit absoluter Effektivität und Gewissenhaftigkeit einzusetzen, sorgen stets für das besondere Maß an Menschlichkeit und garantieren Ihnen und Ihrem Kapital eine einmalige Performance.",
+    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
+    "body2": "Diese Geisteshaltung und die Maxime, dabei alle Ressourcen jederzeit mit absoluter Effektivität und Gewissenhaftigkeit einzusetzen, sorgen für das besondere Maß an Menschlichkeit und garantieren Ihnen und Ihrem Kapital stets eine einmalige Performance.",
     "credo": "Unser Credo der FAIRlässlichkeit.",
     "tagline": "Ihr Schlüssel zum Erfolg.",
-    "role": "Alexander Clasen - Geschäftsführer",
+    "role": "Alexander Clasen",
     "cta": "Schlüsselmoment erleben",
     "circularText": "IHR VERTRAUEN · UNSER STOLZ ·"
   },
@@ -124,6 +124,42 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
+        "client_name": "Daniel Seglias (CH)",
+        "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
+        "client_type": "Bildungsberater / Finanzcoach",
+        "object_title": "Renditekonzept Freising",
+        "objects": [
+          {
+            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/marie_bougeard/profile.png",
+        "client_name": "Marie Bougeard (FR)",
+        "client_quote": "...war ich bereits im ersten gemeinsamen Gespräch besonders überzeugt von der offenen Kommunikation und ehrlichen Beratung.",
+        "client_type": "Bildende Künstlerin",
+        "object_title": "Altbau München/Schwabing",
+        "objects": [
+          {
+            "image_path": "/testimonials/marie_bougeard/image_1.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_2.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_3.jpeg"
           }
         ]
       }
@@ -348,7 +384,7 @@
   "contact": {
     "sectionLabel": "Kontakt",
     "heading": "Ihr Schlüssel zum Erfolg.",
-    "body": "Von A wie Anlageberatung \nbis Z wie zukünftige Generationen. \n\nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
+    "body": "Von A wie \"Anlageberatung\" \nbis Z wie \"zukünftige Generationen\". \n\nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
     "nameLabel": "Ihr Name",

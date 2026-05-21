@@ -33,7 +33,7 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-20 gap-6">
           <div className="text-center md:text-left">
-            <span className="text-accent text-xs uppercase tracking-widest font-semibold block mb-4">
+            <span className="text-accent text-sm uppercase tracking-widest font-semibold block mb-4">
               {dict.sectionLabel}
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight wrap-break-words">
@@ -55,10 +55,10 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
               "order-2 md:order-none", // 2. Off-Market
               "order-4 md:order-none", // 4. Heimspiel
               "order-3 md:order-none", // 3. Steuervorteil
-              "order-6 md:order-none", // 6. Exzellenz
-              "order-5 md:order-none", // 5. Eco - mission
+              "order-5 md:order-none", // 6. Exzellenz
+              "order-6 md:order-none", // 5. Eco-Mission
             ];
-            
+
             return (
               <div key={m.title} className={`flex flex-col items-center gap-4 ${mobileOrders[i] || ""}`}>
                 <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-28 h-28" />

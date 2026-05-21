@@ -45,7 +45,7 @@
     "body2": "Эта позиция и принцип всегда использовать все ресурсы с абсолютной эффективностью и добросовестностью неизменно обеспечивают ту самую особую меру человечности и гарантируют вам и вашему капиталу исключительную результативность.",
     "credo": "Наше кредо — FAIRlässlichkeit (надёжность по-честному).",
     "tagline": "Ваш ключ к успеху.",
-    "role": "Александр Класен — Генеральный директор",
+    "role": "Александр Класен",
     "cta": "Пережить ключевой момент",
     "circularText": "ВАШЕ ДОВЕРИЕ · НАША ГОРДОСТЬ ·"
   },
@@ -124,6 +124,42 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
+        "client_name": "Daniel Seglias (CH)",
+        "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
+        "client_type": "Bildungsberater / Finanzcoach",
+        "object_title": "Renditekonzept Freising",
+        "objects": [
+          {
+            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/marie_bougeard/profile.png",
+        "client_name": "Marie Bougeard (FR)",
+        "client_quote": "...уже в первой совместной беседе я был особенно убеждён открытым общением и честными советами.",
+        "client_type": "Художник",
+        "object_title": "Altbau München/Schwabing",
+        "objects": [
+          {
+            "image_path": "/testimonials/marie_bougeard/image_1.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_2.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_3.jpeg"
           }
         ]
       }
@@ -348,7 +384,7 @@
   "contact": {
     "sectionLabel": "Контакты",
     "heading": "Ваш ключ к успеху.",
-    "body": "От А — как консультация по вложениям \nдо Я — как будущие поколения. \nБудь то оптимизация существующего портфеля или подбор объекта — \nваш запрос заслуживает настоящих экспертов!\n\nДавайте свяжемся — \nдискретно и без обязательств.",
+    "body": "От А — как \"консультация по вложениям\" \nдо Я — как \"будущие поколения\". \nБудь то оптимизация существующего портфеля или подбор объекта — \nваш запрос заслуживает настоящих экспертов!\n\nДавайте свяжемся — \nдискретно и без обязательств.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Телефон",
     "nameLabel": "Ваше имя",

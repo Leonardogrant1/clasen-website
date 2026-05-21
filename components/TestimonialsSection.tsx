@@ -13,6 +13,8 @@ type Props = {
 const imageStyles: Record<string, string> = {
   "Philippe Geissler": "scale-150 object-top",
   "Jens Krautscheid": "scale-130 lg:translate-y-5",
+  "Daniel Seglias (CH)": "object-top",
+  "Marie Bougeard (FR)": "object-top scale-125 lg:scale-130 lg:translate-y-5",
 };
 
 export default function TestimonialsSection({ dict }: Props) {
@@ -76,7 +78,7 @@ export default function TestimonialsSection({ dict }: Props) {
         {/* ── MOBILE LAYOUT ── */}
         <div className="flex flex-col md:hidden">
           <div className="text-center  mb-4">
-            <span className="text-accent text-xs uppercase tracking-widest font-semibold block mb-4">
+            <span className="text-accent text-sm uppercase tracking-widest font-semibold block mb-4">
               {dict.sectionLabel}
             </span>
             <h2 className="text-2xl font-bold text-foreground leading-tight whitespace-pre-line">

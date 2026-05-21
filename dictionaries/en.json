@@ -1,7 +1,7 @@
 {
   "nav": {
-    "kapital": "CAPITAL",
-    "wohnenUndLeben": "LIVING",
+    "kapital": "COMMERCIAL",
+    "wohnenUndLeben": "RESIDENTIAL",
     "clasen": "Clasen",
     "contact": "Contact",
     "login": "CLIENT LOGIN"
@@ -45,7 +45,7 @@
     "body2": "This mindset, along with the principle of deploying all resources with absolute effectiveness and integrity at all times, ensures that uncommon measure of humanity and guarantees you and your capital a singular performance.",
     "credo": "Our credo: FAIRlässlichkeit.",
     "tagline": "Your key to success.",
-    "role": "Alexander Clasen — Managing Director",
+    "role": "Alexander Clasen",
     "cta": "Experience the key moment",
     "circularText": "YOUR TRUST · OUR PRIDE ·"
   },
@@ -126,6 +126,42 @@
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
           }
         ]
+      },
+      {
+        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
+        "client_name": "Daniel Seglias (CH)",
+        "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
+        "client_type": "Education Consultant / Financial Coach",
+        "object_title": "Renditekonzept Freising",
+        "objects": [
+          {
+            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/marie_bougeard/profile.png",
+        "client_name": "Marie Bougeard (FR)",
+        "client_quote": "...already in our very first conversation, I was particularly convinced by the open communication and honest advice.",
+        "client_type": "Fine Artist",
+        "object_title": "Altbau München/Schwabing",
+        "objects": [
+          {
+            "image_path": "/testimonials/marie_bougeard/image_1.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_2.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_3.jpeg"
+          }
+        ]
       }
     ]
   },
@@ -140,11 +176,11 @@
     "navLabel": "Navigation",
     "links": [
       {
-        "label": "Capital",
+        "label": "Commercial",
         "href": "/"
       },
       {
-        "label": "Living",
+        "label": "Residential",
         "href": "/properties"
       },
       {
@@ -348,7 +384,7 @@
   "contact": {
     "sectionLabel": "Contact",
     "heading": "Your key to success.",
-    "body": "From A as in asset advisory \nto Z as in future generations. \n\nWhether portfolio optimisation or property placement — \nyour matter deserves true experts!\n\nLet's get in touch — \ndiscreetly and without obligation.",
+    "body": "From A as in \"asset advisory\" \nto Z as in \"zip code\". \n\nWhether portfolio optimisation or property placement — \nyour matter deserves true experts!\n\nLet's get in touch — \ndiscreetly and without obligation.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "nameLabel": "Your name",

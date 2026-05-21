@@ -59,24 +59,24 @@ export default function ProfileSection({ dict, locale }: Props) {
             <h2 className="hidden md:block md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {dict.heading}
             </h2>
-          <p className="text-muted leading-relaxed">{dict.body1}</p>
-          <p className="text-muted leading-relaxed whitespace-pre-line">{dict.body2}</p>
-          <p className="text-muted leading-relaxed">{dict.credo}</p>
-          <p className="text-muted leading-relaxed">{dict.tagline}</p>
+            <p className="text-muted leading-relaxed">{dict.body1}</p>
+            <p className="text-muted leading-relaxed whitespace-pre-line">{dict.body2}</p>
+            <p className="text-muted leading-relaxed">{dict.credo}</p>
+            <p className="text-muted leading-relaxed">{dict.tagline}</p>
 
-          <div className="flex flex-col items-center md:items-start">
-            <div className="w-40 aspect-4/2 relative">
-              <Image alt="signature" fill sizes="160px" src="/signature.png" className="object-contain" />
+            <div className="flex flex-col items-center md:items-start">
+              <div className="w-34 aspect-5/2 relative">
+                <Image alt="signature" fill sizes="160px" src="/signature.png" className="object-contain" />
+              </div>
+              <span className="text-xs text-muted tracking-widest uppercase mt-1">
+                {dict.role}
+              </span>
             </div>
-            <span className="text-xs text-muted tracking-widest uppercase mt-1">
-              {dict.role}
-            </span>
+            <button onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
+              {dict.cta}
+            </button>
           </div>
-          <button onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
-            {dict.cta}
-          </button>
         </div>
-      </div>
       </div>
     </section>
   );

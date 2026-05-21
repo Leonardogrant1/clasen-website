@@ -45,7 +45,7 @@
     "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,不仅始终保有那份特别的人情味,更为您和您的资本带来无与伦比的业绩。",
     "credo": "我们的信条:公平可靠 (FAIRlässlichkeit)。",
     "tagline": "您通往成功的钥匙。",
-    "role": "Alexander Clasen — 总经理",
+    "role": "Alexander Clasen",
     "cta": "感受关键时刻",
     "circularText": "您的信任 · 我们的荣耀 ·"
   },
@@ -124,6 +124,42 @@
           },
           {
             "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
+        "client_name": "Daniel Seglias (CH)",
+        "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
+        "client_type": "Bildungsberater / Finanzcoach",
+        "object_title": "Renditekonzept Freising",
+        "objects": [
+          {
+            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/marie_bougeard/profile.png",
+        "client_name": "Marie Bougeard (FR)",
+        "client_quote": "...在第一次共同交谈中，我就被坦诚的沟通和真诚的建议深深打动了.",
+        "client_type": "造型艺术家",
+        "object_title": "Altbau München/Schwabing",
+        "objects": [
+          {
+            "image_path": "/testimonials/marie_bougeard/image_1.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_2.jpeg"
+          },
+          {
+            "image_path": "/testimonials/marie_bougeard/image_3.jpeg"
           }
         ]
       }
@@ -348,7 +384,7 @@
   "contact": {
     "sectionLabel": "联系我们",
     "heading": "您通往成功的钥匙。",
-    "body": "从「A」如投资咨询 \n到「Z」如未来世代。 \n无论是资产组合优化还是物业撮合, \n您的需求值得真正的专家来对待!\n\n让我们取得联系—— \n谨慎且无需承诺。",
+    "body": "从「A」如 \"投资咨询\" \n到「Z」如 \"未来世代\"。 \n无论是资产组合优化还是物业撮合, \n您的需求值得真正的专家来对待!\n\n让我们取得联系—— \n谨慎且无需承诺。",
     "emailLabel": "电子邮箱",
     "phoneLabel": "电话",
     "nameLabel": "您的姓名",
