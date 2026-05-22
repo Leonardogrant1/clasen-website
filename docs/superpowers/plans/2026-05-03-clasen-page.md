@@ -163,7 +163,7 @@ const entries: TimelineEntry[] = [
     year: "18. Geburtstag",
     category: "Erster Versuch",
     subtitle: "Die Absage, die alles in Gang setzte.",
-    body: "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für die meisten wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
+    body: "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
   },
   {
     year: "2012",
@@ -181,10 +181,10 @@ const entries: TimelineEntry[] = [
     year: "2016",
     category: "Quereinstieg",
     subtitle: "100 Jahre Geschichte. In einem Jahr überholt.",
-    body: "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+    body: "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, kürzeste Vermarktungszeit, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
     milestone: {
       stat: "1",
-      label: "Jahr · Mehrere Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen",
+      label: "Jahr · Etliche Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen",
     },
   },
   {
