@@ -24,6 +24,13 @@ body {
   color: var(--foreground);
 }
 
+/* Suppress native play button overlay in WebKit (Safari) when autoplay is blocked */
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
 @keyframes swipe-hint {
   0%, 100% { transform: translateX(0px); }
   40%       { transform: translateX(5px); }
