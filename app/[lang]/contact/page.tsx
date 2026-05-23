@@ -38,11 +38,11 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
             <div className="mt-16 flex flex-col gap-4">
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted mb-1">{t.emailLabel}</p>
-                <p className="text-foreground text-sm">info@clasen.com</p>
+                <a href="mailto:info@clasen.com" className="text-foreground text-sm hover:text-accent transition-colors duration-200">info@clasen.com</a>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted mb-1">{t.phoneLabel}</p>
-                <p className="text-foreground text-sm">+49 (0) 89 66 08 55 80</p>
+                <a href="tel:+4989660855800" className="text-foreground text-sm hover:text-accent transition-colors duration-200">+49 (0) 89 66 08 55 80</a>
               </div>
             </div>
           </div>
