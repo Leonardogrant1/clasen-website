@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { cn } from "@/utils/cn";
+import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
 
 type Entry = Dictionary["clasenChronik"]["entries"][number];
 
@@ -59,7 +60,7 @@ function ComparisonSlider({ alt, imageA, imageB }: { alt: string; imageA: string
   return (
     <>
       <div
-        className="bg-white p-2 pb-6"
+        className="bg-white p-2 pb-6 w-full"
         style={{ boxShadow: "2px 4px 18px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.25)" }}
       >
         <div
@@ -213,7 +214,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
     >
       {/* Polaroid frame */}
       <div
-        className="bg-white p-2 pb-6"
+        className="bg-white p-2 pb-6 w-full"
         style={{
           boxShadow: "2px 4px 18px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.25)",
         }}
@@ -317,7 +318,24 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   );
 }
 
-export default function ClasenChronik({ dict }: { dict: Dictionary["clasenChronik"] }) {
+function CtaRow({ cta }: { cta: Dictionary["clasenCta"] }) {
+  const { openDialog } = useCalendlyDialog();
+  return (
+    <div className="flex flex-col items-center justify-center text-center pt-10 pb-5 mt-16 md:mt-24 border-t border-white/10">
+      <p className="text-2xl md:text-3xl font-semibold text-foreground mb-8 max-w-md leading-relaxed whitespace-pre-line">
+        {cta.heading}
+      </p>
+      <button
+        onClick={openDialog}
+        className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
+      >
+        {cta.button}
+      </button>
+    </div>
+  );
+}
+
+export default function ClasenChronik({ dict, cta }: { dict: Dictionary["clasenChronik"]; cta: Dictionary["clasenCta"] }) {
   return (
     <section id="chronik" className="relative py-16 px-4 md:py-32 md:px-8 overflow-hidden">
       {/* Background image – fixed for parallax effect */}
@@ -359,6 +377,8 @@ export default function ClasenChronik({ dict }: { dict: Dictionary["clasenChroni
               ))}
             </div>
           </div>
+
+          <CtaRow cta={cta} />
         </div>
       </div>
     </section>

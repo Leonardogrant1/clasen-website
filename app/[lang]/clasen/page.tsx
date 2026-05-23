@@ -21,7 +21,7 @@ export default async function ClasenPage({ params }: PageProps<"/[lang]/clasen">
     <>
       <ClasenHero dict={dict.clasenHero} />
       <ClasenWarum dict={dict.clasenWarum} />
-      <ClasenChronik dict={dict.clasenChronik} />
+      <ClasenChronik dict={dict.clasenChronik} cta={dict.clasenCta} />
     </>
   );
 }

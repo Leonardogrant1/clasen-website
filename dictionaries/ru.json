@@ -47,7 +47,7 @@
     "tagline": "Ваш ключ к успеху.",
     "role": "Александр Класен",
     "cta": "Пережить ключевой момент",
-    "circularText": "ВАШЕ ДОВЕРИЕ · НАША ГОРДОСТЬ ·"
+    "circularText": "Ihr Vertrauen ist unser Stolz"
   },
   "alleinstell": {
     "sectionLabel": "Преимущества",
@@ -299,6 +299,10 @@
         "image_path": "/timeline-images/11.png"
       }
     ]
+  },
+  "clasenCta": {
+    "heading": "Вместе.\nСейчас.\nСоздаём.",
+    "button": "Пережить ключевой момент"
   },
   "wohnenUndLeben": {
     "sectionLabel": "Референсные объекты",

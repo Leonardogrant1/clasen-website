@@ -47,7 +47,7 @@
     "tagline": "您通往成功的钥匙。",
     "role": "Alexander Clasen",
     "cta": "感受关键时刻",
-    "circularText": "您的信任 · 我们的荣耀 ·"
+    "circularText": "Ihr Vertrauen ist unser Stolz"
   },
   "alleinstell": {
     "sectionLabel": "附加价值",
@@ -299,6 +299,10 @@
         "image_path": "/timeline-images/11.png"
       }
     ]
+  },
+  "clasenCta": {
+    "heading": "共同。\n当下。\n共创。",
+    "button": "体验关键时刻"
   },
   "wohnenUndLeben": {
     "sectionLabel": "参考案例",

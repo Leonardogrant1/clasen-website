@@ -193,10 +193,12 @@ export default function Nav({ dict, locale }: Props) {
             );
           })}
 
+          <Image src="/logo/key_white.svg" alt="Clasen" width={100} height={34} className="mt-6 opacity-80" />
+
           <Link
             href={`${base}/login`}
             onClick={() => { setIsOpen(false); posthog.capture("login_initiated", { source: "mobile_nav" }); }}
-            className="mt-10 px-8 py-3 rounded-full bg-white text-black text-sm uppercase tracking-widest font-semibold hover:bg-white/90 transition-colors duration-200"
+            className="px-8 py-3 rounded-full bg-white text-black text-sm uppercase tracking-widest font-semibold hover:bg-white/90 transition-colors duration-200"
           >
             {dict.login}
           </Link>

@@ -12,14 +12,6 @@ const jost = Jost({
 export const metadata: Metadata = {
   title: "CLASEN Family Office - Ihr Schlüssel zum Erfolg.",
   description: "Professionelle Immobilienlösungen für anspruchsvolle Kunden. Ihr Schlüssel zum Erfolg.",
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
-    ],
-    apple: '/apple-touch-icon.png',
-  },
   manifest: '/site.webmanifest',
 };
 

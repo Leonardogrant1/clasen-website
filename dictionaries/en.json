@@ -47,7 +47,7 @@
     "tagline": "Your key to success.",
     "role": "Alexander Clasen",
     "cta": "Experience the key moment",
-    "circularText": "YOUR TRUST · OUR PRIDE ·"
+    "circularText": "Ihr Vertrauen ist unser Stolz"
   },
   "alleinstell": {
     "sectionLabel": "Added value",
@@ -299,6 +299,10 @@
         "image_path": "/timeline-images/11.png"
       }
     ]
+  },
+  "clasenCta": {
+    "heading": "Together.\nPresent.\nShaping.",
+    "button": "Experience the key moment"
   },
   "wohnenUndLeben": {
     "sectionLabel": "Reference properties",

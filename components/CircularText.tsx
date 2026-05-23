@@ -31,7 +31,11 @@ export default function CircularText({ text }: { text: string }) {
       <div
         className="w-full h-full"
         style={{
-          animation: "spin-slow 12s linear infinite",
+          animationName: "spin-slow",
+          animationDuration: "12s",
+          animationTimingFunction: "linear",
+          animationIterationCount: "infinite",
+          animationDirection: "reverse",
           transformOrigin: "center center",
         }}
       >
@@ -49,7 +53,8 @@ export default function CircularText({ text }: { text: string }) {
             fontFamily="inherit"
             style={{ textTransform: "uppercase" }}
           >
-            <textPath href="#circle-path">{text}</textPath>
+            <textPath href="#circle-path" startOffset="0%">{text}</textPath>
+          <textPath href="#circle-path" startOffset="50%" textAnchor="middle">·</textPath>
           </text>
         </svg>
       </div>

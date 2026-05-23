@@ -47,7 +47,7 @@
     "tagline": "Ihr Schlüssel zum Erfolg.",
     "role": "Alexander Clasen",
     "cta": "Schlüsselmoment erleben",
-    "circularText": "IHR VERTRAUEN · UNSER STOLZ ·"
+    "circularText": "Ihr Vertrauen ist unser Stolz"
   },
   "alleinstell": {
     "sectionLabel": "Mehrwert",
@@ -299,6 +299,10 @@
         "image_path": "/timeline-images/11.png"
       }
     ]
+  },
+  "clasenCta": {
+    "heading": "Gemeinsam.\nGegenwart.\nGestalten.",
+    "button": "Schlüsselmoment erleben"
   },
   "wohnenUndLeben": {
     "sectionLabel": "Referenzobjekte",
