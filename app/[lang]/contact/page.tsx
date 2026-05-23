@@ -42,7 +42,7 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
               </div>
               <div>
                 <p className="text-xs uppercase tracking-widest text-muted mb-1">{t.phoneLabel}</p>
-                <a href="tel:+4989660855800" className="text-foreground text-sm hover:text-accent transition-colors duration-200">+49 (0) 89 66 08 55 80</a>
+                <a href="tel:+498966085580" className="text-foreground text-sm hover:text-accent transition-colors duration-200">+49 (0) 89 66 08 55 80</a>
               </div>
             </div>
           </div>
