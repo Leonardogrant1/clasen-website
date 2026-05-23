@@ -39,7 +39,7 @@ export default function CredoSection({ dict, locale }: Props) {
           loop
           muted
           playsInline
-          className="object-cover w-50 md:w-80 aspect-5/4 self-center"
+          className="object-cover w-40 md:w-80 aspect-5/4 self-center"
         />
       </div>
 
