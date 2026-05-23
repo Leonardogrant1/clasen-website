@@ -50,7 +50,7 @@ export default function LegalPage({ label, heading, sections }: Props) {
                 {section.title}
               </h2>
               <p className="text-white/40 text-sm leading-relaxed whitespace-pre-line">
-                {section.content}
+                {renderWithLinks(section.content)}
               </p>
             </div>
           ))}
