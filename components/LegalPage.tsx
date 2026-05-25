@@ -2,27 +2,42 @@ import React from "react";
 
 type Section = { title: string; content: string };
 function renderWithLinks(text: string) {
-  const emailPattern = "[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}";
-  // Telefon: muss mit +, 00 oder (0) bzw. 0 beginnen und mind. 8 Ziffern enthalten
-  const phonePattern = "(?:\\+|00)?\\s?(?:\\(0\\)|0)[\\d\\s()\\-/]{7,}\\d";
-  const pattern = new RegExp(`(${emailPattern})|(${phonePattern})`, "g");
+  const targets: { match: string; href: string }[] = [
+    { match: "info@clasen.com", href: "mailto:info@clasen.com" },
+    { match: "+49 (0) 89 66 08 55 80", href: "tel:+498966085580" },
+  ];
 
   const parts: React.ReactNode[] = [];
-  let last = 0;
-  let match: RegExpExecArray | null;
+  let remaining = text;
   let key = 0;
-  while ((match = pattern.exec(text)) !== null) {
-    if (match.index > last) parts.push(text.slice(last, match.index));
-    const value = match[0].trim();
-    if (match[1]) {
-      parts.push(<a key={key++} href={`mailto:${value}`} className="text-white/70 hover:text-accent underline underline-offset-2 transition-colors duration-200">{value}</a>);
-    } else {
-      const tel = value.replace(/[\s()\-/]/g, "");
-      parts.push(<a key={key++} href={`tel:${tel}`} className="text-white/70 hover:text-accent underline underline-offset-2 transition-colors duration-200">{value}</a>);
+
+  const linkClass =
+    "text-white/70 hover:text-accent underline underline-offset-2 transition-colors duration-200";
+
+  while (remaining.length > 0) {
+    // finde das früheste vorkommende Target im verbleibenden Text
+    let earliest: { index: number; target: typeof targets[0] } | null = null;
+    for (const target of targets) {
+      const idx = remaining.indexOf(target.match);
+      if (idx !== -1 && (earliest === null || idx < earliest.index)) {
+        earliest = { index: idx, target };
+      }
     }
-    last = match.index + match[0].length;
+
+    if (earliest === null) {
+      parts.push(remaining);
+      break;
+    }
+
+    if (earliest.index > 0) parts.push(remaining.slice(0, earliest.index));
+    parts.push(
+      <a key={key++} href={earliest.target.href} className={linkClass}>
+        {earliest.target.match}
+      </a>
+    );
+    remaining = remaining.slice(earliest.index + earliest.target.match.length);
   }
-  if (last < text.length) parts.push(text.slice(last));
+
   return parts;
 }
 
