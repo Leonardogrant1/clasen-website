@@ -1,23 +1,26 @@
 import React from "react";
 
 type Section = { title: string; content: string };
-
 function renderWithLinks(text: string) {
-  const pattern = /([a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,})|(\+?[\d\s()\-]{7,})/g;
+  const emailPattern = "[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}";
+  // Telefon: muss mit +, 00 oder (0) bzw. 0 beginnen und mind. 8 Ziffern enthalten
+  const phonePattern = "(?:\\+|00)?\\s?(?:\\(0\\)|0)[\\d\\s()\\-/]{7,}\\d";
+  const pattern = new RegExp(`(${emailPattern})|(${phonePattern})`, "g");
+
   const parts: React.ReactNode[] = [];
   let last = 0;
   let match: RegExpExecArray | null;
   let key = 0;
   while ((match = pattern.exec(text)) !== null) {
     if (match.index > last) parts.push(text.slice(last, match.index));
-    const value = match[0];
+    const value = match[0].trim();
     if (match[1]) {
       parts.push(<a key={key++} href={`mailto:${value}`} className="text-white/70 hover:text-accent underline underline-offset-2 transition-colors duration-200">{value}</a>);
     } else {
-      const tel = value.replace(/[\s()\-]/g, "");
+      const tel = value.replace(/[\s()\-/]/g, "");
       parts.push(<a key={key++} href={`tel:${tel}`} className="text-white/70 hover:text-accent underline underline-offset-2 transition-colors duration-200">{value}</a>);
     }
-    last = match.index + value.length;
+    last = match.index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));
   return parts;
