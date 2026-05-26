@@ -110,6 +110,24 @@
         ]
       },
       {
+        "client_name": "Jens Krautscheid",
+        "client_quote": "...anfänglich gefielen mir vorallem Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nSteuerlich komplett zu Ende gedacht.",
+        "client_type": "Apotheker / Speaker / Unternehmer",
+        "object_title": "Renditekonzept München/Giesing",
+        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
+        "objects": [
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
         "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
         "client_name": "Daniel Seglias (CH)",
         "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",

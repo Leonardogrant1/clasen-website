@@ -110,6 +110,24 @@
         ]
       },
       {
+        "client_name": "Jens Krautscheid",
+        "client_quote": "...起初吸引我的，主要是品牌和概念。 \\n 如今，我在人格层面也深感信服。 \\n税务方案考虑得无比周全。",
+        "client_type": "药剂师 / 演讲者 / 企业家",
+        "object_title": "慕尼黑/吉辛收益方案",
+        "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
+        "objects": [
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/jens_krautscheid/image_3.jpg"
+          }
+        ]
+      },
+      {
         "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
         "client_name": "Daniel Seglias (CH)",
         "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",

@@ -179,7 +179,7 @@ export default function Nav({ dict, locale }: Props) {
 
         <nav className="flex flex-col items-center gap-8">
           {mainLinks.map((link) => {
-            const active = pathname === link.href;
+            const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
             return (
               <Link
                 key={link.href}
