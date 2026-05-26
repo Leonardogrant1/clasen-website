@@ -22,6 +22,8 @@ export default function TestimonialsSection({ dict }: Props) {
   const [animating, setAnimating] = useState(false);
   const [direction, setDirection] = useState<"next" | "prev">("next");
 
+  const items = dict.items.filter((item) => item.client_name !== "Jens Krautscheid");
+
   const goTo = useCallback((index: number, dir: "next" | "prev") => {
     if (animating) return;
     setDirection(dir);
@@ -32,7 +34,7 @@ export default function TestimonialsSection({ dict }: Props) {
     }, 500);
   }, [animating]);
 
-  const slide = dict.items[current];
+  const slide = items[current];
 
   const quoteClass = animating
     ? direction === "next" ? "-translate-x-2 opacity-0" : "translate-x-2 opacity-0"
@@ -42,7 +44,7 @@ export default function TestimonialsSection({ dict }: Props) {
 
   const Dots = ({ className }: { className?: string }) => (
     <div className={cn("flex gap-2", className)}>
-      {dict.items.map((_, i) => (
+      {items.map((_, i) => (
         <button
           key={i}
           onClick={() => goTo(i, i > current ? "next" : "prev")}
@@ -57,7 +59,7 @@ export default function TestimonialsSection({ dict }: Props) {
       "relative shrink-0 rounded-[999px] overflow-hidden bg-white/10 border border-white/10",
       size === "sm" ? "w-14 h-20" : "w-32 h-44"
     )}>
-      {dict.items.map((item, i) =>
+      {items.map((item, i) =>
         item.client_image_path ? (
           <Image
             key={i}
@@ -90,7 +92,7 @@ export default function TestimonialsSection({ dict }: Props) {
             {/* Person row with testimonial nav chevrons on the sides */}
             <div className="relative flex justify-center items-center w-full">
               <button
-                onClick={() => goTo((current - 1 + dict.items.length) % dict.items.length, "prev")}
+                onClick={() => goTo((current - 1 + items.length) % items.length, "prev")}
                 className="shrink-0 p-2 rounded-full bg-black/40 text-white hover:bg-black/60 transition-colors backdrop-blur-sm cursor-pointer border border-white/10"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -107,7 +109,7 @@ export default function TestimonialsSection({ dict }: Props) {
               </div>
 
               <button
-                onClick={() => goTo((current + 1) % dict.items.length, "next")}
+                onClick={() => goTo((current + 1) % items.length, "next")}
                 className="shrink-0 p-2 rounded-full bg-black/40 text-white hover:bg-black/60 transition-colors backdrop-blur-sm cursor-pointer border border-white/10"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -170,12 +172,12 @@ export default function TestimonialsSection({ dict }: Props) {
         <TestimonialsCarousel
           objects={slide.objects}
           current={current}
-          total={dict.items.length}
+          total={items.length}
           animating={animating}
           direction={direction}
           onGoTo={(i) => goTo(i, i > current ? "next" : "prev")}
-          onPrev={() => goTo((current - 1 + dict.items.length) % dict.items.length, "prev")}
-          onNext={() => goTo((current + 1) % dict.items.length, "next")}
+          onPrev={() => goTo((current - 1 + items.length) % items.length, "prev")}
+          onNext={() => goTo((current + 1) % items.length, "next")}
           dots={<Dots />}
           navButtons={null}
         />
