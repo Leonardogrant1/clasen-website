@@ -29,7 +29,7 @@ const lotties = {
 export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
   return (
-    <section className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
+    <section id="alleinstellungsmerkmale" className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-20 gap-6">
           <div className="text-center md:text-left">

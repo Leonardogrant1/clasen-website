@@ -4,6 +4,7 @@ import { getDictionary, hasLocale } from "../dictionaries";
 import ClasenHero from "@/components/ClasenHero";
 import ClasenWarum from "@/components/ClasenWarum";
 import ClasenChronik from "@/components/ClasenChronik";
+import HashScrollHandler from "@/components/HashScrollHandler";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/clasen">): Promise<Metadata> {
   const { lang } = await params;
@@ -19,6 +20,7 @@ export default async function ClasenPage({ params }: PageProps<"/[lang]/clasen">
 
   return (
     <>
+      <HashScrollHandler />
       <ClasenHero dict={dict.clasenHero} />
       <ClasenWarum dict={dict.clasenWarum} />
       <ClasenChronik dict={dict.clasenChronik} cta={dict.clasenCta} />

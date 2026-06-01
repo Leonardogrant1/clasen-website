@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "КАПИТАЛ",
-    "wohnenUndLeben": "ЖИЛЬЁ И ЖИЗНЬ",
+    "wohnenUndLeben": "Ключевые моменты",
     "clasen": "Clasen",
     "contact": "Контакты",
     "login": "ВХОД ДЛЯ КЛИЕНТОВ"
@@ -388,7 +388,7 @@
   "contact": {
     "sectionLabel": "Контакты",
     "heading": "Ваш ключ к успеху.",
-    "body": "От А — как \"консультация по вложениям\" \nдо Я — как \"будущие поколения\". \nБудь то оптимизация существующего портфеля или подбор объекта — \nваш запрос заслуживает настоящих экспертов!\n\nДавайте свяжемся — \nдискретно и без обязательств.",
+    "body": "От А — как \"консультация по вложениям\" \nдо Я — как \"будущие поколения\". \nБудь то оптимизация существующего портфеля или продажа объекта — \nваш запрос заслуживает настоящих экспертов!\n\nДавайте свяжемся — \nдискретно и без обязательств.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Телефон",
     "nameLabel": "Ваше имя",
@@ -425,8 +425,8 @@
         "label": "Запрос: капиталовложение"
       },
       {
-        "value": "objektvermittlung",
-        "label": "Запрос: подбор объекта"
+        "value": "objektverkauf",
+        "label": "Запрос: продажа объекта"
       },
       {
         "value": "steuersparmodell",
@@ -466,39 +466,39 @@
   },
   "meta": {
     "home": {
-      "title": "CLASEN Family Office — Ваш ключ к успеху.",
-      "description": "Профессиональные решения в сфере недвижимости для взыскательных клиентов. Ваш ключ к успеху."
+      "title": "CLASEN — Ваш ключ к успеху.",
+      "description": "Там, где риэлторы достигают своих пределов, мы только начинаем."
     },
     "clasen": {
-      "title": "CLASEN Family Office — История",
+      "title": "CLASEN — История",
       "description": "От 18-летнего, которому банк отказал в первом финансировании, до Family Office. История за брендом."
     },
     "contact": {
-      "title": "CLASEN Family Office — Контакты",
+      "title": "CLASEN — Контакты",
       "description": "Свяжитесь с нами."
     },
     "wohnenUndLeben": {
-      "title": "CLASEN Family Office — Жильё и жизнь",
+      "title": "CLASEN — Ключевые моменты",
       "description": "Референсные объекты — представленные кинематографически и в высоком качестве."
     },
     "commercial": {
-      "title": "CLASEN Family Office — Commercial",
+      "title": "CLASEN — Commercial",
       "description": "Коммерческая недвижимость — скоро."
     },
     "living": {
-      "title": "CLASEN Family Office — Living",
+      "title": "CLASEN — Living",
       "description": "Жилая недвижимость — скоро."
     },
     "login": {
-      "title": "CLASEN Family Office — Вход для клиентов",
+      "title": "CLASEN — Вход для клиентов",
       "description": "Безопасный доступ к клиентскому порталу CLASEN."
     },
     "impressum": {
-      "title": "CLASEN Family Office — Выходные данные",
+      "title": "CLASEN — Выходные данные",
       "description": "Выходные данные и обозначение поставщика согласно § 5 TMG."
     },
     "datenschutz": {
-      "title": "CLASEN Family Office — Защита данных",
+      "title": "CLASEN — Защита данных",
       "description": "Политика защиты данных согласно GDPR."
     }
   },

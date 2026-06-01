@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "COMMERCIAL",
-    "wohnenUndLeben": "RESIDENTIAL",
+    "wohnenUndLeben": "Key Moments",
     "clasen": "Clasen",
     "contact": "Contact",
     "login": "CLIENT LOGIN"
@@ -388,7 +388,7 @@
   "contact": {
     "sectionLabel": "Contact",
     "heading": "Your key to success.",
-    "body": "From A as in \"asset advisory\" \nto Z as in \"zip code\". \n\nWhether portfolio optimisation or property placement — \nyour matter deserves true experts!\n\nLet's get in touch — \ndiscreetly and without obligation.",
+    "body": "From A as in \"asset advisory\" \nto Z as in \"zip code\". \n\nWhether portfolio optimisation or property sales — \nyour matter deserves true experts!\n\nLet's get in touch — \ndiscreetly and without obligation.",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "nameLabel": "Your name",
@@ -425,8 +425,8 @@
         "label": "Inquiry: Capital investment"
       },
       {
-        "value": "objektvermittlung",
-        "label": "Inquiry: Property placement"
+        "value": "objektverkauf",
+        "label": "Inquiry: Property sales"
       },
       {
         "value": "steuersparmodell",
@@ -466,39 +466,39 @@
   },
   "meta": {
     "home": {
-      "title": "CLASEN Family Office — Your Key to Success.",
-      "description": "Professional real estate solutions for discerning clients. Your key to success."
+      "title": "CLASEN — Your Key to Success.",
+      "description": "Where real estate agents reach their limits, we are just getting started."
     },
     "clasen": {
-      "title": "CLASEN Family Office — The Story",
+      "title": "CLASEN — The Story",
       "description": "From the 18-year-old whose bank turned down his first loan to the family office. The story behind the brand."
     },
     "contact": {
-      "title": "CLASEN Family Office — Contact",
+      "title": "CLASEN — Contact",
       "description": "Get in touch with us."
     },
     "wohnenUndLeben": {
-      "title": "CLASEN Family Office — Residential",
+      "title": "CLASEN — Key Moments",
       "description": "Reference properties — staged with cinematic, premium quality."
     },
     "commercial": {
-      "title": "CLASEN Family Office — Commercial",
+      "title": "CLASEN — Commercial",
       "description": "Commercial real estate — coming soon."
     },
     "living": {
-      "title": "CLASEN Family Office — Living",
+      "title": "CLASEN — Living",
       "description": "Residential real estate — coming soon."
     },
     "login": {
-      "title": "CLASEN Family Office — Client Login",
+      "title": "CLASEN — Client Login",
       "description": "Secure access to the CLASEN client portal."
     },
     "impressum": {
-      "title": "CLASEN Family Office — Imprint",
+      "title": "CLASEN — Imprint",
       "description": "Imprint and provider identification pursuant to § 5 TMG."
     },
     "datenschutz": {
-      "title": "CLASEN Family Office — Privacy",
+      "title": "CLASEN — Privacy",
       "description": "Privacy policy in accordance with the GDPR."
     }
   },

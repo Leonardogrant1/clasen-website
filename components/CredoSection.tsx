@@ -1,4 +1,7 @@
+"use client";
+
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
 import CherryBlossoms from "./CherryBlossoms";
 
 type Props = {
@@ -8,6 +11,7 @@ type Props = {
 
 export default function CredoSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
+  const { openDialog } = useCalendlyDialog();
   return (
     <section className="py-16 pb-20 px-4 md:py-28 md:px-8 bg-background border-t border-white/5 relative overflow-hidden">
 
@@ -31,6 +35,8 @@ export default function CredoSection({ dict, locale }: Props) {
               </p>
             </div>
           </div>
+
+
         </div>
 
         <video
@@ -39,8 +45,20 @@ export default function CredoSection({ dict, locale }: Props) {
           loop
           muted
           playsInline
-          className="object-cover w-40 md:w-80 aspect-5/4 self-center"
+          className="object-cover w-40 md:w-72 aspect-5/4 self-center"
         />
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-4 mt-20">
+
+
+
+        <button
+          onClick={openDialog}
+          className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
+        >
+          Schlüsselmoment erleben
+        </button>
       </div>
 
     </section>

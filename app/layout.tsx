@@ -10,8 +10,8 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "CLASEN Family Office - Ihr Schlüssel zum Erfolg.",
-  description: "Professionelle Immobilienlösungen für anspruchsvolle Kunden. Ihr Schlüssel zum Erfolg.",
+  title: "CLASEN - Ihr Schlüssel zum Erfolg.",
+  description: "Wo Makler an Ihre Grenzen kommen, fangen wir erst richtig an.",
   manifest: '/site.webmanifest',
 };
 

@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "资本",
-    "wohnenUndLeben": "居住与生活",
+    "wohnenUndLeben": "关键时刻",
     "clasen": "Clasen",
     "contact": "联系我们",
     "login": "客户登录"
@@ -388,7 +388,7 @@
   "contact": {
     "sectionLabel": "联系我们",
     "heading": "您通往成功的钥匙。",
-    "body": "从「A」如 \"投资咨询\" \n到「Z」如 \"未来世代\"。 \n无论是资产组合优化还是物业撮合, \n您的需求值得真正的专家来对待!\n\n让我们取得联系—— \n谨慎且无需承诺。",
+    "body": "从「A」如 \"投资咨询\" \n到「Z」如 \"未来世代\"。 \n无论是资产组合优化还是物业销售, \n您的需求值得真正的专家来对待!\n\n让我们取得联系—— \n谨慎且无需承诺。",
     "emailLabel": "电子邮箱",
     "phoneLabel": "电话",
     "nameLabel": "您的姓名",
@@ -425,8 +425,8 @@
         "label": "咨询:资本投资"
       },
       {
-        "value": "objektvermittlung",
-        "label": "咨询:物业撮合"
+        "value": "objektverkauf",
+        "label": "咨询:物业销售"
       },
       {
         "value": "steuersparmodell",
@@ -466,39 +466,39 @@
   },
   "meta": {
     "home": {
-      "title": "CLASEN Family Office — 您通往成功的钥匙。",
-      "description": "为尊贵客户提供专业不动产解决方案。您通往成功的钥匙。"
+      "title": "CLASEN — 您通往成功的钥匙。",
+      "description": "在房产中介无能为力的地方，我们才刚刚开始。"
     },
     "clasen": {
-      "title": "CLASEN Family Office — 故事",
+      "title": "CLASEN — 故事",
       "description": "从被银行拒绝首笔贷款的 18 岁青年,到家族办公室。品牌背后的故事。"
     },
     "contact": {
-      "title": "CLASEN Family Office — 联系我们",
+      "title": "CLASEN — 联系我们",
       "description": "与我们取得联系。"
     },
     "wohnenUndLeben": {
-      "title": "CLASEN Family Office — 居住与生活",
+      "title": "CLASEN — 关键时刻",
       "description": "参考案例——以电影般的高品质呈现。"
     },
     "commercial": {
-      "title": "CLASEN Family Office — Commercial",
+      "title": "CLASEN — Commercial",
       "description": "商业不动产——敬请期待。"
     },
     "living": {
-      "title": "CLASEN Family Office — Living",
+      "title": "CLASEN — Living",
       "description": "住宅不动产——敬请期待。"
     },
     "login": {
-      "title": "CLASEN Family Office — 客户登录",
+      "title": "CLASEN — 客户登录",
       "description": "安全进入 CLASEN 客户门户。"
     },
     "impressum": {
-      "title": "CLASEN Family Office — 公司信息",
+      "title": "CLASEN — 公司信息",
       "description": "依据 § 5 TMG 的公司信息与服务提供者标识。"
     },
     "datenschutz": {
-      "title": "CLASEN Family Office — 隐私政策",
+      "title": "CLASEN — 隐私政策",
       "description": "依据 GDPR 的数据保护声明。"
     }
   },

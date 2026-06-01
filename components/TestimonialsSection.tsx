@@ -74,7 +74,7 @@ export default function TestimonialsSection({ dict }: Props) {
   );
 
   return (
-    <section className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
+    <section id="testimonials" className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
       <div className="max-w-6xl mx-auto flex flex-col gap-6">
 
         {/* ── MOBILE LAYOUT ── */}

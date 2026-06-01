@@ -185,7 +185,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 8) {
     return (
       <div
-        className="relative shrink-0 w-full md:scale-125"
+        className="relative shrink-0 w-full md:scale-110 md:translate-y-6"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/8a.png" imageB="/timeline-images/8b.png" />
@@ -196,7 +196,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 9) {
     return (
       <div
-        className="relative shrink-0 w-full"
+        className="relative shrink-0 w-full md:translate-y-10"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/9a.png" imageB="/timeline-images/9b.png" />
@@ -209,7 +209,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full", index === 6 && "md:scale-145 md:translate-y-20", (index === 2 || index === 4) && "md:scale-90 md:-translate-y-20 ", (index === 7) && "md:scale-110", (index === 10) && "md:scale-120")}
+      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2 || index === 4) && "md:scale-80 md:-translate-y-16", (index === 7) && "md:scale-95 md:translate-y-10", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-20")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -234,18 +234,18 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
 function EntryText({ entry, i, className }: { entry: Entry, i: number, className?: string }) {
 
-  const mtForIndex = ["mt-14", "mt-10", "mt-8", "mt-24", "mt-24", "mt-24", "mt-14", "mt-4", "mt-14", "mt-10", "mt-4", "mt-4"]
+  const mtForIndex = ["mt-15", "mt-8", "mt-0", "mt-15", "mt-0", "mt-20", "mt-10", "mt-0", "mt-10", "mt-0", "mt-10", "mt-2"]
 
   return (
     <div className={cn("text-left md:min-h-[400px]", className ?? mtForIndex[i])}>
       <span className="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">{entry.year}</span>
-      <h3 className="text-foreground font-bold text-lg mb-1">{entry.category}</h3>
-      <p className="text-muted italic text-sm mb-3">{entry.subtitle}</p>
-      <p className="text-muted text-sm leading-relaxed whitespace-pre-line">{entry.body}</p>
+      <h3 className="text-foreground font-bold text-2xl mb-1">{entry.category}</h3>
+      <p className="text-muted italic text-lg mb-3">{entry.subtitle}</p>
+      <p className="text-muted text-lg leading-relaxed whitespace-pre-line">{entry.body}</p>
       {entry.milestone && (
         <div className="mt-4 flex flex-col items-start">
           <span className="text-accent font-bold text-2xl">{entry.milestone.stat}</span>
-          <span className="text-muted text-xs mt-1 max-w-xs leading-relaxed">{entry.milestone.label}</span>
+          <span className="text-muted text-lg mt-1 max-w-xs leading-relaxed">{entry.milestone.label}</span>
         </div>
       )}
     </div>
@@ -253,12 +253,12 @@ function EntryText({ entry, i, className }: { entry: Entry, i: number, className
 }
 
 // Mobile only: image first, then text below
-const mobileMtForIndex = ["mt-14", "mt-10", "mt-8", "mt-24", "mt-24", "mt-24", "mt-14", "mt-4", "mt-14", "mt-10", "mt-4", "mt-4"];
+const mobileMtForIndex = ["mt-6", "mt-4", "mt-4", "mt-8", "mt-8", "mt-8", "mt-6", "mt-2", "mt-6", "mt-4", "mt-2", "mt-2"];
 
 function EntryContent({ entry, index }: { entry: Entry; index: number }) {
   return (
     <div className="flex flex-col gap-y-8">
-      <div className={mobileMtForIndex[index]}>
+      <div className={cn(mobileMtForIndex[index], "max-w-[82%] mx-auto md:max-w-none md:mx-0")}>
         <EntryImage src={entry.image_path} alt={entry.category} rotate={index === 8 ? 0 : 2} index={index} />
       </div>
       <EntryText entry={entry} i={index} className="" />
@@ -297,9 +297,10 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   return (
     <div
       ref={ref}
+      id={i === 10 ? "clasen-ende" : undefined}
       className={cn("grid grid-cols-[1fr_32px_1fr]  items-start opacity-0 translate-y-6 transition-all duration-700 ease-out", mtForIndex[i])}
     >
-      <div className="pr-8">
+      <div className={cn("pr-8", i % 2 !== 0 && "flex items-center")}>
         {i % 2 === 0 ? <EntryText entry={entry} i={i} /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={-2} index={i} />}
       </div>
       <div className="flex justify-center pt-2">
@@ -311,7 +312,7 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
           <div className="w-2.5 h-2.5 rounded-full bg-white/20 ring-2 ring-white/10" />
         )}
       </div>
-      <div className="pl-8">
+      <div className={cn("pl-8", i % 2 === 0 && "flex items-center")}>
         {i % 2 !== 0 ? <EntryText entry={entry} i={i} /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={2} index={i} />}
       </div>
     </div>

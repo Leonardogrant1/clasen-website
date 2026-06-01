@@ -1,7 +1,7 @@
 {
   "nav": {
-    "kapital": "KAPITAL",
-    "wohnenUndLeben": "WOHNEN & LEBEN",
+    "kapital": "Entrée",
+    "wohnenUndLeben": "Schlüsselmomente",
     "clasen": "Clasen",
     "contact": "Kontakt",
     "login": "MANDANTEN - LogIn"
@@ -24,7 +24,7 @@
   "stats": {
     "investments": {
       "line1": "Vermittelte",
-      "line2": "Investments"
+      "line2": "Sachwerte"
     },
     "transactions": {
       "prefix": "Ø ",
@@ -388,7 +388,7 @@
   "contact": {
     "sectionLabel": "Kontakt",
     "heading": "Ihr Schlüssel zum Erfolg.",
-    "body": "Von A wie \"Anlageberatung\" \nbis Z wie \"zukünftige Generationen\". \n\nOb Bestandsoptimierung oder Objektvermittlung, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
+    "body": "Von A wie \"Anlageberatung\" \nbis Z wie \"zukünftige Generationen\". \n\nOb Bestandsoptimierung oder Objektverkauf, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
     "nameLabel": "Ihr Name",
@@ -425,8 +425,8 @@
         "label": "Anfrage: Kapitalanlage"
       },
       {
-        "value": "objektvermittlung",
-        "label": "Anfrage: Objektvermittlung"
+        "value": "objektverkauf",
+        "label": "Anfrage: Objektverkauf"
       },
       {
         "value": "steuersparmodell",
@@ -466,39 +466,39 @@
   },
   "meta": {
     "home": {
-      "title": "CLASEN Family Office — Ihr Schlüssel zum Erfolg.",
-      "description": "Professionelle Immobilienlösungen für anspruchsvolle Mandanten. Ihr Schlüssel zum Erfolg."
+      "title": "CLASEN — Ihr Schlüssel zum Erfolg.",
+      "description": "Wo Makler an ihre Grenzen kommen, fangen wir erst an."
     },
     "clasen": {
-      "title": "CLASEN Family Office — Die Geschichte",
+      "title": "CLASEN — Die Geschichte",
       "description": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office. Die Geschichte hinter der Marke."
     },
     "contact": {
-      "title": "CLASEN Family Office — Kontakt",
+      "title": "CLASEN — Kontakt",
       "description": "Nehmen Sie Kontakt mit uns auf."
     },
     "wohnenUndLeben": {
-      "title": "CLASEN Family Office — Wohnen & Leben",
+      "title": "CLASEN — Wohnen & Leben",
       "description": "Referenzobjekte — cineastisch und hochwertig in Szene gesetzt."
     },
     "commercial": {
-      "title": "CLASEN Family Office — Commercial",
+      "title": "CLASEN — Commercial",
       "description": "Gewerbliche Immobilien — demnächst."
     },
     "living": {
-      "title": "CLASEN Family Office — Living",
+      "title": "CLASEN — Living",
       "description": "Wohnimmobilien — demnächst."
     },
     "login": {
-      "title": "CLASEN Family Office — Mandanten Login",
+      "title": "CLASEN — Mandanten Login",
       "description": "Sicherer Zugang zum CLASEN Mandantenportal."
     },
     "impressum": {
-      "title": "CLASEN Family Office — Impressum",
+      "title": "CLASEN — Impressum",
       "description": "Impressum und Anbieterkennzeichnung gemäß § 5 TMG."
     },
     "datenschutz": {
-      "title": "CLASEN Family Office — Datenschutz",
+      "title": "CLASEN — Datenschutz",
       "description": "Datenschutzerklärung gemäß DSGVO."
     }
   },

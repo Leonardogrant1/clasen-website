@@ -72,7 +72,7 @@ export default function ProfileSection({ dict, locale }: Props) {
                 {dict.role}
               </span>
             </div>
-            <button onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
+            <button id="clasen-ende" onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
               {dict.cta}
             </button>
           </div>
