@@ -24,10 +24,22 @@ export default function Nav({ dict, locale }: Props) {
   const lockRef = useRef<HTMLDivElement>(null);
   const keyTargetRef = useRef<HTMLDivElement>(null);
 
-  const pathname = usePathname();
+  const rawPathname = usePathname() ?? "";
   const router = useRouter();
 
   const base = locale === "en" ? "/en" : "";
+
+  // For non-English locales, link hrefs have no locale prefix (base = ""),
+  // but Next.js internal routes include the locale segment (e.g. /de, /ru).
+  // Normalise so active-state detection is consistent between SSR and client.
+  const pathname =
+    base === ""
+      ? rawPathname === `/${locale}`
+        ? "/"
+        : rawPathname.startsWith(`/${locale}/`)
+        ? rawPathname.slice(`/${locale}`.length)
+        : rawPathname
+      : rawPathname;
 
   const mainLinks = [
     { href: `${base}/`, label: dict.kapital },
@@ -93,6 +105,7 @@ export default function Nav({ dict, locale }: Props) {
           <div className="flex items-center gap-1 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-2 py-1.5">
             {mainLinks.map((link) => {
               const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
+
               return (
                 <Link
                   key={link.href}
