@@ -53,7 +53,7 @@ export default function ProfileSection({ dict, locale }: Props) {
           </div>
 
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
-            <span className="hidden md:block text-accent text-sm uppercase tracking-widest font-semibold">
+            <span className="hidden md:block text-accent text-xs md:text-base uppercase tracking-widest font-semibold">
               {dict.sectionLabel}
             </span>
             <h2 className="hidden md:block md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">

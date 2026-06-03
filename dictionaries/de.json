@@ -1,6 +1,6 @@
 {
   "nav": {
-    "kapital": "Entrée",
+    "kapital": "Investment",
     "wohnenUndLeben": "Schlüsselmomente",
     "clasen": "Clasen",
     "contact": "Kontakt",
@@ -331,14 +331,14 @@
     "notConnected": "ImmoScout nicht verbunden",
     "connectButton": "Jetzt verbinden",
     "noListings": "Keine Objekte verfügbar",
-    "ctaHeading": "Ihr Objekt verdient die Besten. Beratung. Strategie.",
+    "ctaHeading": "Ihr Objekt verdient das Beste.",
     "ctaButton": "Schlüsselmoment erleben",
     "labelOrt": "Ort",
     "labelTyp": "Typ",
     "labelFlaeche": "Fläche",
     "quote": {
       "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln:",
-      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung von selbstgenutzten Wohnimmobilien."
+      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien."
     },
     "listings": [
       {
@@ -409,32 +409,24 @@
     "topicLabel": "Betreff wählen",
     "topics": [
       {
-        "value": "portfolio",
-        "label": "Anfrage: Portfolio-Beratung"
-      },
-      {
-        "value": "bauleistung",
-        "label": "Anfrage: Bauleistung"
-      },
-      {
-        "value": "asset",
-        "label": "Anfrage: Asset-Management"
-      },
-      {
-        "value": "kapitalanlage",
-        "label": "Anfrage: Kapitalanlage"
+        "value": "bestandsoptimierung",
+        "label": "Bestands-Optimierung"
       },
       {
         "value": "objektverkauf",
-        "label": "Anfrage: Objektverkauf"
+        "label": "Objektverkauf"
       },
       {
-        "value": "steuersparmodell",
-        "label": "Anfrage: Steuersparmodell"
+        "value": "bauleistung",
+        "label": "Bauleistung"
       },
       {
-        "value": "freitext",
-        "label": "Sonstiges"
+        "value": "investment-beratung",
+        "label": "Investment-Beratung"
+      },
+      {
+        "value": "steuersparmodelle",
+        "label": "Steuersparmodelle"
       }
     ]
   },
@@ -534,7 +526,7 @@
     "sections": [
       {
         "title": "Verantwortlicher",
-        "content": "Verantwortlicher im Sinne der DSGVO ist:\n\nCLASEN Family Office — Alexander Clasen\nSchloßstraße 19\n82031 Grünwald\nE-Mail: info@clasen.com\nTelefon: +49 (0) 89 66 08 55 80"
+        "content": "Alexander Clasen"
       },
       {
         "title": "Erhebung und Speicherung personenbezogener Daten",

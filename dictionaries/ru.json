@@ -409,32 +409,24 @@
     "topicLabel": "Выберите тему",
     "topics": [
       {
-        "value": "portfolio",
-        "label": "Запрос: консультация по портфелю"
-      },
-      {
-        "value": "bauleistung",
-        "label": "Запрос: строительные услуги"
-      },
-      {
-        "value": "asset",
-        "label": "Запрос: управление активами"
-      },
-      {
-        "value": "kapitalanlage",
-        "label": "Запрос: капиталовложение"
+        "value": "bestandsoptimierung",
+        "label": "Оптимизация портфеля"
       },
       {
         "value": "objektverkauf",
-        "label": "Запрос: продажа объекта"
+        "label": "Продажа объекта"
       },
       {
-        "value": "steuersparmodell",
-        "label": "Запрос: модель налоговой оптимизации"
+        "value": "bauleistung",
+        "label": "Строительные услуги"
       },
       {
-        "value": "freitext",
-        "label": "Другое"
+        "value": "investment-beratung",
+        "label": "Инвестиционное консультирование"
+      },
+      {
+        "value": "steuersparmodelle",
+        "label": "Модели налоговой оптимизации"
       }
     ]
   },
@@ -534,7 +526,7 @@
     "sections": [
       {
         "title": "Ответственное лицо",
-        "content": "Ответственным в смысле GDPR является:\n\nCLASEN Family Office — Alexander Clasen\nSchloßstraße 19\n82031 Grünwald\nE-Mail: info@clasen.com\nТелефон: +49 (0) 89 66 08 55 80"
+        "content": "Alexander Clasen"
       },
       {
         "title": "Сбор и хранение персональных данных",

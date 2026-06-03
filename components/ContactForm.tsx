@@ -67,7 +67,7 @@ function TopicDropdown({
 
 export default function ContactForm({ dict }: Props) {
     const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-    const [topic, setTopic] = useState<string>("portfolio");
+    const [topic, setTopic] = useState<string>("bestandsoptimierung");
     const formRef = useRef<HTMLFormElement>(null);
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {

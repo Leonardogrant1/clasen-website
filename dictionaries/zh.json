@@ -409,32 +409,24 @@
     "topicLabel": "选择主题",
     "topics": [
       {
-        "value": "portfolio",
-        "label": "咨询:资产组合顾问"
-      },
-      {
-        "value": "bauleistung",
-        "label": "咨询:建筑服务"
-      },
-      {
-        "value": "asset",
-        "label": "咨询:资产管理"
-      },
-      {
-        "value": "kapitalanlage",
-        "label": "咨询:资本投资"
+        "value": "bestandsoptimierung",
+        "label": "资产组合优化"
       },
       {
         "value": "objektverkauf",
-        "label": "咨询:物业销售"
+        "label": "物业出售"
       },
       {
-        "value": "steuersparmodell",
-        "label": "咨询:节税方案"
+        "value": "bauleistung",
+        "label": "建筑服务"
       },
       {
-        "value": "freitext",
-        "label": "其他事项"
+        "value": "investment-beratung",
+        "label": "投资咨询"
+      },
+      {
+        "value": "steuersparmodelle",
+        "label": "节税方案"
       }
     ]
   },
@@ -534,7 +526,7 @@
     "sections": [
       {
         "title": "负责方",
-        "content": "GDPR 意义上的负责方为:\n\nCLASEN Family Office — Alexander Clasen\nSchloßstraße 19\n82031 Grünwald\n电子邮箱:info@clasen.com\n电话:+49 (0) 89 66 08 55 80"
+        "content": "Alexander Clasen"
       },
       {
         "title": "个人数据的收集与存储",

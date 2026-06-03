@@ -409,32 +409,24 @@
     "topicLabel": "Select subject",
     "topics": [
       {
-        "value": "portfolio",
-        "label": "Inquiry: Portfolio advisory"
-      },
-      {
-        "value": "bauleistung",
-        "label": "Inquiry: Construction services"
-      },
-      {
-        "value": "asset",
-        "label": "Inquiry: Asset management"
-      },
-      {
-        "value": "kapitalanlage",
-        "label": "Inquiry: Capital investment"
+        "value": "bestandsoptimierung",
+        "label": "Portfolio Optimisation"
       },
       {
         "value": "objektverkauf",
-        "label": "Inquiry: Property sales"
+        "label": "Property Sale"
       },
       {
-        "value": "steuersparmodell",
-        "label": "Inquiry: Tax optimisation"
+        "value": "bauleistung",
+        "label": "Construction Services"
       },
       {
-        "value": "freitext",
-        "label": "Other"
+        "value": "investment-beratung",
+        "label": "Investment Advisory"
+      },
+      {
+        "value": "steuersparmodelle",
+        "label": "Tax Saving Models"
       }
     ]
   },
@@ -534,7 +526,7 @@
     "sections": [
       {
         "title": "Data controller",
-        "content": "The data controller within the meaning of the GDPR is:\n\nCLASEN Family Office — Alexander Clasen\nSchloßstraße 19\n82031 Grünwald, Germany\nEmail: info@clasen.com\nPhone: +49 (0) 89 66 08 55 80"
+        "content": "Alexander Clasen"
       },
       {
         "title": "Collection and storage of personal data",
