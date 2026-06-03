@@ -209,7 +209,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2 || index === 4) && "md:scale-80 md:-translate-y-16", (index === 7) && "md:scale-95 md:translate-y-10", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-20")}
+      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-60 md:-translate-y-16", (index === 7) && "md:scale-95 md:translate-y-10", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-20")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
