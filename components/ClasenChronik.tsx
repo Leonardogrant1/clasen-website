@@ -139,10 +139,10 @@ function ComparisonSlider({ alt, imageA, imageB }: { alt: string; imageA: string
             ))}
           </div>
 
-          {/* Mobile swipe hint */}
+          {/* Swipe hint */}
           <div
             className={cn(
-              "absolute bottom-2 left-0 right-0 flex items-center justify-center pointer-events-none md:hidden transition-opacity duration-500",
+              "absolute bottom-2 left-0 right-0 flex items-center justify-center pointer-events-none transition-opacity duration-500",
               hintVisible ? "opacity-100" : "opacity-0"
             )}
           >
