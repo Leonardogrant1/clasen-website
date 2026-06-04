@@ -15,10 +15,17 @@ export default function VideoHero({ src, className }: Props) {
         if (!video) return;
         video.muted = true;
 
+        const tryPlay = () => video.play().catch(() => { });
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    video.play().catch(() => { });
+                    // Video might not be loaded yet on iOS Safari — wait for canplay
+                    if (video.readyState >= 2) {
+                        tryPlay();
+                    } else {
+                        video.addEventListener("canplay", tryPlay, { once: true });
+                    }
                 } else {
                     video.pause();
                 }
@@ -34,9 +41,11 @@ export default function VideoHero({ src, className }: Props) {
         <video
             ref={ref}
             src={src}
+            autoPlay
             loop
             muted
             playsInline
+            preload="auto"
             className={className}
         />
     );

@@ -13,10 +13,16 @@ function SakuraVideo({ className }: { className?: string }) {
     if (!video) return;
     video.muted = true;
 
+    const tryPlay = () => video.play().catch(() => {});
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {});
+          if (video.readyState >= 2) {
+            tryPlay();
+          } else {
+            video.addEventListener("canplay", tryPlay, { once: true });
+          }
         } else {
           video.pause();
         }
@@ -32,9 +38,11 @@ function SakuraVideo({ className }: { className?: string }) {
     <video
       ref={ref}
       src="/video/sakura.mp4"
+      autoPlay
       loop
       muted
       playsInline
+      preload="auto"
       className={className}
     />
   );
