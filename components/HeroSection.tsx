@@ -1,7 +1,4 @@
-"use client";
-
 import StatsBox from "./StatsBox";
-import { useState, useEffect, useRef } from "react";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 
 type Props = {
@@ -10,27 +7,15 @@ type Props = {
 };
 
 export default function HeroSection({ dict, statsDict }: Props) {
-  const [item, setItem] = useState(dict.items[0]);
-  const mobileVideoRef = useRef<HTMLVideoElement>(null);
-  const desktopVideoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    const index = Math.floor(Math.random() * dict.items.length);
-    setItem(dict.items[index]);
-  }, [dict.items]);
 
-  useEffect(() => {
-    mobileVideoRef.current?.play().catch(() => {});
-    desktopVideoRef.current?.play().catch(() => {});
-  }, [item]);
-
+  const item = dict.items[Math.floor(Math.random() * dict.items.length)];
   return (
     <>
       {/* Mobile */}
       <section className="flex flex-col md:hidden bg-background">
         <div className="relative h-[70vh] overflow-hidden">
           <video
-            ref={mobileVideoRef}
             src={item.videoPath.replace(".mp4", "_mobile.mp4")}
             autoPlay
             loop
@@ -61,7 +46,6 @@ export default function HeroSection({ dict, statsDict }: Props) {
       {/* Desktop */}
       <section className="hidden md:block relative h-screen overflow-hidden">
         <video
-          ref={desktopVideoRef}
           src={item.videoPath}
           autoPlay
           loop
