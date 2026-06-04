@@ -3,6 +3,42 @@
 import type { Dictionary } from "@/app/[lang]/dictionaries";
 import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
 import CherryBlossoms from "./CherryBlossoms";
+import { useEffect, useRef } from "react";
+
+function SakuraVideo({ className }: { className?: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+    video.muted = true;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={ref}
+      src="/video/sakura.mp4"
+      loop
+      muted
+      playsInline
+      className={className}
+    />
+  );
+}
 
 type Props = {
   dict: Dictionary["credo"];
@@ -39,14 +75,7 @@ export default function CredoSection({ dict, locale }: Props) {
 
         </div>
 
-        <video
-          src="/video/sakura.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="object-cover w-40 md:w-72 aspect-5/4 self-center"
-        />
+        <SakuraVideo className="object-cover w-40 md:w-72 aspect-5/4 self-center" />
       </div>
 
       <div className="flex flex-col items-center justify-center gap-4 mt-20">

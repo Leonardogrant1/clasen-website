@@ -14,14 +14,26 @@ export default function VideoHero({ src, className }: Props) {
         const video = ref.current;
         if (!video) return;
         video.muted = true;
-        video.play().catch(() => { });
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    video.play().catch(() => { });
+                } else {
+                    video.pause();
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        observer.observe(video);
+        return () => observer.disconnect();
     }, []);
 
     return (
         <video
             ref={ref}
             src={src}
-            autoPlay
             loop
             muted
             playsInline
