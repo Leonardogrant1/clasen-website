@@ -1,5 +1,6 @@
 import StatsBox from "./StatsBox";
 import type { Dictionary } from "@/app/[lang]/dictionaries";
+import VideoHero from "./VideoHero";
 
 type Props = {
   dict: Dictionary["hero"];
@@ -15,14 +16,7 @@ export default function HeroSection({ dict, statsDict }: Props) {
       {/* Mobile */}
       <section className="flex flex-col md:hidden bg-background">
         <div className="relative h-[70vh] overflow-hidden">
-          <video
-            src={item.videoPath.replace(".mp4", "_mobile.mp4")}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+          <VideoHero src={item.videoPath.replace(".mp4", "_mobile.mp4")} className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-black/10" />
 
           <div className="absolute bottom-6 left-4 right-4 z-10">
@@ -45,14 +39,7 @@ export default function HeroSection({ dict, statsDict }: Props) {
 
       {/* Desktop */}
       <section className="hidden md:block relative h-screen overflow-hidden">
-        <video
-          src={item.videoPath}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <VideoHero src={item.videoPath} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
 
         <div className="absolute bottom-20 md:bottom-36 lg:bottom-44 xl:bottom-20 left-8 xl:left-16 z-10 max-w-xl lg:max-w-2xl">
