@@ -17,15 +17,15 @@ export default function VideoHero({ src, className }: Props) {
 
         const tryPlay = () => video.play().catch(() => { });
 
+        // Start immediately + retry on canplay (Safari needs both)
+        tryPlay();
+        video.addEventListener("canplay", tryPlay, { once: true });
+
+        // Pause when scrolled out of view, resume when back
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
-                    // Video might not be loaded yet on iOS Safari — wait for canplay
-                    if (video.readyState >= 2) {
-                        tryPlay();
-                    } else {
-                        video.addEventListener("canplay", tryPlay, { once: true });
-                    }
+                    tryPlay();
                 } else {
                     video.pause();
                 }
