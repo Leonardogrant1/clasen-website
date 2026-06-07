@@ -47,14 +47,13 @@ export default function CircularText({ text }: { text: string }) {
             />
           </defs>
           <text
-            fontSize="11"
+            fontSize="9"
             fill="white"
             letterSpacing="4.5"
             fontFamily="inherit"
             style={{ textTransform: "uppercase" }}
           >
             <textPath href="#circle-path" startOffset="0%">{text}</textPath>
-          <textPath href="#circle-path" startOffset="50%" textAnchor="middle">·</textPath>
           </text>
         </svg>
       </div>

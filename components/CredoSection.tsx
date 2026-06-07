@@ -13,7 +13,7 @@ function SakuraVideo({ className }: { className?: string }) {
     if (!video) return;
     video.muted = true;
 
-    const tryPlay = () => video.play().catch(() => {});
+    const tryPlay = () => video.play().catch(() => { });
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -62,7 +62,7 @@ export default function CredoSection({ dict, locale }: Props) {
       <CherryBlossoms />
 
 
-      <div className="flex flex-col md:flex-row justify-center align-center gap-10">
+      <div className="flex flex-col md:flex-row justify-center align-center gap-6 md:gap-10">
 
         <div className="max-w-6xl relative">
           <span className="text-accent text-xs md:text-base uppercase tracking-widest font-semibold block mb-12 text-center md:text-left">
@@ -86,7 +86,7 @@ export default function CredoSection({ dict, locale }: Props) {
         <SakuraVideo className="object-cover w-40 md:w-72 aspect-5/4 self-center" />
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-4 mt-20">
+      <div className="flex flex-col items-center justify-center gap-4 mt-15 md:mt-20">
 
 
 

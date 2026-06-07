@@ -7,7 +7,7 @@
     "login": "ВХОД ДЛЯ КЛИЕНТОВ"
   },
   "hero": {
-    "vision": "Ваше видение",
+    "vision": "Инвестиции",
     "items": [
       {
         "title": "Сделать ставку \nна нужную лошадь.",
@@ -90,6 +90,7 @@
     "sectionLabel": "Отзывы клиентов",
     "heading": "Настоящие лица.\nНастоящие истории.",
     "investmentLabel": "Инвестиция",
+    "realObjectsHeading": "Настоящие объекты. Без ИИ.",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -504,7 +505,7 @@
       },
       {
         "title": "Ответственный за содержание согласно § 55 абз. 2 RStV",
-        "content": "Alexander Clasen\nSchloßstraße 19\n82031 Grünwald"
+        "content": "CLASEN Family Office GmbH"
       },
       {
         "title": "Отказ от ответственности",

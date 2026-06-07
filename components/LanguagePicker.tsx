@@ -51,20 +51,24 @@ export default function LanguagePicker({ locale }: { locale: string }) {
     <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
       {/* Dropdown options */}
       <div
-        className={`flex flex-col gap-1.5 transition-all duration-200 origin-bottom ${
-          open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
+        className={`grid transition-all duration-300 ease-in-out ${
+          open
+            ? "grid-rows-[1fr] opacity-100 translate-y-0 pointer-events-auto"
+            : "grid-rows-[0fr] opacity-0 translate-y-2 pointer-events-none"
         }`}
       >
-        {others.map(({ code, label, Flag }) => (
-          <button
-            key={code}
-            onClick={() => switchLocale(code)}
-            className="flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full pl-1.5 pr-3 py-1.5 text-xs uppercase tracking-widest text-foreground/70 hover:text-foreground hover:bg-white/15 transition-colors duration-150 cursor-pointer"
-          >
-            <Flag className="w-5 h-5 rounded-full object-cover" />
-            {label}
-          </button>
-        ))}
+        <div className="overflow-hidden flex flex-col gap-1.5 pb-1.5">
+          {others.map(({ code, label, Flag }) => (
+            <button
+              key={code}
+              onClick={() => switchLocale(code)}
+              className="flex items-center gap-2 bg-white/10 backdrop-blur border border-white/20 rounded-full pl-1.5 pr-3 py-1.5 text-xs uppercase tracking-widest text-foreground/70 hover:text-foreground hover:bg-white/15 transition-colors duration-150 cursor-pointer"
+            >
+              <Flag className="w-5 h-5 rounded-full object-cover" />
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Active language button */}

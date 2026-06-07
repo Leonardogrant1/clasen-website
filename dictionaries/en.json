@@ -7,7 +7,7 @@
     "login": "CLIENT LOGIN"
   },
   "hero": {
-    "vision": "Your vision",
+    "vision": "Investment",
     "items": [
       {
         "title": "Backing the right \nhorse.",
@@ -90,6 +90,7 @@
     "sectionLabel": "Client voices",
     "heading": "Real faces.\nReal stories.",
     "investmentLabel": "Investment",
+    "realObjectsHeading": "Real properties. No AI.",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -504,7 +505,7 @@
       },
       {
         "title": "Responsible for content pursuant to § 55 (2) RStV",
-        "content": "Alexander Clasen\nSchloßstraße 19\n82031 Grünwald, Germany"
+        "content": "CLASEN Family Office GmbH"
       },
       {
         "title": "Disclaimer",

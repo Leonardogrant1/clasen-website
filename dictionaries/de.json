@@ -7,11 +7,11 @@
     "login": "MANDANTEN - LogIn"
   },
   "hero": {
-    "vision": "Ihre Vision",
+    "vision": "Investment",
     "items": [
       {
         "title": "Aufs richtige \nPferd setzen.",
-        "subtitle": "Ihr zuverlässiges Bindeglied zwischen besonderen Ansprüchen und außergewöhnlichen Investmentchancen.",
+        "subtitle": "Diskret. Persönlich. Verbindlich.\nIhr sicherer Zugang zu außergewöhnlichen Investmentchancen.",
         "videoPath": "/video/hero.mp4"
       },
       {
@@ -41,8 +41,8 @@
     "verticalLabel": "Märkte in Bewegung. Wie Ihr Kopf.",
     "sectionLabel": "Profil",
     "heading": "Leidenschaft die ihresgleichen sucht.",
-    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
-    "body2": "Diese Geisteshaltung und die Maxime, dabei alle Ressourcen jederzeit mit absoluter Effektivität und Gewissenhaftigkeit einzusetzen, sorgen für das besondere Maß an Menschlichkeit und garantieren Ihnen und Ihrem Kapital stets eine einmalige Performance.",
+    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern vor allem unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
+    "body2": "Präzision und Menschlichkeit im Einklang – für eine Performance, die Ihrem Kapital gerecht wird.",
     "credo": "Unser Credo der FAIRlässlichkeit.",
     "tagline": "Ihr Schlüssel zum Erfolg.",
     "role": "Alexander Clasen",
@@ -90,6 +90,7 @@
     "sectionLabel": "Kundenstimmen",
     "heading": "Echte Gesichter.\nEchte Geschichten.",
     "investmentLabel": "Investition",
+    "realObjectsHeading": "Echte Objekte. Keine KI.",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -111,7 +112,7 @@
       },
       {
         "client_name": "Jens Krautscheid",
-        "client_quote": "...anfänglich gefielen mir vorallem Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nSteuerlich komplett zu Ende gedacht.",
+        "client_quote": "...anfänglich gefielen uns Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nDas Konzept ist steuerlich zu Ende gedacht.",
         "client_type": "Apotheker / Speaker / Unternehmer",
         "object_title": "Renditekonzept München/Giesing",
         "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
@@ -128,26 +129,8 @@
         ]
       },
       {
-        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
-        "client_name": "Daniel Seglias (CH)",
-        "client_quote": "...Entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
-        "client_type": "Bildungsberater / Finanzcoach",
-        "object_title": "Renditekonzept Freising",
-        "objects": [
-          {
-            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
-          },
-          {
-            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
-          },
-          {
-            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
-          }
-        ]
-      },
-      {
         "client_image_path": "/testimonials/marie_bougeard/profile.png",
-        "client_name": "Marie Bougeard (FR)",
+        "client_name": "Marie Bougeard",
         "client_quote": "...war ich bereits im ersten gemeinsamen Gespräch besonders überzeugt von der offenen Kommunikation und ehrlichen Beratung.",
         "client_type": "Bildende Künstlerin",
         "object_title": "Altbau München/Schwabing",
@@ -160,6 +143,24 @@
           },
           {
             "image_path": "/testimonials/marie_bougeard/image_3.jpeg"
+          }
+        ]
+      },
+      {
+        "client_image_path": "/testimonials/daniel_seglias/profile.jpeg",
+        "client_name": "Daniel Seglias",
+        "client_quote": "...entscheidend für mich als „Anlageprofi\" war die Möglichkeit, im Rahmen einer Immobilientour persönlich Einblick in den Aufwertungsprozess der Immobilienentwicklung nehmen zu können...",
+        "client_type": "Bildungsberater / Finanzcoach",
+        "object_title": "Renditekonzept Freising",
+        "objects": [
+          {
+            "image_path": "/testimonials/daniel_seglias/image_1.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_2.jpg"
+          },
+          {
+            "image_path": "/testimonials/daniel_seglias/image_3.jpg"
           }
         ]
       }
@@ -226,7 +227,7 @@
         "year": "18. Geburtstag",
         "category": "Erster Versuch",
         "subtitle": "Die Absage, die alles in Gang setzte.",
-        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das vermutlich das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
         "image_path": "/timeline-images/1.png"
       },
       {
@@ -504,7 +505,7 @@
       },
       {
         "title": "Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV",
-        "content": "Alexander Clasen\nSchloßstraße 19\n82031 Grünwald"
+        "content": "CLASEN Family Office GmbH"
       },
       {
         "title": "Haftungsausschluss",

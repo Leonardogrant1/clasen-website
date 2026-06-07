@@ -22,7 +22,7 @@ export default function TestimonialsSection({ dict }: Props) {
   const [animating, setAnimating] = useState(false);
   const [direction, setDirection] = useState<"next" | "prev">("next");
 
-  const items = dict.items.filter((item) => item.client_name !== "Jens Krautscheid");
+  const items = dict.items;
 
   const goTo = useCallback((index: number, dir: "next" | "prev") => {
     if (animating) return;
@@ -54,10 +54,10 @@ export default function TestimonialsSection({ dict }: Props) {
     </div>
   );
 
-  const ProfileImages = ({ size }: { size: "sm" | "lg" }) => (
+  const ProfileImages = ({ size }: { size: "sm" | "md" | "lg" }) => (
     <div className={cn(
       "relative shrink-0 rounded-[999px] overflow-hidden bg-white/10 border border-white/10",
-      size === "sm" ? "w-14 h-20" : "w-32 h-44"
+      size === "sm" ? "w-14 h-20" : size === "md" ? "w-20 h-28" : "w-32 h-44"
     )}>
       {items.map((item, i) =>
         item.client_image_path ? (
@@ -83,12 +83,12 @@ export default function TestimonialsSection({ dict }: Props) {
             <span className="text-accent text-sm uppercase tracking-widest font-semibold block mb-4">
               {dict.sectionLabel}
             </span>
-            <h2 className="text-2xl font-bold text-foreground leading-tight whitespace-pre-line">
+            <h2 className="text-3xl font-bold text-foreground leading-tight whitespace-pre-line">
               {dict.heading}
             </h2>
           </div>
 
-          <div className={`flex flex-col gap-4 items-center transition-all mt-5 duration-500 ease-in-out ${quoteClass}`}>
+          <div className={`flex flex-col items-center transition-all mt-5 duration-500 ease-in-out ${quoteClass}`}>
             {/* Person row with testimonial nav chevrons on the sides */}
             <div className="relative flex justify-center items-center w-full">
               <button
@@ -101,10 +101,10 @@ export default function TestimonialsSection({ dict }: Props) {
               </button>
 
               <div className="flex items-center gap-3 mx-3">
-                <ProfileImages size="sm" />
+                <ProfileImages size="md" />
                 <div className="w-fit">
-                  <p className="text-foreground text-sm font-semibold">{slide.client_name}</p>
-                  <p className="text-accent text-xs uppercase tracking-widest mt-1 whitespace-pre-line">{slide.client_type}</p>
+                  <p className="text-foreground text-lg font-semibold">{slide.client_name}</p>
+                  <p className="text-accent text-xs tracking-widest mt-1 whitespace-pre-line">{slide.client_type}</p>
                 </div>
               </div>
 
@@ -119,20 +119,24 @@ export default function TestimonialsSection({ dict }: Props) {
             </div>
 
             {/* Quote */}
-            <p className="text-muted text-sm text-center leading-relaxed whitespace-pre-line">{slide.client_quote}</p>
-            <Image src="/quote.png" alt="quote" width={36} height={36} className="opacity-80" />
+            <div className="flex flex-col items-center gap-4">
+              <Image src="/quote.png" alt="quote" width={36} height={36} className="opacity-80" />
+              <p className="text-muted text-base text-center leading-relaxed whitespace-pre-line">{slide.client_quote}</p>
+            </div>
           </div>
 
           {/* Dots */}
-          <div className="flex mt-2">
+          <div className="flex mt-5 justify-center">
             <Dots />
           </div>
 
+          <h4 className="text-center font-semibold text-[1.7rem] mt-5">{dict.realObjectsHeading}</h4>
+
           {/* Investment label above carousel */}
-          <div className={`transition-all duration-500  mt-5 ease-in-out ${quoteClass}`}>
-            <p className="text-foreground font-semibold text-sm">
+          <div className={`transition-all flex justify-center duration-500  mt-5 ease-in-out ${quoteClass}`}>
+            <p className="text-foreground font-semibold text-lg">
               {slide.client_name.split(" ")[0]}&apos;s {dict.investmentLabel}:
-              <span className="text-accent tracking-widest ml-2">{slide.object_title}</span>
+              <span className="text-accent text-xs tracking-widest  ml-2">{slide.object_title}</span>
             </p>
           </div>
         </div>
@@ -162,7 +166,7 @@ export default function TestimonialsSection({ dict }: Props) {
               <div className="flex items-center gap-2">
                 <p className="text-foreground text-sm font-semibold">{slide.client_name}</p>
                 <span className="text-white/20 text-xs">·</span>
-                <p className="text-accent text-xs uppercase tracking-widest">{slide.client_type}</p>
+                <p className="text-accent text-xs tracking-widest">{slide.client_type}</p>
               </div>
             </div>
           </div>

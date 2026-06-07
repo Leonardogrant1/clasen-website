@@ -7,7 +7,7 @@
     "login": "客户登录"
   },
   "hero": {
-    "vision": "您的愿景",
+    "vision": "投资",
     "items": [
       {
         "title": "押对\n正确的赌注。",
@@ -90,6 +90,7 @@
     "sectionLabel": "客户心声",
     "heading": "真实的面孔。\n真实的故事。",
     "investmentLabel": "投资",
+    "realObjectsHeading": "真实物业。非人工智能。",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -504,7 +505,7 @@
       },
       {
         "title": "依据 § 55 第 2 款 RStV 对内容负责的人",
-        "content": "Alexander Clasen\nSchloßstraße 19\n82031 Grünwald"
+        "content": "CLASEN Family Office GmbH"
       },
       {
         "title": "免责声明",

@@ -44,7 +44,7 @@ export default function ProfileSection({ dict, locale }: Props) {
                   className="w-full h-full object-cover object-[25%_center]"
                 />
               </div>
-              <div className="absolute bottom-[62%] -right-12 md:-right-16 lg:-right-20 w-27 h-28 md:w-36 md:h-34 lg:w-48 lg:h-52 z-10">
+              <div className="absolute bottom-[62%] -right-12 md:-right-16 lg:-right-20 w-27 h-28 md:w-36 md:h-34 lg:w-48 lg:h-51 z-10">
                 <Link href={`${base}/clasen`}>
                   <CircularText text={dict.circularText} />
                 </Link>
@@ -59,10 +59,10 @@ export default function ProfileSection({ dict, locale }: Props) {
             <h2 className="hidden md:block md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {dict.heading}
             </h2>
-            <p className="text-muted leading-relaxed">{dict.body1}</p>
-            <p className="text-muted leading-relaxed whitespace-pre-line">{dict.body2}</p>
-            <p className="text-muted leading-relaxed">{dict.credo}</p>
-            <p className="text-muted leading-relaxed">{dict.tagline}</p>
+            <p className="text-muted leading-relaxed text-lg md:text-xl">{dict.body1}</p>
+            <p className="text-muted leading-relaxed text-lg md:text-xl whitespace-pre-line">{dict.body2}</p>
+            <p className="text-muted leading-relaxed text-lg md:text-xl">{dict.credo}</p>
+            <p className="text-muted leading-relaxed text-lg md:text-xl">{dict.tagline}</p>
 
             <div className="flex flex-col items-center md:items-start">
               <div className="w-34 aspect-5/2 relative">

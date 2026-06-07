@@ -30,7 +30,7 @@ export default function HeroSection({ dict, statsDict }: Props) {
         </div>
 
         <div className="px-4 py-4">
-          <p className="text-muted leading-relaxed text-sm">{item.subtitle}</p>
+          <p className="text-muted leading-relaxed text-sm whitespace-pre-line">{item.subtitle}</p>
         </div>
 
         <StatsBox dict={statsDict} inline />
@@ -49,7 +49,7 @@ export default function HeroSection({ dict, statsDict }: Props) {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-foreground mb-4 whitespace-pre-line">
             {item.title}
           </h1>
-          <p className="text-muted max-w-md leading-relaxed text-sm">{item.subtitle}</p>
+          <p className="text-muted max-w-md leading-relaxed text-sm whitespace-pre-line">{item.subtitle}</p>
         </div>
 
         <StatsBox dict={statsDict} />
