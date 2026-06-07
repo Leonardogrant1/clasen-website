@@ -7,6 +7,9 @@ import AlleinestellungsMerkmale from "@/components/AlleinestellungsMerkmale";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CredoSection from "@/components/CredoSection";
 
+export const dynamic = "force-dynamic";
+
+
 export async function generateMetadata({ params }: PageProps<"/[lang]">): Promise<Metadata> {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();

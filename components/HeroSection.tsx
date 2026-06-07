@@ -7,8 +7,6 @@ type Props = {
   statsDict: Dictionary["stats"];
 };
 
-export const dynamic = "force-dynamic";
-
 export default function HeroSection({ dict, statsDict }: Props) {
 
   const item = dict.items[Math.floor(Math.random() * dict.items.length)];
