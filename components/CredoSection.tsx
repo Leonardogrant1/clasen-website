@@ -65,7 +65,7 @@ export default function CredoSection({ dict, locale }: Props) {
       <div className="flex flex-col md:flex-row justify-center align-center gap-6 md:gap-10">
 
         <div className="max-w-6xl relative">
-          <span className="text-accent text-xs md:text-base uppercase tracking-widest font-semibold block mb-12 text-center md:text-left">
+          <span className="text-accent text-sm md:text-base uppercase tracking-widest font-semibold block mb-12 text-center md:text-left">
             {dict.sectionLabel}
           </span>
 
