@@ -384,7 +384,28 @@
         "typ": "Loft",
         "flaeche": "190 m²"
       }
-    ]
+    ],
+    "appTeaser": {
+      "label": "应用",
+      "heading": "CLASEN 卖家应用",
+      "subheading": "中介 2.0：随时知情，始终掌控。",
+      "description": "作为卖家，CLASEN 业主应用让您随时全面掌握动态。追踪营销进度、看房预约、价格谈判及实时更新——透明、即时，直达您的手机。",
+      "descriptionMobile": "使用 CLASEN 业主应用随时全面掌握动态：销售进度、看房预约、价格谈判和实时更新。 | 直达您的手机。",
+      "descriptionHighlight": "信息盲区从此成为过去！",
+      "features": [
+        "完全透明",
+        "销售进度随时掌控",
+        "全天候信息更新"
+      ],
+      "badge": "即将推出",
+      "cta": "即将登陆 App Store 和 Google Play",
+      "infoFlowText": "现代化的推广需要持续的信息流。",
+      "infoFlowTextMobile": "推广需要信息流。",
+      "ownerAppTitle": "您的业主应用",
+      "platforms": "iOS & Android",
+      "altText": "CLASEN 业主应用",
+      "ctaTextAbove": "为您的房产交易提供实时透明度。"
+    }
   },
   "contact": {
     "sectionLabel": "联系我们",

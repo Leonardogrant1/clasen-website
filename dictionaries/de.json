@@ -384,7 +384,28 @@
         "typ": "Loft",
         "flaeche": "190 m²"
       }
-    ]
+    ],
+    "appTeaser": {
+      "label": "App",
+      "heading": "Ihr Gamechanger.",
+      "subheading": "Makler 2.0: Jederzeit informiert, immer in Kontrolle.",
+      "description": "Als Verkäufer haben Sie mit der CLASEN Eigentümer-App jederzeit vollen Einblick. Verfolgen Sie Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates transparent, in Echtzeit — direkt auf Ihrem Smartphone.",
+      "descriptionMobile": "Mit der CLASEN Eigentümer-App jederzeit vollen Einblick: Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates - direkt auf Ihrem Smartphone.",
+      "descriptionHighlight": "So gehören Informationslücken endgültig der Vergangenheit an!",
+      "features": [
+        "Volle Transparenz",
+        "Verkaufsfortschritt \njederzeit im Blick",
+        "24/7 informiert"
+      ],
+      "badge": "Demnächst verfügbar",
+      "cta": "Bald im App Store & Google Play",
+      "infoFlowText": "Zeitgemäße Vermarktung erfordert kontinuierlichen Informationsfluss.",
+      "infoFlowTextMobile": "Vermarktung erfordert Informationsfluss.",
+      "ownerAppTitle": "Ihre Eigentümer-App",
+      "platforms": "iOS & Android",
+      "altText": "Die CLASEN Eigentümer-App",
+      "ctaTextAbove": "Echtzeit-Transparent für \nIhren Vermarktungserfolg."
+    }
   },
   "contact": {
     "sectionLabel": "Kontakt",

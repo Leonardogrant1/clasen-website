@@ -384,7 +384,28 @@
         "typ": "Loft",
         "flaeche": "190 m²"
       }
-    ]
+    ],
+    "appTeaser": {
+      "label": "App",
+      "heading": "CLASEN Seller App",
+      "subheading": "Broker 2.0: Always informed, always in control.",
+      "description": "As a seller, the CLASEN Owner App gives you full visibility at all times. Track marketing progress, viewing appointments, price negotiations and live updates — transparently, in real time, directly on your smartphone.",
+      "descriptionMobile": "Full visibility at all times with the CLASEN Owner App: marketing progress, viewing appointments, price negotiations and live updates. | Directly on your smartphone.",
+      "descriptionHighlight": "Information gaps are a thing of the past!",
+      "features": [
+        "Full transparency",
+        "Sales progress at your fingertips",
+        "Informed 24/7"
+      ],
+      "badge": "Coming soon",
+      "cta": "Soon on App Store & Google Play",
+      "infoFlowText": "Contemporary marketing requires a continuous flow of information.",
+      "infoFlowTextMobile": "Marketing requires a flow of information.",
+      "ownerAppTitle": "Your Owner App",
+      "platforms": "iOS & Android",
+      "altText": "The CLASEN Owner App",
+      "ctaTextAbove": "Real-time transparency for your marketing success."
+    }
   },
   "contact": {
     "sectionLabel": "Contact",

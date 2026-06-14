@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { getDictionary, hasLocale } from "../dictionaries";
 import ReferenzGridTemporary from "./ReferenzGridTemporary";
+import AppTeaser from "./AppTeaser";
 
 export async function generateMetadata({ params }: PageProps<"/[lang]/properties">): Promise<Metadata> {
   const { lang } = await params;
@@ -16,6 +16,7 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang);
   const t = dict.wohnenUndLeben;
+  const app = t.appTeaser;
 
   return (
     <main className="min-h-screen bg-background pt-12 pb-16 px-4 md:pt-34 md:pb-24 md:px-8">
@@ -56,6 +57,25 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
           labelTyp={t.labelTyp}
           labelFlaeche={t.labelFlaeche}
           listingsData={t.listings}
+        />
+
+        <AppTeaser
+          label={app.label}
+          heading={app.heading}
+          subheading={app.subheading}
+          description={app.description}
+          descriptionMobile={app.descriptionMobile}
+          descriptionHighlight={app.descriptionHighlight}
+          features={app.features}
+          badge={app.badge}
+          cta={app.cta}
+          infoFlowText={app.infoFlowText}
+          infoFlowTextMobile={app.infoFlowTextMobile}
+          ownerAppTitle={app.ownerAppTitle}
+          platforms={app.platforms}
+          altText={app.altText}
+          ctaButton={t.ctaButton}
+          ctaTextAbove={app.ctaTextAbove}
         />
       </div>
     </main>
