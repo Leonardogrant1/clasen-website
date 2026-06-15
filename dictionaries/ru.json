@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "КАПИТАЛ",
-    "wohnenUndLeben": "Ключевые моменты",
+    "wohnenUndLeben": "Жильё и жизнь",
     "clasen": "Clasen",
     "contact": "Контакты",
     "login": "ВХОД ДЛЯ КЛИЕНТОВ"
@@ -431,8 +431,8 @@
     "topicLabel": "Выберите тему",
     "topics": [
       {
-        "value": "bestandsoptimierung",
-        "label": "Оптимизация портфеля"
+        "value": "anlageberatung",
+        "label": "Инвестиционное консультирование"
       },
       {
         "value": "objektverkauf",
@@ -443,12 +443,12 @@
         "label": "Строительные услуги"
       },
       {
-        "value": "investment-beratung",
-        "label": "Инвестиционное консультирование"
-      },
-      {
         "value": "steuersparmodelle",
         "label": "Модели налоговой оптимизации"
+      },
+      {
+        "value": "portfolio-optimierung",
+        "label": "Оптимизация портфеля"
       }
     ]
   },
@@ -492,7 +492,7 @@
       "description": "Свяжитесь с нами."
     },
     "wohnenUndLeben": {
-      "title": "CLASEN — Ключевые моменты",
+      "title": "CLASEN — Жильё и жизнь",
       "description": "Референсные объекты — представленные кинематографически и в высоком качестве."
     },
     "commercial": {

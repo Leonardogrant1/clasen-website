@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "COMMERCIAL",
-    "wohnenUndLeben": "Key Moments",
+    "wohnenUndLeben": "Residential",
     "clasen": "Clasen",
     "contact": "Contact",
     "login": "CLIENT LOGIN"
@@ -431,8 +431,8 @@
     "topicLabel": "Select subject",
     "topics": [
       {
-        "value": "bestandsoptimierung",
-        "label": "Portfolio Optimisation"
+        "value": "anlageberatung",
+        "label": "Investment Advisory"
       },
       {
         "value": "objektverkauf",
@@ -443,12 +443,12 @@
         "label": "Construction Services"
       },
       {
-        "value": "investment-beratung",
-        "label": "Investment Advisory"
-      },
-      {
         "value": "steuersparmodelle",
         "label": "Tax Saving Models"
+      },
+      {
+        "value": "portfolio-optimierung",
+        "label": "Portfolio Optimisation"
       }
     ]
   },
@@ -492,7 +492,7 @@
       "description": "Get in touch with us."
     },
     "wohnenUndLeben": {
-      "title": "CLASEN — Key Moments",
+      "title": "CLASEN — Residential",
       "description": "Reference properties — staged with cinematic, premium quality."
     },
     "commercial": {

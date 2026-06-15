@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "资本",
-    "wohnenUndLeben": "关键时刻",
+    "wohnenUndLeben": "居住与生活",
     "clasen": "Clasen",
     "contact": "联系我们",
     "login": "客户登录"
@@ -431,8 +431,8 @@
     "topicLabel": "选择主题",
     "topics": [
       {
-        "value": "bestandsoptimierung",
-        "label": "资产组合优化"
+        "value": "anlageberatung",
+        "label": "投资咨询"
       },
       {
         "value": "objektverkauf",
@@ -443,12 +443,12 @@
         "label": "建筑服务"
       },
       {
-        "value": "investment-beratung",
-        "label": "投资咨询"
-      },
-      {
         "value": "steuersparmodelle",
         "label": "节税方案"
+      },
+      {
+        "value": "portfolio-optimierung",
+        "label": "资产组合优化"
       }
     ]
   },
@@ -492,7 +492,7 @@
       "description": "与我们取得联系。"
     },
     "wohnenUndLeben": {
-      "title": "CLASEN — 关键时刻",
+      "title": "CLASEN — 居住与生活",
       "description": "参考案例——以电影般的高品质呈现。"
     },
     "commercial": {

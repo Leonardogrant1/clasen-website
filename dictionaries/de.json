@@ -1,7 +1,7 @@
 {
   "nav": {
     "kapital": "Investment",
-    "wohnenUndLeben": "Schlüsselmomente",
+    "wohnenUndLeben": "Wohnen & Leben",
     "clasen": "Clasen",
     "contact": "Kontakt",
     "login": "MANDANTEN - LogIn"
@@ -410,7 +410,7 @@
   "contact": {
     "sectionLabel": "Kontakt",
     "heading": "Ihr Schlüssel zum Erfolg.",
-    "body": "Von A wie \"Anlageberatung\" \nbis Z wie \"zukünftige Generationen\". \n\nOb Bestandsoptimierung oder Objektverkauf, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
+    "body": "Von A wie \"Anlageberatung\" \nbis Z wie \"zukünftige Generationen\". \n\nOb Portfolio-Optimierung oder Objektverkauf, \nIhr Anliegen verdient echte Experten!\n\nLassen Sie uns in Kontakt kommen — \ndiskret & unverbindlich.",
     "emailLabel": "E-Mail",
     "phoneLabel": "Telefon",
     "nameLabel": "Ihr Name",
@@ -418,7 +418,7 @@
     "phoneFieldLabel": "Ihre Telefonnummer",
     "phoneFieldLabelShort": "Ihre Telefon-Nr.",
     "messageLabel": "Ihre Nachricht",
-    "namePlaceholder": "Peter Beispiel",
+    "namePlaceholder": "Bernd Beispiel",
     "emailPlaceholder": "beispiel@mail.de",
     "phonePlaceholder": "+49",
     "messagePlaceholder": "Wie dürfen wir Ihnen helfen?",
@@ -431,8 +431,8 @@
     "topicLabel": "Betreff wählen",
     "topics": [
       {
-        "value": "bestandsoptimierung",
-        "label": "Bestands-Optimierung"
+        "value": "anlageberatung",
+        "label": "Anlageberatung"
       },
       {
         "value": "objektverkauf",
@@ -443,12 +443,12 @@
         "label": "Bauleistung"
       },
       {
-        "value": "investment-beratung",
-        "label": "Investment-Beratung"
-      },
-      {
         "value": "steuersparmodelle",
         "label": "Steuersparmodelle"
+      },
+      {
+        "value": "portfolio-optimierung",
+        "label": "Portfolio-Optimierung"
       }
     ]
   },
