@@ -185,15 +185,15 @@ export default function AppTeaser({
             <Image
               src="/appstore.png"
               alt="App Store"
-              width={150}
-              height={50}
+              width={120}
+              height={40}
               className="object-contain"
             />
             <Image
               src="/playstore.png"
               alt="Google Play Store"
-              width={150}
-              height={50}
+              width={120}
+              height={40}
               className="object-contain"
             />
           </div>
