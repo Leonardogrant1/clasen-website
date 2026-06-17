@@ -220,100 +220,84 @@
         "year": "Sommer 1993",
         "category": "Ursprung",
         "subtitle": "München. Der Anfang von allem.",
-        "body": "Alexander Christian Clasen wird im Sommer 1993 in München geboren — in der Stadt, die später zum Zentrum seiner Arbeit und seiner Leidenschaft werden wird. Dass der Immobilienmarkt dieser Stadt einmal sein Spielfeld sein würde, ahnte damals noch niemand. Er selbst wahrscheinlich auch nicht.",
+        "body": "Alexander Christian Clasen wird im Sommer 1993 in München geboren — in der Stadt, die später zum Zentrum seiner Arbeit und Leidenschaft werden wird. Dass der Immobilienmarkt dieser Stadt einmal sein Spielfeld sein würde, ahnte damals noch niemand.",
         "image_path": "/timeline-images/0.png"
       },
       {
         "year": "18. Geburtstag",
         "category": "Erster Versuch",
         "subtitle": "Die Absage, die alles in Gang setzte.",
-        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. Die Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das vermutlich das Ende des Gedankens. Für ihn war es der Beginn einer Obsession.",
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. \nDie Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das vermutlich das Ende des Gedankens. Für ihn der Beginn einer Obsession.",
         "image_path": "/timeline-images/1.png"
       },
       {
         "year": "2012",
         "category": "Erweckung",
         "subtitle": "»Rich Dad Poor Dad« und die Erkenntnis.",
-        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. Jura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. Die echte Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt.",
+        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. \nJura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. \nDie wahre Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt.",
         "image_path": "/timeline-images/2.png"
       },
       {
         "year": "2015",
         "category": "Wendepunkt",
         "subtitle": "Der Abbruch, gegen den Rat aller.",
-        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. Nicht aus Gleichgültigkeit — sondern aus Klarheit. Er erkennt, welches Potential ein eigener Immobilienbestand auf den angestrebten frühzeitigen Ruhestand haben kann. Alle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
+        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. \nNicht aus Gleichgültigkeit — sondern aus Klarheit. \nEr erkennt, welches Potential ein eigener Immobilienbestand haben kann. Alle raten ab. \nEr macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
         "image_path": "/timeline-images/3.png"
       },
       {
         "year": "2016",
         "category": "Quereinstieg",
         "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
-        "body": "Als Quereinsteiger tritt Alexander in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind mehrere davon gebrochen: teuerste vermittelte Wohnung, kürzeste Vermarktungszeit, größter Vermietungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchener Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
-        "image_path": "/timeline-images/4.png",
-        "milestone": {
-          "stat": "1",
-          "label": "Jahr · Etliche Verkaufsrekorde aus über 100 Jahren Firmengeschichte gebrochen"
-        }
+        "body": "Als Quereinsteiger tritt Alexander, gemeinsam mit seinem besten Freund, in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. \nEin Jahr später sind mehrere davon gebrochen: hochpreisigste vermittelte Wohnung, kürzeste Vermarktungszeit, größter Vermittlungsauftrag — Bestmarken, die jahrzehntelang Bestand hatten. \nDie Erkenntnis: Der Münchner Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+        "image_path": "/timeline-images/4.png"
       },
       {
         "year": "2017",
         "category": "Erkundung",
         "subtitle": "Die andere Seite. Schweizer Präzision.",
-        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. Konträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht.",
+        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. \nKonträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht.",
         "image_path": "/timeline-images/5.png"
       },
       {
         "year": "2018",
         "category": "1. Gründung",
-        "subtitle": "Das erste eigene Unternehmen. Mit einem klaren Auftrag.",
-        "body": "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie: Der Fokus liegt ausschließlich auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Menschen, die überzeugt waren, keinen Makler zu brauchen. Oft genug lagen sie falsch. Über 330 Immobilien werden in der Folge vermittelt. Das Ergebnis im ersten Jahr: siebenstelliger Umsatz — und die Bestätigung, dass ein anderer Weg möglich ist.",
-        "milestone": {
-          "stat": "330+",
-          "label": "Vermittelte Immobilien · 7-stelliger Umsatz im Gründungsjahr"
-        },
+        "subtitle": "Das erste eigene Unternehmen. Klarer Auftrag.",
+        "body": "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie:\nDer Fokus liegt vor allem auf Verkäufern, die mit der Maklerzunft bereits abgeschlossen hatten. Vertrauen für einen unbeliebten Berufsstand zurückzugewinnen, lautete also ab Tag 1 die Devise.\nInsgesamt über 300 Immobilien werden infolge dieser und späterer Unternehmungen vermittelt.\nSiebenstelliger Umsatz im GründungsJahr und bis in die Gegenwart reichende Mandantenbeziehungen —  bezeugen, dass ein anderer Weg möglich ist.",
         "image_path": "/timeline-images/6.jpg"
       },
       {
         "year": "2018",
         "category": "2. Gründung",
-        "subtitle": "Die eigene Baufirma. Weil echte Unabhängigkeit keine Kompromisse kennt.",
-        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für die Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur fertigen Immobilie.",
+        "subtitle": "Eigene Baufirma. Unabhängigkeit ohne Kompromisse.",
+        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. \nQualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur Schlüsselübergabe.",
         "image_path": "/timeline-images/7.png"
       },
       {
         "year": "Meilenstein (2020)",
-        "category": "Projekt",
-        "subtitle": "Ein Ensemble. Vollständig in eigener Hand.",
-        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchener Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Akquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. \nEin Beweis dafür, was echte Partnerschaft bedeutet.",
+        "category": "Ensemble",
+        "subtitle": "Rund um Begleitung des 1. Großprojekts.",
+        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchner Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Akquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. \nEin Beweis dafür, was echte Partnerschaft bedeutet.",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
         "year": "Meilenstein (2022)",
         "category": "Baudenkmal",
-        "subtitle": "München, Theresienwiese. Vier Jahre. Ein Denkmal.",
-        "body": "Eine Münchener Erbengemeinschaft vertraut CLASEN mit einem der anspruchsvollsten Aufträge der Unternehmensgeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. Denkmalschutz, Erbrecht, Sanierungskomplexität, Münchener Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion, Ausdauer und die Fähigkeit, auch dort Ergebnisse zu liefern, wo andere scheitern.",
-        "image_path": "/timeline-images/9.png",
-        "milestone": {
-          "stat": "4",
-          "label": "Jahre Projektlaufzeit · Baudenkmal · Theresienwiese München"
-        }
+        "subtitle": "Theresienwiese. Vier Jahre. Ein Denkmal.",
+        "body": "Eine Münchner Erbengemeinschaft vertraut CLASEN mit dem anspruchsvollsten Auftrag der jungen Firmengeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. \nDenkmalschutz, Erbrecht, Sanierungskomplexität, Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion und Ausdauer.",
+        "image_path": "/timeline-images/9.png"
       },
       {
         "year": "2024",
         "category": "Vision",
         "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
-        "body": "Aus dem Maklerhaus wird ein Family Office. Der Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. Insgesamt transferierte Sachwerte von über 300 Mio. Euro. Über 400 vermittelte Investments. 97 % Weiterempfehlung. Das Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen — zu Konditionen, die sonst nur Institutionelle kennen.",
-        "milestone": {
-          "stat": "329.7",
-          "label": "Mio. € anvertraute Kundenwerte · 97 % Weiterempfehlung"
-        },
+        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionelle Investoren kennen.",
         "image_path": "/timeline-images/10.png"
       },
       {
         "year": "Heute",
         "category": "Spezialisierung",
         "subtitle": "Steuern sparen als Königsdisziplin.",
-        "body": "Mit wachsendem Mandantenstamm wächst auch die Erkenntnis: Die größte Stellschraube im Vermögensaufbau ist nicht die Rendite — es ist die Steuerlast. CLASEN spezialisiert sich konsequent auf maßgeschneiderte Steuersparmodelle für Topverdiener, Unternehmer und anspruchsvolle Kapitalanleger. In enger Zusammenarbeit mit führenden Kanzleien entstehen rechtssichere Konzepte, die die gesamte Steuerlast der Mandanten strukturell und nachhaltig reduzieren — nicht als Trick, sondern als Architektur. Wer einmal verstanden hat, wie viel Kapital hier jährlich verloren geht, denkt Investitionen nie wieder gleich.",
+        "body": "Was als Überzeugung begann — Unabhängigkeit die keine Kompromisse kennt — ist heute eine Haltung, die wir für unsere Mandanten auf jeden Aspekt des Vermögensaufbaus anwenden. \nMit führenden Rechtskanzleien entwickelte Konzepte, die nicht nur an der Oberfläche kratzen. \nStruktur, Rechtssicherheit, Beständigkeit — ohne Kompromisse. Ihr Schlüssel zum Erfolg.",
         "isToday": true,
         "image_path": "/timeline-images/11.png"
       }
@@ -387,7 +371,7 @@
     ],
     "appTeaser": {
       "label": "App",
-      "heading": "Ihr Gamechanger.",
+      "heading": "Gamechanger.",
       "subheading": "Makler 2.0: Jederzeit informiert, immer in Kontrolle.",
       "description": "Als Verkäufer haben Sie mit der CLASEN Eigentümer-App jederzeit vollen Einblick. Verfolgen Sie Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates transparent, in Echtzeit — direkt auf Ihrem Smartphone.",
       "descriptionMobile": "Mit der CLASEN Eigentümer-App jederzeit vollen Einblick: Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates - direkt auf Ihrem Smartphone.",

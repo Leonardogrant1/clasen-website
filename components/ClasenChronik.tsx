@@ -209,7 +209,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-60 md:-translate-y-16", (index === 7) && "md:scale-95 md:translate-y-10", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-20")}
+      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-60 md:-translate-y-10", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -234,7 +234,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
 function EntryText({ entry, i, className }: { entry: Entry, i: number, className?: string }) {
 
-  const mtForIndex = ["mt-15", "mt-8", "mt-0", "mt-15", "mt-0", "mt-20", "mt-10", "mt-0", "mt-10", "mt-0", "mt-10", "mt-2"]
+  const mtForIndex = ["mt-15", "mt-8", "mt-0", "mt-15", "mt-0", "mt-20", "mt-10", "mt-0", "mt-10", "mt-0", "mt-10", "mt-14"]
 
   return (
     <div className={cn("text-left md:min-h-[400px]", className ?? mtForIndex[i])}>
@@ -242,12 +242,6 @@ function EntryText({ entry, i, className }: { entry: Entry, i: number, className
       <h3 className="text-foreground font-bold text-2xl mb-1">{entry.category}</h3>
       <p className="text-muted italic text-lg mb-3">{entry.subtitle}</p>
       <p className="text-muted text-lg leading-relaxed whitespace-pre-line">{entry.body}</p>
-      {entry.milestone && (
-        <div className="mt-4 flex flex-col items-start">
-          <span className="text-accent font-bold text-2xl">{entry.milestone.stat}</span>
-          <span className="text-muted text-lg mt-1 max-w-xs leading-relaxed">{entry.milestone.label}</span>
-        </div>
-      )}
     </div>
   );
 }
@@ -292,7 +286,7 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
 function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   const ref = useFadeIn();
 
-  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-0", "mt-28", "mt-24", "mt-14", "mt-44", "mt-10", "mt-14"]
+  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-0", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14"]
 
   return (
     <div

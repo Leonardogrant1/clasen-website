@@ -246,19 +246,19 @@ export default function AppTeaser({
             </div>
 
             {/* Right column – Store badges */}
-            <div className="flex flex-col justify-center items-end gap-4 pt-16">
+            <div className="flex flex-col justify-center items-end gap-4 pt-16 pr-4">
               <Image
                 src="/appstore.png"
                 alt="App Store"
-                width={200}
-                height={50}
+                width={166}
+                height={40}
                 className="object-contain"
               />
               <Image
                 src="/playstore.png"
                 alt="Google Play Store"
-                width={200}
-                height={50}
+                width={166}
+                height={40}
                 className="object-contain"
               />
             </div>
