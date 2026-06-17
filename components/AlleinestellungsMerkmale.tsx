@@ -63,8 +63,8 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
               <div key={m.title} className={`flex flex-col items-center gap-4 ${mobileOrders[i] || ""}`}>
                 <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-28 h-28" />
 
-                <p className="text-base uppercase tracking-[0.2em] text-center font-semibold text-foreground">{m.title}</p>
-                <p className="text-muted text-base leading-relaxed text-center">{m.description}</p>
+                <p className="text-lg uppercase tracking-[0.2em] text-center font-semibold text-foreground">{m.title}</p>
+                <p className="text-muted text-lg leading-relaxed text-center">{m.description}</p>
               </div>
             );
           })}
