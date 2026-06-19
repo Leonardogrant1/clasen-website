@@ -24,19 +24,14 @@ type AppTeaserProps = {
 };
 
 export default function AppTeaser({
-  label,
   heading,
   subheading,
   description,
-  descriptionHighlight,
   features,
-  badge,
-  cta,
   infoFlowText = "Zeitgemäße Vermarktung erfordert kontinuierlichen Informationsfluss.",
   infoFlowTextMobile = "Vermarktung erfordert Informationsfluss.",
   descriptionMobile = "Mit der CLASEN Eigentümer-App jederzeit vollen Einblick: Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates. | Direkt auf Ihrem Smartphone.",
   ownerAppTitle = "Ihre Eigentümer-App",
-  platforms = "iOS & Android",
   altText = "Clasen Eigentümer App",
   ctaButton = "Schlüsselmoment erleben",
   ctaTextAbove = "Ihr Vermarktungserfolg auf dem nächsten Level.",

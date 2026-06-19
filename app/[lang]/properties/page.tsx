@@ -19,28 +19,35 @@ export default async function WohnenUndLebenPage({ params }: PageProps<"/[lang]/
   const app = t.appTeaser;
 
   return (
-    <main className="min-h-screen bg-background pt-12 pb-16 px-4 md:pt-34 md:pb-24 md:px-8">
+    <main className="min-h-screen bg-background pt-2 pb-16 px-4 md:pt-34 md:pb-24 md:px-8">
       <div className="w-full lg:max-w-7xl mx-auto flex flex-col gap-3">
         <div className="pt-20 lg:pt-0">
-          <div className="flex flex-col w-full gap-10 md:gap-7">
+          <div className="flex flex-col w-full gap-6 md:gap-7">
             <div className="text-center lg:text-left" style={{ animation: "fade-up 0.7s ease both" }}>
               <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-foreground leading-tight whitespace-pre-line">
                 {t.heading}
               </h1>
-              <span className="text-accent text-xs md:text-base uppercase tracking-widest font-semibold block mt-3">{t.subheading}</span>
+              <span className="text-accent text-xs md:text-base uppercase tracking-widest font-semibold block mt-3">
+                <span className="md:hidden">{t.subheadingMobile}</span>
+                <span className="hidden md:inline">{t.subheading}</span>
+              </span>
             </div>
 
             <blockquote className="flex flex-col items-center lg:items-start gap-3" style={{ animation: "fade-up 0.7s ease 0.2s both" }}>
               <p className="text-muted text-base md:text-xl leading-relaxed text-center lg:text-left italic">
-                „{t.quote.p1}
-                {" "} {t.quote.p2}"
+                <span className="md:hidden">„{t.quote.mobile}“</span>
+                <span className="hidden md:inline">
+                  „{t.quote.p1}
+                  {" "} {t.quote.p2}“
+                </span>
               </p>
 
             </blockquote>
 
-            <div className="flex-col md:flex-row flex items-baseline gap-4 pt-4 md:pt-14 lg:pt-0" style={{ animation: "fade-up 0.7s ease 0.35s both" }}>
+            <div className="flex-col md:flex-row flex items-baseline gap-4 md:pt-14 lg:pt-0" style={{ animation: "fade-up 0.7s ease 0.35s both" }}>
               <span className="text-muted text-xs md:text-base uppercase tracking-widest font-semibold block">
-                {t.description}
+                <span className="md:hidden">{t.descriptionMobile}</span>
+                <span className="hidden md:inline">{t.description}</span>
               </span>
             </div>
           </div>

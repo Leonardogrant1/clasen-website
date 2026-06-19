@@ -311,7 +311,9 @@
     "sectionLabel": "Referenzobjekte",
     "heading": "Wohnen & Leben.",
     "subheading": "Lebensmittelpunkte. So einzigartig wie Sie selbst.",
+    "subheadingMobile": "Einzigartige Lebensmittelpunkte.",
     "description": "Auszüge vermittelter Liegenschaften:",
+    "descriptionMobile": "Vermittelte Liegenschaften:",
     "viewProperty": "Objekt ansehen",
     "notConnected": "ImmoScout nicht verbunden",
     "connectButton": "Jetzt verbinden",
@@ -323,7 +325,8 @@
     "labelFlaeche": "Fläche",
     "quote": {
       "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln:",
-      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien."
+      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien.",
+      "mobile": "Unsere Wurzeln liegen in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien."
     },
     "listings": [
       {
