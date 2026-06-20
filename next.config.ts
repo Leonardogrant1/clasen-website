@@ -13,6 +13,23 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/:lang(de|en)/eigentuemer",
+        destination: "https://clasen-immobilien.perspectivefunnel.com",
+        permanent: false
+      },
+      {
+        source: '/eigentuemer',
+        destination: 'https://clasen-immobilien.perspectivefunnel.com',
+        permanent: false,
+      },
+    ]
+  },
+
+
   async rewrites() {
     return [
       {
