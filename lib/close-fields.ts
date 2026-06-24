@@ -1,0 +1,15 @@
+export const CLOSE_LEAD_FIELDS = {
+  leadType: 'cf_placeholder_leadType',
+  funnelSource: 'cf_placeholder_funnelSource',
+  propertyType: 'cf_placeholder_propertyType',
+  priorities: 'cf_placeholder_priorities',
+  salePhase: 'cf_placeholder_salePhase',
+  district: 'cf_placeholder_district',
+  partnerType: 'cf_placeholder_partnerType',
+  equity: 'cf_placeholder_equity',
+  lifePhase: 'cf_placeholder_lifePhase',
+  homePriorities: 'cf_placeholder_homePriorities',
+  moodLocation: 'cf_placeholder_moodLocation',
+  moodStyle: 'cf_placeholder_moodStyle',
+  moodSize: 'cf_placeholder_moodSize',
+} as const
