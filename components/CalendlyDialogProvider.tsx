@@ -106,7 +106,7 @@ export function CalendlyDialogProvider({ children }: { children: ReactNode }) {
             </button>
 
             <div className="text-center mt-8 md:mt-0 mb-8 md:mb-10">
-              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4 uppercase">Schlüsselmoment erleben</h2>
+              <h2 className="text-2xl md:text-4xl font-bold text-foreground mb-4 uppercase">Beratung buchen</h2>
               <p className="text-white/60 max-w-2xl mx-auto text-lg">Wählen Sie Ihren Ansprechpartner und vereinbaren Sie direkt einen Termin.</p>
             </div>
 

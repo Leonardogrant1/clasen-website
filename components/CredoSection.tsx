@@ -90,7 +90,7 @@ export default function CredoSection({ dict, locale }: Props) {
 
 
         <CalendlyButton trackSource="credo_section">
-          Schlüsselmoment erleben
+          {dict.cta}
         </CalendlyButton>
       </div>
 

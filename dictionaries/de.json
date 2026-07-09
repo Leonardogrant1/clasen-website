@@ -46,7 +46,7 @@
     "credo": "Unser Credo der FAIRlässlichkeit.",
     "tagline": "Ihr Schlüssel zum Erfolg.",
     "role": "Alexander Clasen",
-    "cta": "Schlüsselmoment erleben",
+    "cta": "Beratung buchen",
     "circularText": "Ihr Vertrauen ist unser Stolz"
   },
   "alleinstell": {
@@ -170,7 +170,7 @@
     "sectionLabel": "Credo",
     "quote": "„Der beste Zeitpunkt,\neinen Baum zu pflanzen,\nwar vor 20 Jahren.\n\nDer zweitbeste ist jetzt…“",
     "attribution": "— Chinesisches Sprichwort",
-    "cta": "Jetzt Kontakt aufnehmen"
+    "cta": "Beratung buchen"
   },
   "footer": {
     "tagline": "Ihr Schlüssel zum Erfolg.",
@@ -305,7 +305,7 @@
   },
   "clasenCta": {
     "heading": "Gemeinsam.\nGegenwart.\nGestalten.",
-    "button": "Schlüsselmoment erleben"
+    "button": "Beratung buchen"
   },
   "wohnenUndLeben": {
     "sectionLabel": "Referenzobjekte",
@@ -319,7 +319,7 @@
     "connectButton": "Jetzt verbinden",
     "noListings": "Keine Objekte verfügbar",
     "ctaHeading": "Ihr Objekt verdient das Beste.",
-    "ctaButton": "Schlüsselmoment erleben",
+    "ctaButton": "Beratung buchen",
     "labelOrt": "Ort",
     "labelTyp": "Typ",
     "labelFlaeche": "Fläche",

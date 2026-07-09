@@ -33,7 +33,7 @@ export default function AppTeaser({
   descriptionMobile = "Mit der CLASEN Eigentümer-App jederzeit vollen Einblick: Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates. | Direkt auf Ihrem Smartphone.",
   ownerAppTitle = "Ihre Eigentümer-App",
   altText = "Clasen Eigentümer App",
-  ctaButton = "Schlüsselmoment erleben",
+  ctaButton = "Beratung buchen",
   ctaTextAbove = "Ihr Vermarktungserfolg auf dem nächsten Level.",
 }: AppTeaserProps) {
   const ref = useRef<HTMLDivElement>(null);

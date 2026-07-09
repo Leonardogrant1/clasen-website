@@ -64,8 +64,11 @@ export async function trackEvent(
   // Determine Meta event name to send
   const finalMetaEventName = options.metaEventName || eventName
 
+  // Skip all Meta tracking on localhost
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+
   // 2) Track in Meta Pixel (client-side)
-  if (!options.skipMeta && typeof window.fbq === 'function') {
+  if (!options.skipMeta && !isLocalhost && typeof window.fbq === 'function') {
     try {
       const isStandard = STANDARD_META_EVENTS.includes(finalMetaEventName)
       const trackingType = isStandard ? 'track' : 'trackCustom'
@@ -77,7 +80,7 @@ export async function trackEvent(
   }
 
   // 3) Send to Server (Meta Conversions API via /api/track)
-  if (!options.skipMeta) {
+  if (!options.skipMeta && !isLocalhost) {
     try {
       // Run async without blocking main client UI
       fetch('/api/track', {
