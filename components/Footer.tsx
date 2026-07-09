@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 export default function Footer({ dict, locale }: { dict: Dictionary["footer"]; locale: string }) {
   return (

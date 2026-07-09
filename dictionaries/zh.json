@@ -516,6 +516,10 @@
     "datenschutz": {
       "title": "CLASEN — 隐私政策",
       "description": "依据 GDPR 的数据保护声明。"
+    },
+    "baumanagement": {
+      "title": "CLASEN — 推荐佣金",
+      "description": "向 CLASEN 推荐新的建筑、翻新和装修项目，即可获得丰厚的推荐佣金。"
     }
   },
   "impressum": {
@@ -577,5 +581,124 @@
         "content": "您有权就我方对您个人数据的处理向数据保护监管机构提出申诉。巴伐利亚州的主管监管机构为巴伐利亚州数据保护专员 (BayLfD)。"
       }
     ]
+  },
+  "funnels": {
+    "selection": {
+      "search": {
+        "label": "寻找房产",
+        "tooltip": "从我们的专属投资组合中找到您的理想房产"
+      },
+      "sell": {
+        "label": "出售房产",
+        "tooltip": "我们将谨慎、专业地陪伴您完成销售"
+      }
+    }
+  },
+  "baumanagement": {
+    "hero": {
+      "sectionLabel": "推荐计划",
+      "headingPre": "您的人脉比市场更早知道",
+      "headingEm": "建筑项目",
+      "headingPost": "。",
+      "body": "您经常最先得知新的建筑项目、即将进行的翻新或计划中的装修？将联系人推荐给我们——项目成功后，您将获得丰厚的推荐佣金。谨慎、简便、公平。",
+      "ctaPrimary": "推荐项目",
+      "ctaSecondary": "查看佣金模式",
+      "stats": [
+        { "num": "24 小时内", "label": "推荐后获得回复" },
+        { "num": "0 €", "label": "作为推荐人无任何成本或风险" },
+        { "num": "100 %", "label": "对第三方严格保密" }
+      ]
+    },
+    "why": {
+      "sectionLabel": "为什么设立推荐计划",
+      "heading": "一个好的推荐胜过任何广告。",
+      "body": "工匠、建筑师、物业管理公司、公证处、经纪人和私人联系人往往最先得知建筑、翻新或装修项目。我们希望公平地回报这些信息——以清晰、可预期的佣金取代模糊的人情。",
+      "steps": [
+        {
+          "n": "01 — 推荐",
+          "title": "建立联系",
+          "body": "您通过表单、电话或电子邮件，以非正式的方式向我们告知建筑、翻新或装修项目。只需姓名、房产和简短描述即可。"
+        },
+        {
+          "n": "02 — 审核与对接",
+          "title": "我们来接手",
+          "body": "我们的团队将谨慎地取得联系，审核项目，并亲自陪伴委托方完成整个流程。"
+        },
+        {
+          "n": "03 — 获得佣金",
+          "title": "签约后付款",
+          "body": "如果您的推荐促成了合同，您将在正式委托或公证后获得佣金——并有书面确认。"
+        }
+      ]
+    },
+    "commission": {
+      "sectionLabel": "佣金模式",
+      "heading": "按项目类型透明分级。",
+      "body": "佣金金额取决于所推荐项目的类型和规模。以下费率可作为您与我们初次沟通的参考。",
+      "cards": [
+        {
+          "cat": "建筑项目",
+          "amount": "1.0 – 1.5",
+          "unit": "% 合同金额",
+          "body": "通过您的推荐促成的新建项目及大型交钥匙建筑工程。",
+          "note": "签订合同后付款"
+        },
+        {
+          "cat": "翻新项目",
+          "amount": "1.5 – 2.0",
+          "unit": "% 合同金额",
+          "body": "对现有房产进行的节能、技术或结构性翻新。",
+          "note": "确认订单后付款"
+        },
+        {
+          "cat": "装修项目",
+          "amount": "2.0 – 2.5",
+          "unit": "% 合同金额",
+          "body": "现代化改造、修缮及提升价值的装修措施。",
+          "note": "确认订单后付款"
+        }
+      ],
+      "disclaimer": "所有费率仅供参考。具体条款将在项目开始前与您本人书面商定。"
+    },
+    "eligibility": {
+      "sectionLabel": "条件",
+      "heading": "对双方都公平。",
+      "items": [
+        "推荐可证明地为 CLASEN 带来新的建筑、翻新或装修合同。",
+        "被推荐的联系人此前不是 CLASEN 的客户，也未与 CLASEN 有过活跃联系。",
+        "佣金协议在项目开始前由您与 CLASEN 书面确认。",
+        "佣金在正式委托或公证后支付。",
+        "商业经纪人及已有合同约束的中介不适用于本计划。"
+      ],
+      "quote": "「推荐一个项目的最佳时机，就是您第一次听说它的那一刻。」",
+      "quoteSource": "源自我们的公平信条"
+    },
+    "form": {
+      "sectionLabel": "立即推荐",
+      "heading": "告诉我们您的推荐。",
+      "body": "简单告诉我们项目和联系人——其余的交给我们。谨慎且不具约束力。",
+      "emailLabel": "电子邮件",
+      "phoneLabel": "电话",
+      "nameLabel": "您的姓名",
+      "emailFieldLabel": "您的电子邮件",
+      "phoneFieldLabel": "您的电话号码",
+      "phoneFieldLabelShort": "您的电话",
+      "typeLabel": "项目类型",
+      "types": [
+        { "value": "bauauftrag", "label": "建筑项目" },
+        { "value": "sanierungsauftrag", "label": "翻新项目" },
+        { "value": "renovierungsauftrag", "label": "装修项目" }
+      ],
+      "messageLabel": "您的留言",
+      "namePlaceholder": "王示例",
+      "emailPlaceholder": "example@mail.com",
+      "phonePlaceholder": "+49",
+      "messagePlaceholder": "房产、地点、联系人及项目简短描述。",
+      "submit": "发送推荐",
+      "successHeading1": "非常感谢——",
+      "successHeading2": "我们会尽快与您联系。",
+      "successMessage": "您的推荐已收到。我们的工作人员将尽快与您联系。",
+      "errorMessage": "消息发送失败。请重试或直接致电我们。"
+    }
   }
 }

@@ -4,8 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
-import posthog from "posthog-js";
+import dynamic from "next/dynamic";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
+import { trackEvent } from "@/lib/event-tracker";
+
+import homeAnim from "@/public/animations/burger/system-solid-41-home-hover-pinch-2.json";
+import homeAnim2 from "@/public/animations/burger/system-solid-41-home-hover-pinch.json";
+import investmentAnim from "@/public/animations/burger/system-solid-160-trending-up-hover-trend-up.json";
+import investmentAnim2 from "@/public/animations/burger/system-solid-160-trending-up-hover-trend-up-2.json";
+import contactsAnim from "@/public/animations/burger/system-solid-187-contacts-hover-contacts.json";
+import contactsAnim2 from "@/public/animations/burger/system-solid-187-contacts-hover-contacts-2.json";
+import signInAnim from "@/public/animations/burger/system-solid-113-log-sign-in-hover-sign-in.json";
+import signInAnim2 from "@/public/animations/burger/system-solid-113-log-sign-in-hover-sign-in-2.json";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+
+// index 0 = Kapital, 1 = Wohnen&Leben, 2 = Clasen (key SVG handled separately), 3 = Contact
+const burgerAnimations = [[investmentAnim, investmentAnim2], [homeAnim, homeAnim2], null, [contactsAnim, contactsAnim2]] as const;
 
 type Props = {
   dict: Dictionary["nav"];
@@ -13,6 +28,106 @@ type Props = {
 };
 
 type LoginPhase = "idle" | "flying" | "arrived";
+
+function MobileNavItem({
+  href,
+  label,
+  active,
+  animationData,
+  keyIcon,
+  onNavigate,
+}: {
+  href: string;
+  label: string;
+  active: boolean;
+  animationData?: object | null;
+  keyIcon?: boolean;
+  onNavigate: (href: string) => void;
+}) {
+  const lottieRef = useRef<any>(null);
+
+  const handleClick = () => {
+    if (animationData && lottieRef.current) {
+      lottieRef.current.goToAndPlay(0, true);
+      setTimeout(() => onNavigate(href), 600);
+    } else {
+      onNavigate(href);
+    }
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className={`flex flex-col items-center gap-2 group transition-colors duration-200
+        ${active ? "text-accent" : "text-foreground hover:text-accent"}`}
+    >
+      {keyIcon ? (
+        <div className="w-24 h-16 relative">
+          <Image
+            src="/logo/key_white.svg"
+            fill
+            alt=""
+            className="object-contain"
+          />
+        </div>
+      ) : animationData ? (
+        <div
+          className="w-8 h-8 duration-200"
+          onMouseEnter={() => lottieRef.current?.goToAndPlay(0, true)}
+          onMouseLeave={() => lottieRef.current?.goToAndStop(0, true)}
+        >
+          <Lottie
+            lottieRef={lottieRef}
+            animationData={animationData}
+            autoplay={false}
+            loop={false}
+            className="w-full h-full"
+          />
+        </div>
+      ) : null}
+      <span className="text-2xl font-bold uppercase tracking-widest">
+        {label}
+      </span>
+    </button>
+  );
+}
+
+function MobileLoginIcon({ onNavigate, label }: { onNavigate: () => void; label: string }) {
+  const lottieRef = useRef<any>(null);
+
+  const handleClick = () => {
+    if (lottieRef.current) {
+      lottieRef.current.goToAndPlay(0, true);
+      setTimeout(() => onNavigate(), 600);
+    } else {
+      onNavigate();
+    }
+  };
+
+  return (
+    <button
+      onClick={handleClick}
+      className="flex flex-col items-center gap-4 group mt-20"
+    >
+      <div
+        className="w-8 h-8 duration-200"
+        onMouseEnter={() => lottieRef.current?.goToAndPlay(0, true)}
+        onMouseLeave={() => lottieRef.current?.goToAndStop(0, true)}
+      >
+        <Lottie
+          lottieRef={lottieRef}
+          animationData={signInAnim}
+          autoplay={false}
+          loop={false}
+          className="w-full h-full"
+        />
+      </div>
+      <span className="px-8 py-3 rounded-full bg-white text-black text-sm uppercase tracking-widest font-semibold group-hover:bg-white/90 transition-colors duration-200">
+        {label}
+      </span>
+    </button>
+  );
+}
 
 export default function Nav({ dict, locale }: Props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,8 +152,8 @@ export default function Nav({ dict, locale }: Props) {
       ? rawPathname === `/${locale}`
         ? "/"
         : rawPathname.startsWith(`/${locale}/`)
-        ? rawPathname.slice(`/${locale}`.length)
-        : rawPathname
+          ? rawPathname.slice(`/${locale}`.length)
+          : rawPathname
       : rawPathname;
 
   const mainLinks = [
@@ -51,7 +166,7 @@ export default function Nav({ dict, locale }: Props) {
   const handleLoginClick = () => {
     if (loginPhase !== "idle") return;
 
-    posthog.capture("login_initiated", { source: "desktop_nav" });
+    trackEvent("login_initiated", { source: "desktop_nav" });
 
     const logoEl = logoRef.current;
     const lockEl = lockRef.current;
@@ -123,7 +238,9 @@ export default function Nav({ dict, locale }: Props) {
           </div>
         </nav>
 
-        <div className="hidden lg:flex justify-end items-center">
+        <div className="hidden lg:flex justify-end items-center gap-3">
+
+          {/* Login button */}
           <div ref={lockRef} className="relative h-10 w-36 xl:h-12 xl:w-48">
             <button
               onClick={handleLoginClick}
@@ -191,30 +308,35 @@ export default function Nav({ dict, locale }: Props) {
         </button>
 
         <nav className="flex flex-col items-center gap-8">
-          {mainLinks.map((link) => {
+          {mainLinks.map((link, i) => {
             const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
+            const isClasen = i === 2;
+            const anims = burgerAnimations[i];
             return (
-              <Link
+              <MobileNavItem
                 key={link.href}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`text-2xl font-bold uppercase tracking-widest transition-colors duration-200
-                  ${active ? "text-accent" : "text-foreground hover:text-accent"}`}
-              >
-                {link.label}
-              </Link>
+                label={link.label}
+                active={active}
+                keyIcon={isClasen}
+                animationData={!isClasen && anims ? anims[active ? 1 : 0] : undefined}
+                onNavigate={(href) => {
+                  setIsOpen(false);
+                  router.push(href);
+                }}
+              />
             );
           })}
 
-          <Image src="/logo/key_white.svg" alt="Clasen" width={100} height={34} className="mt-6 opacity-80" />
-
-          <Link
-            href={`${base}/login`}
-            onClick={() => { setIsOpen(false); posthog.capture("login_initiated", { source: "mobile_nav" }); }}
-            className="px-8 py-3 rounded-full bg-white text-black text-sm uppercase tracking-widest font-semibold hover:bg-white/90 transition-colors duration-200"
-          >
-            {dict.login}
-          </Link>
+          {/* Mandanten Login with sign-in animation */}
+          <MobileLoginIcon
+            label={dict.login}
+            onNavigate={() => {
+              setIsOpen(false);
+              trackEvent("login_initiated", { source: "mobile_nav" });
+              router.push(`${base}/login`);
+            }}
+          />
         </nav>
       </div>
     </>

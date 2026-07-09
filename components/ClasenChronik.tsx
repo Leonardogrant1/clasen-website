@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 import { cn } from "@/utils/cn";
-import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
+import CalendlyButton from "./CalendlyButton";
 
 type Entry = Dictionary["clasenChronik"]["entries"][number];
 
@@ -209,7 +209,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-60 md:-translate-y-10", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
+      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-90", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -252,10 +252,10 @@ const mobileMtForIndex = ["mt-6", "mt-4", "mt-4", "mt-8", "mt-8", "mt-8", "mt-6"
 function EntryContent({ entry, index }: { entry: Entry; index: number }) {
   return (
     <div className="flex flex-col gap-y-8">
-      <div className={cn(mobileMtForIndex[index], "max-w-[82%] mx-auto md:max-w-none md:mx-0")}>
+      <EntryText entry={entry} i={index} className="mt-0" />
+      <div className="max-w-[82%] mx-auto md:max-w-none md:mx-0">
         <EntryImage src={entry.image_path} alt={entry.category} rotate={index === 8 ? 0 : 2} index={index} />
       </div>
-      <EntryText entry={entry} i={index} className="" />
     </div>
   );
 }
@@ -267,14 +267,8 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
       ref={ref}
       className="grid grid-cols-[24px_1fr] mb-10 items-start opacity-0 translate-y-6 transition-all duration-700 ease-out"
     >
-      <div className="flex justify-center pt-1.5">
-        {entry.isToday ? (
-          <div className="w-3 h-3 rounded-full bg-accent ring-4 ring-accent/20" />
-        ) : entry.year === "Meilenstein" || entry.year === "Milestone" ? (
-          <div className="w-2.5 h-2.5 rounded-full bg-white/50 ring-2 ring-white/20" />
-        ) : (
-          <div className="w-2 h-2 rounded-full bg-white/20 ring-2 ring-white/10" />
-        )}
+      <div className="flex justify-center pt-8">
+        <div className="w-3 h-3 rounded-full bg-accent ring-4 ring-accent/20" />
       </div>
       <div className="pl-4">
         <EntryContent entry={entry} index={index} />
@@ -286,7 +280,7 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
 function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   const ref = useFadeIn();
 
-  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-0", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14"]
+  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-20", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14"]
 
   return (
     <div
@@ -295,37 +289,27 @@ function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
       className={cn("grid grid-cols-[1fr_32px_1fr]  items-start opacity-0 translate-y-6 transition-all duration-700 ease-out", mtForIndex[i])}
     >
       <div className={cn("pr-8", i % 2 !== 0 && "flex items-center")}>
-        {i % 2 === 0 ? <EntryText entry={entry} i={i} /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={-2} index={i} />}
+        {i % 2 === 0 ? <EntryText entry={entry} i={i} className="mt-0" /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={-2} index={i} />}
       </div>
-      <div className="flex justify-center pt-2">
-        {entry.isToday ? (
-          <div className="w-4 h-4 rounded-full bg-accent ring-4 ring-accent/20" />
-        ) : entry.year === "Meilenstein" || entry.year === "Milestone" ? (
-          <div className="w-3 h-3 rounded-full bg-white/50 ring-2 ring-white/20" />
-        ) : (
-          <div className="w-2.5 h-2.5 rounded-full bg-white/20 ring-2 ring-white/10" />
-        )}
+      <div className="flex justify-center pt-8">
+        <div className="w-4 h-4 rounded-full bg-accent ring-4 ring-accent/20" />
       </div>
       <div className={cn("pl-8", i % 2 === 0 && "flex items-center")}>
-        {i % 2 !== 0 ? <EntryText entry={entry} i={i} /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={2} index={i} />}
+        {i % 2 !== 0 ? <EntryText entry={entry} i={i} className="mt-0" /> : <EntryImage src={entry.image_path} alt={entry.category} rotate={2} index={i} />}
       </div>
     </div>
   );
 }
 
 function CtaRow({ cta }: { cta: Dictionary["clasenCta"] }) {
-  const { openDialog } = useCalendlyDialog();
   return (
     <div className="flex flex-col items-center justify-center text-center pt-10 pb-5 mt-16 md:mt-24 border-t border-white/10">
       <p className="text-2xl md:text-3xl font-semibold text-foreground mb-8 max-w-md leading-relaxed whitespace-pre-line">
         {cta.heading}
       </p>
-      <button
-        onClick={openDialog}
-        className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
-      >
+      <CalendlyButton trackSource="clasen_chronik">
         {cta.button}
-      </button>
+      </CalendlyButton>
     </div>
   );
 }

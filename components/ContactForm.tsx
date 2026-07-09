@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import posthog from "posthog-js";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import { trackEvent } from "@/lib/event-tracker";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 type Props = {
     dict: Dictionary["contact"];
@@ -75,7 +76,7 @@ export default function ContactForm({ dict }: Props) {
         setStatus('submitting');
         const formData = new FormData(formRef.current!);
         const email = formData.get('email') as string;
-        posthog.capture('contact_form_submitted', { has_phone: !!formData.get('phone') });
+        trackEvent('contact_form_submitted', { has_phone: !!formData.get('phone') }, { metaEventName: 'Contact' });
         const topicLabel = dict.topics.find((t) => t.value === topic)?.label ?? topic;
         const freeText = (formData.get('message') as string ?? "").trim();
         const message = freeText || topicLabel;
@@ -97,15 +98,15 @@ export default function ContactForm({ dict }: Props) {
                 }),
             });
             if (res.ok) {
-                posthog.capture('contact_form_succeeded');
+                trackEvent('contact_form_succeeded', {}, { metaEventName: 'Lead' });
                 if (email) posthog.identify(posthog.get_distinct_id(), { email });
                 setStatus('success');
             } else {
-                posthog.capture('contact_form_failed', { status: res.status });
+                trackEvent('contact_form_failed', { status: res.status }, { skipMeta: true });
                 setStatus('error');
             }
         } catch {
-            posthog.capture('contact_form_failed', { status: 'network_error' });
+            trackEvent('contact_form_failed', { status: 'network_error' }, { skipMeta: true });
             setStatus('error');
         }
     }

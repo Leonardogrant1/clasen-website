@@ -1,14 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
+import CalendlyButton from "./CalendlyButton";
 
 type Props = {
   dict: { heading: string; button: string };
 };
 
 export default function ClasenCta({ dict }: Props) {
-  const { openDialog } = useCalendlyDialog();
 
   return (
     <section className="pt-4 pb-16 px-4 md:pt-8 md:pb-32 md:px-8">
@@ -27,12 +26,9 @@ export default function ClasenCta({ dict }: Props) {
             <p className="text-2xl md:text-3xl font-semibold text-white mb-8 max-w-md leading-relaxed">
               {dict.heading}
             </p>
-            <button
-              onClick={openDialog}
-              className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
-            >
+            <CalendlyButton trackSource="clasen_cta">
               {dict.button}
-            </button>
+            </CalendlyButton>
           </div>
         </div>
       </div>

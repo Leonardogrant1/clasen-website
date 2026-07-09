@@ -1,7 +1,7 @@
 "use client";
 
-import type { Dictionary } from "@/app/[lang]/dictionaries";
-import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
+import CalendlyButton from "./CalendlyButton";
 import CherryBlossoms from "./CherryBlossoms";
 import { useEffect, useRef } from "react";
 
@@ -55,7 +55,6 @@ type Props = {
 
 export default function CredoSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
-  const { openDialog } = useCalendlyDialog();
   return (
     <section className="py-16 pb-20 px-4 md:py-28 md:px-8 bg-background border-t border-white/5 relative overflow-hidden">
 
@@ -90,12 +89,9 @@ export default function CredoSection({ dict, locale }: Props) {
 
 
 
-        <button
-          onClick={openDialog}
-          className="px-6 py-2.5 md:px-8 md:py-4 border border-accent bg-accent text-background text-sm uppercase tracking-widest hover:bg-transparent hover:text-accent transition-colors duration-200 cursor-pointer"
-        >
+        <CalendlyButton trackSource="credo_section">
           Schlüsselmoment erleben
-        </button>
+        </CalendlyButton>
       </div>
 
     </section>

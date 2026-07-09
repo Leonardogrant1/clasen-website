@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 export default function ClasenHero({ dict }: { dict: Dictionary["clasenHero"] }) {
   return (

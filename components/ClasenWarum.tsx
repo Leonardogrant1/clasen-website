@@ -1,4 +1,4 @@
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 export default function ClasenWarum({ dict }: { dict: Dictionary["clasenWarum"] }) {
   return (

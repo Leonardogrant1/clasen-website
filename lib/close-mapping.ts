@@ -17,11 +17,13 @@ export type CloseLeadPayload = {
 
 const PROPERTY_TYPE_LABELS: Record<string, string> = {
   'apartment-building': 'Mehrfamilienhaus',
-  'villa': 'Villa / Einfamilienhaus',
-  'semi-detached': 'Doppelhaus / Villenhälfte',
+  'villa': 'Villa',
+  'semi-detached': 'Doppelhaushälfte',
   'terraced': 'Reihenhaus',
   'corner-terraced': 'Reiheneckhaus',
   'apartment': 'Wohnung',
+  'penthouse': 'Penthouse',
+  'house': 'Einfamilienhaus',
   'land': 'Baugrundstück',
   'commercial': 'Gewerbe',
   'new-build': 'Neubau / Projekt',
@@ -46,11 +48,10 @@ const SELLER_PRIORITY_LABELS: Record<string, string> = {
 }
 
 const EQUITY_LABELS: Record<string, string> = {
-  'under-100k': 'Unter 100k €',
-  '100k-250k': '100k–250k €',
-  '250k-500k': '250k–500k €',
-  '500k-1m': '500k–1M €',
-  'over-1m': 'Über 1M €',
+  'under-50k':  '0 – 50.000 €',
+  '50k-100k':   '50.000 – 100.000 €',
+  '100k-250k':  '100.000 – 250.000 €',
+  'over-250k':  '250.000 € +',
 }
 
 const INVESTOR_PRIORITY_LABELS: Record<string, string> = {
@@ -59,19 +60,6 @@ const INVESTOR_PRIORITY_LABELS: Record<string, string> = {
   'security': 'Sicherheit',
 }
 
-const LIFE_PHASE_LABELS: Record<string, string> = {
-  'becoming-couple': 'Wir werden zu zweit',
-  'growing-family': 'Wir werden mehr',
-  'settling-down': 'Wir wollen ankommen',
-  'ready-for-more': 'Wir sind bereit für mehr',
-  'new-chapter': 'Ein neues Kapitel beginnt',
-}
-
-const HOME_PRIORITY_LABELS: Record<string, string> = {
-  'retreat': 'Rückzugsort',
-  'representation': 'Repräsentanz',
-  'family-space': 'Familienraum',
-}
 
 const DISTRICT_LABELS = new Map(MUNICH_DISTRICTS.map((d) => [d.slug as string, d.label]))
 
@@ -118,17 +106,16 @@ export function buildClosePayload(
   }
 
   if (type === 'investor') {
-    if (answers.objectType) payload[cf('propertyType')] = PROPERTY_TYPE_LABELS[answers.objectType] ?? answers.objectType
+    if (answers.investorType) payload[cf('propertyType')] = { bestandshalter: 'Bestandshalter', optimierer: 'Optimierer', portfoliodenker: 'Portfoliodenker' }[answers.investorType] ?? answers.investorType
     if (answers.equity) payload[cf('equity')] = EQUITY_LABELS[answers.equity] ?? answers.equity
     if (answers.priorities?.length) payload[cf('priorities')] = mapPriorities(answers.priorities, INVESTOR_PRIORITY_LABELS)
   }
 
   if (type === 'owner') {
-    if (answers.lifePhase) payload[cf('lifePhase')] = LIFE_PHASE_LABELS[answers.lifePhase] ?? answers.lifePhase
-    if (answers.homePriorities?.length) payload[cf('homePriorities')] = mapPriorities(answers.homePriorities, HOME_PRIORITY_LABELS)
-    if (answers.moodLocation != null) payload[cf('moodLocation')] = answers.moodLocation
-    if (answers.moodStyle != null) payload[cf('moodStyle')] = answers.moodStyle
-    if (answers.moodSize != null) payload[cf('moodSize')] = answers.moodSize
+    if (answers.objectType) payload[cf('propertyType')] = PROPERTY_TYPE_LABELS[answers.objectType] ?? answers.objectType
+    if (answers.districts?.length) payload[cf('district')] = answers.districts.map((s) => DISTRICT_LABELS.get(s) ?? s).join(', ')
+    if (answers.rooms != null) payload[cf('rooms')] = answers.rooms === 10 ? '10+' : String(answers.rooms)
+    if (answers.sqm) payload[cf('sqm')] = { '<40': 'bis 40 m²', '40-60': '40 – 60 m²', '60-80': '60 – 80 m²', '80-120': '80 – 120 m²', '120+': 'ab 120 m²' }[answers.sqm] ?? answers.sqm
   }
 
   return payload

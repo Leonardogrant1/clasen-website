@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useCallback, useState } from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 import { cn } from "@/utils/cn";
 
 type Props = {

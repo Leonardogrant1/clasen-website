@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import "./globals.css";
 import { CalendlyDialogProvider } from "@/components/CalendlyDialogProvider";
+import MetaPixel from "@/components/MetaPixel";
+import { Suspense } from "react";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -10,8 +12,6 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "CLASEN - Ihr Schlüssel zum Erfolg.",
-  description: "Wo Makler an Ihre Grenzen kommen, fangen wir erst richtig an.",
   manifest: '/site.webmanifest',
 };
 
@@ -22,6 +22,9 @@ export default function RootLayout({
     <html lang="de" className={`${jost.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <CalendlyDialogProvider>
+          <Suspense fallback={null}>
+            <MetaPixel />
+          </Suspense>
           {children}
         </CalendlyDialogProvider>
       </body>

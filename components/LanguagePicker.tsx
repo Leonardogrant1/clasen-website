@@ -48,14 +48,13 @@ export default function LanguagePicker({ locale }: { locale: string }) {
   const others = LOCALES.filter((l) => l.code !== locale);
 
   return (
-    <div ref={ref} className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+    <div ref={ref} className="fixed bottom-6 md:bottom-10 right-6 md:right-10 z-50 flex flex-col items-end gap-2">
       {/* Dropdown options */}
       <div
-        className={`grid transition-all duration-300 ease-in-out ${
-          open
-            ? "grid-rows-[1fr] opacity-100 translate-y-0 pointer-events-auto"
-            : "grid-rows-[0fr] opacity-0 translate-y-2 pointer-events-none"
-        }`}
+        className={`grid transition-all duration-300 ease-in-out ${open
+          ? "grid-rows-[1fr] opacity-100 translate-y-0 pointer-events-auto"
+          : "grid-rows-[0fr] opacity-0 translate-y-2 pointer-events-none"
+          }`}
       >
         <div className="overflow-hidden flex flex-col gap-1.5 pb-1.5">
           {others.map(({ code, label, Flag }) => (

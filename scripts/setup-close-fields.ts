@@ -1,3 +1,6 @@
+import dotenv from "dotenv";
+dotenv.config({ path: `.env.local` });
+
 /**
  * setup-close-fields.ts
  *
@@ -12,6 +15,7 @@ if (!API_KEY) {
   console.error('❌  CLOSE_API_KEY ist nicht gesetzt.')
   process.exit(1)
 }
+
 
 const BASE = 'https://api.close.com/api/v1'
 const AUTH = 'Basic ' + Buffer.from(`${API_KEY}:`).toString('base64')
@@ -90,7 +94,7 @@ const FIELDS: FieldDef[] = [
     key: 'equity',
     name: 'Eigenkapital',
     type: 'choices',
-    choices: ['Unter 100k €', '100k–250k €', '250k–500k €', '500k–1M €', 'Über 1M €'],
+    choices: ['0 – 50.000 €', '50.000 – 100.000 €', '100.000 – 250.000 €', '250.000 € +'],
     description: 'Eigenkapital-Bereich des Investors',
   },
   // Owner only

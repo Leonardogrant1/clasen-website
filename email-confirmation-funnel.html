@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bestätigungs-E-Mail Funnel – CLASEN Family Office GmbH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+  </style>
+</head>
+
+<body style="margin:0;padding:20px;background:#2e2e2e;font-family:'Jost',Arial,sans-serif;">
+
+  <!--
+    ============================================================
+    BESTÄTIGUNGS-E-MAIL FUNNEL – CLASEN Family Office
+    ============================================================
+    Vorschau der automatischen Bestätigungs-E-Mail, die nach dem
+    Absenden des Funnel-Kontaktformulars an den Lead gesendet wird.
+
+    Versand: app/api/close-lead/route.ts (nodemailer)
+    Platzhalter hier mit Beispieldaten gefüllt:
+      ${product} → Traumhaus-Finder™ / Deal-Kompass™ / Käuferradar™
+      ${name}    → Max Mustermann
+      ${email}   → max@beispiel.de
+      ${phone}   → +49 176 12345678
+    ============================================================
+  -->
+
+  <!-- Preview wrapper – not part of email -->
+  <div style="max-width:100%;margin:0 auto;">
+    <p style="font-size:12px;color:#888;margin-bottom:20px;">Vorschau der Bestätigungs-E-Mail (Funnel):</p>
+
+    <!-- ===== EMAIL START ===== -->
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0d0d0d;padding:32px 16px;">
+      <tr>
+        <td align="center">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0"
+            style="max-width:560px;background:#1a1a1a;border-top:3px solid #C9A84C;font-family:'Jost',Arial,Helvetica,sans-serif;color:#ffffff;">
+
+            <!-- Logo -->
+            <tr>
+              <td align="center" style="padding:36px 32px 8px 32px;">
+                <img src="https://clasen.com/logo/logo_white.png" alt="CLASEN Family Office" width="180"
+                  style="display:block;border:0;max-width:180px;width:180px;height:auto;" />
+              </td>
+            </tr>
+
+            <!-- Intro -->
+            <tr>
+              <td style="padding:24px 32px 0 32px;">
+                <p style="margin:0 0 4px 0;font-size:11px;color:#C9A84C;letter-spacing:2px;text-transform:uppercase;font-weight:600;">
+                  Ihre Anfrage ist eingegangen
+                </p>
+                <p style="margin:0 0 20px 0;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:0.3px;">
+                  CLASEN Traumhaus-Finder™
+                </p>
+                <p style="margin:0 0 16px 0;font-size:14px;line-height:1.6;color:#e0e0e0;">
+                  Sehr geehrte/r Max Mustermann,
+                </p>
+                <p style="margin:0 0 16px 0;font-size:14px;line-height:1.6;color:#e0e0e0;">
+                  vielen Dank für Ihre Anfrage und Ihr Vertrauen in unseren CLASEN Traumhaus-Finder™.
+                </p>
+                <p style="margin:0 0 12px 0;font-size:14px;line-height:1.6;color:#e0e0e0;">
+                  Wir haben Ihre Angaben erfolgreich erhalten:
+                </p>
+              </td>
+            </tr>
+
+            <!-- Data box -->
+            <tr>
+              <td style="padding:0 32px;">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0"
+                  style="background:#111111;border-left:2px solid #C9A84C;">
+                  <tr>
+                    <td style="padding:16px 20px;">
+                      <p style="margin:0 0 8px 0;font-size:14px;color:#ffffff;">
+                        <span style="color:#C9A84C;font-weight:600;">Name:</span>&nbsp; Max Mustermann
+                      </p>
+                      <p style="margin:0 0 8px 0;font-size:14px;color:#ffffff;">
+                        <span style="color:#C9A84C;font-weight:600;">E-Mail:</span>&nbsp; max@beispiel.de
+                      </p>
+                      <p style="margin:0;font-size:14px;color:#ffffff;">
+                        <span style="color:#C9A84C;font-weight:600;">Telefon:</span>&nbsp; +49 176 12345678
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Body -->
+            <tr>
+              <td style="padding:20px 32px 8px 32px;">
+                <p style="margin:0 0 20px 0;font-size:14px;line-height:1.6;color:#e0e0e0;">
+                  Ihr persönlicher Ansprechpartner meldet sich innerhalb der nächsten
+                  <strong style="color:#ffffff;">24 Stunden</strong> bei Ihnen, um die nächsten Schritte
+                  gemeinsam zu besprechen.
+                </p>
+                <p style="margin:0 0 4px 0;font-size:14px;line-height:1.6;color:#e0e0e0;">
+                  Mit den besten Grüßen
+                </p>
+                <p style="margin:0 0 28px 0;font-size:15px;font-weight:700;color:#ffffff;">
+                  CLASEN Family Office
+                </p>
+              </td>
+            </tr>
+
+            <!-- Bottom bar -->
+            <tr>
+              <td style="padding:10px 32px;background:#111111;font-size:11px;color:#999999;letter-spacing:1px;">
+                Ihr Schlüssel zum Erfolg.
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- ===== EMAIL END ===== -->
+
+  </div>
+</body>
+
+</html>

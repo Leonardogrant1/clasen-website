@@ -11,12 +11,12 @@
     "items": [
       {
         "title": "Aufs richtige \nPferd setzen.",
-        "subtitle": "Diskret. Persönlich. Verbindlich.\nIhr sicherer Zugang zu außergewöhnlichen Investmentchancen.",
+        "subtitle": "Diskret. Persönlich. Zuverlässig.\nIhr sicherer Zugang zu außergewöhnlichen Investmentchancen.",
         "videoPath": "/video/hero.mp4"
       },
       {
         "title": "Vor-Sorge\nstatt Nach-Sicht",
-        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Kapital durch hoch-performante und für Sie maßgeschneiderte Assets.",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Vermögen mit maßgeschneiderten Top-Investments.",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -501,6 +501,10 @@
     "datenschutz": {
       "title": "CLASEN — Datenschutz",
       "description": "Datenschutzerklärung gemäß DSGVO."
+    },
+    "baumanagement": {
+      "title": "CLASEN — Tippgeberprovision",
+      "description": "Empfehlen Sie CLASEN neue Bau-, Sanierungs- und Renovierungsaufträge und erhalten Sie eine attraktive Tippgeberprovision."
     }
   },
   "impressum": {
@@ -562,5 +566,124 @@
         "content": "Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten durch uns zu beschweren. Zuständige Aufsichtsbehörde in Bayern ist der Bayerische Landesbeauftragte für den Datenschutz (BayLfD)."
       }
     ]
+  },
+  "funnels": {
+    "selection": {
+      "search": {
+        "label": "Immobilie finden",
+        "tooltip": "Finden Sie Ihr Traumobjekt in unserem exklusiven Portfolio"
+      },
+      "sell": {
+        "label": "Immobilie verkaufen",
+        "tooltip": "Wir begleiten Sie diskret und professionell beim Verkauf"
+      }
+    }
+  },
+  "baumanagement": {
+    "hero": {
+      "sectionLabel": "Tippgeberprogramm",
+      "headingPre": "Ihr Netzwerk kennt ",
+      "headingEm": "Bauvorhaben",
+      "headingPost": ", bevor der Markt sie kennt.",
+      "body": "Sie hören oft als Erste von einem neuen Bauprojekt, einer anstehenden Sanierung oder einer geplanten Renovierung? Vermitteln Sie uns den Kontakt — und erhalten Sie im Erfolgsfall eine attraktive Tippgeberprovision. Diskret, unbürokratisch, fair.",
+      "ctaPrimary": "Auftrag empfehlen",
+      "ctaSecondary": "Provisionsmodell ansehen",
+      "stats": [
+        { "num": "Bis 24 Std.", "label": "Rückmeldung nach Ihrer Empfehlung" },
+        { "num": "0 €", "label": "Aufwand oder Risiko für Sie als Tippgeber" },
+        { "num": "100 %", "label": "Diskretion gegenüber Dritten" }
+      ]
+    },
+    "why": {
+      "sectionLabel": "Warum ein Tippgeber-Programm",
+      "heading": "Eine gute Empfehlung ist mehr wert als jede Anzeige.",
+      "body": "Handwerker, Architekten, Hausverwaltungen, Notariate, Makler und private Kontakte erfahren oft als Erste von Bau-, Sanierungs- oder Renovierungsvorhaben. Genau dieses Wissen möchten wir fair vergüten — mit einer klaren, planbaren Provision statt vager Gefälligkeiten.",
+      "steps": [
+        {
+          "n": "01 — Empfehlen",
+          "title": "Kontakt herstellen",
+          "body": "Sie melden uns formlos ein Bau-, Sanierungs- oder Renovierungsvorhaben — per Formular, Telefon oder E-Mail. Name, Objekt und kurze Beschreibung genügen."
+        },
+        {
+          "n": "02 — Prüfen & Vermitteln",
+          "title": "Wir übernehmen",
+          "body": "Unser Team nimmt diskret Kontakt auf, prüft das Vorhaben und begleitet den Auftraggeber persönlich durch den gesamten Prozess."
+        },
+        {
+          "n": "03 — Provision erhalten",
+          "title": "Auszahlung nach Beauftragung",
+          "body": "Kommt aus Ihrer Empfehlung ein Auftrag zustande, erhalten Sie Ihre Provision nach erfolgter Beauftragung bzw. Beurkundung — schriftlich bestätigt."
+        }
+      ]
+    },
+    "commission": {
+      "sectionLabel": "Provisionsmodell",
+      "heading": "Transparent gestaffelt\nnach Auftragsart.",
+      "body": "Die Höhe richtet sich nach Art und Volumen des vermittelten Auftrags. Die folgenden Sätze dienen als Orientierung für Ihr Erstgespräch mit uns.",
+      "cards": [
+        {
+          "cat": "Bauauftrag",
+          "amount": "1,0 – 1,5",
+          "unit": "% des Auftragsvolumens",
+          "body": "Neubauten sowie größere schlüsselfertige Bauvorhaben, die durch Ihre Empfehlung zustande kommen.",
+          "note": "Auszahlung nach Vertragsschluss"
+        },
+        {
+          "cat": "Sanierungsauftrag",
+          "amount": "1,5 – 2,0",
+          "unit": "% des Auftragsvolumens",
+          "body": "Energetische, technische oder strukturelle Sanierungen bestehender Bestandsobjekte.",
+          "note": "Auszahlung nach Auftragsbestätigung"
+        },
+        {
+          "cat": "Renovierungsauftrag",
+          "amount": "2,0 – 2,5",
+          "unit": "% des Auftragsvolumens",
+          "body": "Modernisierungen, Instandsetzungen und wertsteigernde Renovierungsmaßnahmen.",
+          "note": "Auszahlung nach Auftragsbestätigung"
+        }
+      ],
+      "disclaimer": "Alle Sätze verstehen sich als Orientierung. Die verbindlichen Konditionen stimmen wir vor Auftragsbeginn persönlich und schriftlich mit Ihnen ab."
+    },
+    "eligibility": {
+      "sectionLabel": "Voraussetzungen",
+      "heading": "Fair für beide Seiten.",
+      "items": [
+        "Die Empfehlung führt nachweislich zu einem neuen Bau-, Sanierungs- oder Renovierungsauftrag bei CLASEN.",
+        "Der empfohlene Kontakt war zuvor nicht bereits Mandant oder in aktivem Kontakt mit CLASEN.",
+        "Die Provisionsvereinbarung wird vor Auftragsbeginn schriftlich zwischen Ihnen und CLASEN bestätigt.",
+        "Die Auszahlung erfolgt nach verbindlicher Beauftragung bzw. notarieller Beurkundung.",
+        "Gewerbliche Makler und bereits vertraglich gebundene Vermittler sind von diesem Programm ausgenommen."
+      ],
+      "quote": "„Der beste Zeitpunkt, ein Projekt zu empfehlen, war der erste Moment, in dem Sie davon erfuhren.“",
+      "quoteSource": "Frei nach unserem Credo der FAIRlässlichkeit"
+    },
+    "form": {
+      "sectionLabel": "Jetzt empfehlen",
+      "heading": "Teilen Sie uns Ihren Tipp mit.",
+      "body": "Nennen Sie uns kurz das Vorhaben und den Kontakt — den Rest übernehmen wir. Diskret & unverbindlich.",
+      "emailLabel": "E-Mail",
+      "phoneLabel": "Telefon",
+      "nameLabel": "Ihr Name",
+      "emailFieldLabel": "Ihre E-Mail",
+      "phoneFieldLabel": "Ihre Telefonnummer",
+      "phoneFieldLabelShort": "Ihre Telefon-Nr.",
+      "typeLabel": "Art des Auftrags",
+      "types": [
+        { "value": "bauauftrag", "label": "Bauauftrag" },
+        { "value": "sanierungsauftrag", "label": "Sanierungsauftrag" },
+        { "value": "renovierungsauftrag", "label": "Renovierungsauftrag" }
+      ],
+      "messageLabel": "Ihre Nachricht",
+      "namePlaceholder": "Bernd Beispiel",
+      "emailPlaceholder": "beispiel@mail.de",
+      "phonePlaceholder": "+49",
+      "messagePlaceholder": "Objekt, Ort, Ansprechpartner sowie kurze Beschreibung des Vorhabens.",
+      "submit": "Empfehlung senden",
+      "successHeading1": "Vielen Dank —",
+      "successHeading2": "wir melden uns bald.",
+      "successMessage": "Ihre Empfehlung ist eingegangen. Ein Mitarbeiter wird sich in Kürze bei Ihnen melden.",
+      "errorMessage": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an."
+    }
   }
 }

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import AnimatedCounter from "./AnimatedCounter";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 const REF_DATE = new Date("2026-05-20T00:00:00Z");
 const REF_VALUE = 487;
@@ -55,7 +55,7 @@ export default function StatsBox({ dict, inline = false }: Props) {
     },
     {
       prefix: dict.transactions.prefix,
-      value: 2.44,
+      value: 2.33,
       suffix: "",
       decimals: 2,
       label: [dict.transactions.line1, dict.transactions.line2],
@@ -86,7 +86,7 @@ export default function StatsBox({ dict, inline = false }: Props) {
       className={
         inline
           ? `flex flex-col w-full border-t border-white/10 transition-all duration-700 ease-out ${visible ? "opacity-100" : "opacity-0"}`
-          : `hidden md:flex absolute bottom-8 right-8 z-10 flex-row border border-white/20 bg-white/10 backdrop-blur-md rounded-xl overflow-hidden transition-all duration-700 ease-out ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`
+          : `hidden md:flex absolute bottom-10 right-8 xl:right-34 2xl:right-35 z-10 flex-row border border-white/20 bg-white/10 backdrop-blur-md rounded-xl overflow-hidden transition-all duration-700 ease-out ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`
       }
     >
       {stats.map((stat, i) => {
@@ -94,30 +94,30 @@ export default function StatsBox({ dict, inline = false }: Props) {
         const finalHref = isAnchor ? stat.href : `${base}${stat.href}`;
 
         return (
-        <Link
-          key={i}
-          href={finalHref}
-          onClick={(e) => {
-            if (isAnchor) {
-              e.preventDefault();
-              document.getElementById(stat.href.slice(1))?.scrollIntoView({ behavior: 'smooth' });
-            }
-          }}
-          className={`flex items-center gap-3 cursor-pointer hover:bg-white/5 transition-colors ${inline ? "px-4 py-4 justify-center" : "px-4 py-3 lg:px-8 lg:py-5"} ${i < stats.length - 1 ? (inline ? "border-b border-white/10" : "border-r border-white/20") : ""}`}
-        >
-          <p className={`text-foreground font-bold whitespace-nowrap ${inline ? "text-xl" : "text-2xl lg:text-3xl"}`}>
-            <AnimatedCounter
-              to={stat.value}
-              prefix={stat.prefix}
-              suffix={stat.suffix}
-              decimals={stat.decimals}
-              active={counting}
-            />
-          </p>
-          <p className="text-muted text-xs uppercase tracking-widest leading-snug">
-            {stat.label[0]}<br />{stat.label[1]}
-          </p>
-        </Link>
+          <Link
+            key={i}
+            href={finalHref}
+            onClick={(e) => {
+              if (isAnchor) {
+                e.preventDefault();
+                document.getElementById(stat.href.slice(1))?.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className={`flex items-center gap-3 cursor-pointer hover:bg-white/5 transition-colors ${inline ? "px-4 py-4 justify-center" : "px-4 py-3 xl:px-6 xl:py-4 2xl:px-8 2xl:py-5"} ${i < stats.length - 1 ? (inline ? "border-b border-white/10" : "border-r border-white/20") : ""}`}
+          >
+            <p className={`text-foreground font-bold whitespace-nowrap ${inline ? "text-xl" : "text-xl xl:text-2xl 2xl:text-3xl"}`}>
+              <AnimatedCounter
+                to={stat.value}
+                prefix={stat.prefix}
+                suffix={stat.suffix}
+                decimals={stat.decimals}
+                active={counting}
+              />
+            </p>
+            <p className="text-muted text-xs uppercase tracking-widest leading-snug">
+              {stat.label[0]}<br />{stat.label[1]}
+            </p>
+          </Link>
         );
       })}
     </div>

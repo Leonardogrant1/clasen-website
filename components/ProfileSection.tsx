@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useCalendlyDialog } from "@/components/CalendlyDialogProvider";
+import CalendlyButton from "./CalendlyButton";
 import CircularText from "./CircularText";
 import Link from "next/link";
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 
 type Props = {
   dict: Dictionary["profile"];
@@ -13,7 +13,6 @@ type Props = {
 
 export default function ProfileSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
-  const { openDialog } = useCalendlyDialog();
 
   return (
     <section className="relative py-16 px-4 md:py-32 md:px-8 bg-background overflow-hidden border-t border-white/5">
@@ -72,9 +71,14 @@ export default function ProfileSection({ dict, locale }: Props) {
                 {dict.role}
               </span>
             </div>
-            <button id="clasen-ende" onClick={openDialog} className="self-center md:self-start mt-4 px-6 py-2.5 md:px-8 md:py-4 border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200 cursor-pointer">
+            <CalendlyButton
+              id="clasen-ende"
+              variant="outline"
+              trackSource="profile_section"
+              className="self-center md:self-start mt-4"
+            >
               {dict.cta}
-            </button>
+            </CalendlyButton>
           </div>
         </div>
       </div>

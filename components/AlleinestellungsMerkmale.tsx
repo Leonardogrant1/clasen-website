@@ -1,5 +1,5 @@
 "use client"
-import type { Dictionary } from "@/app/[lang]/dictionaries";
+import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
