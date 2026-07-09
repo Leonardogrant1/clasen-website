@@ -57,7 +57,7 @@ const EQUITY_LABELS: Record<string, string> = {
 const INVESTOR_PRIORITY_LABELS: Record<string, string> = {
   'return': 'Rendite',
   'tax-benefit': 'Steuervorteil',
-  'security': 'Sicherheit',
+  'stability': 'Wertstabilität',
 }
 
 
@@ -112,10 +112,12 @@ export function buildClosePayload(
   }
 
   if (type === 'owner') {
-    if (answers.objectType) payload[cf('propertyType')] = PROPERTY_TYPE_LABELS[answers.objectType] ?? answers.objectType
+    if (answers.objectType) {
+      const types = Array.isArray(answers.objectType) ? answers.objectType : [answers.objectType]
+      payload[cf('propertyType')] = types.map((t) => PROPERTY_TYPE_LABELS[t] ?? t).join(', ')
+    }
     if (answers.districts?.length) payload[cf('district')] = answers.districts.map((s) => DISTRICT_LABELS.get(s) ?? s).join(', ')
-    if (answers.rooms != null) payload[cf('rooms')] = answers.rooms === 10 ? '10+' : String(answers.rooms)
-    if (answers.sqm) payload[cf('sqm')] = { '<40': 'bis 40 m²', '40-60': '40 – 60 m²', '60-80': '60 – 80 m²', '80-120': '80 – 120 m²', '120+': 'ab 120 m²' }[answers.sqm] ?? answers.sqm
+    if (answers.sqm) payload[cf('sqm')] = { '<50': 'unter 50 m²', '50-80': '50 – 80 m²', '80-120': '80 – 120 m²', '120-200': '120 – 200 m²', '200+': 'über 200 m²' }[answers.sqm] ?? answers.sqm
   }
 
   return payload

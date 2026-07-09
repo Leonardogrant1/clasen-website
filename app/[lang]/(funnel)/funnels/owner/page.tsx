@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { FunnelProvider } from "@/components/funnel/FunnelProvider"
 import OwnerFunnel from "@/components/funnel/OwnerFunnel"
 
@@ -8,7 +9,9 @@ export async function generateStaticParams() {
 export default function OwnerPage() {
   return (
     <FunnelProvider initialType="owner">
-      <OwnerFunnel />
+      <Suspense>
+        <OwnerFunnel />
+      </Suspense>
     </FunnelProvider>
   )
 }
