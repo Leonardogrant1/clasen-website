@@ -23,10 +23,10 @@ export default function ClasenHero({ dict }: { dict: Dictionary["clasenHero"] })
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight text-foreground mb-6 whitespace-pre-line">
           {dict.heading}
         </h1>
-        <p className="text-muted max-w-md leading-relaxed text-sm mb-8">{dict.body}</p>
+        <p className="text-muted max-w-md md:max-w-xl leading-relaxed text-sm md:text-xl mb-8">{dict.body}</p>
         <a
           href="#chronik"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent text-sm uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent text-sm md:text-xl uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200"
         >
           {dict.cta}
         </a>

@@ -246,32 +246,25 @@ function EntryText({ entry, i, className }: { entry: Entry, i: number, className
   );
 }
 
-// Mobile only: image first, then text below
-const mobileMtForIndex = ["mt-6", "mt-4", "mt-4", "mt-8", "mt-8", "mt-8", "mt-6", "mt-2", "mt-6", "mt-4", "mt-2", "mt-2"];
-
-function EntryContent({ entry, index }: { entry: Entry; index: number }) {
-  return (
-    <div className="flex flex-col gap-y-8">
-      <EntryText entry={entry} i={index} className="mt-0" />
-      <div className="max-w-[82%] mx-auto md:max-w-none md:mx-0">
-        <EntryImage src={entry.image_path} alt={entry.category} rotate={index === 8 ? 0 : 2} index={index} />
-      </div>
-    </div>
-  );
-}
-
 function MobileRow({ entry, index }: { entry: Entry; index: number }) {
   const ref = useFadeIn();
   return (
     <div
       ref={ref}
-      className="grid grid-cols-[24px_1fr] mb-10 items-start opacity-0 translate-y-6 transition-all duration-700 ease-out"
+      className="mb-10 opacity-0 translate-y-6 transition-all duration-700 ease-out"
     >
-      <div className="flex justify-center pt-8">
-        <div className="w-3 h-3 rounded-full bg-accent ring-4 ring-accent/20" />
+      {/* Image full-width on top */}
+      <div className="max-w-[82%] mx-auto mb-6">
+        <EntryImage src={entry.image_path} alt={entry.category} rotate={index === 8 ? 0 : 2} index={index} />
       </div>
-      <div className="pl-4">
-        <EntryContent entry={entry} index={index} />
+      {/* Dot aligned with text header */}
+      <div className="grid grid-cols-[24px_1fr] items-start">
+        <div className="flex justify-center pt-8">
+          <div className="w-3 h-3 rounded-full bg-accent ring-4 ring-accent/20" />
+        </div>
+        <div className="pl-4">
+          <EntryText entry={entry} i={index} className="mt-0" />
+        </div>
       </div>
     </div>
   );

@@ -204,13 +204,13 @@
   },
   "clasenHero": {
     "sectionLabel": "Die Geschichte hinter der Marke",
-    "heading": "Eine Überzeugung.\nKein Umweg.",
+    "heading": "Eine Überzeugung.",
     "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen. Was dazwischen liegt, ist keine Karriere — es ist ein Credo.",
     "cta": "Die Geschichte lesen"
   },
   "clasenWarum": {
     "sectionLabel": "Das Warum",
-    "body": "Die Assetklasse, die mich durch alle persönlichen Krisen und jede finanzielle Fehlentscheidung getragen hat — zugänglich machen für alle, die sie verdienen. Nicht nur für Institutionelle. \nNicht nur für Erben. Für jeden, der bereit ist, sein Kapital arbeiten zu lassen."
+    "body": "Die Assetklasse, die mich durch alle persönlichen Krisen und jede finanzielle Fehlentscheidung getragen hat — zugänglich machen für alle, die sie verdienen. \nNicht nur für Institutionelle. \nNicht nur für Erben. Für jeden, der bereit ist, sein Kapital arbeiten zu lassen."
   },
   "clasenChronik": {
     "sectionLabel": "Chronik",
@@ -290,7 +290,7 @@
         "year": "2024",
         "category": "Vision",
         "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
-        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionelle Investoren kennen.",
+        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionelle Investoren vorbehalten war.",
         "image_path": "/timeline-images/10.png"
       },
       {

@@ -307,7 +307,7 @@ export default function Nav({ dict, locale }: Props) {
           </svg>
         </button>
 
-        <nav className="flex flex-col items-center gap-8">
+        <nav className="flex flex-col items-center gap-14">
           {mainLinks.map((link, i) => {
             const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
             const isClasen = i === 2;
