@@ -7,6 +7,7 @@ export const CLOSE_LEAD_FIELDS = {
   district: 'cf_aP9MhzIbsqjotwpiJc7HaDoqDqCoXY0umo8PUjvbDqw',
   partnerType: 'cf_ZmUgZhr5lLRgyqD26dBcBnIFBQmNGLx9NKtswVJiZHK',
   equity: 'cf_feslURqzIjjCFpZoAaPhWMdOzKLk6ZEBybKfAIgmv2c',
+  tippgeberArt: 'cf_FHt0WefT0iz5uXs1JWzONVLrrBTJwJdg9CwV9CyfEnV',
   rooms: 'PLACEHOLDER_rooms',
   sqm: 'PLACEHOLDER_sqm',
 } as const

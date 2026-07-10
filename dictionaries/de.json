@@ -582,22 +582,31 @@
   "baumanagement": {
     "hero": {
       "sectionLabel": "Tippgeberprogramm",
-      "headingPre": "Ihr Netzwerk kennt ",
-      "headingEm": "Bauvorhaben",
-      "headingPost": ", bevor der Markt sie kennt.",
-      "body": "Sie hören oft als Erste von einem neuen Bauprojekt, einer anstehenden Sanierung oder einer geplanten Renovierung? Vermitteln Sie uns den Kontakt — und erhalten Sie im Erfolgsfall eine attraktive Tippgeberprovision. Diskret, unbürokratisch, fair.",
+      "headingPre": "Sie erfahren oft als Erster, wo gebaut, saniert oder einfach umgebaut werden soll. \nVermitteln Sie uns den Kontakt – und sichern Sie sich ",
+      "headingEm": "Ihren Anteil",
+      "headingPost": " daran.",
+      "body": "Im Erfolgsfall erhalten Sie eine attraktive Tippgeberprovision.\nDiskret, unbürokratisch, fair.",
       "ctaPrimary": "Auftrag empfehlen",
       "ctaSecondary": "Provisionsmodell ansehen",
       "stats": [
-        { "num": "Bis 24 Std.", "label": "Rückmeldung nach Ihrer Empfehlung" },
-        { "num": "0 €", "label": "Aufwand oder Risiko für Sie als Tippgeber" },
-        { "num": "100 %", "label": "Diskretion gegenüber Dritten" }
+        {
+          "num": "< 24 Std.",
+          "label": "Rückmeldung nach Ihrer Empfehlung"
+        },
+        {
+          "num": "0 €",
+          "label": "Aufwand oder Risiko für Sie als Tippgeber"
+        },
+        {
+          "num": "100 %",
+          "label": "Diskretion gegenüber Dritten"
+        }
       ]
     },
     "why": {
       "sectionLabel": "Warum ein Tippgeber-Programm",
       "heading": "Eine gute Empfehlung ist mehr wert als jede Anzeige.",
-      "body": "Handwerker, Architekten, Hausverwaltungen, Notariate, Makler und private Kontakte erfahren oft als Erste von Bau-, Sanierungs- oder Renovierungsvorhaben. Genau dieses Wissen möchten wir fair vergüten — mit einer klaren, planbaren Provision statt vager Gefälligkeiten.",
+      "body": "Nachbarn, Handwerker, Architekten, Hausverwaltungen, Notariate, Makler und private Kontakte erfahren oft als Erste von Bau-, Sanierungs- oder Renovierungsvorhaben. Genau dieses Wissen möchten wir fair vergüten — mit einer klaren, planbaren Provision statt vager Gefälligkeiten.",
       "steps": [
         {
           "n": "01 — Empfehlen",
@@ -619,31 +628,24 @@
     "commission": {
       "sectionLabel": "Provisionsmodell",
       "heading": "Transparent gestaffelt\nnach Auftragsart.",
-      "body": "Die Höhe richtet sich nach Art und Volumen des vermittelten Auftrags. Die folgenden Sätze dienen als Orientierung für Ihr Erstgespräch mit uns.",
+      "body": "Die Höhe richtet sich nach der Art des vermittelten Auftrags. Es gelten feste, klar kommunizierte Sätze — jeweils auf Basis des gesamten Auftragsvolumens.",
       "cards": [
         {
           "cat": "Bauauftrag",
-          "amount": "1,0 – 1,5",
-          "unit": "% des Auftragsvolumens",
+          "amount": "1,5",
+          "unit": "% des gesamten Auftragsvolumens",
           "body": "Neubauten sowie größere schlüsselfertige Bauvorhaben, die durch Ihre Empfehlung zustande kommen.",
           "note": "Auszahlung nach Vertragsschluss"
         },
         {
-          "cat": "Sanierungsauftrag",
-          "amount": "1,5 – 2,0",
-          "unit": "% des Auftragsvolumens",
-          "body": "Energetische, technische oder strukturelle Sanierungen bestehender Bestandsobjekte.",
-          "note": "Auszahlung nach Auftragsbestätigung"
-        },
-        {
-          "cat": "Renovierungsauftrag",
-          "amount": "2,0 – 2,5",
-          "unit": "% des Auftragsvolumens",
-          "body": "Modernisierungen, Instandsetzungen und wertsteigernde Renovierungsmaßnahmen.",
+          "cat": "Sanierung / Renovierung",
+          "amount": "2,5",
+          "unit": "% des gesamten Auftragsvolumens",
+          "body": "Sanierungs- und Renovierungsmaßnahmen an bestehenden Gebäuden, die durch Ihre Empfehlung zustande kommen.",
           "note": "Auszahlung nach Auftragsbestätigung"
         }
       ],
-      "disclaimer": "Alle Sätze verstehen sich als Orientierung. Die verbindlichen Konditionen stimmen wir vor Auftragsbeginn persönlich und schriftlich mit Ihnen ab."
+      "footnote": "Sanierung/Renovierung umfasst: energetische, technische und strukturelle Sanierung bestehender Bestandsgebäude, Modernisierung, Instandsetzung sowie wertsteigernde Renovierungsmaßnahmen."
     },
     "eligibility": {
       "sectionLabel": "Voraussetzungen",
@@ -651,12 +653,10 @@
       "items": [
         "Die Empfehlung führt nachweislich zu einem neuen Bau-, Sanierungs- oder Renovierungsauftrag bei CLASEN.",
         "Der empfohlene Kontakt war zuvor nicht bereits Mandant oder in aktivem Kontakt mit CLASEN.",
-        "Die Provisionsvereinbarung wird vor Auftragsbeginn schriftlich zwischen Ihnen und CLASEN bestätigt.",
-        "Die Auszahlung erfolgt nach verbindlicher Beauftragung bzw. notarieller Beurkundung.",
-        "Gewerbliche Makler und bereits vertraglich gebundene Vermittler sind von diesem Programm ausgenommen."
+        "Ihre Provision sichern wir Ihnen vor Auftragsbeginn schriftlich zu — transparent und verbindlich.",
+        "Die Auszahlung erfolgt bereits nach verbindlicher Beauftragung."
       ],
-      "quote": "„Der beste Zeitpunkt, ein Projekt zu empfehlen, war der erste Moment, in dem Sie davon erfuhren.“",
-      "quoteSource": "Frei nach unserem Credo der FAIRlässlichkeit"
+      "quote": "„Der beste Zeitpunkt, ein Projekt zu empfehlen, ist der erste Moment, in dem Sie davon erfahren.“"
     },
     "form": {
       "sectionLabel": "Jetzt empfehlen",
@@ -670,9 +670,18 @@
       "phoneFieldLabelShort": "Ihre Telefon-Nr.",
       "typeLabel": "Art des Auftrags",
       "types": [
-        { "value": "bauauftrag", "label": "Bauauftrag" },
-        { "value": "sanierungsauftrag", "label": "Sanierungsauftrag" },
-        { "value": "renovierungsauftrag", "label": "Renovierungsauftrag" }
+        {
+          "value": "bauauftrag",
+          "label": "Bauauftrag"
+        },
+        {
+          "value": "sanierungsauftrag",
+          "label": "Sanierungsauftrag"
+        },
+        {
+          "value": "renovierungsauftrag",
+          "label": "Renovierungsauftrag"
+        }
       ],
       "messageLabel": "Ihre Nachricht",
       "namePlaceholder": "Bernd Beispiel",
@@ -680,6 +689,7 @@
       "phonePlaceholder": "+49",
       "messagePlaceholder": "Objekt, Ort, Ansprechpartner sowie kurze Beschreibung des Vorhabens.",
       "submit": "Empfehlung senden",
+      "submitting": "Wird gesendet …",
       "successHeading1": "Vielen Dank —",
       "successHeading2": "wir melden uns bald.",
       "successMessage": "Ihre Empfehlung ist eingegangen. Ein Mitarbeiter wird sich in Kürze bei Ihnen melden.",

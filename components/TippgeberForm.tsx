@@ -77,23 +77,17 @@ export default function TippgeberForm({ dict }: Props) {
         const formData = new FormData(formRef.current!);
         const email = formData.get('email') as string;
         trackEvent('tippgeber_form_submitted', { has_phone: !!formData.get('phone') }, { metaEventName: 'Contact' });
-        const typeLabel = dict.types.find((t) => t.value === type)?.label ?? type;
-        const topic = `Tippgeberprovision — ${typeLabel}`;
         const message = (formData.get('message') as string ?? "").trim();
 
         try {
-            const res = await fetch('/api/send-mail', {
+            const res = await fetch('/api/tippgeber-lead', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-POSTHOG-DISTINCT-ID': posthog.get_distinct_id(),
-                    'X-POSTHOG-SESSION-ID': posthog.get_session_id() ?? '',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     name: formData.get('name'),
                     email,
                     phone: formData.get('phone'),
-                    topic,
+                    type,
                     message,
                 }),
             });
@@ -172,7 +166,15 @@ export default function TippgeberForm({ dict }: Props) {
                 disabled={status === 'submitting'}
                 className="mt-1 w-full py-3 rounded-full border border-accent text-accent text-sm uppercase tracking-widest font-semibold hover:bg-accent hover:text-background disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200"
             >
-                {status === 'submitting' ? '…' : dict.submit}
+                {status === 'submitting' ? (
+                    <span className="inline-flex items-center justify-center gap-2.5">
+                        <svg className="animate-spin" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round">
+                            <circle cx="12" cy="12" r="9" opacity="0.25" />
+                            <path d="M21 12a9 9 0 0 0-9-9" />
+                        </svg>
+                        {dict.submitting}
+                    </span>
+                ) : dict.submit}
             </button>
         </form>
     );

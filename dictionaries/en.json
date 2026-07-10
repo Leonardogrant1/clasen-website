@@ -597,10 +597,10 @@
   "baumanagement": {
     "hero": {
       "sectionLabel": "Referral Program",
-      "headingPre": "Your network knows about ",
-      "headingEm": "construction projects",
-      "headingPost": " before the market does.",
-      "body": "You are often the first to hear about a new construction project, an upcoming refurbishment or a planned renovation? Refer the contact to us — and receive an attractive referral commission if the project goes ahead. Discreet, straightforward, fair.",
+      "headingPre": "You're often the first to hear where building, refurbishment or renovation is about to happen. Refer the contact to us – and secure ",
+      "headingEm": "your share",
+      "headingPost": " of it.",
+      "body": "If the project goes ahead, you receive an attractive referral commission. Discreet, straightforward, fair.",
       "ctaPrimary": "Refer a project",
       "ctaSecondary": "View commission model",
       "stats": [
@@ -612,7 +612,7 @@
     "why": {
       "sectionLabel": "Why a referral program",
       "heading": "A good referral is worth more than any advertisement.",
-      "body": "Craftsmen, architects, property managers, notaries, brokers and private contacts are often the first to learn about construction, refurbishment or renovation projects. We want to reward exactly this knowledge fairly — with a clear, predictable commission instead of vague favours.",
+      "body": "Neighbours, craftsmen, architects, property managers, notaries, brokers and private contacts are often the first to learn about construction, refurbishment or renovation projects. We want to reward exactly this knowledge fairly — with a clear, predictable commission instead of vague favours.",
       "steps": [
         {
           "n": "01 — Refer",
@@ -634,31 +634,24 @@
     "commission": {
       "sectionLabel": "Commission Model",
       "heading": "Transparently tiered by type of project.",
-      "body": "The amount depends on the type and volume of the referred project. The following rates serve as orientation for your first conversation with us.",
+      "body": "The amount depends on the type of the referred project. Fixed, clearly communicated rates apply — each based on the total contract volume.",
       "cards": [
         {
           "cat": "Construction",
-          "amount": "1.0 – 1.5",
-          "unit": "% of contract volume",
+          "amount": "1.5",
+          "unit": "% of total contract volume",
           "body": "New builds and larger turnkey construction projects that come about through your referral.",
           "note": "Payout after contract signing"
         },
         {
-          "cat": "Refurbishment",
-          "amount": "1.5 – 2.0",
-          "unit": "% of contract volume",
-          "body": "Energy-related, technical or structural refurbishments of existing properties.",
-          "note": "Payout after order confirmation"
-        },
-        {
-          "cat": "Renovation",
-          "amount": "2.0 – 2.5",
-          "unit": "% of contract volume",
-          "body": "Modernisations, repairs and value-enhancing renovation measures.",
+          "cat": "Refurbishment / Renovation",
+          "amount": "2.5",
+          "unit": "% of total contract volume",
+          "body": "Refurbishment and renovation work on existing buildings that comes about through your referral.",
           "note": "Payout after order confirmation"
         }
       ],
-      "disclaimer": "All rates are indicative. We agree the binding terms with you personally and in writing before the project begins."
+      "footnote": "Refurbishment/renovation covers: energy-related, technical and structural refurbishment of existing buildings, modernisation, repair work and value-enhancing renovation measures."
     },
     "eligibility": {
       "sectionLabel": "Requirements",
@@ -666,12 +659,11 @@
       "items": [
         "The referral demonstrably leads to a new construction, refurbishment or renovation contract with CLASEN.",
         "The referred contact was not previously a client or in active contact with CLASEN.",
-        "The commission agreement is confirmed in writing between you and CLASEN before the project begins.",
+        "We confirm your commission in writing before the project begins — transparent and binding.",
         "Payout takes place after binding commissioning or notarisation.",
         "Commercial brokers and intermediaries already bound by contract are excluded from this program."
       ],
-      "quote": "“The best time to refer a project was the first moment you heard about it.”",
-      "quoteSource": "Loosely based on our credo of FAIRness"
+      "quote": "“The best time to refer a project was the first moment you heard about it.”"
     },
     "form": {
       "sectionLabel": "Refer now",
@@ -695,6 +687,7 @@
       "phonePlaceholder": "+49",
       "messagePlaceholder": "Property, location, contact person and a short description of the project.",
       "submit": "Send referral",
+      "submitting": "Sending …",
       "successHeading1": "Thank you —",
       "successHeading2": "we will be in touch soon.",
       "successMessage": "Your referral has been received. A member of our team will contact you shortly.",

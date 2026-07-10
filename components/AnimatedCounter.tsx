@@ -8,6 +8,8 @@ interface Props {
   suffix?: string;
   decimals?: number;
   duration?: number;
+  /** Decimal separator in the rendered number, e.g. "," for German */
+  separator?: string;
   active: boolean;
 }
 
@@ -17,6 +19,7 @@ export default function AnimatedCounter({
   suffix = "",
   decimals = 0,
   duration = 2000,
+  separator = ".",
   active,
 }: Props) {
   const [current, setCurrent] = useState(0);
@@ -45,13 +48,13 @@ export default function AnimatedCounter({
     };
   }, [active, to, duration]);
 
-  const formatted = current.toFixed(decimals);
+  const formatted = current.toFixed(decimals).replace(".", separator);
 
   return (
     // Phantom text reserves the exact final width — no layout shift
     <span className="relative inline-block tabular-nums">
       <span className="invisible select-none" aria-hidden>
-        {prefix}{to.toFixed(decimals)}{suffix}
+        {prefix}{to.toFixed(decimals).replace(".", separator)}{suffix}
       </span>
       <span className="absolute inset-0">
         {prefix}{formatted}{suffix}
