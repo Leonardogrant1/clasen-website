@@ -3,9 +3,8 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
 import HeroSection from "@/components/HeroSection";
 import ProfileSection from "@/components/ProfileSection";
-import AlleinestellungsMerkmale from "@/components/AlleinestellungsMerkmale";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import CredoSection from "@/components/CredoSection";
+import CTASection from "@/components/CTASection";
 
 export const dynamic = "force-dynamic";
 
@@ -24,11 +23,21 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
   return (
     <>
-      <HeroSection dict={dict.hero} statsDict={dict.stats} />
+      <HeroSection dict={dict.hero} statsDict={dict.stats} forceItemIndex={0} />
       <TestimonialsSection dict={dict.testimonials} />
       <ProfileSection dict={dict.profile} locale={lang} />
-      <AlleinestellungsMerkmale dict={dict.alleinstell} locale={lang} />
-      <CredoSection dict={dict.credo} locale={lang} />
+      <CTASection
+        dict={dict.investmentCTA}
+        locale={lang}
+        videoSrc="/video/hero1.mp4"
+        targetPath="/investment"
+      />
+      <CTASection
+        dict={dict.livingCTA}
+        locale={lang}
+        videoSrc="/video/wohnen_leben.mp4"
+        targetPath="/properties"
+      />
     </>
   );
 }

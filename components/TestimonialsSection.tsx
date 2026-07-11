@@ -75,7 +75,7 @@ export default function TestimonialsSection({ dict }: Props) {
 
   return (
     <section id="testimonials" className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
-      <div className="max-w-6xl mx-auto flex flex-col gap-6">
+      <div className="max-w-6xl mx-auto flex flex-col gap-4">
 
         {/* ── MOBILE LAYOUT ── */}
         <div className="flex flex-col md:hidden">
@@ -130,7 +130,6 @@ export default function TestimonialsSection({ dict }: Props) {
             <Dots />
           </div>
 
-          <h4 className="text-center font-semibold text-[1.7rem] mt-5">{dict.realObjectsHeading}</h4>
 
           {/* Investment label above carousel */}
           <div className={`transition-all flex justify-center duration-500  mt-5 ease-in-out ${quoteClass}`}>
@@ -185,6 +184,12 @@ export default function TestimonialsSection({ dict }: Props) {
           dots={<Dots />}
           navButtons={null}
         />
+
+        {dict.mobileSubtext && (
+          <p className="text-white/30 text-[10px] tracking-wider uppercase text-left">
+            {dict.mobileSubtext}
+          </p>
+        )}
       </div>
     </section>
   );

@@ -5,11 +5,13 @@ import VideoHero from "./VideoHero";
 type Props = {
   dict: Dictionary["hero"];
   statsDict: Dictionary["stats"];
+  forceItemIndex?: number;
 };
 
-export default function HeroSection({ dict, statsDict }: Props) {
+export default function HeroSection({ dict, statsDict, forceItemIndex }: Props) {
 
-  const item = dict.items[Math.floor(Math.random() * dict.items.length)];
+  const itemIndex = forceItemIndex !== undefined ? forceItemIndex : Math.floor(Math.random() * dict.items.length);
+  const item = dict.items[itemIndex];
   return (
     <>
       {/* Mobile */}
@@ -29,7 +31,7 @@ export default function HeroSection({ dict, statsDict }: Props) {
           </div>
         </div>
 
-        <div className="px-4 py-4">
+        <div className="px-4 py-4 flex flex-col gap-2">
           <p className="text-muted leading-relaxed text-sm whitespace-pre-line">{item.subtitle}</p>
         </div>
 

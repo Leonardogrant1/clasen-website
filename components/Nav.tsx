@@ -4,23 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
 import type { Dictionary } from "@/app/[lang]/(main)/dictionaries";
 import { trackEvent } from "@/lib/event-tracker";
-
-import homeAnim from "@/public/animations/burger/system-solid-41-home-hover-pinch-2.json";
-import homeAnim2 from "@/public/animations/burger/system-solid-41-home-hover-pinch.json";
-import investmentAnim from "@/public/animations/burger/system-solid-160-trending-up-hover-trend-up.json";
-import investmentAnim2 from "@/public/animations/burger/system-solid-160-trending-up-hover-trend-up-2.json";
-import contactsAnim from "@/public/animations/burger/system-solid-187-contacts-hover-contacts.json";
-import contactsAnim2 from "@/public/animations/burger/system-solid-187-contacts-hover-contacts-2.json";
-import signInAnim from "@/public/animations/burger/system-solid-113-log-sign-in-hover-sign-in.json";
-import signInAnim2 from "@/public/animations/burger/system-solid-113-log-sign-in-hover-sign-in-2.json";
-
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-
-// index 0 = Kapital, 1 = Wohnen&Leben, 2 = Clasen (key SVG handled separately), 3 = Contact
-const burgerAnimations = [[investmentAnim, investmentAnim2], [homeAnim, homeAnim2], null, [contactsAnim, contactsAnim2]] as const;
 
 type Props = {
   dict: Dictionary["nav"];
@@ -33,58 +18,19 @@ function MobileNavItem({
   href,
   label,
   active,
-  animationData,
-  keyIcon,
   onNavigate,
 }: {
   href: string;
   label: string;
   active: boolean;
-  animationData?: object | null;
-  keyIcon?: boolean;
   onNavigate: (href: string) => void;
 }) {
-  const lottieRef = useRef<any>(null);
-
-  const handleClick = () => {
-    if (animationData && lottieRef.current) {
-      lottieRef.current.goToAndPlay(0, true);
-      setTimeout(() => onNavigate(href), 600);
-    } else {
-      onNavigate(href);
-    }
-  };
-
   return (
     <button
-      onClick={handleClick}
+      onClick={() => onNavigate(href)}
       className={`flex flex-col items-center gap-2 group transition-colors duration-200
         ${active ? "text-accent" : "text-foreground hover:text-accent"}`}
     >
-      {keyIcon ? (
-        <div className="w-24 h-16 relative">
-          <Image
-            src="/logo/key_white.svg"
-            fill
-            alt=""
-            className="object-contain"
-          />
-        </div>
-      ) : animationData ? (
-        <div
-          className="w-8 h-8 duration-200"
-          onMouseEnter={() => lottieRef.current?.goToAndPlay(0, true)}
-          onMouseLeave={() => lottieRef.current?.goToAndStop(0, true)}
-        >
-          <Lottie
-            lottieRef={lottieRef}
-            animationData={animationData}
-            autoplay={false}
-            loop={false}
-            className="w-full h-full"
-          />
-        </div>
-      ) : null}
       <span className="text-2xl font-bold uppercase tracking-widest">
         {label}
       </span>
@@ -93,33 +39,17 @@ function MobileNavItem({
 }
 
 function MobileLoginIcon({ onNavigate, label }: { onNavigate: () => void; label: string }) {
-  const lottieRef = useRef<any>(null);
-
-  const handleClick = () => {
-    if (lottieRef.current) {
-      lottieRef.current.goToAndPlay(0, true);
-      setTimeout(() => onNavigate(), 600);
-    } else {
-      onNavigate();
-    }
-  };
-
   return (
     <button
-      onClick={handleClick}
+      onClick={onNavigate}
       className="flex flex-col items-center gap-4 group mt-20"
     >
-      <div
-        className="w-8 h-8 duration-200"
-        onMouseEnter={() => lottieRef.current?.goToAndPlay(0, true)}
-        onMouseLeave={() => lottieRef.current?.goToAndStop(0, true)}
-      >
-        <Lottie
-          lottieRef={lottieRef}
-          animationData={signInAnim}
-          autoplay={false}
-          loop={false}
-          className="w-full h-full"
+      <div className="w-24 h-16 relative">
+        <Image
+          src="/logo/key_white.svg"
+          fill
+          alt=""
+          className="object-contain"
         />
       </div>
       <span className="px-8 py-3 rounded-full bg-white text-black text-sm uppercase tracking-widest font-semibold group-hover:bg-white/90 transition-colors duration-200">
@@ -157,7 +87,8 @@ export default function Nav({ dict, locale }: Props) {
       : rawPathname;
 
   const mainLinks = [
-    { href: `${base}/`, label: dict.kapital },
+    { href: `${base}/`, label: dict.start },
+    { href: `${base}/investment`, label: dict.kapital },
     { href: `${base}/properties`, label: dict.wohnenUndLeben },
     { href: `${base}/clasen`, label: dict.clasen },
     { href: `${base}/contact`, label: dict.contact },
@@ -200,6 +131,18 @@ export default function Nav({ dict, locale }: Props) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
+
+  // Lock body scroll when navigation menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   const isAnimating = loginPhase !== "idle";
 
@@ -292,52 +235,50 @@ export default function Nav({ dict, locale }: Props) {
       )}
 
       <div
-        className={`fixed inset-0 z-200 bg-background/95 backdrop-blur-md flex flex-col items-center justify-center
+        className={`fixed inset-0 z-200 bg-background/95 backdrop-blur-md overflow-y-auto
           transition-opacity duration-300
           ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
       >
-        <button
-          onClick={() => setIsOpen(false)}
-          aria-label="Menü schließen"
-          className="absolute top-6 right-8 p-2 text-foreground"
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
+        <div className="min-h-full flex flex-col items-center justify-center py-20 px-6 relative">
+          <button
+            onClick={() => setIsOpen(false)}
+            aria-label="Menü schließen"
+            className="absolute top-6 right-8 p-2 text-foreground"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
 
-        <nav className="flex flex-col items-center gap-14">
-          {mainLinks.map((link, i) => {
-            const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
-            const isClasen = i === 2;
-            const anims = burgerAnimations[i];
-            return (
-              <MobileNavItem
-                key={link.href}
-                href={link.href}
-                label={link.label}
-                active={active}
-                keyIcon={isClasen}
-                animationData={!isClasen && anims ? anims[active ? 1 : 0] : undefined}
-                onNavigate={(href) => {
-                  setIsOpen(false);
-                  router.push(href);
-                }}
-              />
-            );
-          })}
+          <nav className="flex flex-col items-center gap-14">
+            {mainLinks.map((link) => {
+              const active = pathname === link.href || (link.href === `${base}/` && pathname === base);
+              return (
+                <MobileNavItem
+                  key={link.href}
+                  href={link.href}
+                  label={link.label}
+                  active={active}
+                  onNavigate={(href) => {
+                    setIsOpen(false);
+                    router.push(href);
+                  }}
+                />
+              );
+            })}
 
-          {/* Mandanten Login with sign-in animation */}
-          <MobileLoginIcon
-            label={dict.login}
-            onNavigate={() => {
-              setIsOpen(false);
-              trackEvent("login_initiated", { source: "mobile_nav" });
-              router.push(`${base}/login`);
-            }}
-          />
-        </nav>
+            {/* Mandanten Login with sign-in animation */}
+            <MobileLoginIcon
+              label={dict.login}
+              onNavigate={() => {
+                setIsOpen(false);
+                trackEvent("login_initiated", { source: "mobile_nav" });
+                router.push(`${base}/login`);
+              }}
+            />
+          </nav>
+        </div>
       </div>
     </>
   );

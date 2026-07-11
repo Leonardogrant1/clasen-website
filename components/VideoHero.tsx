@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
     src: string;
     className?: string;
+    loop?: boolean;
 };
 
-export default function VideoHero({ src, className }: Props) {
+export default function VideoHero({ src, className, loop = true }: Props) {
     const ref = useRef<HTMLVideoElement>(null);
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
         const video = ref.current;
         if (!video) return;
         video.muted = true;
+
+        const handlePlaying = () => setIsLoaded(true);
+        video.addEventListener("playing", handlePlaying);
 
         const tryPlay = () => video.play().catch(() => { });
 
@@ -34,7 +39,10 @@ export default function VideoHero({ src, className }: Props) {
         );
 
         observer.observe(video);
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect();
+            video.removeEventListener("playing", handlePlaying);
+        };
     }, []);
 
     return (
@@ -42,11 +50,11 @@ export default function VideoHero({ src, className }: Props) {
             ref={ref}
             src={src}
             autoPlay
-            loop
+            loop={loop}
             muted
             playsInline
             preload="auto"
-            className={className}
+            className={`${className} transition-opacity duration-700 ${isLoaded ? "opacity-100" : "opacity-0"}`}
         />
     );
 }

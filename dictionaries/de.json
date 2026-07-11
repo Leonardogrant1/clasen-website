@@ -1,5 +1,6 @@
 {
   "nav": {
+    "start": "Start",
     "kapital": "Investment",
     "wohnenUndLeben": "Wohnen & Leben",
     "clasen": "Clasen",
@@ -11,12 +12,12 @@
     "items": [
       {
         "title": "Aufs richtige \nPferd setzen.",
-        "subtitle": "Diskret. Persönlich. Zuverlässig.\nIhr sicherer Zugang zu außergewöhnlichen Investmentchancen.",
+        "subtitle": "Ihr einzigartiger Rundum-Partner für alle Immobilienfragen. \nDamit Sie auch bei jeder Wendung sicher im Sattel bleiben.\nMaklerkompetenz, Bauexpertise und eigener Objektbestand – vereint für Ihren Erfolg.",
         "videoPath": "/video/hero.mp4"
       },
       {
         "title": "Vor-Sorge\nstatt Nach-Sicht",
-        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nSchützen Sie Ihr Vermögen mit maßgeschneiderten Top-Investments.",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nDer Markt bietet viel: Wir zeigen Ihnen, was davon wirklich zählt. Exklusiver Zugang, jahrelange Marktkenntnis und eigenes Kapital – vereint für Ihren Erfolg",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -42,12 +43,24 @@
     "sectionLabel": "Profil",
     "heading": "Leidenschaft die ihresgleichen sucht.",
     "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern vor allem unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
-    "body2": "Präzision und Menschlichkeit im Einklang – für eine Performance, die Ihrem Kapital gerecht wird.",
+    "body2": "Präzision und Menschlichkeit im Einklang – für eine Performance, die Ihrem Ziel gerecht wird.",
     "credo": "Unser Credo der FAIRlässlichkeit.",
     "tagline": "Ihr Schlüssel zum Erfolg.",
     "role": "Alexander Clasen",
     "cta": "Beratung buchen",
     "circularText": "Ihr Vertrauen ist unser Stolz"
+  },
+  "investmentCTA": {
+    "sectionLabel": "Kapitalanlage",
+    "heading": "Vermögen sichern. \nSachwerte aufbauen.",
+    "description": "Finden Sie außergewöhnliche Investmentchancen in erstklassigen Lagen – diskret, wertbeständig und renditestark.",
+    "cta": "Investment-Bereich besuchen"
+  },
+  "livingCTA": {
+    "sectionLabel": "Lebensmittelpunkte",
+    "heading": "Zuhause sein. \nEndlich ankommen.",
+    "description": "Finden Sie einzigartige Wohnimmobilien und außergewöhnliche Lebensmittelpunkte – perfekt auf Ihre Lebensphase abgestimmt.",
+    "cta": "Wohnimmobilien entdecken"
   },
   "alleinstell": {
     "sectionLabel": "Mehrwert",
@@ -91,6 +104,7 @@
     "heading": "Echte Gesichter.\nEchte Geschichten.",
     "investmentLabel": "Investition",
     "realObjectsHeading": "Echte Objekte. Keine KI.",
+    "mobileSubtext": "Echte Objektaufnahmen – keine KI-Bearbeitung.",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -225,7 +239,7 @@
       },
       {
         "year": "18. Geburtstag",
-        "category": "Erster Versuch",
+        "category": "Erste Versuche",
         "subtitle": "Die Absage, die alles in Gang setzte.",
         "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. \nDie Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das vermutlich das Ende des Gedankens. Für ihn der Beginn einer Obsession.",
         "image_path": "/timeline-images/1.png"
@@ -267,9 +281,9 @@
       },
       {
         "year": "2018",
-        "category": "2. Gründung",
+        "category": "Nächste Gründung",
         "subtitle": "Eigene Baufirma. Unabhängigkeit ohne Kompromisse.",
-        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Der Grund ist so simpel wie strategisch — wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht auf dem Weg dorthin von Fremdfirmen abhängig sein. \nQualität, Timing und Kostenkontrolle bleiben so vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung, ein Ergebnis — vom ersten Beratungsgespräch bis zur Schlüsselübergabe.",
+        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. \nDer Grund so simpel wie strategisch: Wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht von Fremdfirmen abhängig sein. \nQualität, Timing und Kostenkontrolle vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung — vom ersten Beratungsgespräch bis zur Schlüsselübergabe.",
         "image_path": "/timeline-images/7.png"
       },
       {
@@ -290,7 +304,7 @@
         "year": "2024",
         "category": "Vision",
         "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
-        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionelle Investoren vorbehalten war.",
+        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionellen Investoren vorbehalten war.",
         "image_path": "/timeline-images/10.png"
       },
       {
@@ -309,12 +323,13 @@
   },
   "wohnenUndLeben": {
     "sectionLabel": "Referenzobjekte",
-    "heading": "Wohnen & Leben.",
+    "heading": "Ihr \"Dahoam\" Gefühl.",
     "subheading": "Lebensmittelpunkte. So einzigartig wie Sie selbst.",
     "subheadingMobile": "Einzigartige Lebensmittelpunkte.",
     "description": "Auszüge vermittelter Liegenschaften:",
     "descriptionMobile": "Vermittelte Liegenschaften:",
     "viewProperty": "Objekt ansehen",
+    "viewOffers": "Aktuelle Angebote",
     "notConnected": "ImmoScout nicht verbunden",
     "connectButton": "Jetzt verbinden",
     "noListings": "Keine Objekte verfügbar",
@@ -469,6 +484,10 @@
     "home": {
       "title": "CLASEN — Ihr Schlüssel zum Erfolg.",
       "description": "Wo Makler an ihre Grenzen kommen, fangen wir erst an."
+    },
+    "investment": {
+      "title": "CLASEN — Investment",
+      "description": "Schützen Sie Ihr Vermögen mit maßgeschneiderten Top-Investments."
     },
     "clasen": {
       "title": "CLASEN — Die Geschichte",

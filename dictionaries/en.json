@@ -1,5 +1,6 @@
 {
   "nav": {
+    "start": "Home",
     "kapital": "COMMERCIAL",
     "wohnenUndLeben": "Residential",
     "clasen": "Clasen",
@@ -42,12 +43,24 @@
     "sectionLabel": "Profile",
     "heading": "A passion without peer.",
     "body1": "When dedication and an eye for detail extend beyond one's own portfolio — continuously creating substantial value for our clients — the result is an advisory and investment atmosphere you'll be proud to share with those closest to you.",
-    "body2": "This mindset, along with the principle of deploying all resources with absolute effectiveness and integrity at all times, ensures that uncommon measure of humanity and guarantees you and your capital a singular performance.",
+    "body2": "This mindset, along with the principle of deploying all resources with absolute effectiveness and integrity at all times, ensures that uncommon measure of humanity and guarantees you and your goals a singular performance.",
     "credo": "Our credo: FAIRlässlichkeit.",
     "tagline": "Your key to success.",
     "role": "Alexander Clasen",
     "cta": "Experience the key moment",
     "circularText": "Ihr Vertrauen ist unser Stolz"
+  },
+  "investmentCTA": {
+    "sectionLabel": "Capital Investment",
+    "heading": "Secure wealth. Build real assets.",
+    "description": "Find exceptional investment opportunities in prime locations – discreet, value-retaining, and high-yielding.",
+    "cta": "Explore Investments"
+  },
+  "livingCTA": {
+    "sectionLabel": "Centres of life",
+    "heading": "Your sense of home.",
+    "description": "Find unique residential properties and exceptional life settings – perfectly matched to your life phase.",
+    "cta": "Discover Properties"
   },
   "alleinstell": {
     "sectionLabel": "Added value",
@@ -91,6 +104,7 @@
     "heading": "Real faces.\nReal stories.",
     "investmentLabel": "Investment",
     "realObjectsHeading": "Real properties. No AI.",
+    "mobileSubtext": "Real property photos – no AI editing.",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -330,6 +344,7 @@
     "subheadingMobile": "Unique centres of life.",
     "description": "A selection of placed properties:",
     "viewProperty": "View property",
+    "viewOffers": "Current Offers",
     "notConnected": "ImmoScout not connected",
     "connectButton": "Connect now",
     "noListings": "No properties available",
@@ -484,6 +499,10 @@
     "home": {
       "title": "CLASEN — Your Key to Success.",
       "description": "Where real estate agents reach their limits, we are just getting started."
+    },
+    "investment": {
+      "title": "CLASEN — Investment",
+      "description": "Protect your wealth with tailored top-quality investments."
     },
     "clasen": {
       "title": "CLASEN — The Story",

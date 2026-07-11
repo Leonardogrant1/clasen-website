@@ -19,11 +19,33 @@ export default function ClasenWarum({ dict }: { dict: Dictionary["clasenWarum"] 
         </div>
       </div>
 
-      <div className="max-w-3xl mx-auto text-center md:text-left">
+      <div className="max-w-3xl mx-auto text-center">
         <span className="text-accent text-sm md:text-xl uppercase tracking-widest font-semibold block my-6">
           {dict.sectionLabel}
         </span>
-        <p className="text-muted text-lg leading-relaxed whitespace-pre-line">{dict.body}</p>
+        <p className="text-muted text-lg leading-relaxed max-w-2xl mx-auto">
+          {dict.body.split("\n").map((line, index, array) => {
+            if (index === 0) {
+              return (
+                <span key={index} className="block mb-2 md:mb-4">
+                  {line.trim()}
+                </span>
+              );
+            }
+            if (index === 1 || index === 2) {
+              return (
+                <span key={index} className="block md:inline md:mr-1">
+                  {line.trim()}{" "}
+                </span>
+              );
+            }
+            return (
+              <span key={index} className="block mt-2 md:mt-4">
+                {line.trim()}
+              </span>
+            );
+          })}
+        </p>
       </div>
     </section>
   );

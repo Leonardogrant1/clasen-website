@@ -46,20 +46,20 @@ export default function StatsBox({ dict, inline = false }: Props) {
       href: "#alleinstellungsmerkmale"
     },
     {
-      prefix: "",
-      value: 95,
-      suffix: dict.recommendations.suffix,
-      decimals: 0,
-      label: [dict.recommendations.line1, dict.recommendations.line2],
-      href: "/clasen#clasen-ende"
-    },
-    {
       prefix: dict.transactions.prefix,
       value: 2.33,
       suffix: "",
       decimals: 2,
       label: [dict.transactions.line1, dict.transactions.line2],
       href: "#testimonials"
+    },
+    {
+      prefix: "",
+      value: 95,
+      suffix: dict.recommendations.suffix,
+      decimals: 0,
+      label: [dict.recommendations.line1, dict.recommendations.line2],
+      href: "/clasen#clasen-ende"
     }
   ];
 

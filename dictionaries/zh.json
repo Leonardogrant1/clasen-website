@@ -1,5 +1,6 @@
 {
   "nav": {
+    "start": "首页",
     "kapital": "资本",
     "wohnenUndLeben": "居住与生活",
     "clasen": "Clasen",
@@ -42,12 +43,24 @@
     "sectionLabel": "简介",
     "heading": "无与伦比的热忱。",
     "body1": "当心血与对细节的执着不仅限于自己的投资组合,更持续为我们的客户创造巨大的附加价值时,便会形成一种独特的咨询与投资氛围——一种您会乐于向最亲近的人讲述的氛围。",
-    "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,不仅始终保有那份特别的人情味,更为您和您的资本带来无与伦比的业绩。",
+    "body2": "这种心态以及始终以绝对的效率与责任心运用所有资源的准则,不仅始终保有那份特别的人情味,更为您和您的目标带来无与伦比的业绩。",
     "credo": "我们的信条:公平可靠 (FAIRlässlichkeit)。",
     "tagline": "您通往成功的钥匙。",
     "role": "Alexander Clasen",
     "cta": "感受关键时刻",
     "circularText": "Ihr Vertrauen ist unser Stolz"
+  },
+  "investmentCTA": {
+    "sectionLabel": "资本投资",
+    "heading": "保障财富。积累实物资产。",
+    "description": "在核心地段寻找非凡的投资机会 —— 隐秘、保值且高回报。",
+    "cta": "发现投资机会"
+  },
+  "livingCTA": {
+    "sectionLabel": "生活的中心",
+    "heading": "您的归属感。",
+    "description": "寻找独特的住宅物业和非凡的生活中心 —— 完美契合您的人生阶段。",
+    "cta": "发现房源"
   },
   "alleinstell": {
     "sectionLabel": "附加价值",
@@ -91,6 +104,7 @@
     "heading": "真实的面孔。\n真实的故事。",
     "investmentLabel": "投资",
     "realObjectsHeading": "真实物业。非人工智能。",
+    "mobileSubtext": "真实房产照片 - 无AI编辑。",
     "items": [
       {
         "client_image_path": "/testimonials/phillip_geissler/profile.png",
@@ -330,6 +344,7 @@
     "subheadingMobile": "独特的生命中心。",
     "description": "精选已成交物业:",
     "viewProperty": "查看物业",
+    "viewOffers": "最新房源",
     "notConnected": "ImmoScout 未连接",
     "connectButton": "立即连接",
     "noListings": "暂无可用物业",
@@ -484,6 +499,10 @@
     "home": {
       "title": "CLASEN — 您通往成功的钥匙。",
       "description": "在房产中介无能为力的地方，我们才刚刚开始。"
+    },
+    "investment": {
+      "title": "CLASEN — 投资物业",
+      "description": "通过定制的高品质顶级投资物业保护您的财富。"
     },
     "clasen": {
       "title": "CLASEN — 故事",
