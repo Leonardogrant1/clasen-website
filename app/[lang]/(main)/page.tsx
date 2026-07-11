@@ -23,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
   return (
     <>
-      <HeroSection dict={dict.hero} statsDict={dict.stats} forceItemIndex={0} />
+      <HeroSection dict={dict.hero} statsDict={dict.stats} forceItemIndex={0} overrideVision={dict.hero.visionHome} />
       <TestimonialsSection dict={dict.testimonials} />
       <ProfileSection dict={dict.profile} locale={lang} />
       <CTASection
