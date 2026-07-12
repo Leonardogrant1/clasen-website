@@ -11,7 +11,8 @@ import Treppchen from "@/components/funnel/Treppchen"
 import EigenkapitalSlider from "@/components/funnel/EigenkapitalSlider"
 import InvestorResultScreen from "@/components/funnel/InvestorResultScreen"
 import FunnelContactForm from "@/components/funnel/FunnelContactForm"
-import Lottie from "lottie-react"
+import { useFunnelCompletion } from "@/components/funnel/useFunnelCompletion"
+import Lottie, { type LottieRefCurrentProps } from "lottie-react"
 
 
 import bestandshalter from "@/public/animations/bestandshalter.json"
@@ -46,7 +47,7 @@ const INVESTOR_TYPES: Array<{
     {
       slug: "optimierer",
       name: "Der Optimierer",
-      quote: '„Ich will das Maximum aus meinem Kapital herausholen – clever und steuereffizient."',
+      quote: '„Ich will das Maximum aus meinem Kapital herausholen \n– clever und steuereffizient."',
       animation: optimierer,
     },
     {
@@ -76,19 +77,44 @@ function InvestorTypeCard({
       onClick={onClick}
       onMouseEnter={() => lottieRef.current?.goToAndPlay(0, true)}
       onMouseLeave={() => lottieRef.current?.goToAndStop(0, true)}
-      className="group flex flex-row sm:flex-col items-center gap-4 sm:gap-3 p-4 sm:p-5 bg-white/3 hover:bg-white/8 border border-white/10 hover:border-accent rounded-2xl text-left sm:text-center transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+      className="group flex flex-row sm:flex-col items-center gap-4 sm:gap-3 p-3 sm:p-5 bg-white/3 hover:bg-white/8 border border-white/10 hover:border-accent rounded-2xl text-left sm:text-center transition-all duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       style={style}
     >
       <Lottie lottieRef={lottieRef} animationData={animation} autoplay={true} loop={false} className="w-16 h-16 sm:w-28 sm:h-28 shrink-0" />
       <div className="flex flex-col gap-1 sm:gap-2">
-        <span className="text-white font-bold text-sm sm:text-2xl group-hover:text-accent transition-colors duration-200 leading-snug">
+        <span className="text-white font-bold text-lg sm:text-2xl group-hover:text-accent transition-colors duration-200 leading-snug">
           {name}
         </span>
-        <span className="text-white/70 text-xs sm:text-lg leading-relaxed italic">
+        <span className="text-white/70 text-base sm:text-lg leading-relaxed italic whitespace-pre-wrap">
           {quote}
         </span>
       </div>
     </button>
+  )
+}
+
+function TeaserFeatureCard({
+  animation, label, sub, style,
+}: {
+  animation: object
+  label: string
+  sub: React.ReactNode
+  style?: React.CSSProperties
+}) {
+  const lottieRef = useRef<LottieRefCurrentProps | null>(null)
+
+  return (
+    <div
+      onClick={() => lottieRef.current?.goToAndPlay(0, true)}
+      className="flex flex-row sm:flex-col items-center px-4 py-4 sm:py-5 bg-white/5 border border-white/10 rounded-2xl sm:text-center gap-4 sm:gap-6 cursor-pointer"
+      style={style}
+    >
+      <Lottie lottieRef={lottieRef} animationData={animation} loop={false} className="w-16 h-16 sm:w-28 sm:h-28 shrink-0" />
+      <div className="flex flex-col gap-1 sm:gap-2">
+        <p className="text-white font-semibold text-xl">{label}</p>
+        <p className="text-white/70 text-base sm:text-lg">{sub}</p>
+      </div>
+    </div>
   )
 }
 
@@ -109,7 +135,7 @@ export default function InvestorFunnel() {
   const pathname = usePathname()
   const step = Number(searchParams.get("step") ?? "0")
   const next = () => router.push(`${pathname}?step=${step + 1}`)
-  const back = () => router.back()
+  const { back, markSubmitted, submitted } = useFunnelCompletion(TOTAL_STEPS - 1)
 
   const investorType = answers.investorType as InvestorAnswers["investorType"] | undefined
 
@@ -122,7 +148,7 @@ export default function InvestorFunnel() {
       <div className="flex flex-col gap-3" style={{ animation: "fadeInUp 0.4s ease 0.05s both" }}>
         <p className="text-accent text-lg uppercase tracking-widest font-semibold">Ihr exklusiver Zugang</p>
         <h2 className="text-3xl sm:text-4xl font-bold tracking-wide text-foreground leading-snug">
-          Ihr CLASEN Deal-&shy;Kompass<sup style={{ verticalAlign: "super", fontSize: "0.3em" }}>TM</sup>
+          CLASEN Deal-&shy;Kompass<sup style={{ verticalAlign: "super", fontSize: "0.3em" }}>TM</sup>
         </h2>
         <p className="text-white/60 text-base sm:text-lg leading-relaxed">
           KI-gestütztes Objekt-Matching filtert für Sie exklusive Off-Market
@@ -132,21 +158,17 @@ export default function InvestorFunnel() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3" style={{ animation: "fadeInUp 0.4s ease 0.2s both" }}>
         {[
-          { animation: offMarket, label: "Off-Market Portfolio", sub: "Garantiert nie am Markt gelistete Premium-Assets" },
-          { animation: ki, label: "KI-basiertes Matching", sub: <span>Laserscharfe Erfassung Ihres Bedarfs - patentiertes KI-Model <strong>CLAvis<sup style={{ verticalAlign: "super", fontSize: "0.4em" }}>TM</sup> 3.0</strong></span> },
-          { animation: questions, label: "Nur 3 gezielte Fragen", sub: "trennen Sie noch von Ihrem perfekten Investment" },
+          { animation: offMarket, label: "Off-Market Portfolio", sub: "Garantiert nie gelistete Premium-Assets" },
+          { animation: ki, label: "KI basiertes Matching", sub: <span>Laserscharfe Erfassung Ihres Bedarfs - patentiertes Model <strong>CLAvis<sup style={{ verticalAlign: "super", fontSize: "0.4em" }}>TM</sup> 3.0</strong></span> },
+          { animation: questions, label: "Nur 3 gezielte Fragen", sub: "trennen Sie von Ihrem Investment" },
         ].map((f, i) => (
-          <div
+          <TeaserFeatureCard
             key={f.label}
-            className="flex flex-row sm:flex-col items-center px-4 py-4 sm:py-5 bg-white/5 border border-white/10 rounded-2xl sm:text-center gap-4 sm:gap-6"
+            animation={f.animation}
+            label={f.label}
+            sub={f.sub}
             style={{ animation: `fadeInUp 0.4s ease ${0.25 + i * 0.1}s both` }}
-          >
-            <Lottie animationData={f.animation} loop={false} className="w-16 h-16 sm:w-28 sm:h-28 shrink-0" />
-            <div className="flex flex-col gap-1 sm:gap-2">
-              <p className="text-white font-semibold text-sm sm:text-xl">{f.label}</p>
-              <p className="text-white/70 text-xs sm:text-lg">{f.sub}</p>
-            </div>
-          </div>
+          />
         ))}
       </div>
 
@@ -238,7 +260,7 @@ export default function InvestorFunnel() {
     />,
 
     // Step 6: Contact form
-    <FunnelContactForm key="contact" />,
+    <FunnelContactForm key="contact" onSubmitted={markSubmitted} />,
   ]
 
   return (
@@ -254,12 +276,14 @@ export default function InvestorFunnel() {
         <div className="w-full max-w-xl md:max-w-4xl flex flex-col my-auto">
           <div className="flex items-center justify-between mb-8 sm:mb-15">
             <Image src="/logo/key_white.svg" alt="Clasen" width={100} height={34} priority />
-            <button
-              onClick={back}
-              className="text-white/30 hover:text-white text-sm transition-colors duration-200 cursor-pointer"
-            >
-              ← Zurück
-            </button>
+            {!submitted && (
+              <button
+                onClick={back}
+                className="text-white/30 hover:text-white text-sm transition-colors duration-200 cursor-pointer"
+              >
+                ← Zurück
+              </button>
+            )}
           </div>
 
           <div>{screens[step]}</div>

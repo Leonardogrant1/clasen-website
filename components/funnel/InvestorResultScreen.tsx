@@ -14,7 +14,7 @@ const LABEL_BY_TYPE: Record<string, string> = {
 
 const METRIC_BY_TYPE: Record<string, string> = {
   bestandshalter: "Eine der Liegenschaften ist seit über 12 Jahren vollvermietet.",
-  optimierer: "Eines davon weist eine Nettomietrendite von über 4,8 % aus.",
+  optimierer: "Eines davon weist eine Nettomietrendite von über 5,2 % aus.",
   portfoliodenker: "Eines davon liegt in einem Wachstumskorridor mit überdurchschnittlicher Preisentwicklung.",
 }
 
@@ -80,10 +80,9 @@ export default function InvestorResultScreen({ investorType, priorities, equity,
             {topPriority && (
               <> und klarem Fokus auf <span className="text-white font-semibold">{topPriority}</span></>
             )}{" "}
-            hat unser patentierter KI Agent <strong className="text-white">CLAvis<sup style={{ verticalAlign: "super", fontSize: "0.4em" }}>TM</sup> 3.0</strong>
-            aus unserem OffMarket-Objektpool{" "}
-            <span className="text-accent font-bold">{count} {count === 1 ? "Objekt" : "Objekte"}</span>{" "}
-            für Sie priorisiert.
+            hat unser patentierter KI Agent <strong className="text-white">CLAvis<sup style={{ verticalAlign: "super", fontSize: "0.4em" }}>TM</sup></strong> insgesamt
+            <strong className="text-accent"> {count} {count === 1 ? "Objekt" : "Objekte"}</strong>{" "}
+            aus unserem exklusiven OffMarket-Pool für Sie priorisiert.
           </p>
         )}
         {metric && (

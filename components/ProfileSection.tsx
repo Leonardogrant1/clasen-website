@@ -15,7 +15,7 @@ export default function ProfileSection({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
 
   return (
-    <section className="relative py-16 px-4 md:py-32 md:px-8 bg-background overflow-hidden border-t border-white/5">
+    <section className="relative pt-10 pb-16 px-4 md:py-32 md:px-8 bg-background overflow-hidden border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         {/* Mobile-only section label & heading */}
         <div className="md:hidden text-center mb-10 flex flex-col gap-4">

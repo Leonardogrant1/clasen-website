@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getPostHogClient } from "@/lib/posthog-server";
+import { CLOSE_LEAD_FIELDS } from "@/lib/close-fields";
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -11,6 +12,59 @@ const transporter = nodemailer.createTransport({
     pass: process.env.PASSWORD_NODE_MAILER,
   },
 });
+
+// A failed lead creation must not break the form — the mail to the team is
+// already out, so we only log errors here.
+async function createCloseLead(name: string, email: string, phone: string, topic: string, message: string) {
+  if (!process.env.CLOSE_API_KEY) {
+    console.error("[send-mail] Close CRM: CLOSE_API_KEY not set");
+    return;
+  }
+
+  const auth = Buffer.from(`${process.env.CLOSE_API_KEY}:`).toString("base64");
+  const headers = {
+    Authorization: `Basic ${auth}`,
+    "Content-Type": "application/json",
+  };
+
+  const payload = {
+    name,
+    contacts: [
+      {
+        name,
+        emails: [{ email, type: "office" }],
+        phones: phone ? [{ phone, type: "mobile" }] : [],
+      },
+    ],
+    [`custom.${CLOSE_LEAD_FIELDS.funnelSource}`]: "Kontaktformular",
+  };
+
+  const res = await fetch("https://api.close.com/api/v1/lead/", {
+    method: "POST",
+    headers,
+    body: JSON.stringify(payload),
+  });
+
+  const responseText = await res.text();
+  console.log("[send-mail] Close lead status:", res.status, "response:", responseText);
+
+  if (!res.ok) {
+    console.error("[send-mail] Close CRM error:", responseText);
+    return;
+  }
+
+  // Attach topic + message as a note so it shows up in the lead's activity feed
+  const lead = JSON.parse(responseText) as { id: string };
+  const note = [`Betreff: ${topic}`, message && message !== topic ? `\n${message}` : null]
+    .filter(Boolean)
+    .join("\n");
+  const noteRes = await fetch("https://api.close.com/api/v1/activity/note/", {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ lead_id: lead.id, note }),
+  });
+  if (!noteRes.ok) console.error("[send-mail] Close note error:", await noteRes.text());
+}
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -41,6 +95,12 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error("[send-mail] SMTP error:", err);
     return NextResponse.json({ message: "Mail konnte nicht gesendet werden." }, { status: 500 });
+  }
+
+  try {
+    await createCloseLead(name, email, phone, topic, message);
+  } catch (err) {
+    console.error("[send-mail] Close lead error:", err);
   }
 
   const distinctId = req.headers.get("x-posthog-distinct-id") ?? email ?? "anonymous";

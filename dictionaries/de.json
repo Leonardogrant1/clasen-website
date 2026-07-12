@@ -13,12 +13,12 @@
     "items": [
       {
         "title": "Aufs richtige \nPferd setzen.",
-        "subtitle": "Ihr einzigartiger Rundum-Partner für alle Immobilienfragen. \nDamit Sie auch bei jeder Wendung sicher im Sattel bleiben.\nMaklerkompetenz, Bauexpertise und eigener Objektbestand – vereint für Ihren Erfolg.",
+        "subtitle": "Ihr einzigartiger Rundum-Partner für alle Immobilienfragen. \nMaklerkompetenz, Bauexpertise und Vermögensverwaltung – vereint für Ihren Erfolg.",
         "videoPath": "/video/hero.mp4"
       },
       {
-        "title": "Vor-Sorge\nstatt Nach-Sicht",
-        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. \nDer Markt bietet viel: Wir zeigen Ihnen, was davon wirklich zählt. Exklusiver Zugang, jahrelange Marktkenntnis und eigenes Kapital – vereint für Ihren Erfolg",
+        "title": "Vor-Sorge\nstatt Nach-Sicht.",
+        "subtitle": "Ihr Portfolio braucht Betongold, wie Sie die Luft zum Atmen. Exklusiver Zugang, jahrzehntelange Marktkenntnis und eigener Objektbestand – vereint für Ihren Erfolg.",
         "videoPath": "/video/hero1.mp4"
       }
     ]
@@ -43,7 +43,7 @@
     "verticalLabel": "Märkte in Bewegung. Wie Ihr Kopf.",
     "sectionLabel": "Profil",
     "heading": "Leidenschaft die ihresgleichen sucht.",
-    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern vor allem unseren Mandanten fortlaufend massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem auch Sie Ihren Liebsten gerne berichten werden.",
+    "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern Ihnen massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem Sie Ihren Liebsten gerne berichten werden.",
     "body2": "Präzision und Menschlichkeit im Einklang – für eine Performance, die Ihrem Ziel gerecht wird.",
     "credo": "Unser Credo der FAIRlässlichkeit.",
     "tagline": "Ihr Schlüssel zum Erfolg.",
@@ -84,19 +84,19 @@
         "animation": "/animations/town.json"
       },
       {
-        "title": "Steuervorteil",
-        "description": "Rechtssichere Konzepte, von führenden Kanzleien entwickelt, um Ihre gesamte Steuerlast drastisch zu reduzieren.",
+        "title": "Steuervorteile",
+        "description": "Rechtssichere Konzepte, von führenden Kanzleien entwickelt, um Ihre Steuerlast drastisch zu reduzieren.",
         "animation": "/animations/gift.json"
-      },
-      {
-        "title": "Exzellenz",
-        "description": "Nachhaltige Strategien der Extraklasse. Durchdacht von A–Z. Damit Sie sich auf Ihr Kerngeschäft fokussieren können.",
-        "animation": "/animations/crown.json"
       },
       {
         "title": "Eco — Mission",
         "description": "Schon heute bereit für die Zukunft: Dank energetischer Sanierung erfüllt jedes Investment modernste Standards.",
         "animation": "/animations/energy.json"
+      },
+      {
+        "title": "Exzellenz",
+        "description": "Nachhaltige Strategien der Extraklasse. Durchdacht von A–Z. Damit Sie sich auf Ihr Kerngeschäft fokussieren können.",
+        "animation": "/animations/crown.json"
       }
     ]
   },
@@ -128,7 +128,7 @@
       {
         "client_name": "Jens Krautscheid",
         "client_quote": "...anfänglich gefielen uns Marke und Konzept. \n Inzwischen bin ich menschlich überzeugt. \nDas Konzept ist steuerlich zu Ende gedacht.",
-        "client_type": "Apotheker / Speaker / Unternehmer",
+        "client_type": "Apotheker / Speaker",
         "object_title": "Renditekonzept München/Giesing",
         "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
         "objects": [

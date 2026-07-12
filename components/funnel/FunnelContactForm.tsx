@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
 import { useFunnel } from "@/components/funnel/FunnelProvider"
 import { trackEvent } from "@/lib/event-tracker"
 import { Search } from "lucide-react"
@@ -11,7 +13,7 @@ const FIELDS = [
   { key: "phone", type: "tel", placeholder: "Telefonnummer", required: true },
 ] as const
 
-export default function FunnelContactForm() {
+export default function FunnelContactForm({ onSubmitted }: { onSubmitted?: () => void }) {
   const { type, answers } = useFunnel()
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -35,6 +37,10 @@ export default function FunnelContactForm() {
       body: JSON.stringify({ name, email, phone, type, answers }),
     }).catch(() => { })
     setSubmitted(true)
+    onSubmitted?.()
+    // Kein Routing beim Submit — Scroll-Reset daher manuell, damit der
+    // Danke-Screen oben beginnt
+    window.scrollTo(0, 0)
   }
 
   if (submitted) {
@@ -43,22 +49,28 @@ export default function FunnelContactForm() {
         className="flex flex-col items-center gap-6 text-center py-8"
         style={{ animation: "fadeSlideIn 0.6s ease both" }}
       >
-        <div className="w-16 h-16 rounded-full bg-accent/10 border border-accent/30 flex items-center justify-center">
-          <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-          </svg>
+        <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Vielen Dank für Ihr Vertrauen!</h2>
+        <div className="relative w-full aspect-video overflow-hidden border border-accent/30 shadow-lg">
+          <Image
+            src="/alex_funnel.png"
+            alt="Alex"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Vielen Dank.</h2>
+          <h2 className="text-xl sm:text-3xl font-bold text-foreground">Auf uns können Sie sich stützen.</h2>
+
           <p className="text-white/50 text-sm sm:text-base leading-relaxed max-w-xs mx-auto">
-            Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.
+            Wir melden uns innerhalb der nächsten 24 Stunden bei Ihnen.
           </p>
         </div>
         <div className="flex flex-col gap-2 w-full mt-2">
           {[
-            "Persönliche Beratung",
-            "Diskrete Abwicklung",
-            "CLASEN-Qualität",
+            "Persönliche Kontaktaufnahme",
+            "Diskreter Umgang mit Ihren Daten",
+            "CLASEN-Qualitätsgarantie",
           ].map((item, i) => (
             <div
               key={item}
@@ -72,6 +84,13 @@ export default function FunnelContactForm() {
             </div>
           ))}
         </div>
+        <Link
+          href="/"
+          className="w-full uppercase py-4 rounded-2xl bg-accent text-background font-bold tracking-wide text-base text-center hover:bg-accent/90 transition-colors duration-200 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          style={{ animation: "fadeInUp 0.4s ease 0.6s both" }}
+        >
+          Zurück zur Startseite
+        </Link>
         <style>{`
           @keyframes fadeSlideIn {
             from { opacity: 0; transform: translateY(8px); }

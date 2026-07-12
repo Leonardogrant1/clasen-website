@@ -19,7 +19,7 @@ const copy = {
     searchTypeTitle: "Ich bin...",
     searchTypeSubtitle: "Bitte wählen Sie Ihre Situation aus.",
     investorLabel: "Kapitalanleger",
-    investorDesc: "Auf der Suche nach vermieteten Objekten für mein Portfolio oder steuerlich optimierten Anlagen.",
+    investorDesc: "Auf der Suche nach Objekten für mein Portfolio oder steuerlich optimierten Anlagen.",
     ownerLabel: "Eigennutzer",
     ownerDesc: "Auf der Suche nach einem Eigenheim für mich/mich und meine Familie.",
     back: "← Zurück",

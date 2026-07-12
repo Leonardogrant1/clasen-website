@@ -34,7 +34,7 @@ export default function HeroSection({ dict, statsDict, forceItemIndex, overrideV
         </div>
 
         <div className="px-4 py-4 flex flex-col gap-2">
-          <p className="text-muted leading-relaxed text-sm whitespace-pre-line">{item.subtitle}</p>
+          <p className="text-muted leading-relaxed text-[0.99rem] whitespace-pre-line">{item.subtitle}</p>
         </div>
 
         <StatsBox dict={statsDict} inline />

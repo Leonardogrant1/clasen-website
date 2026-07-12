@@ -9,6 +9,7 @@ import type { OwnerAnswers } from "@/components/funnel/FunnelProvider"
 import SocialProof from "@/components/funnel/SocialProof"
 import OwnerResultScreen from "@/components/funnel/OwnerResultScreen"
 import FunnelContactForm from "@/components/funnel/FunnelContactForm"
+import { useFunnelCompletion } from "@/components/funnel/useFunnelCompletion"
 import SqmSlider from "@/components/funnel/SqmSlider"
 import { MUNICH_DISTRICTS } from "@/lib/munich-districts"
 
@@ -228,7 +229,7 @@ export default function OwnerFunnel() {
   const pathname = usePathname()
   const step = Number(searchParams.get("step") ?? "0")
   const next = () => router.push(`${pathname}?step=${step + 1}`)
-  const back = () => router.back()
+  const { back, markSubmitted, submitted } = useFunnelCompletion(TOTAL_STEPS - 1)
 
   const [districtSearch, setDistrictSearch] = useState("")
   const [selectedDistricts, setSelectedDistricts] = useState<string[]>([])
@@ -468,7 +469,7 @@ export default function OwnerFunnel() {
     />,
 
     // Step 8: Contact form
-    <FunnelContactForm key="contact" />,
+    <FunnelContactForm key="contact" onSubmitted={markSubmitted} />,
   ]
 
   return (
@@ -484,12 +485,14 @@ export default function OwnerFunnel() {
         <div className="w-full max-w-xl md:max-w-4xl flex flex-col gap-6 my-auto">
           <div className="flex items-center justify-between">
             <Image src="/logo/key_white.svg" alt="Clasen" width={100} height={34} priority />
-            <button
-              onClick={back}
-              className="text-white/30 hover:text-white text-sm transition-colors duration-200 cursor-pointer"
-            >
-              ← Zurück
-            </button>
+            {!submitted && (
+              <button
+                onClick={back}
+                className="text-white/30 hover:text-white text-sm transition-colors duration-200 cursor-pointer"
+              >
+                ← Zurück
+              </button>
+            )}
           </div>
 
           <div>{screens[step]}</div>

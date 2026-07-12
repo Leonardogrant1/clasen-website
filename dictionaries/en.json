@@ -128,7 +128,7 @@
       {
         "client_name": "Jens Krautscheid",
         "client_quote": "...at first it was above all the brand and the concept that won me over. \\n By now I am convinced on a human level too. \\nTax-optimised all the way through.",
-        "client_type": "Pharmacist / Speaker / Entrepreneur",
+        "client_type": "Pharmacist / Speaker",
         "object_title": "Yield concept Munich/Giesing",
         "client_image_path": "/testimonials/jens_krautscheid/profile.jpeg",
         "objects": [
@@ -624,9 +624,18 @@
       "ctaPrimary": "Refer a project",
       "ctaSecondary": "View commission model",
       "stats": [
-        { "num": "Within 24 hrs", "label": "Response after your referral" },
-        { "num": "€ 0", "label": "Effort or risk for you as a referrer" },
-        { "num": "100 %", "label": "Discretion towards third parties" }
+        {
+          "num": "Within 24 hrs",
+          "label": "Response after your referral"
+        },
+        {
+          "num": "€ 0",
+          "label": "Effort or risk for you as a referrer"
+        },
+        {
+          "num": "100 %",
+          "label": "Discretion towards third parties"
+        }
       ]
     },
     "why": {
@@ -697,9 +706,18 @@
       "phoneFieldLabelShort": "Your phone no.",
       "typeLabel": "Type of project",
       "types": [
-        { "value": "bauauftrag", "label": "Construction" },
-        { "value": "sanierungsauftrag", "label": "Refurbishment" },
-        { "value": "renovierungsauftrag", "label": "Renovation" }
+        {
+          "value": "bauauftrag",
+          "label": "Construction"
+        },
+        {
+          "value": "sanierungsauftrag",
+          "label": "Refurbishment"
+        },
+        {
+          "value": "renovierungsauftrag",
+          "label": "Renovation"
+        }
       ],
       "messageLabel": "Your message",
       "namePlaceholder": "John Example",

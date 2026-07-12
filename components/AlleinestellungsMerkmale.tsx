@@ -29,7 +29,7 @@ const lotties = {
 export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
   const base = locale === "en" ? "/en" : "";
   return (
-    <section id="alleinstellungsmerkmale" className="py-16 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
+    <section id="alleinstellungsmerkmale" className="py-10 px-4 md:py-32 md:px-8 bg-background border-t border-white/5">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-20 gap-6">
           <div className="text-center md:text-left">
@@ -48,7 +48,7 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-8 md:gap-y-16 px-1">
           {dict.merkmale.map((m, i) => {
             const mobileOrders = [
               "order-1 md:order-none", // 1. Treffsicher
@@ -61,10 +61,10 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
 
             return (
               <div key={m.title} className={`flex flex-col items-center gap-4 ${mobileOrders[i] || ""}`}>
-                <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-28 h-28" />
+                <Lottie animationData={lotties[m.animation as keyof typeof lotties]} loop={true} className="w-20 h-20 md:w-28 md:h-28" />
 
                 <p className="text-lg uppercase tracking-[0.2em] text-center font-semibold text-foreground">{m.title}</p>
-                <p className="text-muted text-lg leading-relaxed text-center">{m.description}</p>
+                <p className="text-muted text-[0.99rem] md:text-lg leading-relaxed text-center">{m.description}</p>
               </div>
             );
           })}
