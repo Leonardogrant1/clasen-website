@@ -42,7 +42,7 @@
   "profile": {
     "verticalLabel": "Märkte in Bewegung. Wie Ihr Kopf.",
     "sectionLabel": "Profil",
-    "heading": "Leidenschaft die ihresgleichen sucht.",
+    "heading": "Leidenschaft, \ndie ihresgleichen sucht.",
     "body1": "Wenn sich Herzblut und Detailverliebtheit nicht nur auf das eigene Portfolio beschränken, sondern Ihnen massiven Mehrwert bieten, entsteht ein Beratungs – & Investitionsambiente von dem Sie Ihren Liebsten gerne berichten werden.",
     "body2": "Präzision und Menschlichkeit im Einklang – für eine Performance, die Ihrem Ziel gerecht wird.",
     "credo": "Unser Credo der FAIRlässlichkeit.",
@@ -220,12 +220,12 @@
   "clasenHero": {
     "sectionLabel": "Die Geschichte hinter der Marke",
     "heading": "Eine Überzeugung.",
-    "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen. Was dazwischen liegt, ist keine Karriere — es ist ein Credo.",
+    "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen. \nDazwischen liegt keine Karriere — sondern der Beweis, dass diese Überzeugung trägt.",
     "cta": "Die Geschichte lesen"
   },
   "clasenWarum": {
     "sectionLabel": "Das Warum",
-    "body": "Die Assetklasse, die mich durch alle persönlichen Krisen und Fehlentscheidung getragen hat zugänglich machen für alle. \nNicht nur für Institutionelle. \nNicht nur für Erben. \nFür jeden, der bereit ist, sein Kapital arbeiten zu lassen."
+    "body": "Immobilien haben mich durch alle persönlichen Krisen und Fehlentscheidungen getragen. \nMeine Leidenschaft für diese Assetklasse teile ich authentisch und aufrichtig mit jedem, der bereit ist, sein Kapital arbeiten zu lassen. \nDer Beweis sind 100+ glückliche Mandanten."
   },
   "clasenChronik": {
     "sectionLabel": "Chronik",
@@ -242,77 +242,77 @@
         "year": "18. Geburtstag",
         "category": "Erste Versuche",
         "subtitle": "Die Absage, die alles in Gang setzte.",
-        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. \nDie Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele wäre das vermutlich das Ende des Gedankens. Für ihn der Beginn einer Obsession.",
+        "body": "Am Tag seines 18. Geburtstags stellt Alexander seine erste Immobilienfinanzierungsanfrage. \nDie Antwort der Bank: Ablehnung. Kein Eigenkapital, kein Einkommen, keine Chance. Für viele vermutlich das Ende des Gedankens. Für ihn der Beginn einer Obsession.",
         "image_path": "/timeline-images/1.png"
       },
       {
         "year": "2012",
         "category": "Erweckung",
-        "subtitle": "»Rich Dad Poor Dad« und die Erkenntnis.",
-        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. \nJura- und Psychologiestudium beginnen zwar — rücken aber zunehmend in den Hintergrund. \nDie wahre Ausbildung findet in Büchern, Bilanzen und Grundbuchauszügen statt.",
+        "subtitle": "»Rich Dad Poor Dad« — Die Erkenntnis.",
+        "body": "Nach dem Abitur öffnet ein Buch und ein Blick in die Welt gut situierter Freunde eine völlig neue Perspektive: passives Einkommen durch Immobilien. Alexander taucht tief in die Fachliteratur ein. Jura- und Psychologiestudium in München beginnen zwar — rücken aber zunehmend in den Hintergrund. \nDie wahre Ausbildung findet in Büchern, Grundbuchauszügen und Seminaren statt.",
         "image_path": "/timeline-images/2.png"
       },
       {
         "year": "2015",
         "category": "Wendepunkt",
         "subtitle": "Der Abbruch, gegen den Rat aller.",
-        "body": "Kurz vor dem Abschluss bricht Alexander sein kostspieliges Psychologiestudium ab. \nNicht aus Gleichgültigkeit — sondern aus Klarheit. \nEr erkennt, welches Potential ein eigener Immobilienbestand haben kann. Alle raten ab. \nEr macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
+        "body": "Kurz vor dem Abschluss bricht Alexander sein Psychologiestudium ab. \nNicht aus Gleichgültigkeit \n— sondern aus Klarheit. \nAlle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
         "image_path": "/timeline-images/3.png"
       },
       {
         "year": "2016",
         "category": "Quereinstieg",
         "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
-        "body": "Als Quereinsteiger tritt Alexander, gemeinsam mit seinem besten Freund, in eines der renommiertesten Maklerhäuser Münchens ein — über ein Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. \nEin Jahr später sind gleich mehrere davon gebrochen - Bestmarken, die jahrzehntelang Bestand hatten. \nDie Erkenntnis: Der Münchner Maklermarkt ist eingestaubt. Und bereit für eine Revolution.",
+        "body": "Als Quereinsteiger tritt Alexander, gemeinsam mit seinem besten Freund, in eines der renommiertesten Maklerhäuser Münchens ein. \nEin Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. \nEin Jahr später sind gleich mehrere davon gebrochen: Bestmarken, die jahrzehntelang Bestand hatten. \nDie Erkenntnis: Der Münchner Maklermarkt ist eingestaubt. \nUnd bereit für eine Revolution.",
         "image_path": "/timeline-images/4.png"
       },
       {
         "year": "2017",
-        "category": "Erkundung",
+        "category": "Internationale Erkundung",
         "subtitle": "Die andere Seite. Schweizer Präzision.",
-        "body": "Vor dem geplanten und bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. \nKonträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander saugt beides auf — und weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. Und wie nicht.",
+        "body": "Vor dem bereits feststehenden Schritt in die Selbstständigkeit folgt ein bewusster Abstecher: ein modernes Schweizer Franchise-System. \nKonträr zu allem, was er bisher kannte. Andere Prozesse, andere Haltung, andere Maßstäbe. Alexander weiß danach noch genauer, wie sein eigenes Unternehmen aussehen wird. \nUnd wie nicht.",
         "image_path": "/timeline-images/5.png"
       },
       {
         "year": "2018",
         "category": "Gründung Maklerhaus",
-        "subtitle": "Das erste eigene Unternehmen. Klarer Auftrag.",
-        "body": "Gründung des ersten eigenen Maklerunternehmens — mit einer ungewöhnlichen Strategie:\nDer Fokus liegt vor allem auf Verkäufern, die mit der verhassten Maklerzunft bereits abgeschlossen hatten. Vertrauen für einen unbeliebten Berufsstand zurückzugewinnen, lautete also die Devise.\nInsgesamt über 300 Immobilien werden infolge dieser und späterer Unternehmungen vermittelt.\nSiebenstelliger Umsatz im GründungsJahr und bis in die Gegenwart reichende Mandantenbeziehungen bezeugen, dass ein anderer Weg möglich ist.",
+        "subtitle": "Eigenes Unternehmen. Klarer Auftrag.",
+        "body": "Gründung des ersten eigenen Unternehmens — mit einer ungewöhnlichen Strategie:\nDer Fokus liegt vor allem auf Verkäufern, die mit der verhassten Maklerzunft bereits abgeschlossen hatten. Vertrauen für einen unbeliebten Berufsstand zurückzugewinnen, lautete also die Devise. Knapp 300 vermittelte Immobilien und bis in die Gegenwart reichende Mandantenbeziehungen beweisen, dass ein anderer Weg möglich ist.",
         "image_path": "/timeline-images/6.jpg"
       },
       {
         "year": "2018",
         "category": "Nächste Gründung",
-        "subtitle": "Eigene Baufirma. Unabhängigkeit ohne Kompromisse.",
-        "body": "Noch im selben Gründungsjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. \nDer Grund so simpel wie strategisch: Wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht von Fremdfirmen abhängig sein. \nQualität, Timing und Kostenkontrolle vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung — vom ersten Beratungsgespräch bis zur Schlüsselübergabe.",
+        "subtitle": "Unabhängigkeit ohne Kompromisse.",
+        "body": "Im selben Kalenderjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. \nDer Grund so simpel wie strategisch: Wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht von Fremdfirmen abhängig sein. \nQualität, Timing und Kostenkontrolle vollständig in eigener Hand. \nFür Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung — vom ersten Beratungsgespräch bis zur Schlüsselübergabe.",
         "image_path": "/timeline-images/7.png"
       },
       {
         "year": "Meilenstein (2020)",
-        "category": "Ensemble",
-        "subtitle": "Rund um Begleitung des 1. Großprojekts.",
-        "body": "Ein langjähriger Stammkunde vertraut CLASEN mit dem Erwerb eines kompletten Mehrfamilienhausensembles in solider Münchner Lage. Was folgt, ist ein Auftrag in voller Bandbreite: Akquisition, wirtschaftliche Planung, Förderungsmanagement, Kernsanierung, Projektentwicklung, Innenausbau, Vermietung und laufende Objektbetreuung — alles aus einer Hand. \nEin Beweis dafür, was echte Partnerschaft bedeutet.",
+        "category": "1. Großprojekt",
+        "subtitle": "360° Service für Vermögensverwalter",
+        "body": "Ein Stammkunde vertraut CLASEN mit dem Erwerb eines Mehrfamilienhauses in solider Münchner Lage. Es folgt ein Auftrag in voller Bandbreite: Akquisition, Förderungsmanagement, Projektentwicklung, Kernsanierung, Vermietung und Objektbetreuung — alles aus einer Hand.",
         "image_path": "/timeline-images/8a.jpg"
       },
       {
         "year": "Meilenstein (2022)",
-        "category": "Baudenkmal",
-        "subtitle": "Theresienwiese. Vier Jahre. Ein Denkmal.",
-        "body": "Eine Münchner Erbengemeinschaft vertraut CLASEN mit dem anspruchsvollsten Auftrag der jungen Firmengeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. \nDenkmalschutz, Erbrecht, Sanierungskomplexität, Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion und Ausdauer.",
+        "category": "Städtisches Baudenkmal",
+        "subtitle": "Vier Jahre. Ein Denkmal.",
+        "body": "Eine Münchner Erbengemeinschaft vertraut CLASEN mit dem anspruchsvollsten Auftrag der jungen Firmengeschichte: die aufwendige, vierjährige Kernsanierung eines bekannten Baudenkmals nahe der Theresienwiese. Denkmalschutz, Erbrecht, Sanierungskomplexität, Behördenlandschaft. Das Projekt steht für das, was CLASEN ausmacht: Diskretion und Ausdauer.",
         "image_path": "/timeline-images/9.png"
       },
       {
         "year": "2024",
-        "category": "Vision",
-        "subtitle": "CLASEN Family Office. Der nächste Schlüssel.",
-        "body": "Aus dem Maklerhaus wird ein Family Office. \nDer Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. \nDas Fundament steht. Was folgt, ist die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market-Zugang für alle, die ihr Kapital arbeiten lassen wollen. \nEin Dealumfeld, das sonst nur institutionellen Investoren vorbehalten war.",
+        "category": "Weiterentwicklung",
+        "subtitle": "Family Office. Der nächste Schlüssel.",
+        "body": "Aus dem Maklerhaus wird ein Family Office. Der Schritt ist konsequent — nicht Neuerfindung, sondern Vollendung. Die nächste Stufe: maßgeschneiderte Kapitalanlagen, Steuersparmodelle und Off-Market Zugang für alle, die ihr Kapital arbeiten lassen wollen. Ein Dealumfeld, welches früher nur institutionellen Investoren vorbehalten war.",
         "image_path": "/timeline-images/10.png"
       },
       {
         "year": "Heute",
         "category": "Spezialisierung",
         "subtitle": "Steuern sparen als Königsdisziplin.",
-        "body": "Was als Überzeugung begann — Unabhängigkeit die keine Kompromisse kennt — ist heute eine Haltung, die wir für unsere Mandanten auf jeden Aspekt des Vermögensaufbaus anwenden. \nMit führenden Rechtskanzleien entwickelte Konzepte, die nicht nur an der Oberfläche kratzen. \nStruktur, Rechtssicherheit, Beständigkeit — ohne Kompromisse. Ihr Schlüssel zum Erfolg.",
+        "body": "Unabhängigkeit die keine Kompromisse kennt — beschreibt die Haltung, die wir für unsere Mandanten auf jeden Aspekt des Vermögensaufbaus anwenden: \nMit führenden Rechtskanzleien entwickelte Konzepte, kratzen nicht nur an der Oberfläche, sondern sorgen für Struktur, Rechtssicherheit und Beständigkeit. Damit Sie Ihre Ziele garantiert erreichen sind wir: \nIhr Schlüssel zum Erfolg.",
         "isToday": true,
         "image_path": "/timeline-images/11.png"
       }

@@ -22,7 +22,7 @@ export default function ProfileSection({ dict, locale }: Props) {
           <span className="text-accent text-sm uppercase tracking-widest font-semibold">
             {dict.sectionLabel}
           </span>
-          <h2 className="text-3xl font-bold leading-tight text-foreground">
+          <h2 className="text-3xl font-bold leading-tight text-foreground whitespace-break-spaces">
             {dict.heading}
           </h2>
         </div>
