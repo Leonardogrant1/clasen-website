@@ -56,7 +56,6 @@ export default async function WohnenUndLebenPage({ params }: { params: Promise<{
             cta={app.cta}
             infoFlowText={app.infoFlowText}
             infoFlowTextMobile={app.infoFlowTextMobile}
-            ownerAppTitle={app.ownerAppTitle}
             platforms={app.platforms}
             altText={app.altText}
             ctaButton={t.ctaButton}
