@@ -344,6 +344,7 @@
     "subheading": "Centres of life. As singular as you are.",
     "subheadingMobile": "Unique centres of life.",
     "description": "A selection of placed properties:",
+    "descriptionMobile": "Placed properties:",
     "viewProperty": "View property",
     "viewOffers": "Current Offers",
     "notConnected": "ImmoScout not connected",
@@ -355,8 +356,7 @@
     "labelTyp": "Type",
     "labelFlaeche": "Area",
     "quote": {
-      "p1": "Even though our clients today come to us above all for know-how and lived experience in tax matters and the placement of wealth, we stand by our roots:",
-      "p2": "These lie unmistakably in the passionate, discreet marketing of owner-occupied residential properties.",
+      "p1": "Even though our clients today come to us above all for know-how and lived experience in tax matters and the placement of wealth, we stand by our roots:\nThese lie unmistakably in the passionate, discreet marketing of owner-occupied residential properties.",
       "mobile": "Our roots lie in the passionate, discreet marketing of owner-occupied residential properties."
     },
     "listings": [
