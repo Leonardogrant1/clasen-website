@@ -31,7 +31,7 @@ export default function AppTeaser({
   infoFlowText = "Zeitgemäße Vermarktung erfordert kontinuierlichen Informationsfluss.",
   infoFlowTextMobile = "Vermarktung erfordert Informationsfluss.",
   descriptionMobile = "Mit der CLASEN Eigentümer-App jederzeit vollen Einblick: Vermarktungsfortschritt, Besichtigungstermine, Preisverhandlungen und Live-Updates. | Direkt auf Ihrem Smartphone.",
-
+  ownerAppTitle = "Ihre Eigentümer-App",
   altText = "Clasen Eigentümer App",
   ctaButton = "Beratung buchen",
   ctaTextAbove = "Ihr Vermarktungserfolg auf dem nächsten Level.",
@@ -104,7 +104,9 @@ export default function AppTeaser({
         {/* ── Top description bar ── */}
         <div className="relative z-10 w-full border-b border-white/10 bg-white/5 px-8 py-2 md:px-12 md:py-8">
           <div className="max-w-3xl mx-auto text-center">
-
+            <p className="hidden md:block text-white text-lg md:text-3xl tracking-widest font-semibold mb-1 md:mb-3">
+              {ownerAppTitle}
+            </p>
 
             <p className="text-white/80 text-sm md:text-base xl:text-xl leading-relaxed hidden lg:block whitespace-pre-line">
               {description}
