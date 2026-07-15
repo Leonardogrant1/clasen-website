@@ -209,7 +209,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "md:scale-80 md:-translate-y-16", index === 4 && "md:scale-90", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
+      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "scale-90 md:scale-80 md:-translate-y-16", index === 4 && "md:scale-90", index === 3 && "scale-88 md:scale-100", index === 5 && "scale-88 md:scale-100", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -273,7 +273,7 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
 function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   const ref = useFadeIn();
 
-  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-20", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14"]
+  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-20", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14", "mt-14"]
 
   return (
     <div
