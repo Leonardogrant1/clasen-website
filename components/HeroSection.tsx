@@ -25,7 +25,7 @@ export default function HeroSection({ dict, statsDict, forceItemIndex, overrideV
           <div className="absolute bottom-6 left-4 right-4 z-10">
             <div className="flex items-end justify-start gap-2 mb-2">
               <span className="text-[#C9A84C] text-2xl font-semibold tracking-widest uppercase">01</span>
-              <p className="text-[#C9A84C] text-xs uppercase tracking-widest mb-1 font-semibold">{label}</p>
+              <p className="text-[#C9A84C] text-sm uppercase tracking-widest mb-1 font-semibold">{label}</p>
             </div>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground whitespace-pre-line text-left">
               {item.title}
@@ -46,14 +46,14 @@ export default function HeroSection({ dict, statsDict, forceItemIndex, overrideV
         <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
 
         <div className="absolute bottom-16 lg:bottom-16 xl:bottom-14 2xl:bottom-12 left-8 xl:left-12 2xl:left-16 z-10 max-w-xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-3xl">
-          <div className="flex items-end gap-2 align-bottom">
+          <div className="flex items-end gap-1 align-bottom">
             <span className="text-[#C9A84C] text-3xl xl:text-3xl 2xl:text-4xl font-semibold tracking-widest uppercase z-10">01</span>
-            <p className="text-[#C9A84C] text-base xl:text-base 2xl:text-xl uppercase tracking-widest mb-1 font-semibold">{label}</p>
+            <p className="text-[#C9A84C] text-lg xl:text-lg 2xl:text-2xl uppercase tracking-widest mb-1 font-semibold">{label}</p>
           </div>
           <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold leading-tight tracking-tight text-foreground mb-3 2xl:mb-4 whitespace-pre-line">
             {item.title}
           </h1>
-          <p className="text-muted max-w-xl lg:max-w-xl xl:max-w-xl 2xl:max-w-2xl leading-relaxed text-sm md:text-base lg:text-base xl:text-base 2xl:text-[22px] whitespace-pre-line">{item.subtitle}</p>
+          <p className="text-muted max-w-xl lg:max-w-xl xl:max-w-xl 2xl:max-w-2xl leading-relaxed text-base md:text-xl whitespace-pre-line">{item.subtitle}</p>
         </div>
 
         <StatsBox dict={statsDict} />

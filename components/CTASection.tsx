@@ -33,7 +33,7 @@ export default function CTASection({ dict, locale, videoSrc, targetPath }: Props
         className="relative z-10 max-w-3xl flex flex-col items-center gap-6"
         style={{ animation: "fade-up 0.8s ease both" }}
       >
-        <span className="text-accent text-xs md:text-sm uppercase tracking-widest font-semibold">
+        <span className="text-accent text-sm md:text-base uppercase tracking-widest font-semibold">
           {dict.sectionLabel}
         </span>
 

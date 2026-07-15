@@ -19,9 +19,12 @@ export default function ProfileSection({ dict, locale }: Props) {
       <div className="max-w-6xl mx-auto">
         {/* Mobile-only section label & heading */}
         <div className="md:hidden text-center mb-10 flex flex-col gap-4">
-          <span className="text-accent text-sm uppercase tracking-widest font-semibold">
-            {dict.sectionLabel}
-          </span>
+          <div className="flex items-end justify-center gap-2">
+            <span className="text-accent text-2xl font-semibold tracking-widest uppercase">03</span>
+            <span className="text-accent text-base uppercase tracking-widest font-semibold mb-0.5">
+              {dict.sectionLabel}
+            </span>
+          </div>
           <h2 className="text-3xl font-bold leading-tight text-foreground whitespace-break-spaces">
             {dict.heading}
           </h2>
@@ -52,9 +55,12 @@ export default function ProfileSection({ dict, locale }: Props) {
           </div>
 
           <div className="flex flex-col gap-6 items-center md:items-start text-center md:text-left">
-            <span className="hidden md:block text-accent text-xs md:text-base uppercase tracking-widest font-semibold">
-              {dict.sectionLabel}
-            </span>
+            <div className="hidden md:flex items-end gap-1">
+              <span className="text-accent text-3xl font-semibold tracking-widest uppercase">03</span>
+              <span className="text-accent text-sm md:text-lg uppercase tracking-widest font-semibold mb-1">
+                {dict.sectionLabel}
+              </span>
+            </div>
             <h2 className="hidden md:block md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               {dict.heading}
             </h2>

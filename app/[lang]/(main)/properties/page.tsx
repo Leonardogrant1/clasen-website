@@ -22,7 +22,7 @@ export default async function WohnenUndLebenPage({ params }: { params: Promise<{
   return (
     <>
       <PropertiesHero dict={t} navLabel={dict.nav.wohnenUndLeben} locale={lang} />
-      <main id="listings" className="min-h-screen bg-background pt-0 pb-10 px-4 md:py-24 md:px-8">
+      <main id="listings" className="min-h-screen bg-background pt-0 pb-10 px-4 md:py-5 md:px-8">
         <div className="w-full lg:max-w-7xl mx-auto flex flex-col gap-3">
           <div className="pt-3 lg:pt-0" style={{ animation: "fade-up 0.7s ease both" }}>
             <span className="text-muted text-xs md:text-base uppercase tracking-widest font-semibold block">

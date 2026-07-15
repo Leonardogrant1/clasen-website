@@ -80,9 +80,12 @@ export default function TestimonialsSection({ dict }: Props) {
         {/* ── MOBILE LAYOUT ── */}
         <div className="flex flex-col md:hidden">
           <div className="text-center  mb-4">
-            <span className="text-accent text-sm uppercase tracking-widest font-semibold block mb-4">
-              {dict.sectionLabel}
-            </span>
+            <div className="flex items-end justify-center gap-2 mb-4">
+              <span className="text-accent text-2xl font-semibold tracking-widest uppercase">02</span>
+              <span className="text-accent text-base uppercase tracking-widest font-semibold mb-0.5">
+                {dict.sectionLabel}
+              </span>
+            </div>
             <h2 className="text-3xl font-bold text-foreground leading-tight whitespace-pre-line">
               {dict.heading}
             </h2>
@@ -143,9 +146,12 @@ export default function TestimonialsSection({ dict }: Props) {
         {/* ── DESKTOP LAYOUT ── */}
         <div className="hidden md:grid grid-cols-[2fr_3fr] gap-12 items-center">
           <div className="text-left">
-            <span className="text-accent text-xs md:text-base uppercase tracking-widest font-semibold block mb-6">
-              {dict.sectionLabel}
-            </span>
+            <div className="flex items-end gap-1 mb-6">
+              <span className="text-accent text-3xl font-semibold tracking-widest uppercase">02</span>
+              <span className="text-accent text-sm md:text-lg uppercase tracking-widest font-semibold mb-1">
+                {dict.sectionLabel}
+              </span>
+            </div>
             <h2 className="text-3xl md:text-[2.7rem] font-bold text-foreground leading-tight whitespace-pre-line">
               {dict.heading}
             </h2>
@@ -161,11 +167,11 @@ export default function TestimonialsSection({ dict }: Props) {
             <ProfileImages size="lg" />
             <Image src="/quote.png" alt="quote" className="self-start shrink-0" width={40} height={40} />
             <div className="flex flex-col gap-8">
-              <p className="text-muted text-sm md:text-base leading-relaxed whitespace-pre-line">{slide.client_quote}</p>
+              <p className="text-muted text-base md:text-xl leading-relaxed whitespace-pre-line">{slide.client_quote}</p>
               <div className="flex items-center gap-2">
-                <p className="text-foreground text-sm font-semibold">{slide.client_name}</p>
+                <p className="text-foreground text-base font-semibold">{slide.client_name}</p>
                 <span className="text-white/20 text-xs">·</span>
-                <p className="text-accent text-xs tracking-widest">{slide.client_type}</p>
+                <p className="text-accent text-base tracking-widest">{slide.client_type}</p>
               </div>
             </div>
           </div>

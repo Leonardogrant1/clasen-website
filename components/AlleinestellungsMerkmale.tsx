@@ -33,9 +33,12 @@ export default function AlleinestellungsMerkmale({ dict, locale }: Props) {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-20 gap-6">
           <div className="text-center md:text-left">
-            <span className="text-accent text-sm md:text-base uppercase tracking-widest font-semibold block mb-4">
-              {dict.sectionLabel}
-            </span>
+            <div className="flex items-end justify-center md:justify-start gap-2 md:gap-1 mb-4">
+              <span className="text-accent text-2xl md:text-3xl font-semibold tracking-widest uppercase">03</span>
+              <span className="text-accent text-base md:text-lg uppercase tracking-widest font-semibold mb-0.5 md:mb-1">
+                {dict.sectionLabel}
+              </span>
+            </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight wrap-break-words">
               {dict.heading}
             </h2>

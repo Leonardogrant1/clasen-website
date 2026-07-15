@@ -17,7 +17,7 @@ export default function ClasenHero({ dict }: { dict: Dictionary["clasenHero"] })
       <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-black/10" />
 
       <div className="absolute bottom-20 left-4 md:left-8 z-10 max-w-2xl md:max-w-3xl pr-4 md:pr-0">
-        <p className="text-accent text-sm md:text-base uppercase tracking-widest font-semibold mb-4">
+        <p className="text-accent text-base md:text-lg uppercase tracking-widest font-semibold mb-4">
           {dict.sectionLabel}
         </p>
         <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold leading-tight tracking-tight text-foreground mb-6 whitespace-pre-line">
