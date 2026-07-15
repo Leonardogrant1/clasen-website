@@ -185,7 +185,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 8) {
     return (
       <div
-        className="relative shrink-0 w-full md:scale-110 md:translate-y-6"
+        className="relative shrink-0 w-full md:max-w-[95%]"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/8a.png" imageB="/timeline-images/8b.png" />
@@ -196,7 +196,7 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
   if (index === 9) {
     return (
       <div
-        className="relative shrink-0 w-full md:translate-y-10"
+        className="relative shrink-0 w-full"
         style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
       >
         <ComparisonSlider alt={alt} imageA="/timeline-images/9a.png" imageB="/timeline-images/9b.png" />
@@ -209,7 +209,20 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
   return (
     <div
-      className={cn("relative shrink-0 flex justify-center w-full md:scale-90", index === 6 && "md:scale-125 md:translate-y-30", (index === 2) && "scale-90 md:scale-80 md:-translate-y-16", index === 4 && "md:scale-90", index === 3 && "scale-88 md:scale-100", index === 5 && "scale-88 md:scale-100", (index === 7) && "md:scale-95 md:translate-y-17", (index === 10) && "md:scale-105 md:translate-y-20", index == 11 && "md:scale-105 md:translate-y-25")}
+      className={cn(
+        "relative shrink-0 flex justify-center w-full md:max-w-[90%] md:mx-auto",
+        index === 0 && "md:max-w-[70%]",
+        index === 2 && "scale-90 md:scale-100 md:max-w-[80%]",
+        index === 3 && "scale-88 md:scale-100 md:max-w-[60%]",
+        index === 4 && "md:mt-5",
+
+        index === 5 && "scale-88 md:scale-100 md:max-w-[75%]",
+        index === 6 && "md:max-w-full md:mt-10",
+        index === 7 && "md:max-w-[95%] md:mt-10",
+        index === 10 && "md:max-w-full md:mt-5",
+        index === 11 && "md:max-w-full md:mt-5",
+        index === 12 && "md:max-w-full md:mt-5",
+      )}
       style={{ transform: `rotate(${deg}deg)`, transformOrigin: "center" }}
     >
       {/* Polaroid frame */}
@@ -234,10 +247,10 @@ function EntryImage({ src, alt, rotate, index }: { src?: string; alt: string; ro
 
 function EntryText({ entry, i, className }: { entry: Entry, i: number, className?: string }) {
 
-  const mtForIndex = ["mt-15", "mt-8", "mt-0", "mt-15", "mt-0", "mt-20", "mt-10", "mt-0", "mt-10", "mt-0", "mt-10", "mt-14"]
+  const mtForIndex = ["mt-0", "mt-14", "mt-14", "mt-15", "mt-0", "mt-20", "mt-10", "mt-0", "mt-10", "mt-0", "mt-10", "mt-14"]
 
   return (
-    <div className={cn("text-left md:min-h-[400px]", className ?? mtForIndex[i])}>
+    <div className={cn("text-left md:min-h-[300px]", className ?? mtForIndex[i])}>
       <span className="text-accent text-xs font-semibold uppercase tracking-widest block mb-1">{entry.year}</span>
       <h3 className="text-foreground font-bold text-2xl mb-1">{entry.category}</h3>
       <p className="text-muted italic text-lg mb-3">{entry.subtitle}</p>
@@ -273,7 +286,7 @@ function MobileRow({ entry, index }: { entry: Entry; index: number }) {
 function DesktopRow({ entry, i }: { entry: Entry; i: number }) {
   const ref = useFadeIn();
 
-  const mtForIndex = ["mt-14", "mt-24", "mt-8", "mt-0", "mt-24", "mt-20", "mt-28", "mt-24", "mt-20", "mt-44", "mt-10", "mt-14", "mt-14"]
+  const mtForIndex = ["mt-10", "mt-24", "mt-20", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24", "mt-24"]
 
   return (
     <div

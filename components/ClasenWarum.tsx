@@ -23,7 +23,7 @@ export default function ClasenWarum({ dict }: { dict: Dictionary["clasenWarum"] 
         <span className="text-accent text-sm md:text-xl uppercase tracking-widest font-semibold block my-6">
           {dict.sectionLabel}
         </span>
-        <p className="text-muted text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-muted text-lg leading-relaxed max-w-3xl mx-auto">
           {dict.body.split("\n").map((line, index, array) => {
             if (index === 0) {
               return (

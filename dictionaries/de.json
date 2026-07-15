@@ -220,12 +220,12 @@
   "clasenHero": {
     "sectionLabel": "Die Geschichte hinter der Marke",
     "heading": "Eine Überzeugung.",
-    "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen. \nDazwischen liegt keine Karriere — sondern der Beweis, dass diese Überzeugung trägt.",
+    "body": "Vom 18-jährigen, dem die Bank die erste Finanzierung verweigerte, zum Family Office, dem Unternehmer ihr Vermögen anvertrauen.",
     "cta": "Die Geschichte lesen"
   },
   "clasenWarum": {
     "sectionLabel": "Das Warum",
-    "body": "Immobilien haben mich durch alle persönlichen Krisen und Fehlentscheidungen getragen. \nMeine Leidenschaft für diese Assetklasse teile ich authentisch und aufrichtig mit jedem, der bereit ist, sein Kapital arbeiten zu lassen."
+    "body": "\"Immobilien haben mich durch alle persönlichen Krisen und Fehlentscheidungen getragen. \nMeine Leidenschaft für diese Assetklasse teile ich authentisch und aufrichtig mit jedem, der bereit ist, sein Kapital arbeiten zu lassen.\""
   },
   "clasenChronik": {
     "sectionLabel": "Chronik",
@@ -256,14 +256,14 @@
         "year": "2015",
         "category": "Wendepunkt",
         "subtitle": "Der Abbruch, gegen den Rat aller.",
-        "body": "Kurz vor dem Abschluss bricht Alexander sein Psychologiestudium ab. \nNicht aus Gleichgültigkeit \n— sondern aus Klarheit. \nAlle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
+        "body": "Kurz vor dem Abschluss bricht Alexander sein Psychologiestudium ab. Nicht aus Gleichgültigkeit \n— sondern aus Klarheit. \nAlle raten ab. Er macht es trotzdem. Diese Entscheidung, konsequent gegen den Strom zu schwimmen, wird zum Leitmotiv seiner gesamten Laufbahn.",
         "image_path": "/timeline-images/3.png"
       },
       {
         "year": "2016",
         "category": "Quereinstieg",
         "subtitle": "100 Jahre Geschichte. In einem Jahr überholt.",
-        "body": "Als Quereinsteiger tritt Alexander, gemeinsam mit seinem besten Freund, in eines der renommiertesten Maklerhäuser Münchens ein. \nEin Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind nahezu alle davon gebrochen: Bestmarken, die jahrzehntelang Bestand hatten. \nDie Erkenntnis: Der Münchner Maklermarkt ist eingestaubt. \nUnd bereit für eine Revolution.",
+        "body": "Als Quereinsteiger tritt Alexander, gemeinsam mit seinem besten Freund, in eines der renommiertesten Maklerhäuser Münchens ein. \nEin Jahrhundert Firmengeschichte, gewachsene Strukturen, eingespielte Rekorde. Ein Jahr später sind nahezu alle davon gebrochen: Bestmarken, die jahrzehntelang Bestand hatten. Die Erkenntnis: Der Münchner Maklermarkt ist eingestaubt. \nUnd bereit für eine Revolution.",
         "image_path": "/timeline-images/4.png"
       },
       {
@@ -277,14 +277,14 @@
         "year": "2018",
         "category": "Gründung Maklerhaus",
         "subtitle": "Eigenes Unternehmen. Klarer Auftrag.",
-        "body": "Gründung mit einer ungewöhnlichen Strategie: Der Fokus liegt vor allem auf Verkäufern, die mit der verhassten Maklerzunft bereits abgeschlossen hatten. Vertrauen für einen unbeliebten Berufsstand zurückzugewinnen, lautete also von Beginn an die Devise. \nBis in die Gegenwart reichende Kundenbeziehungen aus dieser Zeit erfüllen uns mit Stolz.",
+        "body": "Gründung mit einer ungewöhnlichen Strategie: Der Fokus liegt vor allem auf Verkäufern, die mit der verhassten Maklerzunft bereits abgeschlossen hatten. Vertrauen für einen unbeliebten Berufsstand zurückzugewinnen, lautete also von Beginn an die Devise. Bis in die Gegenwart reichende Kundenbeziehungen aus dieser Zeit erfüllen uns mit Stolz.",
         "image_path": "/timeline-images/6.jpg"
       },
       {
         "year": "2018",
         "category": "Nächste Gründung",
         "subtitle": "Unabhängigkeit ohne Kompromisse.",
-        "body": "Im selben Kalenderjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. \nWer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung — vom Erstgespräch bis zur Schlüsselübergabe.",
+        "body": "Im selben Kalenderjahr folgt der nächste konsequente Schritt: die Gründung eines eigenen Bauunternehmens. Wer seinen Mandanten \"alles aus einer Hand\" verspricht, darf nicht von Fremdfirmen abhängig sein. Qualität, Timing und Kostenkontrolle vollständig in eigener Hand. Für Mandanten bedeutet das: ein Ansprechpartner, eine Verantwortung — vom Erstgespräch bis zur Schlüsselübergabe.",
         "image_path": "/timeline-images/7.png"
       },
       {
@@ -319,7 +319,7 @@
         "year": "Heute",
         "category": "Spezialisierung",
         "subtitle": "Steuern sparen als Königsdisziplin.",
-        "body": "Für unsere Mandanten wenden wir kompromisslose Unabhängigkeit auf jeden Aspekt des Vermögenaufbaus an: \nMit führenden Rechtskanzleien entwickelte Konzepte, kratzen nicht nur an der Oberfläche, sondern sorgen für Struktur, Rechtssicherheit und Beständigkeit. Damit Sie Ihre Ziele garantiert erreichen. \nIhr Schlüssel zum Erfolg.",
+        "body": "Für unsere Mandanten wenden wir kompromisslose Unabhängigkeit auf jeden Aspekt des Vermögenaufbaus an: Mit führenden Rechtskanzleien entwickelte Konzepte, kratzen nicht nur an der Oberfläche, sondern sorgen für Struktur, Rechtssicherheit und Beständigkeit. Damit Sie Ihre Ziele garantiert erreichen. \nIhr Schlüssel zum Erfolg.",
         "isToday": true,
         "image_path": "/timeline-images/11.png"
       }
@@ -347,8 +347,7 @@
     "labelTyp": "Typ",
     "labelFlaeche": "Fläche",
     "quote": {
-      "p1": "Auch wenn unsere Mandanten heute insbesondere Know-How und gelebte Erfahrung in Steuerfragen und der Anlage von Vermögenswerten suchen, stehen wir zu unseren Wurzeln:",
-      "p2": "Diese liegen unverkennbar in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien.",
+      "p1": "Unsere Wurzeln liegen in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien.",
       "mobile": "Unsere Wurzeln liegen in der leidenschaftlichen und diskreten Vermarktung selbstgenutzter Wohnimmobilien."
     },
     "listings": [
@@ -411,7 +410,7 @@
       "cta": "Bald im App Store & Google Play",
       "infoFlowText": "Zeitgemäße Vermarktung erfordert kontinuierlichen Informationsfluss.",
       "infoFlowTextMobile": "Vermarktung erfordert Informationsfluss.",
-      "ownerAppTitle": "Ihre Eigentümer-App",
+      "ownerAppTitle": "Eigentümer-App",
       "platforms": "iOS & Android",
       "altText": "Die CLASEN Eigentümer-App",
       "ctaTextAbove": "Echtzeit-Transparenz für \nIhren Vermarktungserfolg."

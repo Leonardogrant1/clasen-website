@@ -29,17 +29,17 @@ export default function PropertiesHero({ dict, navLabel, locale }: Props) {
       </div>
       <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/45 to-black/15" />
 
-      <div className="absolute bottom-8 md:bottom-16 left-4 md:left-8 z-10 max-w-2xl pr-4 md:pr-0" style={{ animation: "fade-up 0.8s ease both" }}>
-        <p className="text-accent text-xs uppercase tracking-widest font-semibold mb-4">
+      <div className="absolute bottom-8 md:bottom-16 left-4 md:left-8 z-10 max-w-2xl md:max-w-3xl pr-4 md:pr-0" style={{ animation: "fade-up 0.8s ease both" }}>
+        <p className="text-accent text-sm md:text-base uppercase tracking-widest font-semibold mb-4">
           {navLabel}
         </p>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight text-foreground mb-6 whitespace-pre-line">
+        <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-bold leading-tight tracking-tight text-foreground mb-6 whitespace-pre-line">
           {dict.heading}
         </h1>
 
         {/* Desktop Quote */}
-        <p className="hidden md:block text-muted max-w-lg leading-relaxed text-sm md:text-xl mb-8 italic">
-          „{dict.quote.p1} {dict.quote.p2}“
+        <p className="hidden md:block text-muted max-w-lg md:max-w-2xl leading-relaxed text-sm md:text-xl mb-8 italic">
+          „{dict.quote.p1}“
         </p>
 
         {/* Mobile Quote */}
@@ -49,7 +49,7 @@ export default function PropertiesHero({ dict, navLabel, locale }: Props) {
 
         <Link
           href={`/${locale}/funnels/selection`}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent text-sm md:text-xl uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent text-sm md:text-base uppercase tracking-widest hover:bg-accent hover:text-background transition-colors duration-200"
         >
           {dict.viewOffers || "Aktuelle Angebote"}
         </Link>
