@@ -48,6 +48,39 @@ export function getStableImages(answers: Record<string, unknown>): string[] {
   return shuffled
 }
 
+export function getStableScores(
+  answers: Record<string, unknown>,
+  length: number
+): number[] {
+  const sorted = Object.keys(answers)
+    .sort()
+    .reduce<Record<string, unknown>>((acc, k) => { acc[k] = answers[k]; return acc }, {})
+  const key = JSON.stringify(sorted)
+  const hash = djb2(key)
+  const storageKey = `funnel_scores_${hash}_${length}`
+
+  try {
+    const cached = localStorage.getItem(storageKey)
+    if (cached !== null) return JSON.parse(cached) as number[]
+  } catch {}
+
+  // Descending match scores: top score 93–98, each following 2–4 lower
+  let s = hash
+  const next = () => { s = (s * 1664525 + 1013904223) & 0x7fffffff; return s }
+  const scores: number[] = []
+  let current = 93 + (hash % 6)
+  for (let i = 0; i < length; i++) {
+    scores.push(current)
+    current -= 2 + (next() % 3)
+  }
+
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(scores))
+  } catch {}
+
+  return scores
+}
+
 export function getStableCount(
   answers: Record<string, unknown>,
   min: number,

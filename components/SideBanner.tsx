@@ -64,7 +64,6 @@ export default function SideBanner({ locale }: { locale: string }) {
 
   if (!mounted || isHidden) return null
 
-  return null;
   return (
     <div
       className="fixed left-0 py-4 top-[27%] -translate-y-1/2 z-40 flex items-center bg-accent hover:bg-[#b08f37] text-background border border-accent border-l-0 rounded-r-2xl shadow-[0_10px_30px_rgba(0,0,0,0.35)] transition-all duration-300 ease-in-out cursor-pointer"
