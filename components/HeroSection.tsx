@@ -24,7 +24,6 @@ export default function HeroSection({ dict, statsDict, forceItemIndex, overrideV
 
           <div className="absolute bottom-6 left-4 right-4 z-10">
             <div className="flex items-end justify-start gap-2 mb-2">
-              <span className="text-[#C9A84C] text-2xl font-semibold tracking-widest uppercase">01</span>
               <p className="text-[#C9A84C] text-sm uppercase tracking-widest mb-1 font-semibold">{label}</p>
             </div>
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground whitespace-pre-line text-left">

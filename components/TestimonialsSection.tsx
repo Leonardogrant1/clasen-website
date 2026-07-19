@@ -81,7 +81,6 @@ export default function TestimonialsSection({ dict }: Props) {
         <div className="flex flex-col md:hidden">
           <div className="text-center  mb-4">
             <div className="flex items-end justify-center gap-2 mb-4">
-              <span className="text-accent text-2xl font-semibold tracking-widest uppercase">02</span>
               <span className="text-accent text-base uppercase tracking-widest font-semibold mb-0.5">
                 {dict.sectionLabel}
               </span>

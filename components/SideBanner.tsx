@@ -54,29 +54,69 @@ export default function SideBanner({ locale }: { locale: string }) {
   const t = copy[lang]
 
   useEffect(() => {
-    setMounted(true)
-    const stored = sessionStorage.getItem("clasen_side_banner_open")
-    if (stored !== null) {
-      setShowBanner(stored === "true")
-    }
-
-    // Mobile: popup was already auto-shown this session → FAB is visible right away
-    if (sessionStorage.getItem("clasen_mobile_popup_shown") !== null) {
-      setFabVisible(true)
-      return
-    }
-
-    // Otherwise auto-open the popup once the user scrolls a bit
-    const onScroll = () => {
-      if (window.innerWidth >= 768 || window.scrollY < 250) return
-      sessionStorage.setItem("clasen_mobile_popup_shown", "true")
-      setFabVisible(true)
-      setPopupOpen(true)
-      window.removeEventListener("scroll", onScroll)
-    }
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
+    const timer = setTimeout(() => {
+      setMounted(true)
+      const stored = sessionStorage.getItem("clasen_side_banner_open")
+      if (stored !== null) {
+        setShowBanner(stored === "true")
+      }
+    }, 0)
+    return () => clearTimeout(timer)
   }, [])
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.innerWidth >= 768) {
+        setFabVisible(false)
+        setPopupOpen(false)
+        setHintVisible(false)
+        return
+      }
+
+      // Find all visible section elements on mobile
+      const sections = Array.from(document.querySelectorAll("section"))
+        .filter((el) => {
+          const style = window.getComputedStyle(el)
+          return style.display !== "none" && style.visibility !== "hidden"
+        })
+
+      let isPast = false
+      if (sections.length >= 3) {
+        const rect = sections[2].getBoundingClientRect()
+        // Show banner when the top of the third section starts entering the viewport
+        isPast = rect.top <= window.innerHeight * 0.8
+      } else {
+        // Fallback for pages with fewer sections (e.g. subpages)
+        isPast = window.scrollY > 600
+      }
+
+      if (isPast) {
+        setFabVisible(true)
+        if (sessionStorage.getItem("clasen_mobile_popup_shown") === null) {
+          sessionStorage.setItem("clasen_mobile_popup_shown", "true")
+          setPopupOpen(true)
+        }
+      } else {
+        setFabVisible(false)
+        setPopupOpen(false)
+        setHintVisible(false)
+      }
+    }
+
+    // Set initial state on mount or pathname change asynchronously to avoid synchronous setState warnings in useEffect
+    const timer = setTimeout(() => {
+      onScroll()
+    }, 0)
+
+    window.addEventListener("scroll", onScroll, { passive: true })
+    window.addEventListener("resize", onScroll)
+
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener("scroll", onScroll)
+      window.removeEventListener("resize", onScroll)
+    }
+  }, [pathname])
 
   const handleCtaClick = () => {
     if (showBanner) {

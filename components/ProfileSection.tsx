@@ -20,7 +20,6 @@ export default function ProfileSection({ dict, locale }: Props) {
         {/* Mobile-only section label & heading */}
         <div className="md:hidden text-center mb-10 flex flex-col gap-4">
           <div className="flex items-end justify-center gap-2">
-            <span className="text-accent text-2xl font-semibold tracking-widest uppercase">03</span>
             <span className="text-accent text-base uppercase tracking-widest font-semibold mb-0.5">
               {dict.sectionLabel}
             </span>
