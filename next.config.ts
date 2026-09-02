@@ -5,7 +5,7 @@ import type { NextConfig } from "next";
 // ==========================================
 // true  = Website ist offline, alle Besucher werden auf /offline umgeleitet.
 // false = Website ist online (Normalbetrieb).
-const OFFLINE_MODE = true;
+const OFFLINE_MODE = false;
 
 const nextConfig: NextConfig = {
   // Allow accessing the dev server via LAN IP (e.g. from phone or other devices)

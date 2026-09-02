@@ -7,7 +7,7 @@ import createMiddleware from 'next-intl/middleware';
 // ==========================================
 // true  = Website ist offline, alle Besucher werden auf /offline umgeleitet.
 // false = Website ist online (Normalbetrieb).
-const OFFLINE_MODE = true;
+const OFFLINE_MODE = false;
 
 const LANDING_ROUTES = /^\/(?!admin|api|sign-in|_next|.*\..*).*$/;
 
